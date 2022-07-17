@@ -1,0 +1,36 @@
+Question. Si on applique le document XSLT suivant...
+
+ <?xml version="1.0" encoding="ISO-8859-1"?>
+ <xsl:stylesheet version="1.0" 
+   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+ <xsl:template match="*">
+ <xsl:value-of select="count(cours)"/>
+ </xsl:template>
+ </xsl:stylesheet>
+ 
+
+au document XML suivant...
+
+ <?xml version="1.0" encoding="ISO-8859-1" ?>
+ <universite>
+ <cours><nom>INF 102 Introduction avancée</nom>
+ <lien><cours>INF 101 Introduction</cours></lien>
+ <description>Un cours d'introduction à l'informatique pour futurs
+ ingénieurs.</description></cours>
+ <cours><nom>INF 101 Introduction</nom>
+ <description>Un cours d'introduction à l'informatique pour les
+ étudiants en éducation.</description></cours>
+ <cours><nom>INF 103 Java</nom>
+ description>Un cours d'introduction au Java</description></cours>
+ </universite>
+ 
+
+Quel sera le résultat?
+Choisissez la bonne réponse parmi les suivantes.
+
+Le chiffre « 1 ».
+Le chiffre « 2 ».
+Le chiffre « 3 ».
+(Réponse correcte!) Comme le modèle « * » ne s'applique qu'à l'élément-racine qui contient 3 éléments « cours », le résultat sera effectivement le chiffre 3.
+Le chiffre « 4 ».
+Un document vide.
