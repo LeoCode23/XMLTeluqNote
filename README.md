@@ -7,3 +7,5 @@ If everything go well, you should be able to acces it via this link: https://spi
 
 
 Enjoy your day, LeoCode23
+
+Q1: https://github.com/LeoCode23/XMLTeluqNote/blob/main/question1.html
