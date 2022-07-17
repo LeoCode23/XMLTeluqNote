@@ -11,7 +11,7 @@ A= auto-evaluation et Q = question d'examen
 <br><br>
 A1: https://github.com/LeoCode23/XMLTeluqNote/blob/main/question1.html
 <br>
-A2: a2.html
+A2: https://github.com/LeoCode23/XMLTeluqNote/blob/main/a2.html
 <br>
 A3:
 <br>
