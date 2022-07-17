@@ -1,5 +1,5 @@
 # XMLTeluqNote
-Basic answer to university level XML learning question. (Teluq-IN)
+Basic answer to university level XML learning question. (Teluq-INF)
 
 
 This project is mainly for me to keep track of my file produce in my learning of XML during teluq INF 6450 accomplishment.
