@@ -10,8 +10,12 @@ A= auto-evaluation et Q = question d'examen
 
 <br><br>
 A1: https://github.com/LeoCode23/XMLTeluqNote/blob/main/question1.html
-A2:
+<br>
+A2: a2.html
+<br>
 A3:
+<br>
 A4:
+<br>
 A5:
-
+<br>
