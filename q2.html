@@ -1,0 +1,49 @@
+
+
+<!-- 
+    XML: Question 2 :  Calculer les moyennes des étudiants, d'après les éléments « cours » associés aux éléments « étudiant », 
+    et qui trie les étudiants par ordre alphabétique de leur nom de famille. 
+-->
+
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+ <?xml-stylesheet href="class.xsl" type="text/xsl" ?>
+ <universite>
+ <etudiant><nom>Réjean Tremblay</nom>
+ <cours sigle="INF8430" note="89" />
+ <cours sigle="INF1030" note="69" />
+ <cours sigle="INF1230" note="75" /></etudiant>
+ <etudiant><nom>Martin Lambert</nom>
+ <cours sigle="INF8430" note="75" />
+ <cours sigle="INF1030" note="72" />
+ <cours sigle="INF1230" note="73" /></etudiant>
+ <etudiant><nom>Luc Alain</nom>
+ <cours sigle="INF9430" note="39" />
+ <cours sigle="INF1030" note="89" />
+ <cours sigle="INF1230" note="79" /></etudiant>
+ <etudiant><nom>Olive Saint-Amant</nom>
+ <cours sigle="INF8430" note="91" />
+  <cours sigle="INF1230" note="99" /></etudiant>
+ </universite>
+
+
+<!-- 
+    XSLT
+-->
+
+<?xml version="1.0" encoding="ISO-8859-1"?>
+ <xsl:stylesheet version="1.0" 
+ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:output method="html" /> 
+
+<xsl:template match="universite">
+<xsl:apply-templates select="etudiant" >
+<xsl:sort select="substring-after(nom,' ')" order="ascending"/>
+</xsl:apply-templates>
+</xsl:template>
+
+<xsl:template match="etudiant">
+  <p>Nom: <xsl:value-of select="nom" /></p>
+  <p>Moyenne: <xsl:value-of select="format-number(sum(cours/@note) div count(cours), '##.0')"  /></p>
+</xsl:template>
+
+ </xsl:stylesheet>

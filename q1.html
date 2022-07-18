@@ -1,0 +1,53 @@
+<!-- 
+    XML: Question 1 : , rédigez le contenu du document CSS « test.css », 
+    de telle sorte que les mots « Rouge » s'affichent en rouge, les mots « Noir » s'affichent en noir, 
+    les mots « majuscule » s'affichent en majuscule et ainsi de suite 
+-->
+
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+ <?xml-stylesheet type="text/css" href="test.css"?>
+ <a>
+ <b>Rouge</b>
+ <c><a>Olive</a>
+ <b>Bleu</b>
+ <a><a>Noir</a> 
+ Olive 
+ <b>Bleu</b>
+ <a>Rouge</a>
+ <a>Noir</a>
+ </a></c>
+ <b><a>Rouge</a>
+ <b>Noir</b></b>
+<d>majuscule</d>
+ </a>
+
+<!-- 
+    CSS
+-->
+<style type="text/css">
+
+a {
+  display: block;
+  color: red;
+  }
+
+a+b {
+  color: blue;
+  }
+
+ a>b+c>a {
+
+  color: olive;
+  }
+
+a>c>a>b+a+a, a>c a a:nth-child(1), b b {
+  
+  color: black;
+  }
+
+d {
+  display: block;
+  text-transform: uppercase;
+color: black;
+  }
+</style>
