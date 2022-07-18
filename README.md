@@ -13,9 +13,22 @@ A1: https://github.com/LeoCode23/XMLTeluqNote/blob/main/question1.html
 <br>
 A2: https://github.com/LeoCode23/XMLTeluqNote/blob/main/a2.html
 <br>
-A3:
+A3: https://github.com/LeoCode23/XMLTeluqNote/blob/main/a3.html
 <br>
-A4:
+A4: https://github.com/LeoCode23/XMLTeluqNote/blob/main/a4.html
 <br>
-A5:
+A5: https://github.com/LeoCode23/XMLTeluqNote/blob/main/a5.html
 <br>
+
+<br><br>
+Q1: https://github.com/LeoCode23/XMLTeluqNote/blob/main/q1.html
+<br>
+Q2: https://github.com/LeoCode23/XMLTeluqNote/blob/main/q2.html
+<br>
+Q3: https://github.com/LeoCode23/XMLTeluqNote/blob/main/q3.html
+<br>
+Q4: https://github.com/LeoCode23/XMLTeluqNote/blob/main/q4.html
+<br>
+Q5: https://github.com/LeoCode23/XMLTeluqNote/blob/main/q5.html
+<br>
+
