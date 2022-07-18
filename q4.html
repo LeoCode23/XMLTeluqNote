@@ -1,6 +1,7 @@
 <!-- 
     XML: Question 4 : Vous devez proposer deux documents XSLT permettant de réaliser ce filtrage. Le premier document ne devra pas contenir d'élément « xsl:element », 
     alors que le second ne contiendra pas d'élément « xsl:copy ».
+    -XML valable = 1 seul élément racine
 -->
 
 <?xml-stylesheet href="monfichier.xsl" type="text/xsl" ?>
@@ -16,36 +17,45 @@
     <ab x="x"><a>z</a></ab>
 </a>
 
+<ab x="x"><b>Test</b><a>z</a></ab>
 <!-- 
     XSLT #1
 -->
 
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
- version="1.0">
-<xsl:output method="html" version="1.0" indent="yes" encoding="ISO-8859-1"/>
-
-
-<xsl:template match="@*|node()">
-    <xsl:copy>
-        <xsl:apply-templates select="@*|node()"/>
-    </xsl:copy>
-</xsl:template>
-
-<xsl:template match="/*">
-    <xsl:copy>
-        <xsl:apply-templates select="a | ab"/>
-    </xsl:copy>
-</xsl:template>
-
-</xsl:stylesheet>
-
-
+<?xml version="1.0" ?> 
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xsl:template match="*[contains(name(), 'a')]/*[contains(name(), 'a')] | /*[contains(name(), 'a')]">
+     <xsl:element name="{local-name()}">
+       <xsl:choose>
+         <xsl:when test="@x">
+           <xsl:attribute name="x" >
+             <xsl:value-of select="@x" />
+           </xsl:attribute>
+         </xsl:when>
+       </xsl:choose>
+       <xsl:apply-templates />
+     </xsl:element>
+  </xsl:template>
+  <xsl:template match="*" >
+  </xsl:template>
+</xsl:stylesheet>  
 
 <!-- 
     XSLT #2
 -->
 
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+ version="1.0">
 
+
+ <xsl:template match="node()|@*">
+  <xsl:copy >
+	  <xsl:copy-of select="*"/>
+  </xsl:copy>
+</xsl:template>
+
+
+</xsl:stylesheet> 
 
 
 
@@ -56,3 +66,21 @@
     XSLT #3
 -->
 
+<!--
+Solution possible mais en XML 3.0:
+La transformation identité et une ou plusieurs templates matching the element to be filtered out
+https://blogs.sap.com/2020/02/26/thinking-in-xslt-filtering-xml-elements/
+<xsl:mode on-no-match="shallow copy" />    
+-->
+
+
+<!-- Échec
+<xsl:if test="starts-with(., 'a')">
+       
+    <xsl:copy>
+         <xsl:apply-templates select="node()|@*"/>
+       </xsl:copy>
+   
+   
+        </xsl:if>    
+-->
