@@ -1,9 +1,58 @@
 <!-- 
-    XML: Question 2 : 
+    XML: Question 4 : Vous devez proposer deux documents XSLT permettant de réaliser ce filtrage. Le premier document ne devra pas contenir d'élément « xsl:element », 
+    alors que le second ne contiendra pas d'élément « xsl:copy ».
 -->
+
+<?xml-stylesheet href="monfichier.xsl" type="text/xsl" ?>
+<a>
+<ab x="x"><b>Test</b><a>z</a></ab>
+<z x="x"><a>z</a></z>
+</a>
+
+<!--VERS LE RÉSULTAT
+-->
+
+<a>
+    <ab x="x"><a>z</a></ab>
+</a>
+
+<!-- 
+    XSLT #1
+-->
+
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+ version="1.0">
+<xsl:output method="html" version="1.0" indent="yes" encoding="ISO-8859-1"/>
+
+
+<xsl:template match="@*|node()">
+    <xsl:copy>
+        <xsl:apply-templates select="@*|node()"/>
+    </xsl:copy>
+</xsl:template>
+
+<xsl:template match="/*">
+    <xsl:copy>
+        <xsl:apply-templates select="a | ab"/>
+    </xsl:copy>
+</xsl:template>
+
+</xsl:stylesheet>
 
 
 
 <!-- 
-    XSLT
+    XSLT #2
 -->
+
+
+
+
+
+
+
+
+<!-- 
+    XSLT #3
+-->
+
