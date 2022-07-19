@@ -1,0 +1,11 @@
+<?xml version="1.0"  encoding="ISO-8859-1" ?>
+ <liste>
+ <joueur>
+ <nom surnom="jojo">Jean</nom>
+ <buts>32</buts>
+ </joueur>
+ <joueur>
+ <nom surnom="Ma">Marie</nom>
+ <buts>54</buts>
+ </joueur>
+ </liste>
