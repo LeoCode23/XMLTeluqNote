@@ -1,0 +1,37 @@
+
+
+Écrivez un programme qui met à jour l'inventaire en tenant compte des achats
+ de la journée,  contenus dans le fichier « achats.txt ». 
+ Votre code source devra se trouver dans le fichier « Inventaire.java » et 
+ la commande « java Inventaire achats.txt inventaire.xml» 
+ va modifier le fichier « inventaire » pour y soustraire les produits achetés
+  ce qui, dans le cas qui nous concerne, donnera un fichier 
+  « inventaire.xml » ayant le contenu suivant :
+
+CMD (powershell):
+javac Inventaire.java
+java Inventaire achats.txt inventaire.xml
+
+<?xml version="1.0" encoding="ISO-8859-1"?>
+ <inventaire>
+ <produit code="1" prix="432.00" quantité= "31" />
+ <produit code="32" prix="32.00" quantité= "100"  />
+ <produit code="321" prix="31.00" quantité= "197"  />
+ </inventaire>
+
+
+
+ « inventaire.xml ». Le voici :
+
+<?xml version="1.0" encoding="ISO-8859-1"?>
+ <inventaire>
+ <produit code="1" prix="432.00" quantité= "43" />
+ <produit code="32" prix="32.00" quantité= "100"  />
+ <produit code="321" prix="31.00" quantité= "200"  />
+ </inventaire>
+
+ « achats.txt » :
+
+ Jean Charles, 3214324565, 321, 2
+ Yvan Richard, 5435435545, 321, 1
+ Yvette Gagnon, 4324324243, 1, 12
