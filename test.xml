@@ -1,3 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+   <liste> 
+    <client nom="Jean Charles"> 
+        <transaction montant="500" />
+ <question>Quelle est la dernière marque?</question>
+        <transaction montant="1200" /> 
+     </client> 
+     <client nom="Pierre Élisabeth"> 
+        <transaction montant="600" /> 
+        <transaction montant="800" /> 
+ <question>Où puis-je trouver le modèle 2002?</question>
+        <transaction montant="2000" /> 
+     </client> 
+    </liste>
+
+
+
+
+
+
+ <!--
+
 <?xml version="1.0"  encoding="ISO-8859-1" ?>
  <liste>
  <joueur>
@@ -9,3 +31,5 @@
  <buts>54</buts>
  </joueur>
  </liste>
+
+ -->
