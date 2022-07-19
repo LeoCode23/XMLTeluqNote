@@ -33,3 +33,16 @@ Q4: https://github.com/LeoCode23/XMLTeluqNote/blob/main/q4.html
 Q5: https://github.com/LeoCode23/XMLTeluqNote/blob/main/q5.html
 <br>
 
+<br><br>
+Examen #4: <br>
+Q6: https://github.com/LeoCode23/XMLTeluqNote/blob/main/q6.html
+<br>
+Q7: https://github.com/LeoCode23/XMLTeluqNote/blob/main/q7.html
+<br>
+Q8: https://github.com/LeoCode23/XMLTeluqNote/blob/main/q8.html
+<br>
+Q9: https://github.com/LeoCode23/XMLTeluqNote/blob/main/q9.html
+<br>
+Q10: https://github.com/LeoCode23/XMLTeluqNote/blob/main/q10.html
+<br>
+
