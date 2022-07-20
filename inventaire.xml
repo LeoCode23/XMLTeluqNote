@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
- <inventaire>
- <produit code="1" prix="432.00" quantite= "43" />
- <produit code="32" prix="32.00" quantite= "100"  />
- <produit code="321" prix="31.00" quantite= "200"  />
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?><inventaire>
+ <produit code="1" prix="432.00" quantite="-173"/>
+ <produit code="32" prix="32.00" quantite="100"/>
+ <produit code="321" prix="31.00" quantite="146"/>
  </inventaire>

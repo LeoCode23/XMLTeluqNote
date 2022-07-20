@@ -1,19 +1,3 @@
-Il est parfois pénible d'utiliser l'interface DOM quand on cherche une seule information précise. Écrivez un programme Java qui permet d'extraire le prix correspondant à l'item ayant le code de produit 321 dans un fichier XML ayant la forme suivante en utilisant une expression XPath.
-
-<?xml version="1.0" encoding="ISO-8859-1"?>
- <inventaire>
- <produit code="1" prix="432.00" quantite= "43" />
- <produit code="32" prix="32.00" quantite= "100"  />
- <produit code="321" prix="31.00" quantite= "200"  />
- </inventaire>
-
-
- CMD (powershell):
- javac xpathsearch.java
- java xpathsearch inventaire.xml 32
-
- Solution « xpathsearch.java » :
-
  /* on doit toujours importer ces deux paquetages: */
  import javax.xml.parsers.*;
  import javax.xml.xpath.*;
