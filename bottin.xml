@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
- <bottin>
-    <personne nom="Jean Réjean" téléphone="432-4421" />
-    <personne nom="Jules Desche" téléphone="432-4332" />
- </bottin>
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?><bottin>
+    
+    <personne nom="Jules Desche" telephone="432-4332"/>
+ <personne nom="Jean R�jean" telephone="432-4421"/></bottin>
