@@ -1,0 +1,157 @@
+<!DOCTYPE HTML><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>ResultDocumentHandler</title>
+      <meta name="keywords" content="Saxon.Api.ResultDocumentHandler delegate">
+      <link rel="stylesheet" type="text/css" href="../../saxon-dotnetdoc.css" title="Style">
+   </head>
+   <body>
+      <div class="contents">
+         <h3><a href="../../index.html" class="home">Saxon.Api</a></h3>
+         <ul class="list">
+            <li><a href="CollectionFinder.html">CollectionFinder</a></li>
+            <li><a href="DocumentBuilder.html">DocumentBuilder</a></li>
+            <li><a href="DomDestination.html">DomDestination</a></li>
+            <li><a href="DynamicContext.html">DynamicContext</a></li>
+            <li><a href="Error.html">Error</a></li>
+            <li><a href="ErrorReporter.html">ErrorReporter</a></li>
+            <li><a href="ExtensionFunctionCall.html">ExtensionFunctionCall</a></li>
+            <li><a href="ExtensionFunctionDefinition.html">ExtensionFunctionDefinition</a></li>
+            <li><a href="Feature.html">Feature</a></li>
+            <li><a href="FeatureKeys.html">FeatureKeys</a></li>
+            <li><a href="HostLanguage.html">HostLanguage</a></li>
+            <li><a href="IDestination.html">IDestination</a></li>
+            <li><a href="IInvalidityHandler.html">IInvalidityHandler</a></li>
+            <li><a href="IResource.html">IResource</a></li>
+            <li><a href="JsonBuilder.html">JsonBuilder</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="Message.html">Message</a></li>
+            <li><a href="NamespaceConstant.html">NamespaceConstant</a></li>
+            <li><a href="NodeResource.html">NodeResource</a></li>
+            <li><a href="NullDestination.html">NullDestination</a></li>
+            <li><a href="ParameterDetails.html">ParameterDetails</a></li>
+            <li><a href="Predicates.html">Predicates</a></li>
+            <li><a href="Processor.html">Processor</a></li>
+            <li><a href="QName.html">QName</a></li>
+            <li><a href="RawDestination.html">RawDestination</a></li>
+            <li><a href="ResourceRequest.html">ResourceRequest</a></li>
+            <li><a href="ResourceResolver.html">ResourceResolver</a></li>
+            <li><a href="ResultDocumentHandler.html">ResultDocumentHandler</a></li>
+            <li><a href="SaxonApiException.html">SaxonApiException</a></li>
+            <li><a href="SchemaManager.html">SchemaManager</a></li>
+            <li><a href="SchemaResolver.html">SchemaResolver</a></li>
+            <li><a href="SchemaValidationMode.html">SchemaValidationMode</a></li>
+            <li><a href="SchemaValidator.html">SchemaValidator</a></li>
+            <li><a href="Serializer.html">Serializer</a></li>
+            <li><a href="StaticContext.html">StaticContext</a></li>
+            <li><a href="Step.html">Step&lt;TInput, TResult&gt;</a></li>
+            <li><a href="Steps.html">Steps</a></li>
+            <li><a href="TextResource.html">TextResource</a></li>
+            <li><a href="TreeModel.html">TreeModel</a></li>
+            <li><a href="UnprefixedElementMatchingPolicy.html">UnprefixedElementMatchingPolicy</a></li>
+            <li><a href="ValidationFailure.html">ValidationFailure</a></li>
+            <li><a href="WhitespacePolicy.html">WhitespacePolicy</a></li>
+            <li><a href="XdmAnyArrayType.html">XdmAnyArrayType</a></li>
+            <li><a href="XdmAnyFunctionType.html">XdmAnyFunctionType</a></li>
+            <li><a href="XdmAnyItemType.html">XdmAnyItemType</a></li>
+            <li><a href="XdmAnyMapType.html">XdmAnyMapType</a></li>
+            <li><a href="XdmAnyNodeType.html">XdmAnyNodeType</a></li>
+            <li><a href="XdmArray.html">XdmArray</a></li>
+            <li><a href="XdmAtomicType.html">XdmAtomicType</a></li>
+            <li><a href="XdmAtomicValue.html">XdmAtomicValue</a></li>
+            <li><a href="XdmAxis.html">XdmAxis</a></li>
+            <li><a href="XdmDestination.html">XdmDestination</a></li>
+            <li><a href="XdmEmptySequence.html">XdmEmptySequence</a></li>
+            <li><a href="XdmExternalObject.html">XdmExternalObject</a></li>
+            <li><a href="XdmFunctionItem.html">XdmFunctionItem</a></li>
+            <li><a href="XdmItem.html">XdmItem</a></li>
+            <li><a href="XdmItemType.html">XdmItemType</a></li>
+            <li><a href="XdmMap.html">XdmMap</a></li>
+            <li><a href="XdmNode.html">XdmNode</a></li>
+            <li><a href="XdmNodeKind.html">XdmNodeKind</a></li>
+            <li><a href="XdmSequenceType.html">XdmSequenceType</a></li>
+            <li><a href="XdmValue.html">XdmValue</a></li>
+            <li><a href="XmlReaderResource.html">XmlReaderResource</a></li>
+            <li><a href="XmlWriterDestination.html">XmlWriterDestination</a></li>
+            <li><a href="XPathCompiler.html">XPathCompiler</a></li>
+            <li><a href="XPathExecutable.html">XPathExecutable</a></li>
+            <li><a href="XPathSelector.html">XPathSelector</a></li>
+            <li><a href="XQueryCompiler.html">XQueryCompiler</a></li>
+            <li><a href="XQueryEvaluator.html">XQueryEvaluator</a></li>
+            <li><a href="XQueryExecutable.html">XQueryExecutable</a></li>
+            <li><a href="XQueryResolver.html">XQueryResolver</a></li>
+            <li><a href="Xslt30Transformer.html">Xslt30Transformer</a></li>
+            <li><a href="XsltCompiler.html">XsltCompiler</a></li>
+            <li><a href="XsltExecutable.html">XsltExecutable</a></li>
+            <li><a href="XsltPackage.html">XsltPackage</a></li>
+            <li><a href="XsltTransformer.html">XsltTransformer</a></li>
+         </ul>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+      <div class="main">
+         <h3>Saxon.Api</h3>
+         <h1><span class="classLabel">Delegate&nbsp;</span>ResultDocumentHandler</h1>
+         <hr>
+         <dl>
+            <dt>
+               <div class="code">public delegate&nbsp;<a href="IDestination.html" class="apilink">IDestination</a>&nbsp;<span class="signature">ResultDocumentHandler(<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;href, <a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a>&nbsp;baseUri)</span></div>
+            </dt>
+         </dl>
+         <p>A <code>ResultDocumentHandler</code> can be nominated to handle output
+            produced by the <code>xsl:result-document</code> instruction in an XSLT stylesheet.
+            The function is called by the XSLT processor
+            when an <code>xsl:result-document</code> with an <code>href</code> attribute is evaluated.
+            </p>
+         
+         <p>This callback affects any <code>xsl:result-document</code> instruction
+            executed by the stylesheet, provided that it has an <code>href</code> attribute.</p>
+         
+         <p>If no <code>ResultDocumentHandler</code> is nominated (in the
+            <code>ResultDocumentHandler</code> property of the <code>XsltTransformer</code> or <code>Xslt30Transformer</code>), the output
+            of <code>xsl:result-document</code> is serialized, and is written to the file
+            or other resource identified by the URI in the <code>href</code> attribute, resolved
+            (if it is relative) against the URI supplied in the <code>BaseOutputUri</code> property
+            of the <code>XsltTransformer</code>.</p>
+         
+         <p>If a <code>ResultDocumentHandler</code> is nominated, however, it
+            will be called whenever an <code>xsl:result-document</code>
+            instruction with an <code>href</code> attribute is evaluated, and the generated result tree
+            will be passed to the <code>IDestination</code> that it returns.</p>
+         
+         <p>The XSLT processor will ensure that the stylesheet cannot create
+            two distinct result documents which are sent to the same URI. It is the responsibility
+            of the <code>ResultDocumentHandler</code> to ensure that two distinct result documents are
+            not sent to the same <code>IDestination</code>. Failure to observe this rule can result
+            in output streams being incorrectly closed.
+            </p>
+         
+         <p>Note that more than one result document can be open at the same time,
+            and that the order of opening, writing, and closing result documents chosen
+            by the processor does not necessarily bear any direct resemblance to the way
+            that the XSLT source code is written. Saxon-CS processes <code>xsl:result-document</code>
+            instructions asynchronously, in multiple threads, unless this is suppressed using
+            the configuration property <code>Feature.ALLOW_MULTITHREADING</code>.</p>
+         
+         <p>Note also that in the event of a dynamic error occurring in the transformation,
+            it is unpredictable which result documents have been successfully written before
+            the failure occurs.</p>
+         
+         <p class="methodLabel">Parameters:</p>
+         <div class="params"><code>href</code>&nbsp;-&nbsp;An absolute or relative URI. This will be the effective value of the 
+            <code>href</code> attribute of the <code>xsl:result-document</code> in the stylesheet.</div>
+         <div class="params"><code>baseUri</code>&nbsp;-&nbsp;The base URI that should be used for resolving the value of
+            <code>href</code> if it is relative. This will always be the value of the <code>BaseOutputUri</code>
+            property of the <code>XsltTransformer</code>.</div>
+         <p class="methodLabel">Returns:</p>
+         <div class="params">An <code>IDestination</code> object representing the destination to which
+            the result document is sent.</div>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+   </body>
+</html>

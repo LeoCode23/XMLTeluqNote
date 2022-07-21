@@ -1,0 +1,142 @@
+<!DOCTYPE HTML><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>SchemaResolver</title>
+      <meta name="keywords" content="Saxon.Api.SchemaResolver delegate">
+      <link rel="stylesheet" type="text/css" href="../../saxon-dotnetdoc.css" title="Style">
+   </head>
+   <body>
+      <div class="contents">
+         <h3><a href="../../index.html" class="home">Saxon.Api</a></h3>
+         <ul class="list">
+            <li><a href="CollectionFinder.html">CollectionFinder</a></li>
+            <li><a href="DocumentBuilder.html">DocumentBuilder</a></li>
+            <li><a href="DomDestination.html">DomDestination</a></li>
+            <li><a href="DynamicContext.html">DynamicContext</a></li>
+            <li><a href="Error.html">Error</a></li>
+            <li><a href="ErrorReporter.html">ErrorReporter</a></li>
+            <li><a href="ExtensionFunctionCall.html">ExtensionFunctionCall</a></li>
+            <li><a href="ExtensionFunctionDefinition.html">ExtensionFunctionDefinition</a></li>
+            <li><a href="Feature.html">Feature</a></li>
+            <li><a href="FeatureKeys.html">FeatureKeys</a></li>
+            <li><a href="HostLanguage.html">HostLanguage</a></li>
+            <li><a href="IDestination.html">IDestination</a></li>
+            <li><a href="IInvalidityHandler.html">IInvalidityHandler</a></li>
+            <li><a href="IResource.html">IResource</a></li>
+            <li><a href="JsonBuilder.html">JsonBuilder</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="Message.html">Message</a></li>
+            <li><a href="NamespaceConstant.html">NamespaceConstant</a></li>
+            <li><a href="NodeResource.html">NodeResource</a></li>
+            <li><a href="NullDestination.html">NullDestination</a></li>
+            <li><a href="ParameterDetails.html">ParameterDetails</a></li>
+            <li><a href="Predicates.html">Predicates</a></li>
+            <li><a href="Processor.html">Processor</a></li>
+            <li><a href="QName.html">QName</a></li>
+            <li><a href="RawDestination.html">RawDestination</a></li>
+            <li><a href="ResourceRequest.html">ResourceRequest</a></li>
+            <li><a href="ResourceResolver.html">ResourceResolver</a></li>
+            <li><a href="ResultDocumentHandler.html">ResultDocumentHandler</a></li>
+            <li><a href="SaxonApiException.html">SaxonApiException</a></li>
+            <li><a href="SchemaManager.html">SchemaManager</a></li>
+            <li><a href="SchemaResolver.html">SchemaResolver</a></li>
+            <li><a href="SchemaValidationMode.html">SchemaValidationMode</a></li>
+            <li><a href="SchemaValidator.html">SchemaValidator</a></li>
+            <li><a href="Serializer.html">Serializer</a></li>
+            <li><a href="StaticContext.html">StaticContext</a></li>
+            <li><a href="Step.html">Step&lt;TInput, TResult&gt;</a></li>
+            <li><a href="Steps.html">Steps</a></li>
+            <li><a href="TextResource.html">TextResource</a></li>
+            <li><a href="TreeModel.html">TreeModel</a></li>
+            <li><a href="UnprefixedElementMatchingPolicy.html">UnprefixedElementMatchingPolicy</a></li>
+            <li><a href="ValidationFailure.html">ValidationFailure</a></li>
+            <li><a href="WhitespacePolicy.html">WhitespacePolicy</a></li>
+            <li><a href="XdmAnyArrayType.html">XdmAnyArrayType</a></li>
+            <li><a href="XdmAnyFunctionType.html">XdmAnyFunctionType</a></li>
+            <li><a href="XdmAnyItemType.html">XdmAnyItemType</a></li>
+            <li><a href="XdmAnyMapType.html">XdmAnyMapType</a></li>
+            <li><a href="XdmAnyNodeType.html">XdmAnyNodeType</a></li>
+            <li><a href="XdmArray.html">XdmArray</a></li>
+            <li><a href="XdmAtomicType.html">XdmAtomicType</a></li>
+            <li><a href="XdmAtomicValue.html">XdmAtomicValue</a></li>
+            <li><a href="XdmAxis.html">XdmAxis</a></li>
+            <li><a href="XdmDestination.html">XdmDestination</a></li>
+            <li><a href="XdmEmptySequence.html">XdmEmptySequence</a></li>
+            <li><a href="XdmExternalObject.html">XdmExternalObject</a></li>
+            <li><a href="XdmFunctionItem.html">XdmFunctionItem</a></li>
+            <li><a href="XdmItem.html">XdmItem</a></li>
+            <li><a href="XdmItemType.html">XdmItemType</a></li>
+            <li><a href="XdmMap.html">XdmMap</a></li>
+            <li><a href="XdmNode.html">XdmNode</a></li>
+            <li><a href="XdmNodeKind.html">XdmNodeKind</a></li>
+            <li><a href="XdmSequenceType.html">XdmSequenceType</a></li>
+            <li><a href="XdmValue.html">XdmValue</a></li>
+            <li><a href="XmlReaderResource.html">XmlReaderResource</a></li>
+            <li><a href="XmlWriterDestination.html">XmlWriterDestination</a></li>
+            <li><a href="XPathCompiler.html">XPathCompiler</a></li>
+            <li><a href="XPathExecutable.html">XPathExecutable</a></li>
+            <li><a href="XPathSelector.html">XPathSelector</a></li>
+            <li><a href="XQueryCompiler.html">XQueryCompiler</a></li>
+            <li><a href="XQueryEvaluator.html">XQueryEvaluator</a></li>
+            <li><a href="XQueryExecutable.html">XQueryExecutable</a></li>
+            <li><a href="XQueryResolver.html">XQueryResolver</a></li>
+            <li><a href="Xslt30Transformer.html">Xslt30Transformer</a></li>
+            <li><a href="XsltCompiler.html">XsltCompiler</a></li>
+            <li><a href="XsltExecutable.html">XsltExecutable</a></li>
+            <li><a href="XsltPackage.html">XsltPackage</a></li>
+            <li><a href="XsltTransformer.html">XsltTransformer</a></li>
+         </ul>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+      <div class="main">
+         <h3>Saxon.Api</h3>
+         <h1><span class="classLabel">Delegate&nbsp;</span>SchemaResolver</h1>
+         <hr>
+         <dl>
+            <dt>
+               <div class="code">public delegate&nbsp;<a href="IResource.html" class="apilink">IResource</a>&nbsp;<span class="signature">SchemaResolver(<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;targetNamespace, <a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a>&nbsp;baseUri, <a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a>&nbsp;locationHint)</span></div>
+            </dt>
+         </dl>
+         <p>
+            The <code>SchemaResolver</code> is a user-supplied class used for resolving references to
+            schema documents. It applies to references from one schema document to another
+            appearing in <code>xs:import</code>, <code>xs:include</code>, and <code>xs:redefine</code>; to
+            references from an instance document to a schema in <code>xsi:schemaLocation</code> and
+            <code>xsi:noNamespaceSchemaLocation</code>, to <code>xsl:import-schema</code> in XSLT, and to
+            the <code>import schema</code> declaration in XQuery.
+            </p>
+         
+         <p>If the <code>SchemaResolver</code> returns null, then the system attempts to locate
+            a schema using the common resource resolver associated with the Saxon <code>Configuration</code>.
+            It first attempts to resolve the location hint (if available), then the target namespace
+            (if present and non-empty). If both attempts fail, the system then attempts to use
+            standard URI resolution mechanisms to resolve the location hint (if available); it
+            does
+            not attempt to resolve the target namespace.
+            </p>
+         
+         <p class="methodLabel">Parameters:</p>
+         <div class="params"><code>targetNamespace</code>&nbsp;-&nbsp;The target namespace of the required schema components.
+            In the case of <code>xs:include</code>, <code>xs:redefine</code>, and <code>xs:override</code> (where
+            no target namespace is identified), the parameter is set to null. In the case of <code>xs:import</code>,
+            the parameter is set to the value of the <code>namespace</code> attribute if present, or to
+            the zero-length string otherwise.</div>
+         <div class="params"><code>baseUri</code>&nbsp;-&nbsp;The base URI of the module containing the reference to a schema document
+            declaration</div>
+         <div class="params"><code>locationHint</code>&nbsp;-&nbsp;The URI (if any) provided as a location hint: typically,
+            the value of the <code>schemaLocation</code> attribute on <code>xs:include</code> or <code>xs:import</code>.
+            Note: the <code>import schema</code> declaration in XQuery permits several location hints; if
+            there is more than one, all but the first are ignored</div>
+         <p class="methodLabel">Returns:</p>
+         <div class="params">An <code>IResource</code> representing the schema document to be loaded.
+            </div>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+   </body>
+</html>

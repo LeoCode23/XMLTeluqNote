@@ -1,0 +1,650 @@
+<!DOCTYPE HTML><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>QName</title>
+      <meta name="keywords" content="Saxon.Api.QName class">
+      <link rel="stylesheet" type="text/css" href="../../saxon-dotnetdoc.css" title="Style">
+   </head>
+   <body>
+      <div class="contents">
+         <h3><a href="../../index.html" class="home">Saxon.Api</a></h3>
+         <ul class="list">
+            <li><a href="CollectionFinder.html">CollectionFinder</a></li>
+            <li><a href="DocumentBuilder.html">DocumentBuilder</a></li>
+            <li><a href="DomDestination.html">DomDestination</a></li>
+            <li><a href="DynamicContext.html">DynamicContext</a></li>
+            <li><a href="Error.html">Error</a></li>
+            <li><a href="ErrorReporter.html">ErrorReporter</a></li>
+            <li><a href="ExtensionFunctionCall.html">ExtensionFunctionCall</a></li>
+            <li><a href="ExtensionFunctionDefinition.html">ExtensionFunctionDefinition</a></li>
+            <li><a href="Feature.html">Feature</a></li>
+            <li><a href="FeatureKeys.html">FeatureKeys</a></li>
+            <li><a href="HostLanguage.html">HostLanguage</a></li>
+            <li><a href="IDestination.html">IDestination</a></li>
+            <li><a href="IInvalidityHandler.html">IInvalidityHandler</a></li>
+            <li><a href="IResource.html">IResource</a></li>
+            <li><a href="JsonBuilder.html">JsonBuilder</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="Message.html">Message</a></li>
+            <li><a href="NamespaceConstant.html">NamespaceConstant</a></li>
+            <li><a href="NodeResource.html">NodeResource</a></li>
+            <li><a href="NullDestination.html">NullDestination</a></li>
+            <li><a href="ParameterDetails.html">ParameterDetails</a></li>
+            <li><a href="Predicates.html">Predicates</a></li>
+            <li><a href="Processor.html">Processor</a></li>
+            <li><a href="QName.html">QName</a></li>
+            <li><a href="RawDestination.html">RawDestination</a></li>
+            <li><a href="ResourceRequest.html">ResourceRequest</a></li>
+            <li><a href="ResourceResolver.html">ResourceResolver</a></li>
+            <li><a href="ResultDocumentHandler.html">ResultDocumentHandler</a></li>
+            <li><a href="SaxonApiException.html">SaxonApiException</a></li>
+            <li><a href="SchemaManager.html">SchemaManager</a></li>
+            <li><a href="SchemaResolver.html">SchemaResolver</a></li>
+            <li><a href="SchemaValidationMode.html">SchemaValidationMode</a></li>
+            <li><a href="SchemaValidator.html">SchemaValidator</a></li>
+            <li><a href="Serializer.html">Serializer</a></li>
+            <li><a href="StaticContext.html">StaticContext</a></li>
+            <li><a href="Step.html">Step&lt;TInput, TResult&gt;</a></li>
+            <li><a href="Steps.html">Steps</a></li>
+            <li><a href="TextResource.html">TextResource</a></li>
+            <li><a href="TreeModel.html">TreeModel</a></li>
+            <li><a href="UnprefixedElementMatchingPolicy.html">UnprefixedElementMatchingPolicy</a></li>
+            <li><a href="ValidationFailure.html">ValidationFailure</a></li>
+            <li><a href="WhitespacePolicy.html">WhitespacePolicy</a></li>
+            <li><a href="XdmAnyArrayType.html">XdmAnyArrayType</a></li>
+            <li><a href="XdmAnyFunctionType.html">XdmAnyFunctionType</a></li>
+            <li><a href="XdmAnyItemType.html">XdmAnyItemType</a></li>
+            <li><a href="XdmAnyMapType.html">XdmAnyMapType</a></li>
+            <li><a href="XdmAnyNodeType.html">XdmAnyNodeType</a></li>
+            <li><a href="XdmArray.html">XdmArray</a></li>
+            <li><a href="XdmAtomicType.html">XdmAtomicType</a></li>
+            <li><a href="XdmAtomicValue.html">XdmAtomicValue</a></li>
+            <li><a href="XdmAxis.html">XdmAxis</a></li>
+            <li><a href="XdmDestination.html">XdmDestination</a></li>
+            <li><a href="XdmEmptySequence.html">XdmEmptySequence</a></li>
+            <li><a href="XdmExternalObject.html">XdmExternalObject</a></li>
+            <li><a href="XdmFunctionItem.html">XdmFunctionItem</a></li>
+            <li><a href="XdmItem.html">XdmItem</a></li>
+            <li><a href="XdmItemType.html">XdmItemType</a></li>
+            <li><a href="XdmMap.html">XdmMap</a></li>
+            <li><a href="XdmNode.html">XdmNode</a></li>
+            <li><a href="XdmNodeKind.html">XdmNodeKind</a></li>
+            <li><a href="XdmSequenceType.html">XdmSequenceType</a></li>
+            <li><a href="XdmValue.html">XdmValue</a></li>
+            <li><a href="XmlReaderResource.html">XmlReaderResource</a></li>
+            <li><a href="XmlWriterDestination.html">XmlWriterDestination</a></li>
+            <li><a href="XPathCompiler.html">XPathCompiler</a></li>
+            <li><a href="XPathExecutable.html">XPathExecutable</a></li>
+            <li><a href="XPathSelector.html">XPathSelector</a></li>
+            <li><a href="XQueryCompiler.html">XQueryCompiler</a></li>
+            <li><a href="XQueryEvaluator.html">XQueryEvaluator</a></li>
+            <li><a href="XQueryExecutable.html">XQueryExecutable</a></li>
+            <li><a href="XQueryResolver.html">XQueryResolver</a></li>
+            <li><a href="Xslt30Transformer.html">Xslt30Transformer</a></li>
+            <li><a href="XsltCompiler.html">XsltCompiler</a></li>
+            <li><a href="XsltExecutable.html">XsltExecutable</a></li>
+            <li><a href="XsltPackage.html">XsltPackage</a></li>
+            <li><a href="XsltTransformer.html">XsltTransformer</a></li>
+         </ul>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+      <div class="main">
+         <h3>Saxon.Api</h3>
+         <h1><span class="classLabel">Class&nbsp;</span>QName</h1>
+         <hr>
+         <dl>
+            <dt>
+               <div class="code">public class&nbsp;QName</div>
+            </dt>
+         </dl>
+         <p>
+            The <code>QName</code> class represents an instance of <code>xs:QName</code>, as defined in the XPath 2.0
+            data model. Internally, it has three components, a namespace URI, a local name, and
+            a prefix. The prefix is intended to be used only when converting the value back to
+            
+            a string.
+            </p>
+         <p>
+            Note that a <code>QName</code> is not itself an <code>XdmItem</code> in this model; however it can
+            be converted to an <code>XdmAtomicValue</code>.
+            </p><a name="field_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Field Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#XS_ANYURI" class="apilink">XS_ANYURI</a></span><div class="fnormal">
+                     <p>QName constant for the name xs:anyURI</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#XS_BOOLEAN" class="apilink">XS_BOOLEAN</a></span><div class="fnormal">
+                     <p>QName constant for the name xs:boolean</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#XS_DECIMAL" class="apilink">XS_DECIMAL</a></span><div class="fnormal">
+                     <p>QName constant for the name xs:decimal</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#XS_DOUBLE" class="apilink">XS_DOUBLE</a></span><div class="fnormal">
+                     <p>QName constant for the name xs:double</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#XS_FLOAT" class="apilink">XS_FLOAT</a></span><div class="fnormal">
+                     <p>QName constant for the name xs:float</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#XS_INTEGER" class="apilink">XS_INTEGER</a></span><div class="fnormal">
+                     <p>QName constant for the name xs:integer</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#XS_QNAME" class="apilink">XS_QNAME</a></span><div class="fnormal">
+                     <p>QName constant for the name xs:QName</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#XS_STRING" class="apilink">XS_STRING</a></span><div class="fnormal">
+                     <p>QName constant for the name xs:string</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#XS_UNTYPED_ATOMIC" class="apilink">XS_UNTYPED_ATOMIC</a></span><div class="fnormal">
+                     <p>QName constant for the name xs:untypedAtomic</p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="constructor_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Constructor Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#QName(string)" class="apilink">QName</a> (<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;local)</span><div class="fnormal">
+                     <p>
+                        Construct a <code>QName</code> representing a name in no namespace
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#QName(string,string)" class="apilink">QName</a> (<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;uri, <a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;lexical)</span><div class="fnormal">
+                     <p>
+                        Construct a <code>QName</code> using a namespace URI and a lexical representation.
+                        The lexical representation may be a local name on its own, or it may 
+                        be in the form <code>prefix:local-name</code>
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#QName(string,string,string)" class="apilink">QName</a> (<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;prefix, <a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;uri, <a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;local)</span><div class="fnormal">
+                     <p>
+                        Construct a <code>QName</code> using a namespace prefix, a namespace URI, and a local name
+                        (in that order).
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#QName(string,XdmNode)" class="apilink">QName</a> (<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;lexicalQName, <a href="XdmNode.html" class="apilink">XdmNode</a>&nbsp;element)</span><div class="fnormal">
+                     <p>
+                        Construct a <code>QName</code> from a lexical QName, supplying an element node whose
+                        in-scope namespaces are to be used to resolve any prefix contained in the QName.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#QName(XmlQualifiedName)" class="apilink">QName</a> (<a href="http://msdn.microsoft.com/en-us/library/system.xml.xmlqualifiedname(VS.80).aspx" class="apilink system" target="_blank">XmlQualifiedName</a>&nbsp;qualifiedName)</span><div class="fnormal">
+                     <p>
+                        Construct a <code>QName</code> from an <code>XmlQualifiedName</code> (as defined in the
+                        <code>System.Xml</code> package).
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="property_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Property Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#ClarkName" class="apilink">ClarkName</a></span><div class="fnormal">
+                     <p>Get the expanded name, as a string using the notation devised by James Clark.
+                        If the name is in a namespace, the resulting string takes the form <code>{uri}local</code>.
+                        Otherwise, the value is the local part of the name.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#EQName" class="apilink">EQName</a></span><div class="fnormal">
+                     <p>Get the expanded name in EQName format, that is <code>Q{uri}local</code>. A no-namespace name is returned as <code>Q{}local</code>.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#LocalName" class="apilink">LocalName</a></span><div class="fnormal">
+                     <p>Get the local part of the <code>QName</code>
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#Prefix" class="apilink">Prefix</a></span><div class="fnormal">
+                     <p>Get the prefix of the <code>QName</code>. This plays no role in operations such as comparison
+                        of QNames for equality, but is retained (as specified in XPath) so that a string representation
+                        can be reconstructed.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#Uri" class="apilink">Uri</a></span><div class="fnormal">
+                     <p>Get the namespace URI of the <code>QName</code>. Returns "" (the zero-length string) if the
+                        QName is not in a namespace.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="method_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Method Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a></td>
+               <td><span class="signature"><a href="#Equals(object)" class="apilink">Equals</a> (<a href="http://msdn.microsoft.com/en-us/library/system.object(VS.80).aspx" class="apilink system" target="_blank">object</a>&nbsp;other)</span><div class="fnormal">
+                     <p>
+                        Test whether two QNames are equal. This supports the
+                        semantics of equality, which considers only the namespace URI and local name, and
+                        not the prefix.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#FromClarkName(string)" class="apilink">FromClarkName</a> (<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;expandedName)</span><div class="fnormal">
+                     <p>
+                        Factory method to construct a <code>QName</code> from a string containing the expanded
+                        QName in Clark notation, that is, <code>{uri}local</code>
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#FromEQName(string)" class="apilink">FromEQName</a> (<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;expandedName)</span><div class="fnormal">
+                     <p>
+                        Factory method to construct a <code>QName</code> from a string containing the expanded
+                        QName in EQName notation, that is, <code>Q{uri}local</code>
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a></td>
+               <td><span class="signature"><a href="#GetHashCode()" class="apilink">GetHashCode</a> ()</span><div class="fnormal">
+                     <p>
+                        Get a hash code for the <code>QName</code>, to support equality matching. This supports the
+                        semantics of equality, which considers only the namespace URI and local name, and
+                        not the prefix.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="../../../javadoc/net/sf/saxon/om/StructuredQName.html" class="apilink java">net.sf.saxon.om.StructuredQName</a></td>
+               <td><span class="signature"><a href="#GetStructuredQName()" class="apilink">GetStructuredQName</a> ()</span><div class="fnormal">
+                     <p>
+                        Convert the value to an <code>StructuredQName</code>, which is the representation
+                        Saxon uses internally.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a></td>
+               <td><span class="signature"><a href="#IsValid()" class="apilink">IsValid</a> ()</span><div class="fnormal">
+                     <p>
+                        Validate the <code>QName</code> against the XML rules for valid names.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#ToString()" class="apilink">ToString</a> ()</span><div class="fnormal">
+                     <p>
+                        Convert the value to a string. The resulting string is the lexical form of the QName,
+                        using the original prefix if there was one.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.xml.xmlqualifiedname(VS.80).aspx" class="apilink system" target="_blank">XmlQualifiedName</a></td>
+               <td><span class="signature"><a href="#ToXmlQualifiedName()" class="apilink">ToXmlQualifiedName</a> ()</span><div class="fnormal">
+                     <p>
+                        Convert the value to an <code>XmlQualifiedName</code> (as defined in the
+                        <code>System.Xml</code> package)
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="field_detail"></a><div class="section">
+            <h2>Field Detail</h2><a name="XS_ANYURI"></a><div class="member">
+               <h3>XS_ANYURI</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;XS_ANYURI</div>
+               <p>QName constant for the name xs:anyURI</p>
+            </div><a name="XS_BOOLEAN"></a><div class="member">
+               <h3>XS_BOOLEAN</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;XS_BOOLEAN</div>
+               <p>QName constant for the name xs:boolean</p>
+            </div><a name="XS_DECIMAL"></a><div class="member">
+               <h3>XS_DECIMAL</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;XS_DECIMAL</div>
+               <p>QName constant for the name xs:decimal</p>
+            </div><a name="XS_DOUBLE"></a><div class="member">
+               <h3>XS_DOUBLE</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;XS_DOUBLE</div>
+               <p>QName constant for the name xs:double</p>
+            </div><a name="XS_FLOAT"></a><div class="member">
+               <h3>XS_FLOAT</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;XS_FLOAT</div>
+               <p>QName constant for the name xs:float</p>
+            </div><a name="XS_INTEGER"></a><div class="member">
+               <h3>XS_INTEGER</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;XS_INTEGER</div>
+               <p>QName constant for the name xs:integer</p>
+            </div><a name="XS_QNAME"></a><div class="member">
+               <h3>XS_QNAME</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;XS_QNAME</div>
+               <p>QName constant for the name xs:QName</p>
+            </div><a name="XS_STRING"></a><div class="member">
+               <h3>XS_STRING</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;XS_STRING</div>
+               <p>QName constant for the name xs:string</p>
+            </div><a name="XS_UNTYPED_ATOMIC"></a><div class="member">
+               <h3>XS_UNTYPED_ATOMIC</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;XS_UNTYPED_ATOMIC</div>
+               <p>QName constant for the name xs:untypedAtomic</p>
+            </div>
+         </div><a name="constructor_detail"></a><div class="section">
+            <h2>Constructor Detail</h2><a name="QName(string)"></a><div class="member">
+               <h3>QName</h3>
+               <div class="code">public&nbsp;QName(<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;local)</div>
+               <p>
+                  Construct a <code>QName</code> representing a name in no namespace
+                  </p>
+               <p>
+                  This constructor does not check that the components of the QName are
+                  lexically valid.
+                  </p>
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>local</code>&nbsp;-&nbsp;The local part of the name
+                  </div>
+            </div><a name="QName(string,string)"></a><div class="member">
+               <h3>QName</h3>
+               <div class="code">public&nbsp;QName(<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;uri,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;lexical)</div>
+               <p>
+                  Construct a <code>QName</code> using a namespace URI and a lexical representation.
+                  The lexical representation may be a local name on its own, or it may 
+                  be in the form <code>prefix:local-name</code>
+                  </p>
+               <p>
+                  This constructor does not check that the components of the QName are
+                  lexically valid.
+                  </p>
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>uri</code>&nbsp;-&nbsp;The namespace URI. Use either the string "" or null
+                  for names that are not in any namespace.
+                  </div>
+               <div class="params"><code>lexical</code>&nbsp;-&nbsp;Either the local part of the name, or the prefix
+                  and local part in the format <code>prefix:local</code>
+                  </div>
+            </div><a name="QName(string,string,string)"></a><div class="member">
+               <h3>QName</h3>
+               <div class="code">public&nbsp;QName(<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;prefix,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;uri,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;local)</div>
+               <p>
+                  Construct a <code>QName</code> using a namespace prefix, a namespace URI, and a local name
+                  (in that order).
+                  </p>
+               <p>
+                  This constructor does not check that the components of the QName are
+                  lexically valid.
+                  </p>
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>prefix</code>&nbsp;-&nbsp;The prefix of the name. Use either the string ""
+                  or null for names that have no prefix (that is, they are in the default
+                  namespace)</div>
+               <div class="params"><code>uri</code>&nbsp;-&nbsp;The namespace URI. Use either the string "" or null
+                  for names that are not in any namespace.
+                  </div>
+               <div class="params"><code>local</code>&nbsp;-&nbsp;The local part of the name</div>
+            </div><a name="QName(string,XdmNode)"></a><div class="member">
+               <h3>QName</h3>
+               <div class="code">public&nbsp;QName(<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;lexicalQName,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="XdmNode.html" class="apilink">XdmNode</a>&nbsp;element)</div>
+               <p>
+                  Construct a <code>QName</code> from a lexical QName, supplying an element node whose
+                  in-scope namespaces are to be used to resolve any prefix contained in the QName.
+                  </p>
+               
+               <p>This constructor checks that the components of the QName are
+                  lexically valid.</p>
+               
+               <p>If the lexical QName has no prefix, the name is considered to be in the
+                  default namespace, as defined by <code>xmlns="..."</code>.</p>
+               
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>lexicalQName</code>&nbsp;-&nbsp;The lexical QName, in the form <code>prefix:local</code>
+                  or simply <code>local</code>.</div>
+               <div class="params"><code>element</code>&nbsp;-&nbsp;The element node whose in-scope namespaces are to be used
+                  to resolve the prefix part of the lexical QName.</div>
+               <p class="methodLabel">Throws:</p>
+               <div class="params"><a href="http://msdn.microsoft.com/en-us/library/system.argumentexception(VS.80).aspx" class="apilink system" target="_blank">ArgumentException</a>&nbsp;-&nbsp;If the prefix of the lexical QName is not in scope</div>
+               <div class="params"><a href="http://msdn.microsoft.com/en-us/library/system.argumentexception(VS.80).aspx" class="apilink system" target="_blank">ArgumentException</a>&nbsp;-&nbsp;If the lexical QName is invalid 
+                  (for example, if it contains invalid characters)</div>
+            </div><a name="QName(XmlQualifiedName)"></a><div class="member">
+               <h3>QName</h3>
+               <div class="code">public&nbsp;QName(<a href="http://msdn.microsoft.com/en-us/library/system.xml.xmlqualifiedname(VS.80).aspx" class="apilink system" target="_blank">XmlQualifiedName</a>&nbsp;qualifiedName)</div>
+               <p>
+                  Construct a <code>QName</code> from an <code>XmlQualifiedName</code> (as defined in the
+                  <code>System.Xml</code> package).
+                  </p>
+               <p>
+                  Note that an <code>XmlQualifiedName</code> does not contain any prefix, so the result
+                  will always have a prefix of ""
+                  </p>
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>qualifiedName</code>&nbsp;-&nbsp;The <code>XmlQualifiedName</code>
+                  </div>
+            </div>
+         </div><a name="property_detail"></a><div class="section">
+            <h2>Property Detail</h2><a name="ClarkName"></a><div class="member">
+               <h3>ClarkName</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;ClarkName&nbsp;{get; }</div>
+               <p>Get the expanded name, as a string using the notation devised by James Clark.
+                  If the name is in a namespace, the resulting string takes the form <code>{uri}local</code>.
+                  Otherwise, the value is the local part of the name.
+                  </p>
+            </div><a name="EQName"></a><div class="member">
+               <h3>EQName</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;EQName&nbsp;{get; }</div>
+               <p>Get the expanded name in EQName format, that is <code>Q{uri}local</code>. A no-namespace name is returned as <code>Q{}local</code>.
+                  </p>
+            </div><a name="LocalName"></a><div class="member">
+               <h3>LocalName</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;LocalName&nbsp;{get; }</div>
+               <p>Get the local part of the <code>QName</code>
+                  </p>
+            </div><a name="Prefix"></a><div class="member">
+               <h3>Prefix</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;Prefix&nbsp;{get; }</div>
+               <p>Get the prefix of the <code>QName</code>. This plays no role in operations such as comparison
+                  of QNames for equality, but is retained (as specified in XPath) so that a string representation
+                  can be reconstructed.
+                  </p>
+               <p>
+                  Returns the zero-length string in the case of a QName that has no prefix.
+                  </p>
+            </div><a name="Uri"></a><div class="member">
+               <h3>Uri</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;Uri&nbsp;{get; }</div>
+               <p>Get the namespace URI of the <code>QName</code>. Returns "" (the zero-length string) if the
+                  QName is not in a namespace.
+                  </p>
+            </div>
+         </div><a name="method_detail"></a><div class="section">
+            <h2>Method Detail</h2><a name="Equals(object)"></a><div class="member">
+               <h3>Equals</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;override&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a>&nbsp;Equals</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.object(VS.80).aspx" class="apilink system" target="_blank">object</a>&nbsp;other)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Test whether two QNames are equal. This supports the
+                     semantics of equality, which considers only the namespace URI and local name, and
+                     not the prefix.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>other</code>&nbsp;-&nbsp;The value to be compared with this <code>QName</code>. If this value is not a <code>QName</code>, the
+                     result is always false. Otherwise, it is true if the namespace URI and local name
+                     both match.</div>
+               </div>
+            </div><a name="FromClarkName(string)"></a><div class="member">
+               <h3>FromClarkName</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;FromClarkName</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;expandedName)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Factory method to construct a <code>QName</code> from a string containing the expanded
+                     QName in Clark notation, that is, <code>{uri}local</code>
+                     </p>
+                  <p>
+                     The prefix part of the <code>QName</code> will be set to an empty string.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>expandedName</code>&nbsp;-&nbsp;The URI in Clark notation: <code>{uri}local</code> if the
+                     name is in a namespace, or simply <code>local</code> if not.</div>
+               </div>
+            </div><a name="FromEQName(string)"></a><div class="member">
+               <h3>FromEQName</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;FromEQName</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;expandedName)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Factory method to construct a <code>QName</code> from a string containing the expanded
+                     QName in EQName notation, that is, <code>Q{uri}local</code>
+                     </p>
+                  <p>
+                     The prefix part of the <code>QName</code> will be set to an empty string.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>expandedName</code>&nbsp;-&nbsp;The QName in EQName notation: <code>Q{uri}local</code>. 
+                     For a name in no namespace, either of the
+                     forms <code>Q{}local</code> or simply <code>local</code> are accepted.</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params"> the QName corresponding to the supplied name in EQName notation. This will always
+                     have an empty prefix.</div>
+               </div>
+            </div><a name="GetHashCode()"></a><div class="member">
+               <h3>GetHashCode</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;override&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a>&nbsp;GetHashCode</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Get a hash code for the <code>QName</code>, to support equality matching. This supports the
+                     semantics of equality, which considers only the namespace URI and local name, and
+                     not the prefix.
+                     </p>
+                  <p>
+                     The algorithm for allocating a hash code does not depend on registering the QName
+                     
+                     with the <code>Processor</code>.
+                     </p>
+               </div>
+            </div><a name="GetStructuredQName()"></a><div class="member">
+               <h3>GetStructuredQName</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="../../../javadoc/net/sf/saxon/om/StructuredQName.html" class="apilink java">net.sf.saxon.om.StructuredQName</a>&nbsp;GetStructuredQName</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Convert the value to an <code>StructuredQName</code>, which is the representation
+                     Saxon uses internally.
+                     </p>
+               </div>
+            </div><a name="IsValid()"></a><div class="member">
+               <h3>IsValid</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a>&nbsp;IsValid</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Validate the <code>QName</code> against the XML rules for valid names.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">true if the name is valid, false if not</div>
+               </div>
+            </div><a name="ToString()"></a><div class="member">
+               <h3>ToString</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;override&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;ToString</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Convert the value to a string. The resulting string is the lexical form of the QName,
+                     using the original prefix if there was one.
+                     </p>
+               </div>
+            </div><a name="ToXmlQualifiedName()"></a><div class="member">
+               <h3>ToXmlQualifiedName</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.xml.xmlqualifiedname(VS.80).aspx" class="apilink system" target="_blank">XmlQualifiedName</a>&nbsp;ToXmlQualifiedName</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Convert the value to an <code>XmlQualifiedName</code> (as defined in the
+                     <code>System.Xml</code> package)
+                     </p>
+                  <p>
+                     Note that this loses the prefix.
+                     </p>
+               </div>
+            </div>
+         </div>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+   </body>
+</html>

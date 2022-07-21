@@ -1,0 +1,427 @@
+<!DOCTYPE HTML><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>XdmArray</title>
+      <meta name="keywords" content="Saxon.Api.XdmArray class">
+      <link rel="stylesheet" type="text/css" href="../../saxon-dotnetdoc.css" title="Style">
+   </head>
+   <body>
+      <div class="contents">
+         <h3><a href="../../index.html" class="home">Saxon.Api</a></h3>
+         <ul class="list">
+            <li><a href="CollectionFinder.html">CollectionFinder</a></li>
+            <li><a href="DocumentBuilder.html">DocumentBuilder</a></li>
+            <li><a href="DomDestination.html">DomDestination</a></li>
+            <li><a href="DynamicContext.html">DynamicContext</a></li>
+            <li><a href="Error.html">Error</a></li>
+            <li><a href="ErrorReporter.html">ErrorReporter</a></li>
+            <li><a href="ExtensionFunctionCall.html">ExtensionFunctionCall</a></li>
+            <li><a href="ExtensionFunctionDefinition.html">ExtensionFunctionDefinition</a></li>
+            <li><a href="Feature.html">Feature</a></li>
+            <li><a href="FeatureKeys.html">FeatureKeys</a></li>
+            <li><a href="HostLanguage.html">HostLanguage</a></li>
+            <li><a href="IDestination.html">IDestination</a></li>
+            <li><a href="IInvalidityHandler.html">IInvalidityHandler</a></li>
+            <li><a href="IResource.html">IResource</a></li>
+            <li><a href="JsonBuilder.html">JsonBuilder</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="Message.html">Message</a></li>
+            <li><a href="NamespaceConstant.html">NamespaceConstant</a></li>
+            <li><a href="NodeResource.html">NodeResource</a></li>
+            <li><a href="NullDestination.html">NullDestination</a></li>
+            <li><a href="ParameterDetails.html">ParameterDetails</a></li>
+            <li><a href="Predicates.html">Predicates</a></li>
+            <li><a href="Processor.html">Processor</a></li>
+            <li><a href="QName.html">QName</a></li>
+            <li><a href="RawDestination.html">RawDestination</a></li>
+            <li><a href="ResourceRequest.html">ResourceRequest</a></li>
+            <li><a href="ResourceResolver.html">ResourceResolver</a></li>
+            <li><a href="ResultDocumentHandler.html">ResultDocumentHandler</a></li>
+            <li><a href="SaxonApiException.html">SaxonApiException</a></li>
+            <li><a href="SchemaManager.html">SchemaManager</a></li>
+            <li><a href="SchemaResolver.html">SchemaResolver</a></li>
+            <li><a href="SchemaValidationMode.html">SchemaValidationMode</a></li>
+            <li><a href="SchemaValidator.html">SchemaValidator</a></li>
+            <li><a href="Serializer.html">Serializer</a></li>
+            <li><a href="StaticContext.html">StaticContext</a></li>
+            <li><a href="Step.html">Step&lt;TInput, TResult&gt;</a></li>
+            <li><a href="Steps.html">Steps</a></li>
+            <li><a href="TextResource.html">TextResource</a></li>
+            <li><a href="TreeModel.html">TreeModel</a></li>
+            <li><a href="UnprefixedElementMatchingPolicy.html">UnprefixedElementMatchingPolicy</a></li>
+            <li><a href="ValidationFailure.html">ValidationFailure</a></li>
+            <li><a href="WhitespacePolicy.html">WhitespacePolicy</a></li>
+            <li><a href="XdmAnyArrayType.html">XdmAnyArrayType</a></li>
+            <li><a href="XdmAnyFunctionType.html">XdmAnyFunctionType</a></li>
+            <li><a href="XdmAnyItemType.html">XdmAnyItemType</a></li>
+            <li><a href="XdmAnyMapType.html">XdmAnyMapType</a></li>
+            <li><a href="XdmAnyNodeType.html">XdmAnyNodeType</a></li>
+            <li><a href="XdmArray.html">XdmArray</a></li>
+            <li><a href="XdmAtomicType.html">XdmAtomicType</a></li>
+            <li><a href="XdmAtomicValue.html">XdmAtomicValue</a></li>
+            <li><a href="XdmAxis.html">XdmAxis</a></li>
+            <li><a href="XdmDestination.html">XdmDestination</a></li>
+            <li><a href="XdmEmptySequence.html">XdmEmptySequence</a></li>
+            <li><a href="XdmExternalObject.html">XdmExternalObject</a></li>
+            <li><a href="XdmFunctionItem.html">XdmFunctionItem</a></li>
+            <li><a href="XdmItem.html">XdmItem</a></li>
+            <li><a href="XdmItemType.html">XdmItemType</a></li>
+            <li><a href="XdmMap.html">XdmMap</a></li>
+            <li><a href="XdmNode.html">XdmNode</a></li>
+            <li><a href="XdmNodeKind.html">XdmNodeKind</a></li>
+            <li><a href="XdmSequenceType.html">XdmSequenceType</a></li>
+            <li><a href="XdmValue.html">XdmValue</a></li>
+            <li><a href="XmlReaderResource.html">XmlReaderResource</a></li>
+            <li><a href="XmlWriterDestination.html">XmlWriterDestination</a></li>
+            <li><a href="XPathCompiler.html">XPathCompiler</a></li>
+            <li><a href="XPathExecutable.html">XPathExecutable</a></li>
+            <li><a href="XPathSelector.html">XPathSelector</a></li>
+            <li><a href="XQueryCompiler.html">XQueryCompiler</a></li>
+            <li><a href="XQueryEvaluator.html">XQueryEvaluator</a></li>
+            <li><a href="XQueryExecutable.html">XQueryExecutable</a></li>
+            <li><a href="XQueryResolver.html">XQueryResolver</a></li>
+            <li><a href="Xslt30Transformer.html">Xslt30Transformer</a></li>
+            <li><a href="XsltCompiler.html">XsltCompiler</a></li>
+            <li><a href="XsltExecutable.html">XsltExecutable</a></li>
+            <li><a href="XsltPackage.html">XsltPackage</a></li>
+            <li><a href="XsltTransformer.html">XsltTransformer</a></li>
+         </ul>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+      <div class="main">
+         <h3>Saxon.Api</h3>
+         <h1><span class="classLabel">Class&nbsp;</span>XdmArray</h1>
+         <hr>
+         <dl>
+            <dt>
+               <div class="code">public class&nbsp;XdmArray</div>
+            </dt>
+            <dt> extends <a href="XdmFunctionItem.html" class="apilink">XdmFunctionItem</a></dt>
+         </dl>
+         <p>
+            The class <code>XdmArray</code> represents an array item in an XDM 3.1 sequence:
+            this is a new kind of item in the XDM data model. An array is a list of zero or 
+            more members, each of which is an arbitrary XDM value. An array is also a function:
+            it maps a positive integer to the array member found at that position in the array.
+            </p><a name="constructor_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Constructor Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#XdmArray()" class="apilink">XdmArray</a> ()</span><div class="fnormal">
+                     <p> Constructor to create an empty <code>XdmArray</code>
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#XdmArray(XdmValue)" class="apilink">XdmArray</a> (<a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;value)</span><div class="fnormal">
+                     <p>Create an <code>XdmArray</code> whose members are single items, corresponding
+                        one-to-one with the items making up a supplied sequence.</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#XdmArray(XdmValue[])" class="apilink">XdmArray</a> (<a href="XdmValue.html" class="apilink">XdmValue[]</a>&nbsp;members)</span><div class="fnormal">
+                     <p> Create an <code>XdmArray</code> supplying the members as an array of <code>XdmValue</code> objects.</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#XdmArray(List)" class="apilink">XdmArray</a> (<a href="http://msdn.microsoft.com/en-us/library/system.collections.generic.list(VS.80).aspx" class="apilink system" target="_blank">List</a><span class="operator">&lt;<a href="XdmValue.html" class="apilink">XdmValue</a>&gt;</span>&nbsp;members)</span><div class="fnormal">
+                     <p>Create an <code>XdmArray</code> supplying the members as a list of <code>XdmValue</code> objects</p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="method_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Method Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="XdmArray.html" class="apilink">XdmArray</a></td>
+               <td><span class="signature"><a href="#AppendMember(XdmValue)" class="apilink">AppendMember</a> (<a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;value)</span><div class="fnormal">
+                     <p>
+                        Append a new member to an array
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a></td>
+               <td><span class="signature"><a href="#ArrayLength()" class="apilink">ArrayLength</a> ()</span><div class="fnormal">
+                     <p>
+                        Get the number of members in the array
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.generic.list(VS.80).aspx" class="apilink system" target="_blank">List</a><span class="operator">&lt;<a href="XdmValue.html" class="apilink">XdmValue</a>&gt;</span></td>
+               <td><span class="signature"><a href="#AsList()" class="apilink">AsList</a> ()</span><div class="fnormal">
+                     <p>
+                        Get the members of the array in the form of a list.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="XdmArray.html" class="apilink">XdmArray</a></td>
+               <td><span class="signature"><a href="#Concat(XdmArray)" class="apilink">Concat</a> (<a href="XdmArray.html" class="apilink">XdmArray</a>&nbsp;value)</span><div class="fnormal">
+                     <p>
+                        Concatenate another array
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="XdmValue.html" class="apilink">XdmValue</a></td>
+               <td><span class="signature"><a href="#Get(int)" class="apilink">Get</a> (<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a>&nbsp;n)</span><div class="fnormal">
+                     <p>
+                        Get the n'th member in the array, counting from zero.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="XdmArray.html" class="apilink">XdmArray</a></td>
+               <td><span class="signature"><a href="#MakeArray(Object[])" class="apilink">MakeArray</a> (<a href="http://msdn.microsoft.com/en-us/library/system.object(VS.80).aspx" class="apilink system" target="_blank">object[]</a>&nbsp;objectArray)</span><div class="fnormal">
+                     <p>
+                        Make an XDM array from an object array. Each member of the supplied array
+                        is converted to a single member in the result array using the method
+                        <a href="XdmValue.html#MakeValue(Object)" class="apilink">XdmValue.MakeValue(Object)</a>
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="XdmArray.html" class="apilink">XdmArray</a></td>
+               <td><span class="signature"><a href="#MakeArray(Boolean[])" class="apilink">MakeArray</a> (<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool[]</a>&nbsp;booleanArray)</span><div class="fnormal">
+                     <p>
+                        Make an <code>XdmArray</code> whose members are <code>xs:boolean</code> values       
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="XdmArray.html" class="apilink">XdmArray</a></td>
+               <td><span class="signature"><a href="#MakeArray(Int64[])" class="apilink">MakeArray</a> (<a href="http://msdn.microsoft.com/en-us/library/system.int64(VS.80).aspx" class="apilink system" target="_blank">long[]</a>&nbsp;longArray)</span><div class="fnormal">
+                     <p>
+                        Make an <code>XdmArray</code> whose members are <code>xs:integer</code> values      
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="XdmArray.html" class="apilink">XdmArray</a></td>
+               <td><span class="signature"><a href="#MakeArray(Int32[])" class="apilink">MakeArray</a> (<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int[]</a>&nbsp;intArray)</span><div class="fnormal">
+                     <p>
+                        Make an <code>XdmArray</code> whose members are <code>xs:integer</code> values      
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="XdmArray.html" class="apilink">XdmArray</a></td>
+               <td><span class="signature"><a href="#MakeArray(Byte[])" class="apilink">MakeArray</a> (<a href="http://msdn.microsoft.com/en-us/library/system.byte(VS.80).aspx" class="apilink system" target="_blank">Byte[]</a>&nbsp;byteArray)</span><div class="fnormal">
+                     <p>
+                        Make an <code>XdmArray</code> whose members are <code>xs:integer</code> values      
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="XdmArray.html" class="apilink">XdmArray</a></td>
+               <td><span class="signature"><a href="#Put(int,XdmValue)" class="apilink">Put</a> (<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a>&nbsp;n, <a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;valuei)</span><div class="fnormal">
+                     <p>
+                        Create a new array in which one member is replaced with a new value.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="constructor_detail"></a><div class="section">
+            <h2>Constructor Detail</h2><a name="XdmArray()"></a><div class="member">
+               <h3>XdmArray</h3>
+               <div class="code">public&nbsp;XdmArray()</div>
+               <p> Constructor to create an empty <code>XdmArray</code>
+                  </p>
+            </div><a name="XdmArray(XdmValue)"></a><div class="member">
+               <h3>XdmArray</h3>
+               <div class="code">public&nbsp;XdmArray(<a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;value)</div>
+               <p>Create an <code>XdmArray</code> whose members are single items, corresponding
+                  one-to-one with the items making up a supplied sequence.</p>
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>value</code>&nbsp;-&nbsp;A sequence of items; each item becomes a member of the array.</div>
+            </div><a name="XdmArray(XdmValue[])"></a><div class="member">
+               <h3>XdmArray</h3>
+               <div class="code">public&nbsp;XdmArray(<a href="XdmValue.html" class="apilink">XdmValue[]</a>&nbsp;members)</div>
+               <p> Create an <code>XdmArray</code> supplying the members as an array of <code>XdmValue</code> objects.</p>
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>members</code>&nbsp;-&nbsp;An array of <code>XdmValue</code> objects. Note that subsequent changes 
+                  to the array will have no effect on the <code>XdmArray</code>.</div>
+            </div><a name="XdmArray(List)"></a><div class="member">
+               <h3>XdmArray</h3>
+               <div class="code">public&nbsp;XdmArray(<a href="http://msdn.microsoft.com/en-us/library/system.collections.generic.list(VS.80).aspx" class="apilink system" target="_blank">List</a><span class="operator">&lt;<a href="XdmValue.html" class="apilink">XdmValue</a>&gt;</span>&nbsp;members)</div>
+               <p>Create an <code>XdmArray</code> supplying the members as a list of <code>XdmValue</code> objects</p>
+               <p>Note that the argument can be a single <code>XdmValue</code> representing a sequence, in which case the
+                  constructed array will have one member for each item in the supplied sequence.</p>
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>members</code>&nbsp;-&nbsp;A sequence of <code>XdmValue</code> objects. Note that if this is supplied as 
+                  a list or similar collection, subsequent changes to the list/collection will have
+                  no effect on 
+                  the <code>XdmValue</code>.</div>
+            </div>
+         </div><a name="method_detail"></a><div class="section">
+            <h2>Method Detail</h2><a name="AppendMember(XdmValue)"></a><div class="member">
+               <h3>AppendMember</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="XdmArray.html" class="apilink">XdmArray</a>&nbsp;AppendMember</span><span class="fblock">(<a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;value)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Append a new member to an array
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>value</code>&nbsp;-&nbsp;the new member</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">a new array, one item longer than the original</div>
+               </div>
+            </div><a name="ArrayLength()"></a><div class="member">
+               <h3>ArrayLength</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a>&nbsp;ArrayLength</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Get the number of members in the array
+                     </p>
+                  <p>(Note that the <a href="XdmValue.html#Count" class="apilink">XdmValue.Count</a> property returns 1 (one),
+                     because an XDM array is an item.)</p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">the number of members in the array.</div>
+               </div>
+            </div><a name="AsList()"></a><div class="member">
+               <h3>AsList</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.generic.list(VS.80).aspx" class="apilink system" target="_blank">List</a><span class="operator">&lt;<a href="XdmValue.html" class="apilink">XdmValue</a>&gt;</span>&nbsp;AsList</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Get the members of the array in the form of a list.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A list of the members of this array.</div>
+               </div>
+            </div><a name="Concat(XdmArray)"></a><div class="member">
+               <h3>Concat</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="XdmArray.html" class="apilink">XdmArray</a>&nbsp;Concat</span><span class="fblock">(<a href="XdmArray.html" class="apilink">XdmArray</a>&nbsp;value)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Concatenate another array
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>value</code>&nbsp;-&nbsp;the other array</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">a new array, containing the members of this array followed by the members 
+                     of the other array</div>
+               </div>
+            </div><a name="Get(int)"></a><div class="member">
+               <h3>Get</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;Get</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a>&nbsp;n)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Get the n'th member in the array, counting from zero.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>n</code>&nbsp;-&nbsp;the position of the member that is required, counting the first member in 
+                     the array as member zero</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">the n'th member in the sequence making up the array, counting from zero</div>
+               </div>
+            </div><a name="MakeArray(Object[])"></a><div class="member">
+               <h3>MakeArray</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="XdmArray.html" class="apilink">XdmArray</a>&nbsp;MakeArray</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.object(VS.80).aspx" class="apilink system" target="_blank">object[]</a>&nbsp;objectArray)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Make an XDM array from an object array. Each member of the supplied array
+                     is converted to a single member in the result array using the method
+                     <a href="XdmValue.html#MakeValue(Object)" class="apilink">XdmValue.MakeValue(Object)</a>
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>objectArray</code>&nbsp;-&nbsp;the array of objects</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">the result of the conversion if successful</div>
+               </div>
+            </div><a name="MakeArray(Boolean[])"></a><div class="member">
+               <h3>MakeArray</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="XdmArray.html" class="apilink">XdmArray</a>&nbsp;MakeArray</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool[]</a>&nbsp;booleanArray)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Make an <code>XdmArray</code> whose members are <code>xs:boolean</code> values       
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>booleanArray</code>&nbsp;-&nbsp;the input array of booleans</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">an <code>XdmArray</code> whose members are <code>xs:boolean</code> values corresponding one-to-one with the input</div>
+               </div>
+            </div><a name="MakeArray(Int64[])"></a><div class="member">
+               <h3>MakeArray</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="XdmArray.html" class="apilink">XdmArray</a>&nbsp;MakeArray</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.int64(VS.80).aspx" class="apilink system" target="_blank">long[]</a>&nbsp;longArray)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Make an <code>XdmArray</code> whose members are <code>xs:integer</code> values      
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>longArray</code>&nbsp;-&nbsp;the input array of long values</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">an <code>XdmArray</code> whose members are <code>xs:integer</code> values corresponding one-to-one with the input</div>
+               </div>
+            </div><a name="MakeArray(Int32[])"></a><div class="member">
+               <h3>MakeArray</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="XdmArray.html" class="apilink">XdmArray</a>&nbsp;MakeArray</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int[]</a>&nbsp;intArray)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Make an <code>XdmArray</code> whose members are <code>xs:integer</code> values      
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>intArray</code>&nbsp;-&nbsp;the input array of int values</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">an <code>XdmArray</code> whose members are <code>xs:integer</code> values corresponding one-to-one with the input</div>
+               </div>
+            </div><a name="MakeArray(Byte[])"></a><div class="member">
+               <h3>MakeArray</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="XdmArray.html" class="apilink">XdmArray</a>&nbsp;MakeArray</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.byte(VS.80).aspx" class="apilink system" target="_blank">Byte[]</a>&nbsp;byteArray)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Make an <code>XdmArray</code> whose members are <code>xs:integer</code> values      
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>byteArray</code>&nbsp;-&nbsp;the input array of byte values</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">an <code>XdmArray</code> whose members are <code>xs:integer</code> values corresponding one-to-one with the input</div>
+               </div>
+            </div><a name="Put(int,XdmValue)"></a><div class="member">
+               <h3>Put</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="XdmArray.html" class="apilink">XdmArray</a>&nbsp;Put</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a>&nbsp;n, <br><a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;valuei)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Create a new array in which one member is replaced with a new value.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>n</code>&nbsp;-&nbsp;the position of the member that is to be replaced, counting the first member
+                     in the array as member zero</div>
+                  <div class="params"><code>valuei</code>&nbsp;-&nbsp;the new value</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">the new array</div>
+               </div>
+            </div>
+         </div>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+   </body>
+</html>

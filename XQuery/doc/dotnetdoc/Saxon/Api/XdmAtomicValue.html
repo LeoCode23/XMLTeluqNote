@@ -1,0 +1,724 @@
+<!DOCTYPE HTML><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>XdmAtomicValue</title>
+      <meta name="keywords" content="Saxon.Api.XdmAtomicValue class">
+      <link rel="stylesheet" type="text/css" href="../../saxon-dotnetdoc.css" title="Style">
+   </head>
+   <body>
+      <div class="contents">
+         <h3><a href="../../index.html" class="home">Saxon.Api</a></h3>
+         <ul class="list">
+            <li><a href="CollectionFinder.html">CollectionFinder</a></li>
+            <li><a href="DocumentBuilder.html">DocumentBuilder</a></li>
+            <li><a href="DomDestination.html">DomDestination</a></li>
+            <li><a href="DynamicContext.html">DynamicContext</a></li>
+            <li><a href="Error.html">Error</a></li>
+            <li><a href="ErrorReporter.html">ErrorReporter</a></li>
+            <li><a href="ExtensionFunctionCall.html">ExtensionFunctionCall</a></li>
+            <li><a href="ExtensionFunctionDefinition.html">ExtensionFunctionDefinition</a></li>
+            <li><a href="Feature.html">Feature</a></li>
+            <li><a href="FeatureKeys.html">FeatureKeys</a></li>
+            <li><a href="HostLanguage.html">HostLanguage</a></li>
+            <li><a href="IDestination.html">IDestination</a></li>
+            <li><a href="IInvalidityHandler.html">IInvalidityHandler</a></li>
+            <li><a href="IResource.html">IResource</a></li>
+            <li><a href="JsonBuilder.html">JsonBuilder</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="Message.html">Message</a></li>
+            <li><a href="NamespaceConstant.html">NamespaceConstant</a></li>
+            <li><a href="NodeResource.html">NodeResource</a></li>
+            <li><a href="NullDestination.html">NullDestination</a></li>
+            <li><a href="ParameterDetails.html">ParameterDetails</a></li>
+            <li><a href="Predicates.html">Predicates</a></li>
+            <li><a href="Processor.html">Processor</a></li>
+            <li><a href="QName.html">QName</a></li>
+            <li><a href="RawDestination.html">RawDestination</a></li>
+            <li><a href="ResourceRequest.html">ResourceRequest</a></li>
+            <li><a href="ResourceResolver.html">ResourceResolver</a></li>
+            <li><a href="ResultDocumentHandler.html">ResultDocumentHandler</a></li>
+            <li><a href="SaxonApiException.html">SaxonApiException</a></li>
+            <li><a href="SchemaManager.html">SchemaManager</a></li>
+            <li><a href="SchemaResolver.html">SchemaResolver</a></li>
+            <li><a href="SchemaValidationMode.html">SchemaValidationMode</a></li>
+            <li><a href="SchemaValidator.html">SchemaValidator</a></li>
+            <li><a href="Serializer.html">Serializer</a></li>
+            <li><a href="StaticContext.html">StaticContext</a></li>
+            <li><a href="Step.html">Step&lt;TInput, TResult&gt;</a></li>
+            <li><a href="Steps.html">Steps</a></li>
+            <li><a href="TextResource.html">TextResource</a></li>
+            <li><a href="TreeModel.html">TreeModel</a></li>
+            <li><a href="UnprefixedElementMatchingPolicy.html">UnprefixedElementMatchingPolicy</a></li>
+            <li><a href="ValidationFailure.html">ValidationFailure</a></li>
+            <li><a href="WhitespacePolicy.html">WhitespacePolicy</a></li>
+            <li><a href="XdmAnyArrayType.html">XdmAnyArrayType</a></li>
+            <li><a href="XdmAnyFunctionType.html">XdmAnyFunctionType</a></li>
+            <li><a href="XdmAnyItemType.html">XdmAnyItemType</a></li>
+            <li><a href="XdmAnyMapType.html">XdmAnyMapType</a></li>
+            <li><a href="XdmAnyNodeType.html">XdmAnyNodeType</a></li>
+            <li><a href="XdmArray.html">XdmArray</a></li>
+            <li><a href="XdmAtomicType.html">XdmAtomicType</a></li>
+            <li><a href="XdmAtomicValue.html">XdmAtomicValue</a></li>
+            <li><a href="XdmAxis.html">XdmAxis</a></li>
+            <li><a href="XdmDestination.html">XdmDestination</a></li>
+            <li><a href="XdmEmptySequence.html">XdmEmptySequence</a></li>
+            <li><a href="XdmExternalObject.html">XdmExternalObject</a></li>
+            <li><a href="XdmFunctionItem.html">XdmFunctionItem</a></li>
+            <li><a href="XdmItem.html">XdmItem</a></li>
+            <li><a href="XdmItemType.html">XdmItemType</a></li>
+            <li><a href="XdmMap.html">XdmMap</a></li>
+            <li><a href="XdmNode.html">XdmNode</a></li>
+            <li><a href="XdmNodeKind.html">XdmNodeKind</a></li>
+            <li><a href="XdmSequenceType.html">XdmSequenceType</a></li>
+            <li><a href="XdmValue.html">XdmValue</a></li>
+            <li><a href="XmlReaderResource.html">XmlReaderResource</a></li>
+            <li><a href="XmlWriterDestination.html">XmlWriterDestination</a></li>
+            <li><a href="XPathCompiler.html">XPathCompiler</a></li>
+            <li><a href="XPathExecutable.html">XPathExecutable</a></li>
+            <li><a href="XPathSelector.html">XPathSelector</a></li>
+            <li><a href="XQueryCompiler.html">XQueryCompiler</a></li>
+            <li><a href="XQueryEvaluator.html">XQueryEvaluator</a></li>
+            <li><a href="XQueryExecutable.html">XQueryExecutable</a></li>
+            <li><a href="XQueryResolver.html">XQueryResolver</a></li>
+            <li><a href="Xslt30Transformer.html">Xslt30Transformer</a></li>
+            <li><a href="XsltCompiler.html">XsltCompiler</a></li>
+            <li><a href="XsltExecutable.html">XsltExecutable</a></li>
+            <li><a href="XsltPackage.html">XsltPackage</a></li>
+            <li><a href="XsltTransformer.html">XsltTransformer</a></li>
+         </ul>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+      <div class="main">
+         <h3>Saxon.Api</h3>
+         <h1><span class="classLabel">Class&nbsp;</span>XdmAtomicValue</h1>
+         <hr>
+         <dl>
+            <dt>
+               <div class="code">public class&nbsp;XdmAtomicValue</div>
+            </dt>
+            <dt> extends <a href="XdmItem.html" class="apilink">XdmItem</a></dt>
+         </dl>
+         <p>
+            The class <code>XdmAtomicValue</code> represents an item in an XDM sequence
+            that is an atomic value. The value may belong to any of the 19 primitive types
+            defined in XML Schema, or to a type derived from these primitive types, or to 
+            the XDM-specific type <code>xs:untypedAtomic</code>.
+            </p>
+         <p>
+            Note that there is no guarantee that every <code>XdmValue</code> comprising a single
+            atomic value will be an instance of this class. To force this, use the <code>Simplify</code>
+            property of the <code>XdmValue</code>.
+            </p><a name="constructor_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Constructor Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#XdmAtomicValue(AtomicValue)" class="apilink">XdmAtomicValue</a> (<a href="../../../javadoc/net/sf/saxon/value/AtomicValue.html" class="apilink java">net.sf.saxon.value.AtomicValue</a>&nbsp;atomicValue)</span><div class="fnormal">
+                     <p>
+                        Construct an XdmNode as a wrapper around an instance of the internal class <code>Saxon.Hej.value.AtomicValue</code>
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#XdmAtomicValue(string)" class="apilink">XdmAtomicValue</a> (<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;str)</span><div class="fnormal">
+                     <p>
+                        Construct an atomic value of type <code>xs:string</code>
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#XdmAtomicValue(long)" class="apilink">XdmAtomicValue</a> (<a href="http://msdn.microsoft.com/en-us/library/system.int64(VS.80).aspx" class="apilink system" target="_blank">long</a>&nbsp;i)</span><div class="fnormal">
+                     <p>
+                        Construct an atomic value of type <code>xs:integer</code> from a supplied <code>long</code>
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#XdmAtomicValue(int)" class="apilink">XdmAtomicValue</a> (<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a>&nbsp;i)</span><div class="fnormal">
+                     <p>
+                        Construct an atomic value of type <code>xs:integer</code> from a supplied <code>long</code>
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#XdmAtomicValue(Byte)" class="apilink">XdmAtomicValue</a> (<a href="http://msdn.microsoft.com/en-us/library/system.byte(VS.80).aspx" class="apilink system" target="_blank">Byte</a>&nbsp;i)</span><div class="fnormal">
+                     <p>
+                        Construct an atomic value of type <code>xs:integer</code> from a supplied <code>byte</code>
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#XdmAtomicValue(decimal)" class="apilink">XdmAtomicValue</a> (<a href="http://msdn.microsoft.com/en-us/library/system.decimal(VS.80).aspx" class="apilink system" target="_blank">decimal</a>&nbsp;d)</span><div class="fnormal">
+                     <p>
+                        Construct an atomic value of type <code>xs:decimal</code>
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#XdmAtomicValue(float)" class="apilink">XdmAtomicValue</a> (<a href="http://msdn.microsoft.com/en-us/library/system.single(VS.80).aspx" class="apilink system" target="_blank">float</a>&nbsp;f)</span><div class="fnormal">
+                     <p>
+                        Construct an atomic value of type <code>xs:float</code>
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#XdmAtomicValue(DateTime)" class="apilink">XdmAtomicValue</a> (<a href="http://msdn.microsoft.com/en-us/library/system.datetime(VS.80).aspx" class="apilink system" target="_blank">DateTime</a>&nbsp;dt)</span><div class="fnormal">
+                     <p>
+                        Construct an atomic value of type <code>xs:dateTime</code> from a .NET DateTime object
+                        Here we probe the object for timezone offset information to create the resulting value.
+                        
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#XdmAtomicValue(DateTimeOffset)" class="apilink">XdmAtomicValue</a> (<a href="http://msdn.microsoft.com/en-us/library/system.datetimeoffset(VS.80).aspx" class="apilink system" target="_blank">DateTimeOffset</a>&nbsp;offset)</span><div class="fnormal">
+                     <p>
+                        Construct an atomic value of type <code>xs:dateTime</code> with a specific timezone offset from a DateTimeOffset object.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#XdmAtomicValue(double)" class="apilink">XdmAtomicValue</a> (<a href="http://msdn.microsoft.com/en-us/library/system.double(VS.80).aspx" class="apilink system" target="_blank">double</a>&nbsp;d)</span><div class="fnormal">
+                     <p>
+                        Construct an atomic value of type <code>xs:double</code>
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#XdmAtomicValue(bool)" class="apilink">XdmAtomicValue</a> (<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a>&nbsp;b)</span><div class="fnormal">
+                     <p>
+                        Construct an atomic value of type <code>xs:boolean</code>
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#XdmAtomicValue(Uri)" class="apilink">XdmAtomicValue</a> (<a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a>&nbsp;u)</span><div class="fnormal">
+                     <p>
+                        Construct an atomic value of type <code>xs:anyURI</code>
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#XdmAtomicValue(QName)" class="apilink">XdmAtomicValue</a> (<a href="QName.html" class="apilink">QName</a>&nbsp;q)</span><div class="fnormal">
+                     <p>
+                        Construct an atomic value of type <code>xs:QName</code>
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#XdmAtomicValue(string,XdmAtomicType)" class="apilink">XdmAtomicValue</a> (<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;lexicalForm, <a href="XdmAtomicType.html" class="apilink">XdmAtomicType</a>&nbsp;type)</span><div class="fnormal">
+                     <p>
+                        Construct an atomic value of a given type
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="property_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Property Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#PrimitiveTypeName" class="apilink">PrimitiveTypeName</a></span><div class="fnormal">
+                     <p>
+                        Get the name of the primitive type of the value
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#TypeName" class="apilink">TypeName</a></span><div class="fnormal">
+                     <p>
+                        Get the name of the value's XDM type
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.object(VS.80).aspx" class="apilink system" target="_blank">object</a></td>
+               <td><span class="signature"><a href="#Value" class="apilink">Value</a></span><div class="fnormal">
+                     <p>Get the value as a CLI object of the nearest equivalent type.</p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="method_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Method Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a></td>
+               <td><span class="signature"><a href="#AsBoolean()" class="apilink">AsBoolean</a> ()</span><div class="fnormal">
+                     <p>
+                        Get the value converted to a boolean using the XPath casting rules.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.decimal(VS.80).aspx" class="apilink system" target="_blank">decimal</a></td>
+               <td><span class="signature"><a href="#AsDecimal()" class="apilink">AsDecimal</a> ()</span><div class="fnormal">
+                     <p>
+                        Get the value converted to a decimal using the XPath casting rules.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.double(VS.80).aspx" class="apilink system" target="_blank">double</a></td>
+               <td><span class="signature"><a href="#AsDouble()" class="apilink">AsDouble</a> ()</span><div class="fnormal">
+                     <p>
+                        Get the value converted to a double using the XPath casting rules.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.int64(VS.80).aspx" class="apilink system" target="_blank">long</a></td>
+               <td><span class="signature"><a href="#AsLong()" class="apilink">AsLong</a> ()</span><div class="fnormal">
+                     <p>
+                        Get the value converted to a long using the XPath casting rules.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#AsQName()" class="apilink">AsQName</a> ()</span><div class="fnormal">
+                     <p>
+                        Get the value converted to a QName. The value must be of type xs:QName or xs:NOTATION.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a></td>
+               <td><span class="signature"><a href="#Equals(object)" class="apilink">Equals</a> (<a href="http://msdn.microsoft.com/en-us/library/system.object(VS.80).aspx" class="apilink system" target="_blank">object</a>&nbsp;other)</span><div class="fnormal">
+                     <p>
+                        Compare two atomic values for equality
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a></td>
+               <td><span class="signature"><a href="#GetHashCode()" class="apilink">GetHashCode</a> ()</span><div class="fnormal">
+                     <p>
+                        Get a hash code to support equality comparison
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a></td>
+               <td><span class="signature"><a href="#IsAtomic()" class="apilink">IsAtomic</a> ()</span><div class="fnormal">
+                     <p>
+                        Determine whether the item is an atomic value
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="XdmAtomicValue.html" class="apilink">XdmAtomicValue</a></td>
+               <td><span class="signature"><a href="#MakeAtomicValue(object)" class="apilink">MakeAtomicValue</a> (<a href="http://msdn.microsoft.com/en-us/library/system.object(VS.80).aspx" class="apilink system" target="_blank">object</a>&nbsp;value)</span><div class="fnormal">
+                     <p>
+                        Create an atomic value of a type appropriate to the supplied value. 
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#ToString()" class="apilink">ToString</a> ()</span><div class="fnormal">
+                     <p>
+                        Convert the atomic value to a string
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="constructor_detail"></a><div class="section">
+            <h2>Constructor Detail</h2><a name="XdmAtomicValue(AtomicValue)"></a><div class="member">
+               <h3>XdmAtomicValue</h3>
+               <div class="code">public&nbsp;XdmAtomicValue(<a href="../../../javadoc/net/sf/saxon/value/AtomicValue.html" class="apilink java">net.sf.saxon.value.AtomicValue</a>&nbsp;atomicValue)</div>
+               <p>
+                  Construct an XdmNode as a wrapper around an instance of the internal class <code>Saxon.Hej.value.AtomicValue</code>
+                  </p>
+               <p>
+                  Applications using the class <code>Saxon.Hej.value.AtomicValue</code> should be aware that it is subject to occasional
+                  changes from one release to the next. For documentation on this class, see the Saxon-EE
+                  Javadoc documentation
+                  for the very similar class <a href="../../../javadoc/net/sf/saxon/value/AtomicValue.html" class="apilink java">net.sf.saxon.value.AtomicValue</a>.
+                  </p>
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>atomicValue</code>&nbsp;-&nbsp;The object to be wrapped</div>
+            </div><a name="XdmAtomicValue(string)"></a><div class="member">
+               <h3>XdmAtomicValue</h3>
+               <div class="code">public&nbsp;XdmAtomicValue(<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;str)</div>
+               <p>
+                  Construct an atomic value of type <code>xs:string</code>
+                  </p>
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>str</code>&nbsp;-&nbsp;The string value</div>
+            </div><a name="XdmAtomicValue(long)"></a><div class="member">
+               <h3>XdmAtomicValue</h3>
+               <div class="code">public&nbsp;XdmAtomicValue(<a href="http://msdn.microsoft.com/en-us/library/system.int64(VS.80).aspx" class="apilink system" target="_blank">long</a>&nbsp;i)</div>
+               <p>
+                  Construct an atomic value of type <code>xs:integer</code> from a supplied <code>long</code>
+                  </p>
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>i</code>&nbsp;-&nbsp;The integer value</div>
+            </div><a name="XdmAtomicValue(int)"></a><div class="member">
+               <h3>XdmAtomicValue</h3>
+               <div class="code">public&nbsp;XdmAtomicValue(<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a>&nbsp;i)</div>
+               <p>
+                  Construct an atomic value of type <code>xs:integer</code> from a supplied <code>long</code>
+                  </p>
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>i</code>&nbsp;-&nbsp;The integer value</div>
+            </div><a name="XdmAtomicValue(Byte)"></a><div class="member">
+               <h3>XdmAtomicValue</h3>
+               <div class="code">public&nbsp;XdmAtomicValue(<a href="http://msdn.microsoft.com/en-us/library/system.byte(VS.80).aspx" class="apilink system" target="_blank">Byte</a>&nbsp;i)</div>
+               <p>
+                  Construct an atomic value of type <code>xs:integer</code> from a supplied <code>byte</code>
+                  </p>
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>i</code>&nbsp;-&nbsp;The integer value, in the range -128 to +127</div>
+            </div><a name="XdmAtomicValue(decimal)"></a><div class="member">
+               <h3>XdmAtomicValue</h3>
+               <div class="code">public&nbsp;XdmAtomicValue(<a href="http://msdn.microsoft.com/en-us/library/system.decimal(VS.80).aspx" class="apilink system" target="_blank">decimal</a>&nbsp;d)</div>
+               <p>
+                  Construct an atomic value of type <code>xs:decimal</code>
+                  </p>
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>d</code>&nbsp;-&nbsp;The decimal value</div>
+            </div><a name="XdmAtomicValue(float)"></a><div class="member">
+               <h3>XdmAtomicValue</h3>
+               <div class="code">public&nbsp;XdmAtomicValue(<a href="http://msdn.microsoft.com/en-us/library/system.single(VS.80).aspx" class="apilink system" target="_blank">float</a>&nbsp;f)</div>
+               <p>
+                  Construct an atomic value of type <code>xs:float</code>
+                  </p>
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>f</code>&nbsp;-&nbsp;The float value</div>
+            </div><a name="XdmAtomicValue(DateTime)"></a><div class="member">
+               <h3>XdmAtomicValue</h3>
+               <div class="code">public&nbsp;XdmAtomicValue(<a href="http://msdn.microsoft.com/en-us/library/system.datetime(VS.80).aspx" class="apilink system" target="_blank">DateTime</a>&nbsp;dt)</div>
+               <p>
+                  Construct an atomic value of type <code>xs:dateTime</code> from a .NET DateTime object
+                  Here we probe the object for timezone offset information to create the resulting value.
+                  
+                  </p>
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>dt</code>&nbsp;-&nbsp;The DateTime object value</div>
+            </div><a name="XdmAtomicValue(DateTimeOffset)"></a><div class="member">
+               <h3>XdmAtomicValue</h3>
+               <div class="code">public&nbsp;XdmAtomicValue(<a href="http://msdn.microsoft.com/en-us/library/system.datetimeoffset(VS.80).aspx" class="apilink system" target="_blank">DateTimeOffset</a>&nbsp;offset)</div>
+               <p>
+                  Construct an atomic value of type <code>xs:dateTime</code> with a specific timezone offset from a DateTimeOffset object.
+                  </p>
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>offset</code>&nbsp;-&nbsp;The DateTimeOffset value</div>
+            </div><a name="XdmAtomicValue(double)"></a><div class="member">
+               <h3>XdmAtomicValue</h3>
+               <div class="code">public&nbsp;XdmAtomicValue(<a href="http://msdn.microsoft.com/en-us/library/system.double(VS.80).aspx" class="apilink system" target="_blank">double</a>&nbsp;d)</div>
+               <p>
+                  Construct an atomic value of type <code>xs:double</code>
+                  </p>
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>d</code>&nbsp;-&nbsp;The double value</div>
+            </div><a name="XdmAtomicValue(bool)"></a><div class="member">
+               <h3>XdmAtomicValue</h3>
+               <div class="code">public&nbsp;XdmAtomicValue(<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a>&nbsp;b)</div>
+               <p>
+                  Construct an atomic value of type <code>xs:boolean</code>
+                  </p>
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>b</code>&nbsp;-&nbsp;The boolean value</div>
+            </div><a name="XdmAtomicValue(Uri)"></a><div class="member">
+               <h3>XdmAtomicValue</h3>
+               <div class="code">public&nbsp;XdmAtomicValue(<a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a>&nbsp;u)</div>
+               <p>
+                  Construct an atomic value of type <code>xs:anyURI</code>
+                  </p>
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>u</code>&nbsp;-&nbsp;The uri value</div>
+            </div><a name="XdmAtomicValue(QName)"></a><div class="member">
+               <h3>XdmAtomicValue</h3>
+               <div class="code">public&nbsp;XdmAtomicValue(<a href="QName.html" class="apilink">QName</a>&nbsp;q)</div>
+               <p>
+                  Construct an atomic value of type <code>xs:QName</code>
+                  </p>
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>q</code>&nbsp;-&nbsp;The QName value</div>
+            </div><a name="XdmAtomicValue(string,XdmAtomicType)"></a><div class="member">
+               <h3>XdmAtomicValue</h3>
+               <div class="code">public&nbsp;XdmAtomicValue(<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;lexicalForm,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="XdmAtomicType.html" class="apilink">XdmAtomicType</a>&nbsp;type)</div>
+               <p>
+                  Construct an atomic value of a given type
+                  </p>
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>lexicalForm</code>&nbsp;-&nbsp;The string representation of the value (any value that is acceptable
+                  in the lexical space, as defined by XML Schema Part 2). Whitespace normalization as
+                  defined by
+                  the target type will be applied to the value.</div>
+               <div class="params"><code>type</code>&nbsp;-&nbsp;The type given as an <code>XdmAtomicType</code>
+                  </div>
+            </div>
+         </div><a name="property_detail"></a><div class="section">
+            <h2>Property Detail</h2><a name="PrimitiveTypeName"></a><div class="member">
+               <h3>PrimitiveTypeName</h3>
+               <div class="code">public&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;PrimitiveTypeName&nbsp;{get; }</div>
+               <p>
+                  Get the name of the primitive type of the value
+                  </p>
+               <p class="methodLabel">Returns:</p>
+               <div class="params">The primitive type of the value, as a QName. This will be the name of
+                  one of the primitive types defined in XML Schema Part 2, or the XPath-defined
+                  type <code>xs:untypedAtomic</code>. For the purposes of this method, <code>xs:integer</code> is considered
+                  to be a primitive type.
+                  </div>
+            </div><a name="TypeName"></a><div class="member">
+               <h3>TypeName</h3>
+               <div class="code">public&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;TypeName&nbsp;{get; }</div>
+               <p>
+                  Get the name of the value's XDM type
+                  </p>
+               <p class="methodLabel">Returns:</p>
+               <div class="params">The type of the value, as a QName.</div>
+            </div><a name="Value"></a><div class="member">
+               <h3>Value</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.object(VS.80).aspx" class="apilink system" target="_blank">object</a>&nbsp;Value&nbsp;{get; }</div>
+               <p>Get the value as a CLI object of the nearest equivalent type.</p>
+               
+               <p>The return type is as follows:</p>
+               
+               <ul>
+                  
+                  <li>
+                     <code>xs:string</code> - String</li>
+                  
+                  <li>
+                     <code>xs:integer</code> - Long</li>
+                  
+                  <li>
+                     <code>xs:decimal</code> - Decimal</li>
+                  
+                  <li>
+                     <code>xs:double</code> - Double</li>
+                  
+                  <li>
+                     <code>xs:float</code> - Float</li>
+                  
+                  <li>
+                     <code>xs:boolean</code> - Bool</li>
+                  
+                  <li>
+                     <code>xs:QName</code> - QName</li>
+                  
+                  <li>
+                     <code>xs:anyURI</code> - Uri</li>
+                  
+                  <li>
+                     <code>xs:untypedAtomic</code> - String</li>
+                  
+                  <li>wrapped external object - the original external object</li>
+                  
+                  <li>Other types - currently String, but this may change in the future</li>
+                  </ul>
+               
+               <p class="methodLabel">Returns:</p>
+               <div class="params">The value converted to the most appropriate CLI type</div>
+            </div>
+         </div><a name="method_detail"></a><div class="section">
+            <h2>Method Detail</h2><a name="AsBoolean()"></a><div class="member">
+               <h3>AsBoolean</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a>&nbsp;AsBoolean</span><span class="fblock">()<br>throws<br><a href="http://msdn.microsoft.com/en-us/library/system.invalidcastexception(VS.80).aspx" class="apilink system" target="_blank">InvalidCastException</a></span></div>
+               <div class="fcomment">
+                  <p>
+                     Get the value converted to a boolean using the XPath casting rules.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">The result of converting to a boolean (Note: this is not the same as the
+                     effective boolean value).</div>
+                  <p class="methodLabel">Throws:</p>
+                  <div class="params"><a href="http://msdn.microsoft.com/en-us/library/system.invalidcastexception(VS.80).aspx" class="apilink system" target="_blank">InvalidCastException</a>&nbsp;-&nbsp;If the value cannot be cast to an xs:boolean</div>
+               </div>
+            </div><a name="AsDecimal()"></a><div class="member">
+               <h3>AsDecimal</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.decimal(VS.80).aspx" class="apilink system" target="_blank">decimal</a>&nbsp;AsDecimal</span><span class="fblock">()<br>throws<br><a href="http://msdn.microsoft.com/en-us/library/system.invalidcastexception(VS.80).aspx" class="apilink system" target="_blank">InvalidCastException</a></span></div>
+               <div class="fcomment">
+                  <p>
+                     Get the value converted to a decimal using the XPath casting rules.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">The result of converting to a decimal</div>
+                  <p class="methodLabel">Throws:</p>
+                  <div class="params"><a href="http://msdn.microsoft.com/en-us/library/system.invalidcastexception(VS.80).aspx" class="apilink system" target="_blank">InvalidCastException</a>&nbsp;-&nbsp;If the value cannot be cast to an xs:decimal, or converted
+                     to a .NET primitive decimal.</div>
+               </div>
+            </div><a name="AsDouble()"></a><div class="member">
+               <h3>AsDouble</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.double(VS.80).aspx" class="apilink system" target="_blank">double</a>&nbsp;AsDouble</span><span class="fblock">()<br>throws<br><a href="http://msdn.microsoft.com/en-us/library/system.invalidcastexception(VS.80).aspx" class="apilink system" target="_blank">InvalidCastException</a></span></div>
+               <div class="fcomment">
+                  <p>
+                     Get the value converted to a double using the XPath casting rules.
+                     </p>
+                  <p>If the value is a string, the XSD 1.1 rules are used, which means that the string
+                     "+INF" is recognised.</p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">The result of converting to a double</div>
+                  <p class="methodLabel">Throws:</p>
+                  <div class="params"><a href="http://msdn.microsoft.com/en-us/library/system.invalidcastexception(VS.80).aspx" class="apilink system" target="_blank">InvalidCastException</a>&nbsp;-&nbsp;If the value cannot be cast to an xs:double</div>
+               </div>
+            </div><a name="AsLong()"></a><div class="member">
+               <h3>AsLong</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.int64(VS.80).aspx" class="apilink system" target="_blank">long</a>&nbsp;AsLong</span><span class="fblock">()<br>throws<br><a href="http://msdn.microsoft.com/en-us/library/system.invalidcastexception(VS.80).aspx" class="apilink system" target="_blank">InvalidCastException</a></span></div>
+               <div class="fcomment">
+                  <p>
+                     Get the value converted to a long using the XPath casting rules.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">The result of converting to a long</div>
+                  <p class="methodLabel">Throws:</p>
+                  <div class="params"><a href="http://msdn.microsoft.com/en-us/library/system.invalidcastexception(VS.80).aspx" class="apilink system" target="_blank">InvalidCastException</a>&nbsp;-&nbsp;If the value cannot be cast to an xs:long</div>
+               </div>
+            </div><a name="AsQName()"></a><div class="member">
+               <h3>AsQName</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;AsQName</span><span class="fblock">()<br>throws<br><a href="http://msdn.microsoft.com/en-us/library/system.invalidcastexception(VS.80).aspx" class="apilink system" target="_blank">InvalidCastException</a></span></div>
+               <div class="fcomment">
+                  <p>
+                     Get the value converted to a QName. The value must be of type xs:QName or xs:NOTATION.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">The result of converting to a QName</div>
+                  <p class="methodLabel">Throws:</p>
+                  <div class="params"><a href="http://msdn.microsoft.com/en-us/library/system.invalidcastexception(VS.80).aspx" class="apilink system" target="_blank">InvalidCastException</a>&nbsp;-&nbsp;If the value cannot be cast to an xs:QName</div>
+               </div>
+            </div><a name="Equals(object)"></a><div class="member">
+               <h3>Equals</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;override&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a>&nbsp;Equals</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.object(VS.80).aspx" class="apilink system" target="_blank">object</a>&nbsp;other)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Compare two atomic values for equality
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>other</code>&nbsp;-&nbsp;The object to be compared</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">The result of the equality comparison, using the rules of the
+                     <code>op:is-same-key()</code> comparison used for comparing key values in maps.</div>
+               </div>
+            </div><a name="GetHashCode()"></a><div class="member">
+               <h3>GetHashCode</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;override&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a>&nbsp;GetHashCode</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Get a hash code to support equality comparison
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A suitable hash code</div>
+               </div>
+            </div><a name="IsAtomic()"></a><div class="member">
+               <h3>IsAtomic</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;override&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a>&nbsp;IsAtomic</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Determine whether the item is an atomic value
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">
+                     True (the item is an atomic value).
+                     </div>
+               </div>
+            </div><a name="MakeAtomicValue(object)"></a><div class="member">
+               <h3>MakeAtomicValue</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="XdmAtomicValue.html" class="apilink">XdmAtomicValue</a>&nbsp;MakeAtomicValue</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.object(VS.80).aspx" class="apilink system" target="_blank">object</a>&nbsp;value)<br>throws<br><a href="http://msdn.microsoft.com/en-us/library/system.argumentexception(VS.80).aspx" class="apilink system" target="_blank">ArgumentException</a></span></div>
+               <div class="fcomment">
+                  <p>
+                     Create an atomic value of a type appropriate to the supplied value. 
+                     </p>
+                  <p>
+                     The supplied value must be one of the following:
+                     
+                     <ul>
+                        
+                        <li>An instance of the Saxon Java class <code>Saxon.Hej.value.AtomicValue</code>
+                           </li>
+                        
+                        <li>A <code>Boolean</code> - returns an instance of <code>xs:boolean</code>
+                           </li>
+                        
+                        <li>A (signed) <code>int</code>, <code>long</code>, <code>short</code>, or <code>byte</code> - returns an instance of <code>xs:integer</code>
+                           </li>
+                        
+                        <li>A <code>Char</code> - TODO ???????</li>
+                        
+                        <li>A <code>String</code> - returns an instance of <code>xs:string</code>
+                           </li>
+                        
+                        <li>A <code>Double</code> - returns an instance of <code>xs:double</code>
+                           </li>
+                        
+                        <li>A <code>Float</code> - returns an instance of <code>xs:float</code>
+                           </li>
+                        
+                        <li>A <code>decimal</code> - returns an instance of <code>xs:decimal</code>
+                           </li>
+                        
+                        <li>A <code>URI</code> - returns an instance of <code>xs:anyURI</code>
+                           </li>
+                        
+                        <li>A <code>QName</code> - returns an instance of <code>xs:QName</code>
+                           </li>
+                        </ul>
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>value</code>&nbsp;-&nbsp;The value to be converted.</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">The converted value</div>
+                  <p class="methodLabel">Throws:</p>
+                  <div class="params"><a href="http://msdn.microsoft.com/en-us/library/system.argumentexception(VS.80).aspx" class="apilink system" target="_blank">ArgumentException</a>&nbsp;-&nbsp;If the supplied value is not one of the recognized types</div>
+               </div>
+            </div><a name="ToString()"></a><div class="member">
+               <h3>ToString</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;override&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;ToString</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Convert the atomic value to a string
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">The value converted to a string, according to the rules
+                     of the XPath cast expression. The result is the same as the <code>StringValue</code> property.</div>
+               </div>
+            </div>
+         </div>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+   </body>
+</html>

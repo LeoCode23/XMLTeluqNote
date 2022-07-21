@@ -1,0 +1,263 @@
+<!DOCTYPE HTML><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>XPathExecutable</title>
+      <meta name="keywords" content="Saxon.Api.XPathExecutable class">
+      <link rel="stylesheet" type="text/css" href="../../saxon-dotnetdoc.css" title="Style">
+   </head>
+   <body>
+      <div class="contents">
+         <h3><a href="../../index.html" class="home">Saxon.Api</a></h3>
+         <ul class="list">
+            <li><a href="CollectionFinder.html">CollectionFinder</a></li>
+            <li><a href="DocumentBuilder.html">DocumentBuilder</a></li>
+            <li><a href="DomDestination.html">DomDestination</a></li>
+            <li><a href="DynamicContext.html">DynamicContext</a></li>
+            <li><a href="Error.html">Error</a></li>
+            <li><a href="ErrorReporter.html">ErrorReporter</a></li>
+            <li><a href="ExtensionFunctionCall.html">ExtensionFunctionCall</a></li>
+            <li><a href="ExtensionFunctionDefinition.html">ExtensionFunctionDefinition</a></li>
+            <li><a href="Feature.html">Feature</a></li>
+            <li><a href="FeatureKeys.html">FeatureKeys</a></li>
+            <li><a href="HostLanguage.html">HostLanguage</a></li>
+            <li><a href="IDestination.html">IDestination</a></li>
+            <li><a href="IInvalidityHandler.html">IInvalidityHandler</a></li>
+            <li><a href="IResource.html">IResource</a></li>
+            <li><a href="JsonBuilder.html">JsonBuilder</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="Message.html">Message</a></li>
+            <li><a href="NamespaceConstant.html">NamespaceConstant</a></li>
+            <li><a href="NodeResource.html">NodeResource</a></li>
+            <li><a href="NullDestination.html">NullDestination</a></li>
+            <li><a href="ParameterDetails.html">ParameterDetails</a></li>
+            <li><a href="Predicates.html">Predicates</a></li>
+            <li><a href="Processor.html">Processor</a></li>
+            <li><a href="QName.html">QName</a></li>
+            <li><a href="RawDestination.html">RawDestination</a></li>
+            <li><a href="ResourceRequest.html">ResourceRequest</a></li>
+            <li><a href="ResourceResolver.html">ResourceResolver</a></li>
+            <li><a href="ResultDocumentHandler.html">ResultDocumentHandler</a></li>
+            <li><a href="SaxonApiException.html">SaxonApiException</a></li>
+            <li><a href="SchemaManager.html">SchemaManager</a></li>
+            <li><a href="SchemaResolver.html">SchemaResolver</a></li>
+            <li><a href="SchemaValidationMode.html">SchemaValidationMode</a></li>
+            <li><a href="SchemaValidator.html">SchemaValidator</a></li>
+            <li><a href="Serializer.html">Serializer</a></li>
+            <li><a href="StaticContext.html">StaticContext</a></li>
+            <li><a href="Step.html">Step&lt;TInput, TResult&gt;</a></li>
+            <li><a href="Steps.html">Steps</a></li>
+            <li><a href="TextResource.html">TextResource</a></li>
+            <li><a href="TreeModel.html">TreeModel</a></li>
+            <li><a href="UnprefixedElementMatchingPolicy.html">UnprefixedElementMatchingPolicy</a></li>
+            <li><a href="ValidationFailure.html">ValidationFailure</a></li>
+            <li><a href="WhitespacePolicy.html">WhitespacePolicy</a></li>
+            <li><a href="XdmAnyArrayType.html">XdmAnyArrayType</a></li>
+            <li><a href="XdmAnyFunctionType.html">XdmAnyFunctionType</a></li>
+            <li><a href="XdmAnyItemType.html">XdmAnyItemType</a></li>
+            <li><a href="XdmAnyMapType.html">XdmAnyMapType</a></li>
+            <li><a href="XdmAnyNodeType.html">XdmAnyNodeType</a></li>
+            <li><a href="XdmArray.html">XdmArray</a></li>
+            <li><a href="XdmAtomicType.html">XdmAtomicType</a></li>
+            <li><a href="XdmAtomicValue.html">XdmAtomicValue</a></li>
+            <li><a href="XdmAxis.html">XdmAxis</a></li>
+            <li><a href="XdmDestination.html">XdmDestination</a></li>
+            <li><a href="XdmEmptySequence.html">XdmEmptySequence</a></li>
+            <li><a href="XdmExternalObject.html">XdmExternalObject</a></li>
+            <li><a href="XdmFunctionItem.html">XdmFunctionItem</a></li>
+            <li><a href="XdmItem.html">XdmItem</a></li>
+            <li><a href="XdmItemType.html">XdmItemType</a></li>
+            <li><a href="XdmMap.html">XdmMap</a></li>
+            <li><a href="XdmNode.html">XdmNode</a></li>
+            <li><a href="XdmNodeKind.html">XdmNodeKind</a></li>
+            <li><a href="XdmSequenceType.html">XdmSequenceType</a></li>
+            <li><a href="XdmValue.html">XdmValue</a></li>
+            <li><a href="XmlReaderResource.html">XmlReaderResource</a></li>
+            <li><a href="XmlWriterDestination.html">XmlWriterDestination</a></li>
+            <li><a href="XPathCompiler.html">XPathCompiler</a></li>
+            <li><a href="XPathExecutable.html">XPathExecutable</a></li>
+            <li><a href="XPathSelector.html">XPathSelector</a></li>
+            <li><a href="XQueryCompiler.html">XQueryCompiler</a></li>
+            <li><a href="XQueryEvaluator.html">XQueryEvaluator</a></li>
+            <li><a href="XQueryExecutable.html">XQueryExecutable</a></li>
+            <li><a href="XQueryResolver.html">XQueryResolver</a></li>
+            <li><a href="Xslt30Transformer.html">Xslt30Transformer</a></li>
+            <li><a href="XsltCompiler.html">XsltCompiler</a></li>
+            <li><a href="XsltExecutable.html">XsltExecutable</a></li>
+            <li><a href="XsltPackage.html">XsltPackage</a></li>
+            <li><a href="XsltTransformer.html">XsltTransformer</a></li>
+         </ul>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+      <div class="main">
+         <h3>Saxon.Api</h3>
+         <h1><span class="classLabel">Class&nbsp;</span>XPathExecutable</h1>
+         <hr>
+         <dl>
+            <dt>
+               <div class="code">public class&nbsp;XPathExecutable</div>
+            </dt>
+         </dl>
+         <p>
+            An <code>XPathExecutable</code> represents the compiled form of an XPath expression. 
+            To evaluate the expression, it must first be loaded to form an <code>XPathSelector</code>.
+            </p>
+         
+         <p>An <code>XPathExecutable</code> is immutable, and therefore thread-safe. It is simplest to
+            load a new <code>XPathSelector</code> each time the expression is to be evaluated. However, the 
+            <code>XPathSelector</code> is serially reusable within a single thread.</p>
+         
+         <p>An <code>XPathExecutable</code> is created by using the <code>Compile</code>
+            method on the <code>XPathCompiler</code> class.</p>
+         <a name="property_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Property Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;<a href="QName.html" class="apilink">QName</a>&gt;</span></td>
+               <td><span class="signature"><a href="#ExternalVariables" class="apilink">ExternalVariables</a></span><div class="fnormal">
+                     <p>
+                        Get a list of external variables used by the expression. This will include both variables
+                        that were explicitly
+                        declared to the <code>XPathCompiler</code>, and (if the <code>AllowUndeclaredVariables</code> option was set) variables that
+                        are referenced within the expression but not explicitly declared.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="method_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Method Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerator(VS.80).aspx" class="apilink system" target="_blank">IEnumerator</a></td>
+               <td><span class="signature"><a href="#EnumerateExternalVariables()" class="apilink">EnumerateExternalVariables</a> ()</span><div class="fnormal">
+                     <p>
+                        Get a list of external variables used by the expression. This will include both variables
+                        that were explicitly
+                        declared to the <code>XPathCompiler</code>, and (if the <code>AllowUndeclaredVariables</code> option was set) variables that
+                        are referenced within the expression but not explicitly declared.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.char(VS.80).aspx" class="apilink system" target="_blank">char</a></td>
+               <td><span class="signature"><a href="#GetRequiredCardinalityForVariable(QName)" class="apilink">GetRequiredCardinalityForVariable</a> (<a href="QName.html" class="apilink">QName</a>&nbsp;variableName)</span><div class="fnormal">
+                     <p>
+                        Get the required cardinality of a declared variable in the static context of the expression.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="XPathSelector.html" class="apilink">XPathSelector</a></td>
+               <td><span class="signature"><a href="#Load()" class="apilink">Load</a> ()</span><div class="fnormal">
+                     <p>
+                        Load the compiled XPath expression to prepare it for execution.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="property_detail"></a><div class="section">
+            <h2>Property Detail</h2><a name="ExternalVariables"></a><div class="member">
+               <h3>ExternalVariables</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;<a href="QName.html" class="apilink">QName</a>&gt;</span>&nbsp;ExternalVariables&nbsp;{get; }</div>
+               <p>
+                  Get a list of external variables used by the expression. This will include both variables
+                  that were explicitly
+                  declared to the <code>XPathCompiler</code>, and (if the <code>AllowUndeclaredVariables</code> option was set) variables that
+                  are referenced within the expression but not explicitly declared.
+                  </p>
+               <p class="methodLabel">Returns:</p>
+               <div class="params">
+                  A collection holding the names of the external variables, as instances of <code>QName</code>.
+                  </div>
+            </div>
+         </div><a name="method_detail"></a><div class="section">
+            <h2>Method Detail</h2><a name="EnumerateExternalVariables()"></a><div class="member">
+               <h3>EnumerateExternalVariables</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerator(VS.80).aspx" class="apilink system" target="_blank">IEnumerator</a>&nbsp;EnumerateExternalVariables</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Get a list of external variables used by the expression. This will include both variables
+                     that were explicitly
+                     declared to the <code>XPathCompiler</code>, and (if the <code>AllowUndeclaredVariables</code> option was set) variables that
+                     are referenced within the expression but not explicitly declared.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">
+                     An <code>IEnumerator</code> over the names of the external variables, as instances of <code>QName</code>.
+                     </div>
+               </div>
+            </div><a name="GetRequiredCardinalityForVariable(QName)"></a><div class="member">
+               <h3>GetRequiredCardinalityForVariable</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.char(VS.80).aspx" class="apilink system" target="_blank">char</a>&nbsp;GetRequiredCardinalityForVariable</span><span class="fblock">(<a href="QName.html" class="apilink">QName</a>&nbsp;variableName)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Get the required cardinality of a declared variable in the static context of the expression.
+                     </p>
+                  
+                  <p>The result is given as an occurrence indicator, one of:</p>
+                  
+                  <ul>
+                     
+                     <li>'?' (zero-or-one)</li>
+                     
+                     <li>'*' (zero-or-more)</li>
+                     
+                     <li>'+' (one-or-more)</li>
+                     
+                     <li>' ' (a single space) (exactly one)</li>
+                     
+                     <li>'º' (masculine ordinal indicator, xBA) (exactly zero)</li>
+                     </ul>
+                  
+                  <p>The type <code>empty-sequence()</code> can be represented by an occurrence indicator of 'º' with 
+                     any item type.</p>
+                  
+                  <p>If the variable was explicitly declared, this will be the occurrence indicator that
+                     was set when the
+                     variable was declared. If no item type was set, it will be "*".</p>
+                  
+                  <p>If the variable was implicitly declared by reference (which can happen only when the
+                     <code>allowUndeclaredVariables</code> option is set), the returned type will be "*".</p>
+                  
+                  <p>If no variable with the specified <code>QName</code> has been declared either explicitly or implicitly,
+                     the method returns '0'.</p>
+                  
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>variableName</code>&nbsp;-&nbsp;the name of a declared variable</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">The required cardinality, in the form of an occurrence indicator.</div>
+               </div>
+            </div><a name="Load()"></a><div class="member">
+               <h3>Load</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="XPathSelector.html" class="apilink">XPathSelector</a>&nbsp;Load</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Load the compiled XPath expression to prepare it for execution.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">
+                     An <code>XPathSelector</code>. The returned <code>XPathSelector</code> can be used to
+                     set up the dynamic context, and then to evaluate the expression.
+                     </div>
+               </div>
+            </div>
+         </div>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+   </body>
+</html>

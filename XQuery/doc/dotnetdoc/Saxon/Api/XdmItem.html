@@ -1,0 +1,327 @@
+<!DOCTYPE HTML><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>XdmItem</title>
+      <meta name="keywords" content="Saxon.Api.XdmItem class">
+      <link rel="stylesheet" type="text/css" href="../../saxon-dotnetdoc.css" title="Style">
+   </head>
+   <body>
+      <div class="contents">
+         <h3><a href="../../index.html" class="home">Saxon.Api</a></h3>
+         <ul class="list">
+            <li><a href="CollectionFinder.html">CollectionFinder</a></li>
+            <li><a href="DocumentBuilder.html">DocumentBuilder</a></li>
+            <li><a href="DomDestination.html">DomDestination</a></li>
+            <li><a href="DynamicContext.html">DynamicContext</a></li>
+            <li><a href="Error.html">Error</a></li>
+            <li><a href="ErrorReporter.html">ErrorReporter</a></li>
+            <li><a href="ExtensionFunctionCall.html">ExtensionFunctionCall</a></li>
+            <li><a href="ExtensionFunctionDefinition.html">ExtensionFunctionDefinition</a></li>
+            <li><a href="Feature.html">Feature</a></li>
+            <li><a href="FeatureKeys.html">FeatureKeys</a></li>
+            <li><a href="HostLanguage.html">HostLanguage</a></li>
+            <li><a href="IDestination.html">IDestination</a></li>
+            <li><a href="IInvalidityHandler.html">IInvalidityHandler</a></li>
+            <li><a href="IResource.html">IResource</a></li>
+            <li><a href="JsonBuilder.html">JsonBuilder</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="Message.html">Message</a></li>
+            <li><a href="NamespaceConstant.html">NamespaceConstant</a></li>
+            <li><a href="NodeResource.html">NodeResource</a></li>
+            <li><a href="NullDestination.html">NullDestination</a></li>
+            <li><a href="ParameterDetails.html">ParameterDetails</a></li>
+            <li><a href="Predicates.html">Predicates</a></li>
+            <li><a href="Processor.html">Processor</a></li>
+            <li><a href="QName.html">QName</a></li>
+            <li><a href="RawDestination.html">RawDestination</a></li>
+            <li><a href="ResourceRequest.html">ResourceRequest</a></li>
+            <li><a href="ResourceResolver.html">ResourceResolver</a></li>
+            <li><a href="ResultDocumentHandler.html">ResultDocumentHandler</a></li>
+            <li><a href="SaxonApiException.html">SaxonApiException</a></li>
+            <li><a href="SchemaManager.html">SchemaManager</a></li>
+            <li><a href="SchemaResolver.html">SchemaResolver</a></li>
+            <li><a href="SchemaValidationMode.html">SchemaValidationMode</a></li>
+            <li><a href="SchemaValidator.html">SchemaValidator</a></li>
+            <li><a href="Serializer.html">Serializer</a></li>
+            <li><a href="StaticContext.html">StaticContext</a></li>
+            <li><a href="Step.html">Step&lt;TInput, TResult&gt;</a></li>
+            <li><a href="Steps.html">Steps</a></li>
+            <li><a href="TextResource.html">TextResource</a></li>
+            <li><a href="TreeModel.html">TreeModel</a></li>
+            <li><a href="UnprefixedElementMatchingPolicy.html">UnprefixedElementMatchingPolicy</a></li>
+            <li><a href="ValidationFailure.html">ValidationFailure</a></li>
+            <li><a href="WhitespacePolicy.html">WhitespacePolicy</a></li>
+            <li><a href="XdmAnyArrayType.html">XdmAnyArrayType</a></li>
+            <li><a href="XdmAnyFunctionType.html">XdmAnyFunctionType</a></li>
+            <li><a href="XdmAnyItemType.html">XdmAnyItemType</a></li>
+            <li><a href="XdmAnyMapType.html">XdmAnyMapType</a></li>
+            <li><a href="XdmAnyNodeType.html">XdmAnyNodeType</a></li>
+            <li><a href="XdmArray.html">XdmArray</a></li>
+            <li><a href="XdmAtomicType.html">XdmAtomicType</a></li>
+            <li><a href="XdmAtomicValue.html">XdmAtomicValue</a></li>
+            <li><a href="XdmAxis.html">XdmAxis</a></li>
+            <li><a href="XdmDestination.html">XdmDestination</a></li>
+            <li><a href="XdmEmptySequence.html">XdmEmptySequence</a></li>
+            <li><a href="XdmExternalObject.html">XdmExternalObject</a></li>
+            <li><a href="XdmFunctionItem.html">XdmFunctionItem</a></li>
+            <li><a href="XdmItem.html">XdmItem</a></li>
+            <li><a href="XdmItemType.html">XdmItemType</a></li>
+            <li><a href="XdmMap.html">XdmMap</a></li>
+            <li><a href="XdmNode.html">XdmNode</a></li>
+            <li><a href="XdmNodeKind.html">XdmNodeKind</a></li>
+            <li><a href="XdmSequenceType.html">XdmSequenceType</a></li>
+            <li><a href="XdmValue.html">XdmValue</a></li>
+            <li><a href="XmlReaderResource.html">XmlReaderResource</a></li>
+            <li><a href="XmlWriterDestination.html">XmlWriterDestination</a></li>
+            <li><a href="XPathCompiler.html">XPathCompiler</a></li>
+            <li><a href="XPathExecutable.html">XPathExecutable</a></li>
+            <li><a href="XPathSelector.html">XPathSelector</a></li>
+            <li><a href="XQueryCompiler.html">XQueryCompiler</a></li>
+            <li><a href="XQueryEvaluator.html">XQueryEvaluator</a></li>
+            <li><a href="XQueryExecutable.html">XQueryExecutable</a></li>
+            <li><a href="XQueryResolver.html">XQueryResolver</a></li>
+            <li><a href="Xslt30Transformer.html">Xslt30Transformer</a></li>
+            <li><a href="XsltCompiler.html">XsltCompiler</a></li>
+            <li><a href="XsltExecutable.html">XsltExecutable</a></li>
+            <li><a href="XsltPackage.html">XsltPackage</a></li>
+            <li><a href="XsltTransformer.html">XsltTransformer</a></li>
+         </ul>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+      <div class="main">
+         <h3>Saxon.Api</h3>
+         <h1><span class="classLabel">Class&nbsp;</span>XdmItem</h1>
+         <dl>
+            <dt>Direct Known Subclasses</dt>
+            <dd><a href="XdmAtomicValue.html" class="apilink">XdmAtomicValue</a>, <a href="XdmExternalObject.html" class="apilink">XdmExternalObject</a>, <a href="XdmFunctionItem.html" class="apilink">XdmFunctionItem</a>, <a href="XdmNode.html" class="apilink">XdmNode</a></dd>
+         </dl>
+         <hr>
+         <dl>
+            <dt>
+               <div class="code">public abstract class&nbsp;XdmItem</div>
+            </dt>
+            <dt> extends <a href="XdmValue.html" class="apilink">XdmValue</a></dt>
+         </dl>
+         <p>
+            The class <code>XdmItem</code> represents an item in a sequence, as defined
+            by the XDM data model. An item may be an atomic value, a node, a function (including
+            maps
+            and arrays), or an external object.
+            </p>
+         
+         <p>An item is a member of a sequence, but it can also be considered as
+            a sequence (of length one) in its own right. <code>XdmItem</code> is a subtype
+            of <code>XdmValue</code> because every item in the XDM data model is also a
+            value.</p>
+         
+         <p>It cannot be assumed that every sequence of length one will always be 
+            represented by an <code>XdmItem</code>. It is quite possible for an <code>XdmValue</code>
+            that is not an <code>XdmItem</code> to hold a singleton sequence. Use <a href="XdmValue.html#Simplify" class="apilink">XdmValue.Simplify</a> 
+            to ensure that a singleton is represented as an <code>XdmItem</code>.</p>
+         <a name="property_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Property Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#StringValue" class="apilink">StringValue</a></span><div class="fnormal">
+                     <p>
+                        Get the string value of the item. 
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="method_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Method Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a></td>
+               <td><span class="signature"><a href="#IsAtomic()" class="apilink">IsAtomic</a> ()</span><div class="fnormal">
+                     <p>
+                        Ask whether the item is an atomic value.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a></td>
+               <td><span class="signature"><a href="#IsNode()" class="apilink">IsNode</a> ()</span><div class="fnormal">
+                     <p>
+                        Ask whether the item is a node or some other type of item.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a></td>
+               <td><span class="signature"><a href="#Matches(XdmItemType)" class="apilink">Matches</a> (<a href="XdmItemType.html" class="apilink">XdmItemType</a>&nbsp;typei)</span><div class="fnormal">
+                     <p>
+                        Ask whether this item matches a given item type.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="XdmItem.html" class="apilink">XdmItem</a></td>
+               <td><span class="signature"><a href="#WrapItem(Item)" class="apilink">WrapItem</a> (<a href="../../../javadoc/net/sf/saxon/om/Item.html" class="apilink java">net.sf.saxon.om.Item</a>&nbsp;value)</span><div class="fnormal">
+                     <p>
+                        Create an <code>XdmItem</code> from an underlying Saxon <code>Saxon.Hej.om.Item</code> object.
+                        The result is the same as applying the <code>XdmValue.Wrap</code> method, but
+                        it is returned more conveniently as an instance of <code>XdmItem</code>
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="XdmNode.html" class="apilink">XdmNode</a></td>
+               <td><span class="signature"><a href="#WrapItem(NodeInfo)" class="apilink">WrapItem</a> (<a href="../../../javadoc/net/sf/saxon/om/NodeInfo.html" class="apilink java">net.sf.saxon.om.NodeInfo</a>&nbsp;value)</span><div class="fnormal">
+                     <p>
+                        Create an <code>XdmNode</code> from an underlying Saxon <code>Saxon.Hej.om.NodeInfo</code> object.
+                        The result is the same as applying the <code>XdmValue.Wrap</code> method, but
+                        it is returned more conveniently as an instance of <code>XdmNode</code>
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="XdmAtomicValue.html" class="apilink">XdmAtomicValue</a></td>
+               <td><span class="signature"><a href="#WrapItem(AtomicValue)" class="apilink">WrapItem</a> (<a href="../../../javadoc/net/sf/saxon/value/AtomicValue.html" class="apilink java">net.sf.saxon.value.AtomicValue</a>&nbsp;value)</span><div class="fnormal">
+                     <p>
+                        Create an <code>XdmAtomicValue</code> from an underlying Saxon <code>Saxon.Hej.value.AtomicValue</code> object.
+                        The result is the same as applying the <code>XdmValue.Wrap</code> method, but
+                        it is returned more conveniently as an instance of <code>XdmAtomicValue</code>
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="property_detail"></a><div class="section">
+            <h2>Property Detail</h2><a name="StringValue"></a><div class="member">
+               <h3>StringValue</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;StringValue&nbsp;{get; }</div>
+               <p>
+                  Get the string value of the item. 
+                  </p>
+               
+               <ul>
+                  
+                  <li>For an atomic value, the result is the same as casting the value to a string.</li>
+                  
+                  <li>For a node, the method returns the string
+                     value of the node. This is not the same as the result of <a href="XdmNode.html#ToString" class="apilink">XdmNode.ToString</a>, which
+                     returns the result of serializing the node.</li>
+                  
+                  <li>For a function, including a map or array, the result is an error.</li>
+                  
+                  <li>For an external object, the result is the same as the result of calling <code>ToString()</code>
+                     on the external object.</li>
+                  </ul>
+               
+               <p>In all cases the result is the same as applying the XPath <code>string()</code> function.</p>
+               
+               <p class="methodLabel">Returns:</p>
+               <div class="params">The result of converting the item to a string.</div>
+            </div>
+         </div><a name="method_detail"></a><div class="section">
+            <h2>Method Detail</h2><a name="IsAtomic()"></a><div class="member">
+               <h3>IsAtomic</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;abstract&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a>&nbsp;IsAtomic</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Ask whether the item is an atomic value.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">
+                     True if the item is an atomic value, false if it is a node, function, or external
+                     object.
+                     </div>
+               </div>
+            </div><a name="IsNode()"></a><div class="member">
+               <h3>IsNode</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a>&nbsp;IsNode</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Ask whether the item is a node or some other type of item.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">True if the item is a node, false if it is an atomic value or a function (including
+                     maps and arrays).</div>
+               </div>
+            </div><a name="Matches(XdmItemType)"></a><div class="member">
+               <h3>Matches</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a>&nbsp;Matches</span><span class="fblock">(<a href="XdmItemType.html" class="apilink">XdmItemType</a>&nbsp;typei)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Ask whether this item matches a given item type.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>typei</code>&nbsp;-&nbsp;The item type to be tested against this item</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">True if the item matches this item type, false if it does not match.</div>
+               </div>
+            </div><a name="WrapItem(Item)"></a><div class="member">
+               <h3>WrapItem</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="XdmItem.html" class="apilink">XdmItem</a>&nbsp;WrapItem</span><span class="fblock">(<a href="../../../javadoc/net/sf/saxon/om/Item.html" class="apilink java">net.sf.saxon.om.Item</a>&nbsp;value)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Create an <code>XdmItem</code> from an underlying Saxon <code>Saxon.Hej.om.Item</code> object.
+                     The result is the same as applying the <code>XdmValue.Wrap</code> method, but
+                     it is returned more conveniently as an instance of <code>XdmItem</code>
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>value</code>&nbsp;-&nbsp;An object representing an XDM value in the
+                     underlying Saxon implementation. Must not be null.</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">An <code>XdmItem</code> that wraps the underlying Saxon XDM item
+                     representation.</div>
+               </div>
+            </div><a name="WrapItem(NodeInfo)"></a><div class="member">
+               <h3>WrapItem</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="XdmNode.html" class="apilink">XdmNode</a>&nbsp;WrapItem</span><span class="fblock">(<a href="../../../javadoc/net/sf/saxon/om/NodeInfo.html" class="apilink java">net.sf.saxon.om.NodeInfo</a>&nbsp;value)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Create an <code>XdmNode</code> from an underlying Saxon <code>Saxon.Hej.om.NodeInfo</code> object.
+                     The result is the same as applying the <code>XdmValue.Wrap</code> method, but
+                     it is returned more conveniently as an instance of <code>XdmNode</code>
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>value</code>&nbsp;-&nbsp;An object representing an XDM node in the
+                     underlying Saxon implementation. Must not be null.</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">An <code>XdmNode</code> that wraps the underlying Saxon XDM node
+                     representation.</div>
+               </div>
+            </div><a name="WrapItem(AtomicValue)"></a><div class="member">
+               <h3>WrapItem</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="XdmAtomicValue.html" class="apilink">XdmAtomicValue</a>&nbsp;WrapItem</span><span class="fblock">(<a href="../../../javadoc/net/sf/saxon/value/AtomicValue.html" class="apilink java">net.sf.saxon.value.AtomicValue</a>&nbsp;value)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Create an <code>XdmAtomicValue</code> from an underlying Saxon <code>Saxon.Hej.value.AtomicValue</code> object.
+                     The result is the same as applying the <code>XdmValue.Wrap</code> method, but
+                     it is returned more conveniently as an instance of <code>XdmAtomicValue</code>
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>value</code>&nbsp;-&nbsp;An object representing an XDM atomic value in the
+                     underlying Saxon implementation. Must not be null.</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">An <code>XdmAtomicValue</code> that wraps the underlying Saxon atomic value
+                     representation.</div>
+               </div>
+            </div>
+         </div>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+   </body>
+</html>

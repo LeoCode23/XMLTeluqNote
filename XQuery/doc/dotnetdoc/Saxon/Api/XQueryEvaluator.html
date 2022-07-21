@@ -1,0 +1,528 @@
+<!DOCTYPE HTML><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>XQueryEvaluator</title>
+      <meta name="keywords" content="Saxon.Api.XQueryEvaluator class">
+      <link rel="stylesheet" type="text/css" href="../../saxon-dotnetdoc.css" title="Style">
+   </head>
+   <body>
+      <div class="contents">
+         <h3><a href="../../index.html" class="home">Saxon.Api</a></h3>
+         <ul class="list">
+            <li><a href="CollectionFinder.html">CollectionFinder</a></li>
+            <li><a href="DocumentBuilder.html">DocumentBuilder</a></li>
+            <li><a href="DomDestination.html">DomDestination</a></li>
+            <li><a href="DynamicContext.html">DynamicContext</a></li>
+            <li><a href="Error.html">Error</a></li>
+            <li><a href="ErrorReporter.html">ErrorReporter</a></li>
+            <li><a href="ExtensionFunctionCall.html">ExtensionFunctionCall</a></li>
+            <li><a href="ExtensionFunctionDefinition.html">ExtensionFunctionDefinition</a></li>
+            <li><a href="Feature.html">Feature</a></li>
+            <li><a href="FeatureKeys.html">FeatureKeys</a></li>
+            <li><a href="HostLanguage.html">HostLanguage</a></li>
+            <li><a href="IDestination.html">IDestination</a></li>
+            <li><a href="IInvalidityHandler.html">IInvalidityHandler</a></li>
+            <li><a href="IResource.html">IResource</a></li>
+            <li><a href="JsonBuilder.html">JsonBuilder</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="Message.html">Message</a></li>
+            <li><a href="NamespaceConstant.html">NamespaceConstant</a></li>
+            <li><a href="NodeResource.html">NodeResource</a></li>
+            <li><a href="NullDestination.html">NullDestination</a></li>
+            <li><a href="ParameterDetails.html">ParameterDetails</a></li>
+            <li><a href="Predicates.html">Predicates</a></li>
+            <li><a href="Processor.html">Processor</a></li>
+            <li><a href="QName.html">QName</a></li>
+            <li><a href="RawDestination.html">RawDestination</a></li>
+            <li><a href="ResourceRequest.html">ResourceRequest</a></li>
+            <li><a href="ResourceResolver.html">ResourceResolver</a></li>
+            <li><a href="ResultDocumentHandler.html">ResultDocumentHandler</a></li>
+            <li><a href="SaxonApiException.html">SaxonApiException</a></li>
+            <li><a href="SchemaManager.html">SchemaManager</a></li>
+            <li><a href="SchemaResolver.html">SchemaResolver</a></li>
+            <li><a href="SchemaValidationMode.html">SchemaValidationMode</a></li>
+            <li><a href="SchemaValidator.html">SchemaValidator</a></li>
+            <li><a href="Serializer.html">Serializer</a></li>
+            <li><a href="StaticContext.html">StaticContext</a></li>
+            <li><a href="Step.html">Step&lt;TInput, TResult&gt;</a></li>
+            <li><a href="Steps.html">Steps</a></li>
+            <li><a href="TextResource.html">TextResource</a></li>
+            <li><a href="TreeModel.html">TreeModel</a></li>
+            <li><a href="UnprefixedElementMatchingPolicy.html">UnprefixedElementMatchingPolicy</a></li>
+            <li><a href="ValidationFailure.html">ValidationFailure</a></li>
+            <li><a href="WhitespacePolicy.html">WhitespacePolicy</a></li>
+            <li><a href="XdmAnyArrayType.html">XdmAnyArrayType</a></li>
+            <li><a href="XdmAnyFunctionType.html">XdmAnyFunctionType</a></li>
+            <li><a href="XdmAnyItemType.html">XdmAnyItemType</a></li>
+            <li><a href="XdmAnyMapType.html">XdmAnyMapType</a></li>
+            <li><a href="XdmAnyNodeType.html">XdmAnyNodeType</a></li>
+            <li><a href="XdmArray.html">XdmArray</a></li>
+            <li><a href="XdmAtomicType.html">XdmAtomicType</a></li>
+            <li><a href="XdmAtomicValue.html">XdmAtomicValue</a></li>
+            <li><a href="XdmAxis.html">XdmAxis</a></li>
+            <li><a href="XdmDestination.html">XdmDestination</a></li>
+            <li><a href="XdmEmptySequence.html">XdmEmptySequence</a></li>
+            <li><a href="XdmExternalObject.html">XdmExternalObject</a></li>
+            <li><a href="XdmFunctionItem.html">XdmFunctionItem</a></li>
+            <li><a href="XdmItem.html">XdmItem</a></li>
+            <li><a href="XdmItemType.html">XdmItemType</a></li>
+            <li><a href="XdmMap.html">XdmMap</a></li>
+            <li><a href="XdmNode.html">XdmNode</a></li>
+            <li><a href="XdmNodeKind.html">XdmNodeKind</a></li>
+            <li><a href="XdmSequenceType.html">XdmSequenceType</a></li>
+            <li><a href="XdmValue.html">XdmValue</a></li>
+            <li><a href="XmlReaderResource.html">XmlReaderResource</a></li>
+            <li><a href="XmlWriterDestination.html">XmlWriterDestination</a></li>
+            <li><a href="XPathCompiler.html">XPathCompiler</a></li>
+            <li><a href="XPathExecutable.html">XPathExecutable</a></li>
+            <li><a href="XPathSelector.html">XPathSelector</a></li>
+            <li><a href="XQueryCompiler.html">XQueryCompiler</a></li>
+            <li><a href="XQueryEvaluator.html">XQueryEvaluator</a></li>
+            <li><a href="XQueryExecutable.html">XQueryExecutable</a></li>
+            <li><a href="XQueryResolver.html">XQueryResolver</a></li>
+            <li><a href="Xslt30Transformer.html">Xslt30Transformer</a></li>
+            <li><a href="XsltCompiler.html">XsltCompiler</a></li>
+            <li><a href="XsltExecutable.html">XsltExecutable</a></li>
+            <li><a href="XsltPackage.html">XsltPackage</a></li>
+            <li><a href="XsltTransformer.html">XsltTransformer</a></li>
+         </ul>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+      <div class="main">
+         <h3>Saxon.Api</h3>
+         <h1><span class="classLabel">Class&nbsp;</span>XQueryEvaluator</h1>
+         <hr>
+         <dl>
+            <dt>
+               <div class="code">public class&nbsp;XQueryEvaluator</div>
+            </dt>
+            <dt> implements <a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span></dt>
+         </dl>
+         <p>
+            An <code>XQueryEvaluator</code> represents a compiled and loaded query ready for execution.
+            The <code>XQueryEvaluator</code> holds details of the dynamic evaluation context for the query.
+            </p>
+         
+         <p>An <code>XQueryEvaluator</code> must not be used concurrently in multiple threads. It is safe,
+            however, to reuse the object within a single thread to run the same query several
+            times.
+            Running the query does not change the context that has been established.</p>
+         
+         <p>An <code>XQueryEvaluator</code> is always constructed by running the <code>Load</code> method of
+            an <code>XQueryExecutable</code>.</p>
+         <a name="property_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Property Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="XdmItem.html" class="apilink">XdmItem</a></td>
+               <td><span class="signature"><a href="#ContextItem" class="apilink">ContextItem</a></span><div class="fnormal">
+                     <p>
+                        The context item for the query.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="ErrorReporter.html" class="apilink">ErrorReporter</a></td>
+               <td><span class="signature"><a href="#ErrorReporter" class="apilink">ErrorReporter</a></span><div class="fnormal">
+                     <p>
+                        Destination for reporting warnings and non-fatal errors (including validation errors
+                        that occur when validating constructed nodes, which will eventually cause the transformation
+                        to fail)
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="Processor.html" class="apilink">Processor</a></td>
+               <td><span class="signature"><a href="#Processor" class="apilink">Processor</a></span><div class="fnormal">
+                     <p>
+                        Get the <code>Processor</code> from which this <code>XQueryCompiler</code> was constructed
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="SchemaValidationMode.html" class="apilink">SchemaValidationMode</a></td>
+               <td><span class="signature"><a href="#SchemaValidationMode" class="apilink">SchemaValidationMode</a></span><div class="fnormal">
+                     <p>
+                        The <code>SchemaValidationMode</code> to be used in this query, especially for documents
+                        loaded using the <code>doc()</code>, <code>document()</code>, or <code>collection()</code> functions.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="ResourceResolver.html" class="apilink">ResourceResolver</a></td>
+               <td><span class="signature"><a href="#TextResolver" class="apilink">TextResolver</a></span><div class="fnormal">
+                     <p>
+                        The <code>TextResolver</code> to be used at run-time to resolve and dereference URIs
+                        supplied to the <code>unparsed-text()</code>, <code>unparsed-text-lines()</code>,
+                        <code>unparsed-text-available()</code>, and <code>json-doc()</code> functions.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.io.textwriter(VS.80).aspx" class="apilink system" target="_blank">TextWriter</a></td>
+               <td><span class="signature"><a href="#TraceFunctionDestination" class="apilink">TraceFunctionDestination</a></span><div class="fnormal">
+                     <p>
+                        Destination for output of messages produced using the <code>trace()</code> function. 
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="ResourceResolver.html" class="apilink">ResourceResolver</a></td>
+               <td><span class="signature"><a href="#XmlDocumentResolver" class="apilink">XmlDocumentResolver</a></span><div class="fnormal">
+                     <p>
+                        The <code>ResourceResolver</code> to be used at run-time to resolve and dereference URIs
+                        supplied to the <code>fn:doc()</code> and <code>fn:doc-available()</code> functions, and other functions
+                        that fetch XML resources such as <code>fn:transform</code>.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="method_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Method Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="XdmValue.html" class="apilink">XdmValue</a></td>
+               <td><span class="signature"><a href="#CallFunction(QName,XdmValue[])" class="apilink">CallFunction</a> (<a href="QName.html" class="apilink">QName</a>&nbsp;function, <a href="XdmValue.html" class="apilink">XdmValue[]</a>&nbsp;arguments)</span><div class="fnormal">
+                     <p>
+                        Call a global user-defined function in the compiled query.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="XdmValue.html" class="apilink">XdmValue</a></td>
+               <td><span class="signature"><a href="#Evaluate()" class="apilink">Evaluate</a> ()</span><div class="fnormal">
+                     <p>
+                        Evaluate the query, returning the result as an <code>XdmValue</code> (that is,
+                        a sequence of nodes and/or atomic values).
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="XdmItem.html" class="apilink">XdmItem</a></td>
+               <td><span class="signature"><a href="#EvaluateSingle()" class="apilink">EvaluateSingle</a> ()</span><div class="fnormal">
+                     <p>
+                        Evaluate the query, returning the result as an <code>XdmItem</code> (that is,
+                        a single node or atomic value).
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerator(VS.80).aspx" class="apilink system" target="_blank">IEnumerator</a></td>
+               <td><span class="signature"><a href="#GetEnumerator()" class="apilink">GetEnumerator</a> ()</span><div class="fnormal">
+                     <p>
+                        Evaluate the query, returning the result as an <code>IEnumerator</code> (that is,
+                        an enumerator over a sequence of nodes and/or atomic values).
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#Run(IDestination)" class="apilink">Run</a> (<a href="IDestination.html" class="apilink">IDestination</a>&nbsp;destination)</span><div class="fnormal">
+                     <p>
+                        Evaluate the query, sending the result to a specified destination.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#RunStreamed(Stream,Uri,IDestination)" class="apilink">RunStreamed</a> (<a href="http://msdn.microsoft.com/en-us/library/system.io.stream(VS.80).aspx" class="apilink system" target="_blank">Stream</a>&nbsp;input, <a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a>&nbsp;baseUri, <a href="IDestination.html" class="apilink">IDestination</a>&nbsp;destination)</span><div class="fnormal">
+                     <p>
+                        Execute a streamed query.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="XdmNode.html" class="apilink">XdmNode[]</a></td>
+               <td><span class="signature"><a href="#RunUpdate()" class="apilink">RunUpdate</a> ()</span><div class="fnormal">
+                     <p>
+                        Execute an updating query.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#SetExternalVariable(QName,XdmValue)" class="apilink">SetExternalVariable</a> (<a href="QName.html" class="apilink">QName</a>&nbsp;name, <a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;value)</span><div class="fnormal">
+                     <p>
+                        Set the value of an external variable declared in the query.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="property_detail"></a><div class="section">
+            <h2>Property Detail</h2><a name="ContextItem"></a><div class="member">
+               <h3>ContextItem</h3>
+               <div class="code">public&nbsp;<a href="XdmItem.html" class="apilink">XdmItem</a>&nbsp;ContextItem&nbsp;{get; set; }</div>
+               <p>
+                  The context item for the query.
+                  </p>
+               <p> This may be a node, an atomic value, or a function item such as a map or array.
+                  Most commonly it will be a document node, which might be constructed
+                  using a <code>DocumentBuilder</code> created from the <code>Processor</code> object.
+                  </p>
+            </div><a name="ErrorReporter"></a><div class="member">
+               <h3>ErrorReporter</h3>
+               <div class="code">public&nbsp;<a href="ErrorReporter.html" class="apilink">ErrorReporter</a>&nbsp;ErrorReporter&nbsp;{set; }</div>
+               <p>
+                  Destination for reporting warnings and non-fatal errors (including validation errors
+                  that occur when validating constructed nodes, which will eventually cause the transformation
+                  to fail)
+                  </p>
+            </div><a name="Processor"></a><div class="member">
+               <h3>Processor</h3>
+               <div class="code">public&nbsp;<a href="Processor.html" class="apilink">Processor</a>&nbsp;Processor&nbsp;{get; }</div>
+               <p>
+                  Get the <code>Processor</code> from which this <code>XQueryCompiler</code> was constructed
+                  </p>
+            </div><a name="SchemaValidationMode"></a><div class="member">
+               <h3>SchemaValidationMode</h3>
+               <div class="code">public&nbsp;<a href="SchemaValidationMode.html" class="apilink">SchemaValidationMode</a>&nbsp;SchemaValidationMode&nbsp;{get; set; }</div>
+               <p>
+                  The <code>SchemaValidationMode</code> to be used in this query, especially for documents
+                  loaded using the <code>doc()</code>, <code>document()</code>, or <code>collection()</code> functions.
+                  </p>
+               <p>
+                  This does not affect any document supplied as the context item for the query, or as
+                  the values
+                  of external variables.
+                  </p>
+            </div><a name="TextResolver"></a><div class="member">
+               <h3>TextResolver</h3>
+               <div class="code">public&nbsp;<a href="ResourceResolver.html" class="apilink">ResourceResolver</a>&nbsp;TextResolver&nbsp;{get; set; }</div>
+               <p>
+                  The <code>TextResolver</code> to be used at run-time to resolve and dereference URIs
+                  supplied to the <code>unparsed-text()</code>, <code>unparsed-text-lines()</code>,
+                  <code>unparsed-text-available()</code>, and <code>json-doc()</code> functions.
+                  </p>
+            </div><a name="TraceFunctionDestination"></a><div class="member">
+               <h3>TraceFunctionDestination</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.io.textwriter(VS.80).aspx" class="apilink system" target="_blank">TextWriter</a>&nbsp;TraceFunctionDestination&nbsp;{get; set; }</div>
+               <p>
+                  Destination for output of messages produced using the <code>trace()</code> function. 
+                  </p>
+               
+               <p>If no specific destination is supplied by the caller, message information will be
+                  written to
+                  the standard error stream.</p>
+               
+               <p>The supplied destination is ignored if a <code>TraceListener</code> is in use.</p>
+               
+               <p>The <code>TextWriter</code> should be closed by the caller after use.</p>
+               </div><a name="XmlDocumentResolver"></a><div class="member">
+               <h3>XmlDocumentResolver</h3>
+               <div class="code">public&nbsp;<a href="ResourceResolver.html" class="apilink">ResourceResolver</a>&nbsp;XmlDocumentResolver&nbsp;{get; set; }</div>
+               <p>
+                  The <code>ResourceResolver</code> to be used at run-time to resolve and dereference URIs
+                  supplied to the <code>fn:doc()</code> and <code>fn:doc-available()</code> functions, and other functions
+                  that fetch XML resources such as <code>fn:transform</code>.
+                  </p>
+               
+               <p>
+                  The URI supplied as the first argument to the resolver is the absolute URI requested,
+                  that is, the result of resolving the requested relative URI against the relevant base
+                  URI.
+                  </p>
+               
+               <p>The requested relative URI and the corresponding base URI are supplied as separate
+                  properties within the <code>ResourceProperties</code> argument, in case they are needed.
+                  </p>
+               
+               <p>The returned <code>IResource</code> must be one of the following:
+                  
+                  <ul>
+                     
+                     <li>An <code>IResource</code> such as a <code>NodeResource</code> or an <code>XmlReaderResource</code>
+                        whose <code>getItem()</code> method delivers an <code>XdmNode</code>;</li>
+                     
+                     <li>A <code>TextResource</code> delivering lexical XML in its <code>Content</code> property; this
+                        will then be parsed to deliver the corresponding XML document.</li>
+                     </ul>
+                  </p>
+               
+               <p>If no <code>XmlDocumentResolver</code> is supplied, or if it returns null, then
+                  the <code>CommonResourceResolver</code> associated with the Saxon Configuration is invoked.
+                  </p>
+               </div>
+         </div><a name="method_detail"></a><div class="section">
+            <h2>Method Detail</h2><a name="CallFunction(QName,XdmValue[])"></a><div class="member">
+               <h3>CallFunction</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;CallFunction</span><span class="fblock">(<a href="QName.html" class="apilink">QName</a>&nbsp;function, <br><a href="XdmValue.html" class="apilink">XdmValue[]</a>&nbsp;arguments)<br>throws<br><a href="http://msdn.microsoft.com/en-us/library/system.argumentexception(VS.80).aspx" class="apilink system" target="_blank">ArgumentException</a>, <br><a href="SaxonApiException.html" class="apilink">SaxonApiException</a></span></div>
+               <div class="fcomment">
+                  <p>
+                     Call a global user-defined function in the compiled query.
+                     </p>
+                  <p>
+                     If this is called more than once (to evaluate the same function repeatedly with different
+                     arguments,
+                     or to evaluate different functions) then the sequence of evaluations uses the same
+                     values of global
+                     variables including external variables (query parameters); the effect of any changes
+                     made to query parameters
+                     between calls is undefined.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>function</code>&nbsp;-&nbsp;
+                     The name of the function to be called
+                     </div>
+                  <div class="params"><code>arguments</code>&nbsp;-&nbsp;
+                     The values of the arguments to be supplied to the function. These
+                     must be of the correct type as defined in the function signature (there is no automatic
+                     conversion to the required type).
+                     </div>
+                  <p class="methodLabel">Throws:</p>
+                  <div class="params"><a href="http://msdn.microsoft.com/en-us/library/system.argumentexception(VS.80).aspx" class="apilink system" target="_blank">ArgumentException</a>&nbsp;-&nbsp;If no function has been defined with the given name and arity
+                     or if any of the arguments does not match its required type according to the function
+                     signature.</div>
+                  <div class="params"><a href="SaxonApiException.html" class="apilink">SaxonApiException</a>&nbsp;-&nbsp;If a dynamic error occurs in evaluating the function.
+                     </div>
+               </div>
+            </div><a name="Evaluate()"></a><div class="member">
+               <h3>Evaluate</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;Evaluate</span><span class="fblock">()<br>throws<br><a href="SaxonApiException.html" class="apilink">SaxonApiException</a></span></div>
+               <div class="fcomment">
+                  <p>
+                     Evaluate the query, returning the result as an <code>XdmValue</code> (that is,
+                     a sequence of nodes and/or atomic values).
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">
+                     An <code>XdmValue</code> representing the results of the query
+                     </div>
+                  <p class="methodLabel">Throws:</p>
+                  <div class="params"><a href="SaxonApiException.html" class="apilink">SaxonApiException</a>&nbsp;-&nbsp;Throws a <code>SaxonApiException</code> if any run-time failure
+                     occurs while evaluating the query.</div>
+               </div>
+            </div><a name="EvaluateSingle()"></a><div class="member">
+               <h3>EvaluateSingle</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="XdmItem.html" class="apilink">XdmItem</a>&nbsp;EvaluateSingle</span><span class="fblock">()<br>throws<br><a href="SaxonApiException.html" class="apilink">SaxonApiException</a></span></div>
+               <div class="fcomment">
+                  <p>
+                     Evaluate the query, returning the result as an <code>XdmItem</code> (that is,
+                     a single node or atomic value).
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">
+                     An <code>XdmItem</code> representing the result of the query, or null if the query
+                     returns an empty sequence. If the query returns a sequence of more than one item,
+                     any items after the first are ignored.
+                     </div>
+                  <p class="methodLabel">Throws:</p>
+                  <div class="params"><a href="SaxonApiException.html" class="apilink">SaxonApiException</a>&nbsp;-&nbsp;Throws a <code>DynamicError</code> if any run-time failure
+                     occurs while evaluating the expression.</div>
+               </div>
+            </div><a name="GetEnumerator()"></a><div class="member">
+               <h3>GetEnumerator</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerator(VS.80).aspx" class="apilink system" target="_blank">IEnumerator</a>&nbsp;GetEnumerator</span><span class="fblock">()<br>throws<br><a href="SaxonApiException.html" class="apilink">SaxonApiException</a></span></div>
+               <div class="fcomment">
+                  <p>
+                     Evaluate the query, returning the result as an <code>IEnumerator</code> (that is,
+                     an enumerator over a sequence of nodes and/or atomic values).
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">
+                     An enumerator over the sequence that represents the results of the query.
+                     Each object in this sequence will be an instance of <code>XdmItem</code>. Note
+                     that the query may be evaluated lazily, which means that a successful response
+                     from this method does not imply that the query has executed successfully: failures
+                     may be reported later while retrieving items from the iterator. 
+                     </div>
+                  <p class="methodLabel">Throws:</p>
+                  <div class="params"><a href="SaxonApiException.html" class="apilink">SaxonApiException</a>&nbsp;-&nbsp;Throws a <code>SaxonApiException</code> if any run-time failure
+                     occurs while evaluating the expression.</div>
+               </div>
+            </div><a name="Run(IDestination)"></a><div class="member">
+               <h3>Run</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;Run</span><span class="fblock">(<a href="IDestination.html" class="apilink">IDestination</a>&nbsp;destination)<br>throws<br><a href="SaxonApiException.html" class="apilink">SaxonApiException</a></span></div>
+               <div class="fcomment">
+                  <p>
+                     Evaluate the query, sending the result to a specified destination.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>destination</code>&nbsp;-&nbsp;
+                     The destination for the results of the query. The class <code>XmlDestination</code>
+                     is an abstraction that allows a number of different kinds of destination
+                     to be specified.
+                     </div>
+                  <p class="methodLabel">Throws:</p>
+                  <div class="params"><a href="SaxonApiException.html" class="apilink">SaxonApiException</a>&nbsp;-&nbsp;Throws a <code>DynamicError</code> if any run-time failure
+                     occurs while evaluating the expression.</div>
+               </div>
+            </div><a name="RunStreamed(Stream,Uri,IDestination)"></a><div class="member">
+               <h3>RunStreamed</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;RunStreamed</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.io.stream(VS.80).aspx" class="apilink system" target="_blank">Stream</a>&nbsp;input, <br><a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a>&nbsp;baseUri, <br><a href="IDestination.html" class="apilink">IDestination</a>&nbsp;destination)<br>throws<br><a href="SaxonApiException.html" class="apilink">SaxonApiException</a></span></div>
+               <div class="fcomment">
+                  <p>
+                     Execute a streamed query.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>input</code>&nbsp;-&nbsp;The input stream, which must contain a well-formed XML document</div>
+                  <div class="params"><code>baseUri</code>&nbsp;-&nbsp;The base URI of the document supplied on the input stream</div>
+                  <div class="params"><code>destination</code>&nbsp;-&nbsp;The destination to which the query result will be sent</div>
+                  <p class="methodLabel">Throws:</p>
+                  <div class="params"><a href="SaxonApiException.html" class="apilink">SaxonApiException</a>&nbsp;-&nbsp;Throws a <code>SaxonApiException</code> if any run-time failure
+                     occurs while evaluating the query, or if the query execution cannot be streamed.</div>
+               </div>
+            </div><a name="RunUpdate()"></a><div class="member">
+               <h3>RunUpdate</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="XdmNode.html" class="apilink">XdmNode[]</a>&nbsp;RunUpdate</span><span class="fblock">()<br>throws<br><a href="SaxonApiException.html" class="apilink">SaxonApiException</a></span></div>
+               <div class="fcomment">
+                  <p>
+                     Execute an updating query.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">An array containing the root nodes of documents that have been
+                     updated by the query.</div>
+                  <p class="methodLabel">Throws:</p>
+                  <div class="params"><a href="SaxonApiException.html" class="apilink">SaxonApiException</a>&nbsp;-&nbsp;Throws a <code>SaxonApiException</code> if any run-time failure
+                     occurs while evaluating the expression, or if the expression is not an
+                     updating query.</div>
+               </div>
+            </div><a name="SetExternalVariable(QName,XdmValue)"></a><div class="member">
+               <h3>SetExternalVariable</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;SetExternalVariable</span><span class="fblock">(<a href="QName.html" class="apilink">QName</a>&nbsp;name, <br><a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;value)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Set the value of an external variable declared in the query.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>name</code>&nbsp;-&nbsp;The name of the external variable, expressed
+                     as a <code>QName</code>. If an external variable of this name has been declared in the
+                     query prolog, the given value will be assigned to the variable. If the
+                     variable has not been declared, calling this method has no effect (it is
+                     not an error).</div>
+                  <div class="params"><code>value</code>&nbsp;-&nbsp;The value to be given to the external variable.
+                     If the variable declaration defines a required type for the variable, then
+                     this value must match the required type: no conversions are applied.</div>
+               </div>
+            </div>
+         </div>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+   </body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE HTML><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>ValidationFailure</title>
+      <meta name="keywords" content="Saxon.Api.ValidationFailure class">
+      <link rel="stylesheet" type="text/css" href="../../saxon-dotnetdoc.css" title="Style">
+   </head>
+   <body>
+      <div class="contents">
+         <h3><a href="../../index.html" class="home">Saxon.Api</a></h3>
+         <ul class="list">
+            <li><a href="CollectionFinder.html">CollectionFinder</a></li>
+            <li><a href="DocumentBuilder.html">DocumentBuilder</a></li>
+            <li><a href="DomDestination.html">DomDestination</a></li>
+            <li><a href="DynamicContext.html">DynamicContext</a></li>
+            <li><a href="Error.html">Error</a></li>
+            <li><a href="ErrorReporter.html">ErrorReporter</a></li>
+            <li><a href="ExtensionFunctionCall.html">ExtensionFunctionCall</a></li>
+            <li><a href="ExtensionFunctionDefinition.html">ExtensionFunctionDefinition</a></li>
+            <li><a href="Feature.html">Feature</a></li>
+            <li><a href="FeatureKeys.html">FeatureKeys</a></li>
+            <li><a href="HostLanguage.html">HostLanguage</a></li>
+            <li><a href="IDestination.html">IDestination</a></li>
+            <li><a href="IInvalidityHandler.html">IInvalidityHandler</a></li>
+            <li><a href="IResource.html">IResource</a></li>
+            <li><a href="JsonBuilder.html">JsonBuilder</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="Message.html">Message</a></li>
+            <li><a href="NamespaceConstant.html">NamespaceConstant</a></li>
+            <li><a href="NodeResource.html">NodeResource</a></li>
+            <li><a href="NullDestination.html">NullDestination</a></li>
+            <li><a href="ParameterDetails.html">ParameterDetails</a></li>
+            <li><a href="Predicates.html">Predicates</a></li>
+            <li><a href="Processor.html">Processor</a></li>
+            <li><a href="QName.html">QName</a></li>
+            <li><a href="RawDestination.html">RawDestination</a></li>
+            <li><a href="ResourceRequest.html">ResourceRequest</a></li>
+            <li><a href="ResourceResolver.html">ResourceResolver</a></li>
+            <li><a href="ResultDocumentHandler.html">ResultDocumentHandler</a></li>
+            <li><a href="SaxonApiException.html">SaxonApiException</a></li>
+            <li><a href="SchemaManager.html">SchemaManager</a></li>
+            <li><a href="SchemaResolver.html">SchemaResolver</a></li>
+            <li><a href="SchemaValidationMode.html">SchemaValidationMode</a></li>
+            <li><a href="SchemaValidator.html">SchemaValidator</a></li>
+            <li><a href="Serializer.html">Serializer</a></li>
+            <li><a href="StaticContext.html">StaticContext</a></li>
+            <li><a href="Step.html">Step&lt;TInput, TResult&gt;</a></li>
+            <li><a href="Steps.html">Steps</a></li>
+            <li><a href="TextResource.html">TextResource</a></li>
+            <li><a href="TreeModel.html">TreeModel</a></li>
+            <li><a href="UnprefixedElementMatchingPolicy.html">UnprefixedElementMatchingPolicy</a></li>
+            <li><a href="ValidationFailure.html">ValidationFailure</a></li>
+            <li><a href="WhitespacePolicy.html">WhitespacePolicy</a></li>
+            <li><a href="XdmAnyArrayType.html">XdmAnyArrayType</a></li>
+            <li><a href="XdmAnyFunctionType.html">XdmAnyFunctionType</a></li>
+            <li><a href="XdmAnyItemType.html">XdmAnyItemType</a></li>
+            <li><a href="XdmAnyMapType.html">XdmAnyMapType</a></li>
+            <li><a href="XdmAnyNodeType.html">XdmAnyNodeType</a></li>
+            <li><a href="XdmArray.html">XdmArray</a></li>
+            <li><a href="XdmAtomicType.html">XdmAtomicType</a></li>
+            <li><a href="XdmAtomicValue.html">XdmAtomicValue</a></li>
+            <li><a href="XdmAxis.html">XdmAxis</a></li>
+            <li><a href="XdmDestination.html">XdmDestination</a></li>
+            <li><a href="XdmEmptySequence.html">XdmEmptySequence</a></li>
+            <li><a href="XdmExternalObject.html">XdmExternalObject</a></li>
+            <li><a href="XdmFunctionItem.html">XdmFunctionItem</a></li>
+            <li><a href="XdmItem.html">XdmItem</a></li>
+            <li><a href="XdmItemType.html">XdmItemType</a></li>
+            <li><a href="XdmMap.html">XdmMap</a></li>
+            <li><a href="XdmNode.html">XdmNode</a></li>
+            <li><a href="XdmNodeKind.html">XdmNodeKind</a></li>
+            <li><a href="XdmSequenceType.html">XdmSequenceType</a></li>
+            <li><a href="XdmValue.html">XdmValue</a></li>
+            <li><a href="XmlReaderResource.html">XmlReaderResource</a></li>
+            <li><a href="XmlWriterDestination.html">XmlWriterDestination</a></li>
+            <li><a href="XPathCompiler.html">XPathCompiler</a></li>
+            <li><a href="XPathExecutable.html">XPathExecutable</a></li>
+            <li><a href="XPathSelector.html">XPathSelector</a></li>
+            <li><a href="XQueryCompiler.html">XQueryCompiler</a></li>
+            <li><a href="XQueryEvaluator.html">XQueryEvaluator</a></li>
+            <li><a href="XQueryExecutable.html">XQueryExecutable</a></li>
+            <li><a href="XQueryResolver.html">XQueryResolver</a></li>
+            <li><a href="Xslt30Transformer.html">Xslt30Transformer</a></li>
+            <li><a href="XsltCompiler.html">XsltCompiler</a></li>
+            <li><a href="XsltExecutable.html">XsltExecutable</a></li>
+            <li><a href="XsltPackage.html">XsltPackage</a></li>
+            <li><a href="XsltTransformer.html">XsltTransformer</a></li>
+         </ul>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+      <div class="main">
+         <h3>Saxon.Api</h3>
+         <h1><span class="classLabel">Class&nbsp;</span>ValidationFailure</h1>
+         <hr>
+         <dl>
+            <dt>
+               <div class="code">public class&nbsp;ValidationFailure</div>
+            </dt>
+         </dl>
+         <p>
+            This object represents a failure detected when validating an instance against a type
+            defined in a schema.
+            </p>
+         <p>
+            The object holds information about the schema constraints that were violated, and
+            the location in the instance document where the invalidity was detected. It is
+            not an exception, because detection of invalid instances is not considered an
+            abnormal condition and does not cause program termination.
+            </p><a name="property_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Property Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a></td>
+               <td><span class="signature"><a href="#ColumnNumber" class="apilink">ColumnNumber</a></span><div class="fnormal">
+                     <p>
+                        Return the character position where the current document event ends.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#ConstraintClauseNumber" class="apilink">ConstraintClauseNumber</a></span><div class="fnormal">
+                     <p>
+                        Get the constraint clause number.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#ConstraintName" class="apilink">ConstraintName</a></span><div class="fnormal">
+                     <p>
+                        Get the constraint name.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#ConstraintReference" class="apilink">ConstraintReference</a></span><div class="fnormal">
+                     <p>
+                        Get the constraint name and clause in the format defined in XML Schema Part C (Outcome
+                        Tabulations).
+                        This mandates the format validation-rule-name.clause-number
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#ContextPath" class="apilink">ContextPath</a></span><div class="fnormal">
+                     <p>
+                        Get additional location text, if any.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#ErrorCode" class="apilink">ErrorCode</a></span><div class="fnormal">
+                     <p>
+                        Get the error code associated with the validity error. This is relevant only when
+                        validation
+                        is run from within XSLT or XQuery, which define different error codes for validation
+                        errors.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a></td>
+               <td><span class="signature"><a href="#LineNumber" class="apilink">LineNumber</a></span><div class="fnormal">
+                     <p>
+                        Return the line number where the current document event ends.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#Message" class="apilink">Message</a></span><div class="fnormal">
+                     <p>
+                        Get the text of a message explaining what is wrong.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#Path" class="apilink">Path</a></span><div class="fnormal">
+                     <p>
+                        Get a hierarchic path giving the logical position in the instance document where the
+                        validation error was found.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#PublicId" class="apilink">PublicId</a></span><div class="fnormal">
+                     <p>
+                        Return the public identifier for the current document event.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a></td>
+               <td><span class="signature"><a href="#SchemaPart" class="apilink">SchemaPart</a></span><div class="fnormal">
+                     <p>
+                        Get the "schema part" component of the constraint reference.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#SystemId" class="apilink">SystemId</a></span><div class="fnormal">
+                     <p>
+                        Return the system identifier for the current document event.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="property_detail"></a><div class="section">
+            <h2>Property Detail</h2><a name="ColumnNumber"></a><div class="member">
+               <h3>ColumnNumber</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a>&nbsp;ColumnNumber&nbsp;{get; }</div>
+               <p>
+                  Return the character position where the current document event ends.
+                  </p>
+               <p class="methodLabel">Returns:</p>
+               <div class="params">the column number, or -1 if none is available</div>
+            </div><a name="ConstraintClauseNumber"></a><div class="member">
+               <h3>ConstraintClauseNumber</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;ConstraintClauseNumber&nbsp;{get; }</div>
+               <p>
+                  Get the constraint clause number.
+                  </p>
+               <p class="methodLabel">Returns:</p>
+               <div class="params">The section number of the clause containing the constraint that has been violated.
+                  Generally a decimal number in the form n.n.n; possibly a sequence of such numbers
+                  separated
+                  by semicolons.Or null if the information is not available.</div>
+            </div><a name="ConstraintName"></a><div class="member">
+               <h3>ConstraintName</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;ConstraintName&nbsp;{get; }</div>
+               <p>
+                  Get the constraint name.
+                  </p>
+               <p class="methodLabel">Returns:</p>
+               <div class="params">The name of the violated constraint, in the form of a fragment identifier within
+                  the published XML Schema specification; or null if the information is not available.</div>
+            </div><a name="ConstraintReference"></a><div class="member">
+               <h3>ConstraintReference</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;ConstraintReference&nbsp;{get; }</div>
+               <p>
+                  Get the constraint name and clause in the format defined in XML Schema Part C (Outcome
+                  Tabulations).
+                  This mandates the format validation-rule-name.clause-number
+                  </p>
+               <p class="methodLabel">Returns:</p>
+               <div class="params">The constraint reference, for example "cos-ct-extends.1.2"; or null if the reference
+                  is not known.</div>
+            </div><a name="ContextPath"></a><div class="member">
+               <h3>ContextPath</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;ContextPath&nbsp;{get; }</div>
+               <p>
+                  Get additional location text, if any.
+                  </p>
+               <p class="methodLabel">Returns:</p>
+               <div class="params">Additional information about the location of the error, designed to be output
+                  as a prefix to the error message if desired.</div>
+            </div><a name="ErrorCode"></a><div class="member">
+               <h3>ErrorCode</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;ErrorCode&nbsp;{get; }</div>
+               <p>
+                  Get the error code associated with the validity error. This is relevant only when
+                  validation
+                  is run from within XSLT or XQuery, which define different error codes for validation
+                  errors.
+                  </p>
+               <p class="methodLabel">Returns:</p>
+               <div class="params">The error code associated with the error, if any. The error is returned as a simple
+                  string if it is in the standard error namespace, or as an EQName (that is Q{uri}local)
+                  
+                  otherwise.</div>
+            </div><a name="LineNumber"></a><div class="member">
+               <h3>LineNumber</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a>&nbsp;LineNumber&nbsp;{get; }</div>
+               <p>
+                  Return the line number where the current document event ends.
+                  </p>
+               <p class="methodLabel">Returns:</p>
+               <div class="params">The line number, or -1 if none is available.</div>
+            </div><a name="Message"></a><div class="member">
+               <h3>Message</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;Message&nbsp;{get; }</div>
+               <p>
+                  Get the text of a message explaining what is wrong.
+                  </p>
+               <p class="methodLabel">Returns:</p>
+               <div class="params">A human-readable message explaining the validity error.</div>
+            </div><a name="Path"></a><div class="member">
+               <h3>Path</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;Path&nbsp;{get; }</div>
+               <p>
+                  Get a hierarchic path giving the logical position in the instance document where the
+                  validation error was found.
+                  </p>
+               <p class="methodLabel">Returns:</p>
+               <div class="params">A path to the location in the document.</div>
+            </div><a name="PublicId"></a><div class="member">
+               <h3>PublicId</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;PublicId&nbsp;{get; }</div>
+               <p>
+                  Return the public identifier for the current document event.
+                  </p>
+               <p class="methodLabel">Returns:</p>
+               <div class="params">A string containing the public identifier, or null if none is available.</div>
+            </div><a name="SchemaPart"></a><div class="member">
+               <h3>SchemaPart</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a>&nbsp;SchemaPart&nbsp;{get; }</div>
+               <p>
+                  Get the "schema part" component of the constraint reference.
+                  </p>
+               <p class="methodLabel">Returns:</p>
+               <div class="params">1 or 2 depending on whether the violated constraint is in XML Schema Part 1 or Part
+                  2;
+                  or -1 if there is no constraint reference.</div>
+            </div><a name="SystemId"></a><div class="member">
+               <h3>SystemId</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;SystemId&nbsp;{get; }</div>
+               <p>
+                  Return the system identifier for the current document event.
+                  </p>
+               <p class="methodLabel">Returns:</p>
+               <div class="params">A string containing the system identifier, or null if none is available.</div>
+            </div>
+         </div>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+   </body>
+</html>

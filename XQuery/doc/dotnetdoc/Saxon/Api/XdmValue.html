@@ -1,0 +1,747 @@
+<!DOCTYPE HTML><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>XdmValue</title>
+      <meta name="keywords" content="Saxon.Api.XdmValue class">
+      <link rel="stylesheet" type="text/css" href="../../saxon-dotnetdoc.css" title="Style">
+   </head>
+   <body>
+      <div class="contents">
+         <h3><a href="../../index.html" class="home">Saxon.Api</a></h3>
+         <ul class="list">
+            <li><a href="CollectionFinder.html">CollectionFinder</a></li>
+            <li><a href="DocumentBuilder.html">DocumentBuilder</a></li>
+            <li><a href="DomDestination.html">DomDestination</a></li>
+            <li><a href="DynamicContext.html">DynamicContext</a></li>
+            <li><a href="Error.html">Error</a></li>
+            <li><a href="ErrorReporter.html">ErrorReporter</a></li>
+            <li><a href="ExtensionFunctionCall.html">ExtensionFunctionCall</a></li>
+            <li><a href="ExtensionFunctionDefinition.html">ExtensionFunctionDefinition</a></li>
+            <li><a href="Feature.html">Feature</a></li>
+            <li><a href="FeatureKeys.html">FeatureKeys</a></li>
+            <li><a href="HostLanguage.html">HostLanguage</a></li>
+            <li><a href="IDestination.html">IDestination</a></li>
+            <li><a href="IInvalidityHandler.html">IInvalidityHandler</a></li>
+            <li><a href="IResource.html">IResource</a></li>
+            <li><a href="JsonBuilder.html">JsonBuilder</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="Message.html">Message</a></li>
+            <li><a href="NamespaceConstant.html">NamespaceConstant</a></li>
+            <li><a href="NodeResource.html">NodeResource</a></li>
+            <li><a href="NullDestination.html">NullDestination</a></li>
+            <li><a href="ParameterDetails.html">ParameterDetails</a></li>
+            <li><a href="Predicates.html">Predicates</a></li>
+            <li><a href="Processor.html">Processor</a></li>
+            <li><a href="QName.html">QName</a></li>
+            <li><a href="RawDestination.html">RawDestination</a></li>
+            <li><a href="ResourceRequest.html">ResourceRequest</a></li>
+            <li><a href="ResourceResolver.html">ResourceResolver</a></li>
+            <li><a href="ResultDocumentHandler.html">ResultDocumentHandler</a></li>
+            <li><a href="SaxonApiException.html">SaxonApiException</a></li>
+            <li><a href="SchemaManager.html">SchemaManager</a></li>
+            <li><a href="SchemaResolver.html">SchemaResolver</a></li>
+            <li><a href="SchemaValidationMode.html">SchemaValidationMode</a></li>
+            <li><a href="SchemaValidator.html">SchemaValidator</a></li>
+            <li><a href="Serializer.html">Serializer</a></li>
+            <li><a href="StaticContext.html">StaticContext</a></li>
+            <li><a href="Step.html">Step&lt;TInput, TResult&gt;</a></li>
+            <li><a href="Steps.html">Steps</a></li>
+            <li><a href="TextResource.html">TextResource</a></li>
+            <li><a href="TreeModel.html">TreeModel</a></li>
+            <li><a href="UnprefixedElementMatchingPolicy.html">UnprefixedElementMatchingPolicy</a></li>
+            <li><a href="ValidationFailure.html">ValidationFailure</a></li>
+            <li><a href="WhitespacePolicy.html">WhitespacePolicy</a></li>
+            <li><a href="XdmAnyArrayType.html">XdmAnyArrayType</a></li>
+            <li><a href="XdmAnyFunctionType.html">XdmAnyFunctionType</a></li>
+            <li><a href="XdmAnyItemType.html">XdmAnyItemType</a></li>
+            <li><a href="XdmAnyMapType.html">XdmAnyMapType</a></li>
+            <li><a href="XdmAnyNodeType.html">XdmAnyNodeType</a></li>
+            <li><a href="XdmArray.html">XdmArray</a></li>
+            <li><a href="XdmAtomicType.html">XdmAtomicType</a></li>
+            <li><a href="XdmAtomicValue.html">XdmAtomicValue</a></li>
+            <li><a href="XdmAxis.html">XdmAxis</a></li>
+            <li><a href="XdmDestination.html">XdmDestination</a></li>
+            <li><a href="XdmEmptySequence.html">XdmEmptySequence</a></li>
+            <li><a href="XdmExternalObject.html">XdmExternalObject</a></li>
+            <li><a href="XdmFunctionItem.html">XdmFunctionItem</a></li>
+            <li><a href="XdmItem.html">XdmItem</a></li>
+            <li><a href="XdmItemType.html">XdmItemType</a></li>
+            <li><a href="XdmMap.html">XdmMap</a></li>
+            <li><a href="XdmNode.html">XdmNode</a></li>
+            <li><a href="XdmNodeKind.html">XdmNodeKind</a></li>
+            <li><a href="XdmSequenceType.html">XdmSequenceType</a></li>
+            <li><a href="XdmValue.html">XdmValue</a></li>
+            <li><a href="XmlReaderResource.html">XmlReaderResource</a></li>
+            <li><a href="XmlWriterDestination.html">XmlWriterDestination</a></li>
+            <li><a href="XPathCompiler.html">XPathCompiler</a></li>
+            <li><a href="XPathExecutable.html">XPathExecutable</a></li>
+            <li><a href="XPathSelector.html">XPathSelector</a></li>
+            <li><a href="XQueryCompiler.html">XQueryCompiler</a></li>
+            <li><a href="XQueryEvaluator.html">XQueryEvaluator</a></li>
+            <li><a href="XQueryExecutable.html">XQueryExecutable</a></li>
+            <li><a href="XQueryResolver.html">XQueryResolver</a></li>
+            <li><a href="Xslt30Transformer.html">Xslt30Transformer</a></li>
+            <li><a href="XsltCompiler.html">XsltCompiler</a></li>
+            <li><a href="XsltExecutable.html">XsltExecutable</a></li>
+            <li><a href="XsltPackage.html">XsltPackage</a></li>
+            <li><a href="XsltTransformer.html">XsltTransformer</a></li>
+         </ul>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+      <div class="main">
+         <h3>Saxon.Api</h3>
+         <h1><span class="classLabel">Class&nbsp;</span>XdmValue</h1>
+         <dl>
+            <dt>Direct Known Subclasses</dt>
+            <dd><a href="XdmEmptySequence.html" class="apilink">XdmEmptySequence</a>, <a href="XdmItem.html" class="apilink">XdmItem</a></dd>
+         </dl>
+         <hr>
+         <dl>
+            <dt>
+               <div class="code">public class&nbsp;XdmValue</div>
+            </dt>
+            <dt> implements <a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span></dt>
+         </dl>
+         <p>
+            A value in the XDM data model. A value is a sequence of zero or more
+            items, each item being an atomic value, a node, or a function item.
+            </p>
+         
+         <p>An <code>XdmValue</code> is designed to be immutable.</p>
+         
+         <p>An <code>XdmValue</code> is indexed, so you can get the n'th item in the value (starting from zero) by
+            writing <code>value[n]</code>. Alternatively, use the method <code>value.ItemAt(n)</code>.</p>
+         
+         <p>A sequence consisting of a single item <i>may</i> be represented
+            as an instance of <a href="XdmItem.html" class="apilink">XdmItem</a>, which is a subtype of <code>XdmValue</code>. However,
+            there is no guarantee that all single-item sequences will be instances of
+            <code>XdmItem</code>: if you want to ensure this, use the <a href="XdmValue.html#Simplify" class="apilink">XdmValue.Simplify</a> method.</p>
+         
+         <p>There are various ways of creating an <code>XdmValue</code>. To create an atomic
+            value, use one of the constructors on <a href="XdmAtomicValue.html" class="apilink">XdmAtomicValue</a> (which is a subtype of <code>XdmValue</code>).
+            To construct an <a href="XdmNode.html" class="apilink">XdmNode</a> (another subtype) by parsing an XML document, or by wrapping a DOM document,
+            use a <a href="DocumentBuilder.html" class="apilink">DocumentBuilder</a>. To create a sequence of values, use the <a href="XdmValue.html#Append(XdmValue)" class="apilink">XdmValue.Append(XdmValue)</a>
+            method on this class to form a list from individual items or sub-lists.</p>
+         
+         <p>An <code>XdmValue</code> is also returned as the result of evaluating a query
+            using the XQuery and XPath interfaces.</p>
+         
+         <p>The subtype <a href="XdmEmptySequence.html" class="apilink">XdmEmptySequence</a> represents an empty sequence: an
+            <code>XdmValue</code> of length zero. Again, there is no guarantee that every empty sequence
+            will be represented as an instance of <code>XdmEmptySequence</code>, unless you use
+            the <a href="XdmValue.html#Simplify" class="apilink">XdmValue.Simplify</a> method.</p>
+         <a name="constructor_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Constructor Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#XdmValue(IEnumerator)" class="apilink">XdmValue</a> (<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerator(VS.80).aspx" class="apilink system" target="_blank">IEnumerator</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span>&nbsp;items)</span><div class="fnormal">
+                     <p>
+                        Create an <code>XdmValue</code> from an enumerator of <code>XdmItem</code> objects.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#XdmValue(IEnumerable)" class="apilink">XdmValue</a> (<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span>&nbsp;items)</span><div class="fnormal">
+                     <p>
+                        Create a value from a collection of items.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="property_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Property Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a></td>
+               <td><span class="signature"><a href="#Count" class="apilink">Count</a></span><div class="fnormal">
+                     <p>
+                        Get the number of items in the sequence.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a></td>
+               <td><span class="signature"><a href="#Empty" class="apilink">Empty</a></span><div class="fnormal">
+                     <p>
+                        Ask whether the sequence is empty.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="indexer_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Indexer Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="XdmItem.html" class="apilink">XdmItem</a></td>
+               <td><span class="signature"><a href="#Item" class="apilink">Item</a> [<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a>&nbsp;index]</span><div class="fnormal">
+                     <p>
+                        Get a selected item in the sequence by position, counting from zero.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="method_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Method Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<span class="operator">&lt;T&gt;</span>&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a></td>
+               <td><span class="signature"><a href="#AllMatch(Predicate)" class="apilink">AllMatch</a> (<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;T&gt;</span>&nbsp;predicate)</span><div class="fnormal">
+                     <p>
+                        Ask whether all items of this <code>XdmValue</code> match the provided predicate.
+                        Might not evaluate the predicate on all items if not necessary for determining the
+                        result.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<span class="operator">&lt;T&gt;</span>&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a></td>
+               <td><span class="signature"><a href="#AnyMatch(Predicate)" class="apilink">AnyMatch</a> (<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;T&gt;</span>&nbsp;predicate)</span><div class="fnormal">
+                     <p>
+                        Ask whether any item in this <code>XdmValue</code> matches the provided predicate.
+                        Might not evaluate the predicate on all items if not necessary for 
+                        determining the result. 
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="XdmValue.html" class="apilink">XdmValue</a></td>
+               <td><span class="signature"><a href="#Append(XdmValue)" class="apilink">Append</a> (<a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;otherValue)</span><div class="fnormal">
+                     <p>
+                        Create a new <code>XdmValue</code> by concatenating the sequences of items in 
+                        this <code>XdmValue</code> and another <code>XdmValue</code>.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="XdmValue.html" class="apilink">XdmValue</a></td>
+               <td><span class="signature"><a href="#Atomize()" class="apilink">Atomize</a> ()</span><div class="fnormal">
+                     <p>
+                        Atomize a value (that is, replace nodes by their typed value)
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<span class="operator">&lt;TInput&gt;</span>&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;TInput&gt;</span></td>
+               <td><span class="signature"><a href="#Concat(IEnumerable,IEnumerable)" class="apilink">Concat</a> (<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;TInput&gt;</span>&nbsp;first, <a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;TInput&gt;</span>&nbsp;second)</span><div class="fnormal">
+                     <p>
+                        Concatenate two <code>IEnumerable</code> objects of <code>XdmItem</code> objects or items of its subclass.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="XdmValue.html" class="apilink">XdmValue</a></td>
+               <td><span class="signature"><a href="#DocumentOrder()" class="apilink">DocumentOrder</a> ()</span><div class="fnormal">
+                     <p>
+                        Return a new <code>XdmValue</code> containing the nodes present in this <code>XdmValue</code>,
+                        with duplicates eliminated, and sorted into document order.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerator(VS.80).aspx" class="apilink system" target="_blank">IEnumerator</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span></td>
+               <td><span class="signature"><a href="#GetEnumerator()" class="apilink">GetEnumerator</a> ()</span><div class="fnormal">
+                     <p>
+                        Get the sequence of items in the form of an <code>IEnumerator</code>.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ilist(VS.80).aspx" class="apilink system" target="_blank">IList</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span></td>
+               <td><span class="signature"><a href="#GetList()" class="apilink">GetList</a> ()</span><div class="fnormal">
+                     <p>
+                        Get the sequence of items in the form of an <code>IList</code>.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="XdmItem.html" class="apilink">XdmItem</a></td>
+               <td><span class="signature"><a href="#ItemAt(int)" class="apilink">ItemAt</a> (<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a>&nbsp;i)</span><div class="fnormal">
+                     <p>
+                        Get the i'th item in the value, counting from zero.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="XdmValue.html" class="apilink">XdmValue</a></td>
+               <td><span class="signature"><a href="#MakeValue(object)" class="apilink">MakeValue</a> (<a href="http://msdn.microsoft.com/en-us/library/system.object(VS.80).aspx" class="apilink system" target="_blank">object</a>&nbsp;o)</span><div class="fnormal">
+                     <p>
+                        Make an XDM value from a .NET object. 
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<span class="operator">&lt;TInput,&nbsp;TResult&gt;</span>&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;TResult&gt;</span></td>
+               <td><span class="signature"><a href="#Select(Step)" class="apilink">Select</a> (<a href="Step.html" class="apilink">Step</a><span class="operator">&lt;TInput,&nbsp;TResult&gt;</span>&nbsp;step)</span><div class="fnormal">
+                     <p>
+                        Get an <code>IEnumerable</code> by applying a <code>Step</code> to the items in this value. This operation
+                        is analogous to the <code>SelectMany</code> operation in C#, or to the "!" operator
+                        in XPath.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="XdmValue.html" class="apilink">XdmValue</a></td>
+               <td><span class="signature"><a href="#Simplify()" class="apilink">Simplify</a> ()</span><div class="fnormal">
+                     <p>
+                        Simplify an XDM value: that is, reduce it to the simplest possible form.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#ToString()" class="apilink">ToString</a> ()</span><div class="fnormal">
+                     <p>
+                        Create a string representation of the value. The is the result of serializing
+                        the value using the adaptive serialization method.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="../../../javadoc/net/sf/saxon/om/GroundedValue.html" class="apilink java">net.sf.saxon.om.GroundedValue</a></td>
+               <td><span class="signature"><a href="#Unwrap()" class="apilink">Unwrap</a> ()</span><div class="fnormal">
+                     <p>
+                        Extract the underlying Saxon <code>Sequence</code> object from an <code>XdmValue</code>.
+                        This method is provided for the benefit of applications that need to mix
+                        use of the Saxon .NET API with direct use of the underlying objects
+                        and methods offered by the Java implementation.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<span class="operator">&lt;T&gt;</span>&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;T&gt;</span></td>
+               <td><span class="signature"><a href="#Where(Predicate)" class="apilink">Where</a> (<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;T&gt;</span>&nbsp;predicate)</span><div class="fnormal">
+                     <p>
+                        Get the collection of items that satisfy a supplied <code>Predicate</code>.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="XdmValue.html" class="apilink">XdmValue</a></td>
+               <td><span class="signature"><a href="#Wrap(Sequence)" class="apilink">Wrap</a> (<a href="../../../javadoc/net/sf/saxon/om/Sequence.html" class="apilink java">net.sf.saxon.om.Sequence</a>&nbsp;value)</span><div class="fnormal">
+                     <p>
+                        Create an <code>XdmValue</code> from an underlying Saxon <code>Sequence</code> object.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="constructor_detail"></a><div class="section">
+            <h2>Constructor Detail</h2><a name="XdmValue(IEnumerator)"></a><div class="member">
+               <h3>XdmValue</h3>
+               <div class="code">public&nbsp;XdmValue(<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerator(VS.80).aspx" class="apilink system" target="_blank">IEnumerator</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span>&nbsp;items)</div>
+               <p>
+                  Create an <code>XdmValue</code> from an enumerator of <code>XdmItem</code> objects.
+                  </p>
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>items</code>&nbsp;-&nbsp;An enumerator of <code>XdmItem</code> objects</div>
+            </div><a name="XdmValue(IEnumerable)"></a><div class="member">
+               <h3>XdmValue</h3>
+               <div class="code">public&nbsp;XdmValue(<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span>&nbsp;items)</div>
+               <p>
+                  Create a value from a collection of items.
+                  </p>
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>items</code>&nbsp;-&nbsp;An enumerable collection providing the items to make up the sequence. Every
+                  member of this collection must be an instance of <code>XdmItem</code>
+                  </div>
+            </div>
+         </div><a name="property_detail"></a><div class="section">
+            <h2>Property Detail</h2><a name="Count"></a><div class="member">
+               <h3>Count</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a>&nbsp;Count&nbsp;{get; }</div>
+               <p>
+                  Get the number of items in the sequence.
+                  </p>
+               <p class="methodLabel">Returns:</p>
+               <div class="params">
+                  The number of items in the sequence. Note that for a single item (including
+                  a map or an array) this always returns 1 (one).
+                  </div>
+            </div><a name="Empty"></a><div class="member">
+               <h3>Empty</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a>&nbsp;Empty&nbsp;{get; }</div>
+               <p>
+                  Ask whether the sequence is empty.
+                  </p>
+               <p class="methodLabel">Returns:</p>
+               <div class="params">
+                  True if the length of the sequence is zero. Note: there is no guarantee that an empty
+                  sequence will always be represented by an <code>XdmEmptySequence</code> object.
+                  </div>
+            </div>
+         </div><a name="indexer_detail"></a><div class="section">
+            <h2>Indexer Detail</h2><a name="Item"></a><div class="member">
+               <h3>Item</h3>
+               <div class="code">public&nbsp;<a href="XdmItem.html" class="apilink">XdmItem</a>&nbsp;this[<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a>&nbsp;index]</div>
+               <p>
+                  Get a selected item in the sequence by position, counting from zero.
+                  </p>
+               <p>
+                  Retained for compatibility; but <code>xdmValue.ItemAt(i)</code> can also be written <code>xdmValue[i]</code>
+                  </p>
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>index</code>&nbsp;-&nbsp;The item that is required, counting the first item in the sequence as item zero.</div>
+               <p class="methodLabel">Returns:</p>
+               <div class="params">The item in the sequence at position <code>index</code>, counting from zero.</div>
+            </div>
+         </div><a name="method_detail"></a><div class="section">
+            <h2>Method Detail</h2><a name="AllMatch(Predicate)"></a><div class="member">
+               <h3>AllMatch</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a>&nbsp;AllMatch<span class="operator">&lt;T&gt;</span></span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;T&gt;</span>&nbsp;predicate)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Ask whether all items of this <code>XdmValue</code> match the provided predicate.
+                     Might not evaluate the predicate on all items if not necessary for determining the
+                     result.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>predicate</code>&nbsp;-&nbsp;The predicate to apply to items of this <code>XdmValue</code>
+                     </div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">
+                     <code>true</code> if either all items of the <code>XdmValue</code> match the provided predicate or the <code>XdmValue</code> is empty, otherwise <code>false</code>
+                     </div>
+               </div>
+            </div><a name="AnyMatch(Predicate)"></a><div class="member">
+               <h3>AnyMatch</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a>&nbsp;AnyMatch<span class="operator">&lt;T&gt;</span></span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;T&gt;</span>&nbsp;predicate)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Ask whether any item in this <code>XdmValue</code> matches the provided predicate.
+                     Might not evaluate the predicate on all items if not necessary for 
+                     determining the result. 
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>predicate</code>&nbsp;-&nbsp;The predicate to apply to items of this <code>XdmValue</code>
+                     </div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">True if any items of the <code>XdmValue</code> match the provided predicate, otherwise false.</div>
+               </div>
+            </div><a name="Append(XdmValue)"></a><div class="member">
+               <h3>Append</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;Append</span><span class="fblock">(<a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;otherValue)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Create a new <code>XdmValue</code> by concatenating the sequences of items in 
+                     this <code>XdmValue</code> and another <code>XdmValue</code>.
+                     </p>
+                  <p>
+                     Neither of the input <code>XdmValue</code> objects is modified by this operation.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>otherValue</code>&nbsp;-&nbsp;
+                     The other <code>XdmValue</code>, whose items are to be appended to the items from this <code>XdmValue</code>.
+                     </div>
+               </div>
+            </div><a name="Atomize()"></a><div class="member">
+               <h3>Atomize</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;Atomize</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Atomize a value (that is, replace nodes by their typed value)
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">
+                     The atomized value
+                     </div>
+               </div>
+            </div><a name="Concat(IEnumerable,IEnumerable)"></a><div class="member">
+               <h3>Concat</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;TInput&gt;</span>&nbsp;Concat<span class="operator">&lt;TInput&gt;</span></span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;TInput&gt;</span>&nbsp;first, <br><a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;TInput&gt;</span>&nbsp;second)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Concatenate two <code>IEnumerable</code> objects of <code>XdmItem</code> objects or items of its subclass.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>first</code>&nbsp;-&nbsp;The first enumerable object</div>
+                  <div class="params"><code>second</code>&nbsp;-&nbsp;The second enumerable object</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">The enumerable object as a result of the concatenation.</div>
+               </div>
+            </div><a name="DocumentOrder()"></a><div class="member">
+               <h3>DocumentOrder</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;DocumentOrder</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Return a new <code>XdmValue</code> containing the nodes present in this <code>XdmValue</code>,
+                     with duplicates eliminated, and sorted into document order.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">The same nodes, sorted into document order, with duplicates eliminated.</div>
+               </div>
+            </div><a name="GetEnumerator()"></a><div class="member">
+               <h3>GetEnumerator</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerator(VS.80).aspx" class="apilink system" target="_blank">IEnumerator</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span>&nbsp;GetEnumerator</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Get the sequence of items in the form of an <code>IEnumerator</code>.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">
+                     An enumeration over the list of items making up this XDM value. Each item in the list
+                     will be an object of type <code>XdmItem</code>.
+                     </div>
+               </div>
+            </div><a name="GetList()"></a><div class="member">
+               <h3>GetList</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ilist(VS.80).aspx" class="apilink system" target="_blank">IList</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span>&nbsp;GetList</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Get the sequence of items in the form of an <code>IList</code>.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">
+                     The list of items making up this XDM value. Each item in the list
+                     will be an object of type <code>XdmItem</code>.
+                     </div>
+               </div>
+            </div><a name="ItemAt(int)"></a><div class="member">
+               <h3>ItemAt</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="XdmItem.html" class="apilink">XdmItem</a>&nbsp;ItemAt</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a>&nbsp;i)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Get the i'th item in the value, counting from zero.
+                     </p>
+                  <p>
+                     Retained for compatibility; but <code>xdmValue.ItemAt(i)</code> can also be written <code>xdmValue[i]</code>
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>i</code>&nbsp;-&nbsp;The item that is required, counting the first item in the sequence as item zero.</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">The i'th item in the sequence making up the value, counting from zero.</div>
+               </div>
+            </div><a name="MakeValue(object)"></a><div class="member">
+               <h3>MakeValue</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;MakeValue</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.object(VS.80).aspx" class="apilink system" target="_blank">object</a>&nbsp;o)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Make an XDM value from a .NET object. 
+                     </p>
+                  <p>
+                     The supplied object may be any of the following:
+                     
+                     <ul>
+                        
+                        <li>An instance of <code>XdmValue</code> (for example an <code>XdmAtomicValue</code>, 
+                           <code>XdmMap</code>, <code>XdmArray</code> or <code>XdmNode</code>), which is returned unchanged</li>
+                        
+                        <li>An instance of Saxon's Java class <code>Saxon.Hej.om.Sequence</code>, which is wrapped
+                           as an <code>XdmValue</code>
+                           </li>
+                        
+                        <li>An instance of <code>IDictionary</code> (which is wrapped as an <code>XdmMap</code> using the method <a href="XdmMap.html#MakeMap(IDictionary)" class="apilink">XdmMap.MakeMap(IDictionary)</a>)</li>
+                        
+                        <li>An array of objects, which are converted by applying these rules recursively,
+                           and then wrapped as an <code>XdmArray</code>.</li>
+                        </ul>
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>o</code>&nbsp;-&nbsp;The supplied object</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">The result of conversion if successful.</div>
+               </div>
+            </div><a name="Select(Step)"></a><div class="member">
+               <h3>Select</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;TResult&gt;</span>&nbsp;Select<span class="operator">&lt;TInput,&nbsp;TResult&gt;</span></span><span class="fblock">(<a href="Step.html" class="apilink">Step</a><span class="operator">&lt;TInput,&nbsp;TResult&gt;</span>&nbsp;step)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Get an <code>IEnumerable</code> by applying a <code>Step</code> to the items in this value. This operation
+                     is analogous to the <code>SelectMany</code> operation in C#, or to the "!" operator
+                     in XPath.
+                     </p>
+                  
+                  <p>
+                     The following examples assume a <code>using static</code> declaration of the standard Steps:
+                     <code>using static Saxon.Api.Steps;</code>
+                     </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        <code>Select(Child())</code> returns a stream containing all children</li>
+                     
+                     <li>
+                        <code>Select(Child("*"))</code> returns a stream containing all element children</li>
+                     
+                     <li>
+                        <code>Select(Child("author"))</code> returns a stream containing all element children with
+                        local name "author" (regardless of namespace)</li>
+                     
+                     <li>
+                        <code>Select(Child("http://my.ns/", "author"))</code> returns a stream containing all element children with
+                        local name "author" and namespace "http://my.ns/"</li>
+                     
+                     <li>
+                        <code>Select(Descendant("author"))</code> returns a stream containing all element descendants with
+                        local name "author" (regardless of namespace)</li>
+                     
+                     <li>
+                        <code>Select(Descendant("author").Then(Attribute("name"))</code> returns a stream containing the "name"
+                        attributes of "author" descendants</li>
+                     
+                     <li>
+                        <code>Select(Path("//", "author", "@name"))</code> returns a stream containing the "name"
+                        attributes of "author" descendants</li>
+                     
+                     <li>
+                        <code>Select(Child("author").Where(AttributeEq("firstName", "Jane"))</code> returns a stream
+                        containing all the "author" children having a "firstName" attribute whose value is
+                        "Jane"</li>
+                     
+                     <li>
+                        <code>Select(Child("author").First())</code> returns the first "author" child
+                        (if there is one)</li>
+                     
+                     <li>
+                        <code>Select(Child("author").Where(attributeEq("firstName", "Jane").Last())</code> returns 
+                        the last "author" child having a "firstName" attribute whose value is "Jane" (if there
+                        is one)</li>
+                     </ul>
+                  
+                  <p>In each of the above examples except the last two, the selected nodes are returned
+                     as an <code>Enumerable&lt;XdmNode&gt;</code>,
+                     so they can be processed using a <code>foreach</code> statement.</p>
+                  
+                  <p>The <code>Select</code> method thus has comparable power to simple XPath expressions; but unlike
+                     XPath expressions, there is no run-time overhead in parsing the XPath expression and
+                     developing an
+                     execution plan.</p>
+                  
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>step</code>&nbsp;-&nbsp;The <code>Step</code> to be applied to the items in this value.</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">An <code>IEnumerable</code> of items obtained by replacing each item X in this value by the items obtained
+                     by applying the <code>Step</code> function to X.</div>
+               </div>
+            </div><a name="Simplify()"></a><div class="member">
+               <h3>Simplify</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;Simplify</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Simplify an XDM value: that is, reduce it to the simplest possible form.
+                     </p>
+                  <p>
+                     
+                     <ul>
+                        
+                        <li>If the sequence is empty, the result will be an instance of <code>XdmEmptySequence</code>
+                           </li>
+                        
+                        <li>If the sequence is a single node, the result will be an instance of <code>XdmNode</code>
+                           </li>
+                        
+                        <li>If it is a single atomic value, it will be an instance of <code>XdmAtomicValue</code>
+                           </li>
+                        
+                        <li>If it is a map, it will be an instance of <code>XdmMap</code>
+                           </li>
+                        
+                        <li>If it is an array, it will be an instance of <code>XdmArray</code>
+                           </li>
+                        
+                        <li>If it is any other kind of function, it will be an instance of <code>XdmFunctionItem</code>
+                           </li>
+                        
+                        <li>If it is a wrapper around a .NET object, it will be an instance of <code>XdmExternalObjectValue</code>
+                           </li>
+                        </ul>
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">The XDM value reduced to the simplest possible form.</div>
+               </div>
+            </div><a name="ToString()"></a><div class="member">
+               <h3>ToString</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;override&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;ToString</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Create a string representation of the value. The is the result of serializing
+                     the value using the adaptive serialization method.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A string representation of the value.</div>
+               </div>
+            </div><a name="Unwrap()"></a><div class="member">
+               <h3>Unwrap</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="../../../javadoc/net/sf/saxon/om/GroundedValue.html" class="apilink java">net.sf.saxon.om.GroundedValue</a>&nbsp;Unwrap</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Extract the underlying Saxon <code>Sequence</code> object from an <code>XdmValue</code>.
+                     This method is provided for the benefit of applications that need to mix
+                     use of the Saxon .NET API with direct use of the underlying objects
+                     and methods offered by the Java implementation.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">An object representing the XDM value in the
+                     underlying Saxon implementation.</div>
+               </div>
+            </div><a name="Where(Predicate)"></a><div class="member">
+               <h3>Where</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;T&gt;</span>&nbsp;Where<span class="operator">&lt;T&gt;</span></span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;T&gt;</span>&nbsp;predicate)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Get the collection of items that satisfy a supplied <code>Predicate</code>.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>predicate</code>&nbsp;-&nbsp;The predicate to be applied</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">An enumerable of items that satisfy the suppplied <code>Predicate</code>.</div>
+               </div>
+            </div><a name="Wrap(Sequence)"></a><div class="member">
+               <h3>Wrap</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;Wrap</span><span class="fblock">(<a href="../../../javadoc/net/sf/saxon/om/Sequence.html" class="apilink java">net.sf.saxon.om.Sequence</a>&nbsp;value)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Create an <code>XdmValue</code> from an underlying Saxon <code>Sequence</code> object.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>value</code>&nbsp;-&nbsp;An object representing an XDM value in the
+                     underlying Saxon implementation. If the parameter is null,
+                     the method returns null.</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">An <code>XdmValue</code> that wraps the underlying Saxon XDM value
+                     representation.</div>
+               </div>
+            </div>
+         </div>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+   </body>
+</html>

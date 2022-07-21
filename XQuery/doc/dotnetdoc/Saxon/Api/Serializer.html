@@ -1,0 +1,942 @@
+<!DOCTYPE HTML><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Serializer</title>
+      <meta name="keywords" content="Saxon.Api.Serializer class">
+      <link rel="stylesheet" type="text/css" href="../../saxon-dotnetdoc.css" title="Style">
+   </head>
+   <body>
+      <div class="contents">
+         <h3><a href="../../index.html" class="home">Saxon.Api</a></h3>
+         <ul class="list">
+            <li><a href="CollectionFinder.html">CollectionFinder</a></li>
+            <li><a href="DocumentBuilder.html">DocumentBuilder</a></li>
+            <li><a href="DomDestination.html">DomDestination</a></li>
+            <li><a href="DynamicContext.html">DynamicContext</a></li>
+            <li><a href="Error.html">Error</a></li>
+            <li><a href="ErrorReporter.html">ErrorReporter</a></li>
+            <li><a href="ExtensionFunctionCall.html">ExtensionFunctionCall</a></li>
+            <li><a href="ExtensionFunctionDefinition.html">ExtensionFunctionDefinition</a></li>
+            <li><a href="Feature.html">Feature</a></li>
+            <li><a href="FeatureKeys.html">FeatureKeys</a></li>
+            <li><a href="HostLanguage.html">HostLanguage</a></li>
+            <li><a href="IDestination.html">IDestination</a></li>
+            <li><a href="IInvalidityHandler.html">IInvalidityHandler</a></li>
+            <li><a href="IResource.html">IResource</a></li>
+            <li><a href="JsonBuilder.html">JsonBuilder</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="Message.html">Message</a></li>
+            <li><a href="NamespaceConstant.html">NamespaceConstant</a></li>
+            <li><a href="NodeResource.html">NodeResource</a></li>
+            <li><a href="NullDestination.html">NullDestination</a></li>
+            <li><a href="ParameterDetails.html">ParameterDetails</a></li>
+            <li><a href="Predicates.html">Predicates</a></li>
+            <li><a href="Processor.html">Processor</a></li>
+            <li><a href="QName.html">QName</a></li>
+            <li><a href="RawDestination.html">RawDestination</a></li>
+            <li><a href="ResourceRequest.html">ResourceRequest</a></li>
+            <li><a href="ResourceResolver.html">ResourceResolver</a></li>
+            <li><a href="ResultDocumentHandler.html">ResultDocumentHandler</a></li>
+            <li><a href="SaxonApiException.html">SaxonApiException</a></li>
+            <li><a href="SchemaManager.html">SchemaManager</a></li>
+            <li><a href="SchemaResolver.html">SchemaResolver</a></li>
+            <li><a href="SchemaValidationMode.html">SchemaValidationMode</a></li>
+            <li><a href="SchemaValidator.html">SchemaValidator</a></li>
+            <li><a href="Serializer.html">Serializer</a></li>
+            <li><a href="StaticContext.html">StaticContext</a></li>
+            <li><a href="Step.html">Step&lt;TInput, TResult&gt;</a></li>
+            <li><a href="Steps.html">Steps</a></li>
+            <li><a href="TextResource.html">TextResource</a></li>
+            <li><a href="TreeModel.html">TreeModel</a></li>
+            <li><a href="UnprefixedElementMatchingPolicy.html">UnprefixedElementMatchingPolicy</a></li>
+            <li><a href="ValidationFailure.html">ValidationFailure</a></li>
+            <li><a href="WhitespacePolicy.html">WhitespacePolicy</a></li>
+            <li><a href="XdmAnyArrayType.html">XdmAnyArrayType</a></li>
+            <li><a href="XdmAnyFunctionType.html">XdmAnyFunctionType</a></li>
+            <li><a href="XdmAnyItemType.html">XdmAnyItemType</a></li>
+            <li><a href="XdmAnyMapType.html">XdmAnyMapType</a></li>
+            <li><a href="XdmAnyNodeType.html">XdmAnyNodeType</a></li>
+            <li><a href="XdmArray.html">XdmArray</a></li>
+            <li><a href="XdmAtomicType.html">XdmAtomicType</a></li>
+            <li><a href="XdmAtomicValue.html">XdmAtomicValue</a></li>
+            <li><a href="XdmAxis.html">XdmAxis</a></li>
+            <li><a href="XdmDestination.html">XdmDestination</a></li>
+            <li><a href="XdmEmptySequence.html">XdmEmptySequence</a></li>
+            <li><a href="XdmExternalObject.html">XdmExternalObject</a></li>
+            <li><a href="XdmFunctionItem.html">XdmFunctionItem</a></li>
+            <li><a href="XdmItem.html">XdmItem</a></li>
+            <li><a href="XdmItemType.html">XdmItemType</a></li>
+            <li><a href="XdmMap.html">XdmMap</a></li>
+            <li><a href="XdmNode.html">XdmNode</a></li>
+            <li><a href="XdmNodeKind.html">XdmNodeKind</a></li>
+            <li><a href="XdmSequenceType.html">XdmSequenceType</a></li>
+            <li><a href="XdmValue.html">XdmValue</a></li>
+            <li><a href="XmlReaderResource.html">XmlReaderResource</a></li>
+            <li><a href="XmlWriterDestination.html">XmlWriterDestination</a></li>
+            <li><a href="XPathCompiler.html">XPathCompiler</a></li>
+            <li><a href="XPathExecutable.html">XPathExecutable</a></li>
+            <li><a href="XPathSelector.html">XPathSelector</a></li>
+            <li><a href="XQueryCompiler.html">XQueryCompiler</a></li>
+            <li><a href="XQueryEvaluator.html">XQueryEvaluator</a></li>
+            <li><a href="XQueryExecutable.html">XQueryExecutable</a></li>
+            <li><a href="XQueryResolver.html">XQueryResolver</a></li>
+            <li><a href="Xslt30Transformer.html">Xslt30Transformer</a></li>
+            <li><a href="XsltCompiler.html">XsltCompiler</a></li>
+            <li><a href="XsltExecutable.html">XsltExecutable</a></li>
+            <li><a href="XsltPackage.html">XsltPackage</a></li>
+            <li><a href="XsltTransformer.html">XsltTransformer</a></li>
+         </ul>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+      <div class="main">
+         <h3>Saxon.Api</h3>
+         <h1><span class="classLabel">Class&nbsp;</span>Serializer</h1>
+         <hr>
+         <dl>
+            <dt>
+               <div class="code">public class&nbsp;Serializer</div>
+            </dt>
+            <dt> implements <a href="IDestination.html" class="apilink">IDestination</a></dt>
+         </dl>
+         <p>
+            A <code>Serializer</code> takes a tree representation of XML and turns
+            it into lexical XML markup.
+            </p>
+         <p>
+            Note that this is serialization in the sense of the W3C XSLT and XQuery specifications.
+            Unlike the class <code>System.Xml.Serialization.XmlSerializer</code>, this object does not
+            serialize arbitrary CLI objects.
+            </p><a name="field_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Field Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#BUILD_TREE" class="apilink">BUILD_TREE</a></span><div class="fnormal">
+                     <p>
+                        Build-tree option (XSLT only)
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#BYTE_ORDER_MARK" class="apilink">BYTE_ORDER_MARK</a></span><div class="fnormal">
+                     <p>QName identifying the serialization parameter "byte-order-mark".
+                        The value is the string "yes" or "no".</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#CDATA_SECTION_ELEMENTS" class="apilink">CDATA_SECTION_ELEMENTS</a></span><div class="fnormal">
+                     <p>QName identifying the serialization parameter "cdata-section-elements".
+                        The value of this parameter is given as a space-separated list of expanded QNames
+                        in
+                        Clark notation, that is "{uri}local".</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#DOCTYPE_PUBLIC" class="apilink">DOCTYPE_PUBLIC</a></span><div class="fnormal">
+                     <p>QName identifying the serialization parameter "doctype-public"</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#DOCTYPE_SYSTEM" class="apilink">DOCTYPE_SYSTEM</a></span><div class="fnormal">
+                     <p>QName identifying the serialization parameter "doctype-system"</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#ENCODING" class="apilink">ENCODING</a></span><div class="fnormal">
+                     <p>QName identifying the serialization parameter "encoding"</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#ESCAPE_URI_ATTRIBUTES" class="apilink">ESCAPE_URI_ATTRIBUTES</a></span><div class="fnormal">
+                     <p>QName identifying the serialization parameter "escape-uri-attributes".
+                        The value is the string "yes" or "no".</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#HTML_VERSION" class="apilink">HTML_VERSION</a></span><div class="fnormal">
+                     <p>
+                        HTML version number
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#INCLUDE_CONTENT_TYPE" class="apilink">INCLUDE_CONTENT_TYPE</a></span><div class="fnormal">
+                     <p>QName identifying the serialization parameter "include-content-type".
+                        The value is the string "yes" or "no".</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#INDENT" class="apilink">INDENT</a></span><div class="fnormal">
+                     <p>QName identifying the serialization parameter "indent".
+                        The value is the string "yes" or "no".</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#ITEM_SEPARATOR" class="apilink">ITEM_SEPARATOR</a></span><div class="fnormal">
+                     <p>
+                        Set to a string used to separate adjacent items in an XQuery result sequence
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#MEDIA_TYPE" class="apilink">MEDIA_TYPE</a></span><div class="fnormal">
+                     <p>QName identifying the serialization parameter "media-type".</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#METHOD" class="apilink">METHOD</a></span><div class="fnormal">
+                     <p>QName identifying the serialization parameter "method". If the value
+                        is a user-defined method, then it is given as a QName in Clark notation, that is
+                        "{uri}local".</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#NEXT_IN_CHAIN" class="apilink">NEXT_IN_CHAIN</a></span><div class="fnormal">
+                     <p>QName identifying the serialization parameter "saxon:next-in-chain". This
+                        is available only with XSLT, and identifies the URI of a stylesheet that is to be
+                        used to
+                        process the results before passing them to their final destination.</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#NORMALIZATION_FORM" class="apilink">NORMALIZATION_FORM</a></span><div class="fnormal">
+                     <p>QName identifying the serialization parameter "normalization-form"</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#OMIT_XML_DECLARATION" class="apilink">OMIT_XML_DECLARATION</a></span><div class="fnormal">
+                     <p>QName identifying the serialization parameter "omit-xml-declaration".
+                        The value is the string "yes" or "no".</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#SAXON_ATTRIBUTE_ORDER" class="apilink">SAXON_ATTRIBUTE_ORDER</a></span><div class="fnormal">
+                     <p>
+                        Saxon extension: set to a space-separated list of attribute names, in Clark notation,
+                        indicating that attributes present in the list should be serialized in the order
+                        indicated, followed by attributes not present in the list(these are sorted first
+                        by namespace, then by local name).
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#SAXON_CANONICAL" class="apilink">SAXON_CANONICAL</a></span><div class="fnormal">
+                     <p>
+                        Saxon extension: request canonical XML output.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#SAXON_CHARACTER_REPRESENTATION" class="apilink">SAXON_CHARACTER_REPRESENTATION</a></span><div class="fnormal">
+                     <p>QName identifying the serialization parameter "saxon:character-representation"</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#SAXON_DOUBLE_SPACE" class="apilink">SAXON_DOUBLE_SPACE</a></span><div class="fnormal">
+                     <p>QName identifying the serialization parameter "saxon:double-space". The value of this
+                        
+                        parameter is given as a space-separated list of expanded QNames in Clark notation,
+                        that is 
+                        "{uri}local"; each QName identifies an element that should be preceded by an extra
+                        blank line within
+                        indented output.</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#SAXON_INDENT_SPACES" class="apilink">SAXON_INDENT_SPACES</a></span><div class="fnormal">
+                     <p>QName identifying the serialization parameter "saxon:indent-spaces". The value
+                        is an integer (represented as a string) indicating the amount of indentation required.
+                        If specified, this parameter overrides indent="no".</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#SAXON_LINE_LENGTH" class="apilink">SAXON_LINE_LENGTH</a></span><div class="fnormal">
+                     <p>
+                        Saxon extension: set to an integer (represented as a string) giving the desired maximum
+                        length of lines when indenting.Default is 80.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#SAXON_NEWLINE" class="apilink">SAXON_NEWLINE</a></span><div class="fnormal">
+                     <p>
+                        Saxon extension: set to any string. Indicates the sequence of characters used to represent
+                        a newline in the text output method, and in newlines used for indentation in any output
+                        methods that use indentation.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#SAXON_RECOGNIZE_BINARY" class="apilink">SAXON_RECOGNIZE_BINARY</a></span><div class="fnormal">
+                     <p>
+                        Saxon extension for use when writing to the text output method; this option causes
+                        the processing
+                        instructions hex and b64 to be recognized containing hexBinary or base64 data respectively.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#SAXON_REQUIRE_WELL_FORMED" class="apilink">SAXON_REQUIRE_WELL_FORMED</a></span><div class="fnormal">
+                     <p>QName identifying the serialization parameter "saxon:require-well-formed". The
+                        value is the string "yes" or "no". If set to "yes", the output must be a well-formed
+                        document, or an error will be reported. ("Well-formed" here means that the document
+                        node
+                        must have exactly one element child, and no text node children other than whitespace-only
+                        text nodes).</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#SAXON_STYLESHEET_VERSION" class="apilink">SAXON_STYLESHEET_VERSION</a></span><div class="fnormal">
+                     <p>
+                        Saxon extension for internal use: used in XSLT to tell the serializer whether the
+                        stylesheet used version="1.0" or version = "2.0"
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#SAXON_SUPPRESS_INDENTATION" class="apilink">SAXON_SUPPRESS_INDENTATION</a></span><div class="fnormal">
+                     <p>QName identifying the serialization parameter "suppress-indentation". Retained
+                        as a synonym of SUPPRESS_INDENTATION for backwards compatibility.</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#SAXON_WRAP" class="apilink">SAXON_WRAP</a></span><div class="fnormal">
+                     <p>
+                        Saxon extension, indicates that the output of a query is to be wrapped before serialization,
+                        such that each item in the result sequence is enclosed in an element indicating its
+                        type
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#STANDALONE" class="apilink">STANDALONE</a></span><div class="fnormal">
+                     <p>QName identifying the serialization parameter "standalone".
+                        The value is the string "yes" or "no" or "omit".</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#SUPPLY_SOURCE_LOCATOR" class="apilink">SUPPLY_SOURCE_LOCATOR</a></span><div class="fnormal">
+                     <p>
+                        Saxon extension for interfacing with debuggers; indicates that the location information
+                        is
+                        available for events in this output stream
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#SUPPRESS_INDENTATION" class="apilink">SUPPRESS_INDENTATION</a></span><div class="fnormal">
+                     <p>QName identifying the serialization parameter "suppress-indentation"
+                        (introduced in XSLT/XQuery 3.0). Previously available as "saxon:suppress-indentation".
+                        The value is the string "yes" or "no".</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#UNDECLARE_PREFIXES" class="apilink">UNDECLARE_PREFIXES</a></span><div class="fnormal">
+                     <p>QName identifying the serialization parameter "undeclare-prefixes".
+                        The value is the string "yes" or "no".</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#USE_CHARACTER_MAPS" class="apilink">USE_CHARACTER_MAPS</a></span><div class="fnormal">
+                     <p>QName identifying the serialization parameter "use-character-maps".
+                        The value of the parameter is a list of expanded QNames
+                        in Clark notation giving the names of character maps defined in the XSLT stylesheet,
+                        or supplied programmatically.</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#VERSION" class="apilink">VERSION</a></span><div class="fnormal">
+                     <p>QName identifying the serialization parameter "version"</p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="property_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Property Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a></td>
+               <td><span class="signature"><a href="#BaseUri" class="apilink">BaseUri</a></span><div class="fnormal">
+                     <p>This property determines the base Uri of the constructed <code>Serializer</code>. 
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#OutputFile" class="apilink">OutputFile</a></span><div class="fnormal">
+                     <p>Specify the destination of the serialized output, in the
+                        form of a file name</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.io.stream(VS.80).aspx" class="apilink system" target="_blank">Stream</a></td>
+               <td><span class="signature"><a href="#OutputStream" class="apilink">OutputStream</a></span><div class="fnormal">
+                     <p>Specify the destination of the serialized output, in the
+                        form of a <code>Stream</code>. This must be a stream that allows writing.</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.io.textwriter(VS.80).aspx" class="apilink system" target="_blank">TextWriter</a></td>
+               <td><span class="signature"><a href="#OutputWriter" class="apilink">OutputWriter</a></span><div class="fnormal">
+                     <p>Specify the destination of the serialized output, in the
+                        form of a <code>TextWriter</code>.</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="Processor.html" class="apilink">Processor</a></td>
+               <td><span class="signature"><a href="#Processor" class="apilink">Processor</a></span><div class="fnormal">
+                     <p>The Processor from which this <code>Serializer</code> was created.</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="../../../javadoc/net/sf/saxon/s9api/Destination.html" class="apilink java">net.sf.saxon.s9api.Destination</a></td>
+               <td><span class="signature"><a href="#UnderlyingDestination" class="apilink">UnderlyingDestination</a></span><div class="fnormal">
+                     <p>
+                        The underlying <code>Saxon.Hej.s9api.Destination</code> object in the Saxon implementation
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="method_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Method Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#Close()" class="apilink">Close</a> ()</span><div class="fnormal">
+                     <p>
+                        Close any resources associated with this destination. Note that this does <b>not</b>
+                        close any user-supplied OutputStream or Writer; those must be closed explicitly
+                        by the calling application.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.generic.idictionary(VS.80).aspx" class="apilink system" target="_blank">IDictionary</a><span class="operator">&lt;<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a>,&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&gt;</span></td>
+               <td><span class="signature"><a href="#GetCharacterMap(QName)" class="apilink">GetCharacterMap</a> (<a href="QName.html" class="apilink">QName</a>&nbsp;name)</span><div class="fnormal">
+                     <p>
+                        Get the character map with a given name
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#OnClose(Action)" class="apilink">OnClose</a> (<a href="http://msdn.microsoft.com/en-us/library/system.action(VS.80).aspx" class="apilink system" target="_blank">Action</a>&nbsp;action)</span><div class="fnormal">
+                     <p>
+                        Define an action to be performed when writing to the Destination is complete.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#SerializeXdmNode(XdmNode)" class="apilink">SerializeXdmNode</a> (<a href="XdmNode.html" class="apilink">XdmNode</a>&nbsp;node)</span><div class="fnormal">
+                     <p>
+                        Serialize an <code>XdmNode</code> to the selected output destination using this serializer.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#SerializeXdmValue(XdmValue)" class="apilink">SerializeXdmValue</a> (<a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;value)</span><div class="fnormal">
+                     <p>
+                        Serialize an arbitrary <code>XdmValue</code> to the selected output destination using this serializer.
+                        The supplied sequence is first wrapped in a document node according to the rules given
+                        in section 2
+                        (Sequence Normalization) of the XSLT/XQuery serialization specification; the resulting
+                        document node 
+                        is then serialized using the serialization parameters defined in this serializer.
+                        A call on this 
+                        method will close the writer or output stream internally.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#SetCharacterMap(QName,IDictionary)" class="apilink">SetCharacterMap</a> (<a href="QName.html" class="apilink">QName</a>&nbsp;name, <a href="http://msdn.microsoft.com/en-us/library/system.collections.generic.idictionary(VS.80).aspx" class="apilink system" target="_blank">IDictionary</a><span class="operator">&lt;<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a>,&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&gt;</span>&nbsp;charMap)</span><div class="fnormal">
+                     <p>
+                        Set a character map to be used
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#SetOutputProperty(QName,string)" class="apilink">SetOutputProperty</a> (<a href="QName.html" class="apilink">QName</a>&nbsp;name, <a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;value)</span><div class="fnormal">
+                     <p>Set a serialization property</p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="field_detail"></a><div class="section">
+            <h2>Field Detail</h2><a name="BUILD_TREE"></a><div class="member">
+               <h3>BUILD_TREE</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;BUILD_TREE</div>
+               <p>
+                  Build-tree option (XSLT only)
+                  </p>
+            </div><a name="BYTE_ORDER_MARK"></a><div class="member">
+               <h3>BYTE_ORDER_MARK</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;BYTE_ORDER_MARK</div>
+               <p>QName identifying the serialization parameter "byte-order-mark".
+                  The value is the string "yes" or "no".</p>
+            </div><a name="CDATA_SECTION_ELEMENTS"></a><div class="member">
+               <h3>CDATA_SECTION_ELEMENTS</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;CDATA_SECTION_ELEMENTS</div>
+               <p>QName identifying the serialization parameter "cdata-section-elements".
+                  The value of this parameter is given as a space-separated list of expanded QNames
+                  in
+                  Clark notation, that is "{uri}local".</p>
+            </div><a name="DOCTYPE_PUBLIC"></a><div class="member">
+               <h3>DOCTYPE_PUBLIC</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;DOCTYPE_PUBLIC</div>
+               <p>QName identifying the serialization parameter "doctype-public"</p>
+            </div><a name="DOCTYPE_SYSTEM"></a><div class="member">
+               <h3>DOCTYPE_SYSTEM</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;DOCTYPE_SYSTEM</div>
+               <p>QName identifying the serialization parameter "doctype-system"</p>
+            </div><a name="ENCODING"></a><div class="member">
+               <h3>ENCODING</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;ENCODING</div>
+               <p>QName identifying the serialization parameter "encoding"</p>
+            </div><a name="ESCAPE_URI_ATTRIBUTES"></a><div class="member">
+               <h3>ESCAPE_URI_ATTRIBUTES</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;ESCAPE_URI_ATTRIBUTES</div>
+               <p>QName identifying the serialization parameter "escape-uri-attributes".
+                  The value is the string "yes" or "no".</p>
+            </div><a name="HTML_VERSION"></a><div class="member">
+               <h3>HTML_VERSION</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;HTML_VERSION</div>
+               <p>
+                  HTML version number
+                  </p>
+            </div><a name="INCLUDE_CONTENT_TYPE"></a><div class="member">
+               <h3>INCLUDE_CONTENT_TYPE</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;INCLUDE_CONTENT_TYPE</div>
+               <p>QName identifying the serialization parameter "include-content-type".
+                  The value is the string "yes" or "no".</p>
+            </div><a name="INDENT"></a><div class="member">
+               <h3>INDENT</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;INDENT</div>
+               <p>QName identifying the serialization parameter "indent".
+                  The value is the string "yes" or "no".</p>
+            </div><a name="ITEM_SEPARATOR"></a><div class="member">
+               <h3>ITEM_SEPARATOR</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;ITEM_SEPARATOR</div>
+               <p>
+                  Set to a string used to separate adjacent items in an XQuery result sequence
+                  </p>
+            </div><a name="MEDIA_TYPE"></a><div class="member">
+               <h3>MEDIA_TYPE</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;MEDIA_TYPE</div>
+               <p>QName identifying the serialization parameter "media-type".</p>
+            </div><a name="METHOD"></a><div class="member">
+               <h3>METHOD</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;METHOD</div>
+               <p>QName identifying the serialization parameter "method". If the value
+                  is a user-defined method, then it is given as a QName in Clark notation, that is
+                  "{uri}local".</p>
+            </div><a name="NEXT_IN_CHAIN"></a><div class="member">
+               <h3>NEXT_IN_CHAIN</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;NEXT_IN_CHAIN</div>
+               <p>QName identifying the serialization parameter "saxon:next-in-chain". This
+                  is available only with XSLT, and identifies the URI of a stylesheet that is to be
+                  used to
+                  process the results before passing them to their final destination.</p>
+            </div><a name="NORMALIZATION_FORM"></a><div class="member">
+               <h3>NORMALIZATION_FORM</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;NORMALIZATION_FORM</div>
+               <p>QName identifying the serialization parameter "normalization-form"</p>
+            </div><a name="OMIT_XML_DECLARATION"></a><div class="member">
+               <h3>OMIT_XML_DECLARATION</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;OMIT_XML_DECLARATION</div>
+               <p>QName identifying the serialization parameter "omit-xml-declaration".
+                  The value is the string "yes" or "no".</p>
+            </div><a name="SAXON_ATTRIBUTE_ORDER"></a><div class="member">
+               <h3>SAXON_ATTRIBUTE_ORDER</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;SAXON_ATTRIBUTE_ORDER</div>
+               <p>
+                  Saxon extension: set to a space-separated list of attribute names, in Clark notation,
+                  indicating that attributes present in the list should be serialized in the order
+                  indicated, followed by attributes not present in the list(these are sorted first
+                  by namespace, then by local name).
+                  </p>
+            </div><a name="SAXON_CANONICAL"></a><div class="member">
+               <h3>SAXON_CANONICAL</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;SAXON_CANONICAL</div>
+               <p>
+                  Saxon extension: request canonical XML output.
+                  </p>
+            </div><a name="SAXON_CHARACTER_REPRESENTATION"></a><div class="member">
+               <h3>SAXON_CHARACTER_REPRESENTATION</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;SAXON_CHARACTER_REPRESENTATION</div>
+               <p>QName identifying the serialization parameter "saxon:character-representation"</p>
+            </div><a name="SAXON_DOUBLE_SPACE"></a><div class="member">
+               <h3>SAXON_DOUBLE_SPACE</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;SAXON_DOUBLE_SPACE</div>
+               <p>QName identifying the serialization parameter "saxon:double-space". The value of this
+                  
+                  parameter is given as a space-separated list of expanded QNames in Clark notation,
+                  that is 
+                  "{uri}local"; each QName identifies an element that should be preceded by an extra
+                  blank line within
+                  indented output.</p>
+            </div><a name="SAXON_INDENT_SPACES"></a><div class="member">
+               <h3>SAXON_INDENT_SPACES</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;SAXON_INDENT_SPACES</div>
+               <p>QName identifying the serialization parameter "saxon:indent-spaces". The value
+                  is an integer (represented as a string) indicating the amount of indentation required.
+                  If specified, this parameter overrides indent="no".</p>
+            </div><a name="SAXON_LINE_LENGTH"></a><div class="member">
+               <h3>SAXON_LINE_LENGTH</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;SAXON_LINE_LENGTH</div>
+               <p>
+                  Saxon extension: set to an integer (represented as a string) giving the desired maximum
+                  length of lines when indenting.Default is 80.
+                  </p>
+            </div><a name="SAXON_NEWLINE"></a><div class="member">
+               <h3>SAXON_NEWLINE</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;SAXON_NEWLINE</div>
+               <p>
+                  Saxon extension: set to any string. Indicates the sequence of characters used to represent
+                  a newline in the text output method, and in newlines used for indentation in any output
+                  methods that use indentation.
+                  </p>
+            </div><a name="SAXON_RECOGNIZE_BINARY"></a><div class="member">
+               <h3>SAXON_RECOGNIZE_BINARY</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;SAXON_RECOGNIZE_BINARY</div>
+               <p>
+                  Saxon extension for use when writing to the text output method; this option causes
+                  the processing
+                  instructions hex and b64 to be recognized containing hexBinary or base64 data respectively.
+                  </p>
+            </div><a name="SAXON_REQUIRE_WELL_FORMED"></a><div class="member">
+               <h3>SAXON_REQUIRE_WELL_FORMED</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;SAXON_REQUIRE_WELL_FORMED</div>
+               <p>QName identifying the serialization parameter "saxon:require-well-formed". The
+                  value is the string "yes" or "no". If set to "yes", the output must be a well-formed
+                  document, or an error will be reported. ("Well-formed" here means that the document
+                  node
+                  must have exactly one element child, and no text node children other than whitespace-only
+                  text nodes).</p>
+            </div><a name="SAXON_STYLESHEET_VERSION"></a><div class="member">
+               <h3>SAXON_STYLESHEET_VERSION</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;SAXON_STYLESHEET_VERSION</div>
+               <p>
+                  Saxon extension for internal use: used in XSLT to tell the serializer whether the
+                  stylesheet used version="1.0" or version = "2.0"
+                  </p>
+            </div><a name="SAXON_SUPPRESS_INDENTATION"></a><div class="member">
+               <h3>SAXON_SUPPRESS_INDENTATION</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;SAXON_SUPPRESS_INDENTATION</div>
+               <p>QName identifying the serialization parameter "suppress-indentation". Retained
+                  as a synonym of SUPPRESS_INDENTATION for backwards compatibility.</p>
+            </div><a name="SAXON_WRAP"></a><div class="member">
+               <h3>SAXON_WRAP</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;SAXON_WRAP</div>
+               <p>
+                  Saxon extension, indicates that the output of a query is to be wrapped before serialization,
+                  such that each item in the result sequence is enclosed in an element indicating its
+                  type
+                  </p>
+            </div><a name="STANDALONE"></a><div class="member">
+               <h3>STANDALONE</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;STANDALONE</div>
+               <p>QName identifying the serialization parameter "standalone".
+                  The value is the string "yes" or "no" or "omit".</p>
+            </div><a name="SUPPLY_SOURCE_LOCATOR"></a><div class="member">
+               <h3>SUPPLY_SOURCE_LOCATOR</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;SUPPLY_SOURCE_LOCATOR</div>
+               <p>
+                  Saxon extension for interfacing with debuggers; indicates that the location information
+                  is
+                  available for events in this output stream
+                  </p>
+            </div><a name="SUPPRESS_INDENTATION"></a><div class="member">
+               <h3>SUPPRESS_INDENTATION</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;SUPPRESS_INDENTATION</div>
+               <p>QName identifying the serialization parameter "suppress-indentation"
+                  (introduced in XSLT/XQuery 3.0). Previously available as "saxon:suppress-indentation".
+                  The value is the string "yes" or "no".</p>
+            </div><a name="UNDECLARE_PREFIXES"></a><div class="member">
+               <h3>UNDECLARE_PREFIXES</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;UNDECLARE_PREFIXES</div>
+               <p>QName identifying the serialization parameter "undeclare-prefixes".
+                  The value is the string "yes" or "no".</p>
+            </div><a name="USE_CHARACTER_MAPS"></a><div class="member">
+               <h3>USE_CHARACTER_MAPS</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;USE_CHARACTER_MAPS</div>
+               <p>QName identifying the serialization parameter "use-character-maps".
+                  The value of the parameter is a list of expanded QNames
+                  in Clark notation giving the names of character maps defined in the XSLT stylesheet,
+                  or supplied programmatically.</p>
+            </div><a name="VERSION"></a><div class="member">
+               <h3>VERSION</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;VERSION</div>
+               <p>QName identifying the serialization parameter "version"</p>
+            </div>
+         </div><a name="property_detail"></a><div class="section">
+            <h2>Property Detail</h2><a name="BaseUri"></a><div class="member">
+               <h3>BaseUri</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a>&nbsp;BaseUri&nbsp;{get; set; }</div>
+               <p>This property determines the base Uri of the constructed <code>Serializer</code>. 
+                  </p>
+            </div><a name="OutputFile"></a><div class="member">
+               <h3>OutputFile</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;OutputFile&nbsp;{set; }</div>
+               <p>Specify the destination of the serialized output, in the
+                  form of a file name</p>
+               <p class="methodLabel">Value:</p>
+               <div class="params">
+                  The name of the file to receive the serialized output. This
+                  method sets the destination base URI to the URI corresponding to the name of the supplied
+                  file.
+                  </div>
+               <p class="methodLabel">Throws:</p>
+               <div class="params"><a href="SaxonApiException.html" class="apilink">SaxonApiException</a>&nbsp;-&nbsp;Throws a <code>SaxonApiException</code> if it is not possible to 
+                  create an output stream to write to this file, for example, if the filename is in
+                  a
+                  directory that does not exist.</div>
+            </div><a name="OutputStream"></a><div class="member">
+               <h3>OutputStream</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.io.stream(VS.80).aspx" class="apilink system" target="_blank">Stream</a>&nbsp;OutputStream&nbsp;{set; }</div>
+               <p>Specify the destination of the serialized output, in the
+                  form of a <code>Stream</code>. This must be a stream that allows writing.</p>
+               <p>Saxon will not close the stream on completion; this is the
+                  caller's responsibility.</p>
+            </div><a name="OutputWriter"></a><div class="member">
+               <h3>OutputWriter</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.io.textwriter(VS.80).aspx" class="apilink system" target="_blank">TextWriter</a>&nbsp;OutputWriter&nbsp;{set; }</div>
+               <p>Specify the destination of the serialized output, in the
+                  form of a <code>TextWriter</code>.</p>
+               
+               <p>Note that when writing to a <code>TextWriter</code>, character encoding is
+                  the responsibility of the <code>TextWriter</code>, not the <code>Serializer</code>. This
+                  means that the encoding requested in the output properties is ignored; it also
+                  means that characters that cannot be represented in the target encoding will
+                  use whatever fallback representation the <code>TextWriter</code> defines, rather than
+                  being represented as XML character references.</p>
+               
+               <p>
+                  Saxon will not close the
+                  <code>TextWriter</code> on completion; this is the caller's responsibility.
+                  </p>
+               </div><a name="Processor"></a><div class="member">
+               <h3>Processor</h3>
+               <div class="code">public&nbsp;<a href="Processor.html" class="apilink">Processor</a>&nbsp;Processor&nbsp;{get; }</div>
+               <p>The Processor from which this <code>Serializer</code> was created.</p>
+            </div><a name="UnderlyingDestination"></a><div class="member">
+               <h3>UnderlyingDestination</h3>
+               <div class="code">public&nbsp;<a href="../../../javadoc/net/sf/saxon/s9api/Destination.html" class="apilink java">net.sf.saxon.s9api.Destination</a>&nbsp;UnderlyingDestination&nbsp;{get; }</div>
+               <p>
+                  The underlying <code>Saxon.Hej.s9api.Destination</code> object in the Saxon implementation
+                  </p>
+               
+               <p>This property provides access to internal methods in the Saxon engine that are
+                  not specifically exposed in the .NET API. In general these methods should be
+                  considered to be less stable than the classes in the Saxon.Api namespace.</p>
+               
+               <p>The internal methods follow
+                  Java naming conventions rather than .NET conventions.</p>
+               
+               <p>Information about the returned <a href="../../../javadoc/net/sf/saxon/s9api/Destination.html" class="apilink java">net.sf.saxon.s9api.Destination</a> object 
+                  (and the objects it provides access to) is included in the Saxon JavaDoc documentation.
+                  </p>
+               
+               <p class="methodLabel">Value:</p>
+               <div class="params">The underlying Destination object</div>
+            </div>
+         </div><a name="method_detail"></a><div class="section">
+            <h2>Method Detail</h2><a name="Close()"></a><div class="member">
+               <h3>Close</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;Close</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Close any resources associated with this destination. Note that this does <b>not</b>
+                     close any user-supplied OutputStream or Writer; those must be closed explicitly
+                     by the calling application.
+                     </p>
+               </div>
+            </div><a name="GetCharacterMap(QName)"></a><div class="member">
+               <h3>GetCharacterMap</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.generic.idictionary(VS.80).aspx" class="apilink system" target="_blank">IDictionary</a><span class="operator">&lt;<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a>,&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&gt;</span>&nbsp;GetCharacterMap</span><span class="fblock">(<a href="QName.html" class="apilink">QName</a>&nbsp;name)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Get the character map with a given name
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>name</code>&nbsp;-&nbsp;The name of the character map, as a QName</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A dictionary that maps integer Unicode codepoint values to strings</div>
+               </div>
+            </div><a name="OnClose(Action)"></a><div class="member">
+               <h3>OnClose</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;OnClose</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.action(VS.80).aspx" class="apilink system" target="_blank">Action</a>&nbsp;action)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Define an action to be performed when writing to the Destination is complete.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>action</code>&nbsp;-&nbsp;The action to be performed.</div>
+               </div>
+            </div><a name="SerializeXdmNode(XdmNode)"></a><div class="member">
+               <h3>SerializeXdmNode</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;SerializeXdmNode</span><span class="fblock">(<a href="XdmNode.html" class="apilink">XdmNode</a>&nbsp;node)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Serialize an <code>XdmNode</code> to the selected output destination using this serializer.
+                     </p>
+                  <p>since 9.8</p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>node</code>&nbsp;-&nbsp;The node to be serialized</div>
+               </div>
+            </div><a name="SerializeXdmValue(XdmValue)"></a><div class="member">
+               <h3>SerializeXdmValue</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;SerializeXdmValue</span><span class="fblock">(<a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;value)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Serialize an arbitrary <code>XdmValue</code> to the selected output destination using this serializer.
+                     The supplied sequence is first wrapped in a document node according to the rules given
+                     in section 2
+                     (Sequence Normalization) of the XSLT/XQuery serialization specification; the resulting
+                     document node 
+                     is then serialized using the serialization parameters defined in this serializer.
+                     A call on this 
+                     method will close the writer or output stream internally.
+                     </p>
+                  <p>since 9.8</p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>value</code>&nbsp;-&nbsp; The value to be serialized</div>
+               </div>
+            </div><a name="SetCharacterMap(QName,IDictionary)"></a><div class="member">
+               <h3>SetCharacterMap</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;SetCharacterMap</span><span class="fblock">(<a href="QName.html" class="apilink">QName</a>&nbsp;name, <br><a href="http://msdn.microsoft.com/en-us/library/system.collections.generic.idictionary(VS.80).aspx" class="apilink system" target="_blank">IDictionary</a><span class="operator">&lt;<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a>,&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&gt;</span>&nbsp;charMap)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Set a character map to be used
+                     </p>
+                  
+                  <p>Note that the character map is used by the serializer only if the
+                     <code>USE_CHARACTER_MAPS</code> output property includes the name of this character map.
+                     </p>
+                  
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>name</code>&nbsp;-&nbsp;the name of the character map</div>
+                  <div class="params"><code>charMap</code>&nbsp;-&nbsp;the content of the character map, supplied as
+                     a dictionary that maps integer Unicode codepoint values to strings</div>
+               </div>
+            </div><a name="SetOutputProperty(QName,string)"></a><div class="member">
+               <h3>SetOutputProperty</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;SetOutputProperty</span><span class="fblock">(<a href="QName.html" class="apilink">QName</a>&nbsp;name, <br><a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;value)</span></div>
+               <div class="fcomment">
+                  <p>Set a serialization property</p>
+                  <p>In the case of XSLT, properties set within the serializer override
+                     any properties set in <code>xsl:output</code> declarations in the stylesheet.
+                     Similarly, with XQuery, they override any properties set in the Query
+                     prolog using <code>declare option output</code>.</p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>name</code>&nbsp;-&nbsp;The name of the serialization property to be set</div>
+                  <div class="params"><code>value</code>&nbsp;-&nbsp;The value to be set for the serialization property. May be null
+                     to unset the property (that is, to set it back to the default value).</div>
+                  <p class="methodLabel">Example:</p><samp>
+                     Serializer qout = processor.NewSerializer();
+                     qout.SetOutputProperty(Serializer.METHOD, "xml");
+                     qout.SetOutputProperty(Serializer.INDENT, "yes");
+                     qout.SetOutputProperty(Serializer.SAXON_INDENT_SPACES, "1");
+                     </samp></div>
+            </div>
+         </div>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+   </body>
+</html>

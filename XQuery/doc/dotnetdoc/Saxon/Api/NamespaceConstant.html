@@ -1,0 +1,643 @@
+<!DOCTYPE HTML><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>NamespaceConstant</title>
+      <meta name="keywords" content="Saxon.Api.NamespaceConstant class">
+      <link rel="stylesheet" type="text/css" href="../../saxon-dotnetdoc.css" title="Style">
+   </head>
+   <body>
+      <div class="contents">
+         <h3><a href="../../index.html" class="home">Saxon.Api</a></h3>
+         <ul class="list">
+            <li><a href="CollectionFinder.html">CollectionFinder</a></li>
+            <li><a href="DocumentBuilder.html">DocumentBuilder</a></li>
+            <li><a href="DomDestination.html">DomDestination</a></li>
+            <li><a href="DynamicContext.html">DynamicContext</a></li>
+            <li><a href="Error.html">Error</a></li>
+            <li><a href="ErrorReporter.html">ErrorReporter</a></li>
+            <li><a href="ExtensionFunctionCall.html">ExtensionFunctionCall</a></li>
+            <li><a href="ExtensionFunctionDefinition.html">ExtensionFunctionDefinition</a></li>
+            <li><a href="Feature.html">Feature</a></li>
+            <li><a href="FeatureKeys.html">FeatureKeys</a></li>
+            <li><a href="HostLanguage.html">HostLanguage</a></li>
+            <li><a href="IDestination.html">IDestination</a></li>
+            <li><a href="IInvalidityHandler.html">IInvalidityHandler</a></li>
+            <li><a href="IResource.html">IResource</a></li>
+            <li><a href="JsonBuilder.html">JsonBuilder</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="Message.html">Message</a></li>
+            <li><a href="NamespaceConstant.html">NamespaceConstant</a></li>
+            <li><a href="NodeResource.html">NodeResource</a></li>
+            <li><a href="NullDestination.html">NullDestination</a></li>
+            <li><a href="ParameterDetails.html">ParameterDetails</a></li>
+            <li><a href="Predicates.html">Predicates</a></li>
+            <li><a href="Processor.html">Processor</a></li>
+            <li><a href="QName.html">QName</a></li>
+            <li><a href="RawDestination.html">RawDestination</a></li>
+            <li><a href="ResourceRequest.html">ResourceRequest</a></li>
+            <li><a href="ResourceResolver.html">ResourceResolver</a></li>
+            <li><a href="ResultDocumentHandler.html">ResultDocumentHandler</a></li>
+            <li><a href="SaxonApiException.html">SaxonApiException</a></li>
+            <li><a href="SchemaManager.html">SchemaManager</a></li>
+            <li><a href="SchemaResolver.html">SchemaResolver</a></li>
+            <li><a href="SchemaValidationMode.html">SchemaValidationMode</a></li>
+            <li><a href="SchemaValidator.html">SchemaValidator</a></li>
+            <li><a href="Serializer.html">Serializer</a></li>
+            <li><a href="StaticContext.html">StaticContext</a></li>
+            <li><a href="Step.html">Step&lt;TInput, TResult&gt;</a></li>
+            <li><a href="Steps.html">Steps</a></li>
+            <li><a href="TextResource.html">TextResource</a></li>
+            <li><a href="TreeModel.html">TreeModel</a></li>
+            <li><a href="UnprefixedElementMatchingPolicy.html">UnprefixedElementMatchingPolicy</a></li>
+            <li><a href="ValidationFailure.html">ValidationFailure</a></li>
+            <li><a href="WhitespacePolicy.html">WhitespacePolicy</a></li>
+            <li><a href="XdmAnyArrayType.html">XdmAnyArrayType</a></li>
+            <li><a href="XdmAnyFunctionType.html">XdmAnyFunctionType</a></li>
+            <li><a href="XdmAnyItemType.html">XdmAnyItemType</a></li>
+            <li><a href="XdmAnyMapType.html">XdmAnyMapType</a></li>
+            <li><a href="XdmAnyNodeType.html">XdmAnyNodeType</a></li>
+            <li><a href="XdmArray.html">XdmArray</a></li>
+            <li><a href="XdmAtomicType.html">XdmAtomicType</a></li>
+            <li><a href="XdmAtomicValue.html">XdmAtomicValue</a></li>
+            <li><a href="XdmAxis.html">XdmAxis</a></li>
+            <li><a href="XdmDestination.html">XdmDestination</a></li>
+            <li><a href="XdmEmptySequence.html">XdmEmptySequence</a></li>
+            <li><a href="XdmExternalObject.html">XdmExternalObject</a></li>
+            <li><a href="XdmFunctionItem.html">XdmFunctionItem</a></li>
+            <li><a href="XdmItem.html">XdmItem</a></li>
+            <li><a href="XdmItemType.html">XdmItemType</a></li>
+            <li><a href="XdmMap.html">XdmMap</a></li>
+            <li><a href="XdmNode.html">XdmNode</a></li>
+            <li><a href="XdmNodeKind.html">XdmNodeKind</a></li>
+            <li><a href="XdmSequenceType.html">XdmSequenceType</a></li>
+            <li><a href="XdmValue.html">XdmValue</a></li>
+            <li><a href="XmlReaderResource.html">XmlReaderResource</a></li>
+            <li><a href="XmlWriterDestination.html">XmlWriterDestination</a></li>
+            <li><a href="XPathCompiler.html">XPathCompiler</a></li>
+            <li><a href="XPathExecutable.html">XPathExecutable</a></li>
+            <li><a href="XPathSelector.html">XPathSelector</a></li>
+            <li><a href="XQueryCompiler.html">XQueryCompiler</a></li>
+            <li><a href="XQueryEvaluator.html">XQueryEvaluator</a></li>
+            <li><a href="XQueryExecutable.html">XQueryExecutable</a></li>
+            <li><a href="XQueryResolver.html">XQueryResolver</a></li>
+            <li><a href="Xslt30Transformer.html">Xslt30Transformer</a></li>
+            <li><a href="XsltCompiler.html">XsltCompiler</a></li>
+            <li><a href="XsltExecutable.html">XsltExecutable</a></li>
+            <li><a href="XsltPackage.html">XsltPackage</a></li>
+            <li><a href="XsltTransformer.html">XsltTransformer</a></li>
+         </ul>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+      <div class="main">
+         <h3>Saxon.Api</h3>
+         <h1><span class="classLabel">Class&nbsp;</span>NamespaceConstant</h1>
+         <hr>
+         <dl>
+            <dt>
+               <div class="code">public class&nbsp;NamespaceConstant</div>
+            </dt>
+         </dl>
+         <p> 
+            Holds a set of constants representing known namespaces.
+            </p><a name="field_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Field Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#ANONYMOUS" class="apilink">ANONYMOUS</a></span><div class="fnormal">
+                     <p>
+                        Namespace for names allocated to anonymous types: "http://ns.saxonica.com/anonymous-type".
+                        
+                        This exists so that a name fingerprint can be allocated for use as a type annotation.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#ARRAY" class="apilink">ARRAY</a></span><div class="fnormal">
+                     <p>
+                        Namespace name for XPath 3.0 functions associated with arrays: "http://www.w3.org/2005/xpath-functions/array"
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#CODEPOINT_COLLATION_URI" class="apilink">CODEPOINT_COLLATION_URI</a></span><div class="fnormal">
+                     <p>
+                        URI identifying the Unicode codepoint collation
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#ERR" class="apilink">ERR</a></span><div class="fnormal">
+                     <p>
+                        The standard namespace for system error codes: "http://www.w3.org/2005/xqt-errors"
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#EXPATH_ZIP" class="apilink">EXPATH_ZIP</a></span><div class="fnormal">
+                     <p>
+                        Namespace for the EXPath zip module: "http://expath.org/ns/zip" 
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#EXSLT_COMMON" class="apilink">EXSLT_COMMON</a></span><div class="fnormal">
+                     <p>
+                        Fixed namespace name for EXSLT/Common: "http://exslt.org/common"
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#FN" class="apilink">FN</a></span><div class="fnormal">
+                     <p>
+                        The standard namespace for functions and operators: "http://www.w3.org/2005/xpath-functions"
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#HTML5_CASE_BLIND_COLLATION_URI" class="apilink">HTML5_CASE_BLIND_COLLATION_URI</a></span><div class="fnormal">
+                     <p>
+                        URI identifying the HML5 ascii-case-blind collation
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#LOCAL" class="apilink">LOCAL</a></span><div class="fnormal">
+                     <p>
+                        Predefined XQuery namespace for local functions: "http://www.w3.org/2005/xquery-local-functions"
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#MAP" class="apilink">MAP</a></span><div class="fnormal">
+                     <p>
+                        Namespace name for XPath 3.0 functions associated with maps: "http://www.w3.org/2005/xpath-functions/map"
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#MATH" class="apilink">MATH</a></span><div class="fnormal">
+                     <p>
+                        Namespace name for the XPath 3.0 math functions: "http://www.w3.org/2005/xpath-functions/math"
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#MATHML" class="apilink">MATHML</a></span><div class="fnormal">
+                     <p>
+                        The MathML namespace: "http://www.w3.org/1998/Math/MathML"
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#NULL" class="apilink">NULL</a></span><div class="fnormal">
+                     <p>
+                        A URI representing the null namespace (actually, an empty string)
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#OUTPUT" class="apilink">OUTPUT</a></span><div class="fnormal">
+                     <p>
+                        The standard namespace for XQuery output declarations: "http://www.w3.org/2010/xslt-xquery-serialization"
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#SAXON" class="apilink">SAXON</a></span><div class="fnormal">
+                     <p>
+                        Fixed namespace name for Saxon: "http://saxon.sf.net/"
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#SAXON_CONFIGURATION" class="apilink">SAXON_CONFIGURATION</a></span><div class="fnormal">
+                     <p>
+                        Namespace for the Saxon configuration file: "http://saxon.sf.net/ns/configuration"
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#SAXON_GENERATED_GLOBAL" class="apilink">SAXON_GENERATED_GLOBAL</a></span><div class="fnormal">
+                     <p>
+                        Namespace for the names of generated global variables: "http://saxon.sf.net/generated-global-variable"
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#SAXON_XSLT_EXPORT" class="apilink">SAXON_XSLT_EXPORT</a></span><div class="fnormal">
+                     <p>
+                        Fixed namespace name for the export of a Saxon stylesheet package: "http://ns.saxonica.com/xslt/export"
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#SCHEMA" class="apilink">SCHEMA</a></span><div class="fnormal">
+                     <p>
+                        Namespace name for XML Schema: "http://www.w3.org/2001/XMLSchema"
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#SCHEMA_INSTANCE" class="apilink">SCHEMA_INSTANCE</a></span><div class="fnormal">
+                     <p>
+                        XML-schema-defined namespace for use in instance documents ("xsi"): "http://www.w3.org/2001/XMLSchema-instance"
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#SCHEMA_VERSIONING" class="apilink">SCHEMA_VERSIONING</a></span><div class="fnormal">
+                     <p>
+                        Namespace defined in XSD 1.1 for schema versioning: "http://www.w3.org/2007/XMLSchema-versioning"
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#SCM" class="apilink">SCM</a></span><div class="fnormal">
+                     <p>
+                        Namespace for the Saxon serialization of the schema component model: "http://ns.saxonica.com/schema-component-model"
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#SQL" class="apilink">SQL</a></span><div class="fnormal">
+                     <p>
+                        Fixed namespace name for Saxon SQL extension: "http://saxon.sf.net/sql"
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#SVG" class="apilink">SVG</a></span><div class="fnormal">
+                     <p>
+                        The SVG namespace: "http://www.w3.org/2000/svg"
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#XHTML" class="apilink">XHTML</a></span><div class="fnormal">
+                     <p>
+                        The XHTML namespace: "http://www.w3.org/1999/xhtml"
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#XLINK" class="apilink">XLINK</a></span><div class="fnormal">
+                     <p>
+                        The XLink namespace: "http://www.w3.org/1999/xlink"
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#XML" class="apilink">XML</a></span><div class="fnormal">
+                     <p>
+                        Fixed namespace name for XML: "http://www.w3.org/XML/1998/namespace".
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#XMLNS" class="apilink">XMLNS</a></span><div class="fnormal">
+                     <p>
+                        The XMLNS namespace (used in DOM): "http://www.w3.org/2000/xmlns/"
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#XQUERY" class="apilink">XQUERY</a></span><div class="fnormal">
+                     <p>
+                        The xquery namespace for the XQuery 3.0 declare option: "http://www.w3.org/2012/xquery"
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#XQUERY_OPTIONS" class="apilink">XQUERY_OPTIONS</a></span><div class="fnormal">
+                     <p>
+                        The xquery-option namespace for the XQuery 3.0 feature names: "http://www.w3.org/2011/xquery-options"
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#XSLT" class="apilink">XSLT</a></span><div class="fnormal">
+                     <p>
+                        Fixed namespace name for XSLT: "http://www.w3.org/1999/XSL/Transform"
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="method_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Method Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a></td>
+               <td><span class="signature"><a href="#IsReserved(string)" class="apilink">IsReserved</a> (<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;uri)</span><div class="fnormal">
+                     <p>
+                        Determine whether a namespace is a reserved namespace
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a></td>
+               <td><span class="signature"><a href="#IsReservedInQuery31(string)" class="apilink">IsReservedInQuery31</a> (<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;uri)</span><div class="fnormal">
+                     <p>
+                        Determine whether a namespace is a reserved namespace in XQuery 3.1
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="field_detail"></a><div class="section">
+            <h2>Field Detail</h2><a name="ANONYMOUS"></a><div class="member">
+               <h3>ANONYMOUS</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;ANONYMOUS</div>
+               <p>
+                  Namespace for names allocated to anonymous types: "http://ns.saxonica.com/anonymous-type".
+                  
+                  This exists so that a name fingerprint can be allocated for use as a type annotation.
+                  </p>
+            </div><a name="ARRAY"></a><div class="member">
+               <h3>ARRAY</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;ARRAY</div>
+               <p>
+                  Namespace name for XPath 3.0 functions associated with arrays: "http://www.w3.org/2005/xpath-functions/array"
+                  </p>
+            </div><a name="CODEPOINT_COLLATION_URI"></a><div class="member">
+               <h3>CODEPOINT_COLLATION_URI</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;CODEPOINT_COLLATION_URI</div>
+               <p>
+                  URI identifying the Unicode codepoint collation
+                  </p>
+            </div><a name="ERR"></a><div class="member">
+               <h3>ERR</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;ERR</div>
+               <p>
+                  The standard namespace for system error codes: "http://www.w3.org/2005/xqt-errors"
+                  </p>
+            </div><a name="EXPATH_ZIP"></a><div class="member">
+               <h3>EXPATH_ZIP</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;EXPATH_ZIP</div>
+               <p>
+                  Namespace for the EXPath zip module: "http://expath.org/ns/zip" 
+                  </p>
+            </div><a name="EXSLT_COMMON"></a><div class="member">
+               <h3>EXSLT_COMMON</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;EXSLT_COMMON</div>
+               <p>
+                  Fixed namespace name for EXSLT/Common: "http://exslt.org/common"
+                  </p>
+            </div><a name="FN"></a><div class="member">
+               <h3>FN</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;FN</div>
+               <p>
+                  The standard namespace for functions and operators: "http://www.w3.org/2005/xpath-functions"
+                  </p>
+            </div><a name="HTML5_CASE_BLIND_COLLATION_URI"></a><div class="member">
+               <h3>HTML5_CASE_BLIND_COLLATION_URI</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;HTML5_CASE_BLIND_COLLATION_URI</div>
+               <p>
+                  URI identifying the HML5 ascii-case-blind collation
+                  </p>
+            </div><a name="LOCAL"></a><div class="member">
+               <h3>LOCAL</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;LOCAL</div>
+               <p>
+                  Predefined XQuery namespace for local functions: "http://www.w3.org/2005/xquery-local-functions"
+                  </p>
+            </div><a name="MAP"></a><div class="member">
+               <h3>MAP</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;MAP</div>
+               <p>
+                  Namespace name for XPath 3.0 functions associated with maps: "http://www.w3.org/2005/xpath-functions/map"
+                  </p>
+            </div><a name="MATH"></a><div class="member">
+               <h3>MATH</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;MATH</div>
+               <p>
+                  Namespace name for the XPath 3.0 math functions: "http://www.w3.org/2005/xpath-functions/math"
+                  </p>
+            </div><a name="MATHML"></a><div class="member">
+               <h3>MATHML</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;MATHML</div>
+               <p>
+                  The MathML namespace: "http://www.w3.org/1998/Math/MathML"
+                  </p>
+            </div><a name="NULL"></a><div class="member">
+               <h3>NULL</h3>
+               <div class="code">public&nbsp;static&nbsp;readonly&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;NULL</div>
+               <p>
+                  A URI representing the null namespace (actually, an empty string)
+                  </p>
+            </div><a name="OUTPUT"></a><div class="member">
+               <h3>OUTPUT</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;OUTPUT</div>
+               <p>
+                  The standard namespace for XQuery output declarations: "http://www.w3.org/2010/xslt-xquery-serialization"
+                  </p>
+            </div><a name="SAXON"></a><div class="member">
+               <h3>SAXON</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;SAXON</div>
+               <p>
+                  Fixed namespace name for Saxon: "http://saxon.sf.net/"
+                  </p>
+            </div><a name="SAXON_CONFIGURATION"></a><div class="member">
+               <h3>SAXON_CONFIGURATION</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;SAXON_CONFIGURATION</div>
+               <p>
+                  Namespace for the Saxon configuration file: "http://saxon.sf.net/ns/configuration"
+                  </p>
+            </div><a name="SAXON_GENERATED_GLOBAL"></a><div class="member">
+               <h3>SAXON_GENERATED_GLOBAL</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;SAXON_GENERATED_GLOBAL</div>
+               <p>
+                  Namespace for the names of generated global variables: "http://saxon.sf.net/generated-global-variable"
+                  </p>
+            </div><a name="SAXON_XSLT_EXPORT"></a><div class="member">
+               <h3>SAXON_XSLT_EXPORT</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;SAXON_XSLT_EXPORT</div>
+               <p>
+                  Fixed namespace name for the export of a Saxon stylesheet package: "http://ns.saxonica.com/xslt/export"
+                  </p>
+            </div><a name="SCHEMA"></a><div class="member">
+               <h3>SCHEMA</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;SCHEMA</div>
+               <p>
+                  Namespace name for XML Schema: "http://www.w3.org/2001/XMLSchema"
+                  </p>
+            </div><a name="SCHEMA_INSTANCE"></a><div class="member">
+               <h3>SCHEMA_INSTANCE</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;SCHEMA_INSTANCE</div>
+               <p>
+                  XML-schema-defined namespace for use in instance documents ("xsi"): "http://www.w3.org/2001/XMLSchema-instance"
+                  </p>
+            </div><a name="SCHEMA_VERSIONING"></a><div class="member">
+               <h3>SCHEMA_VERSIONING</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;SCHEMA_VERSIONING</div>
+               <p>
+                  Namespace defined in XSD 1.1 for schema versioning: "http://www.w3.org/2007/XMLSchema-versioning"
+                  </p>
+            </div><a name="SCM"></a><div class="member">
+               <h3>SCM</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;SCM</div>
+               <p>
+                  Namespace for the Saxon serialization of the schema component model: "http://ns.saxonica.com/schema-component-model"
+                  </p>
+            </div><a name="SQL"></a><div class="member">
+               <h3>SQL</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;SQL</div>
+               <p>
+                  Fixed namespace name for Saxon SQL extension: "http://saxon.sf.net/sql"
+                  </p>
+            </div><a name="SVG"></a><div class="member">
+               <h3>SVG</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;SVG</div>
+               <p>
+                  The SVG namespace: "http://www.w3.org/2000/svg"
+                  </p>
+            </div><a name="XHTML"></a><div class="member">
+               <h3>XHTML</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;XHTML</div>
+               <p>
+                  The XHTML namespace: "http://www.w3.org/1999/xhtml"
+                  </p>
+            </div><a name="XLINK"></a><div class="member">
+               <h3>XLINK</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;XLINK</div>
+               <p>
+                  The XLink namespace: "http://www.w3.org/1999/xlink"
+                  </p>
+            </div><a name="XML"></a><div class="member">
+               <h3>XML</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;XML</div>
+               <p>
+                  Fixed namespace name for XML: "http://www.w3.org/XML/1998/namespace".
+                  </p>
+            </div><a name="XMLNS"></a><div class="member">
+               <h3>XMLNS</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;XMLNS</div>
+               <p>
+                  The XMLNS namespace (used in DOM): "http://www.w3.org/2000/xmlns/"
+                  </p>
+            </div><a name="XQUERY"></a><div class="member">
+               <h3>XQUERY</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;XQUERY</div>
+               <p>
+                  The xquery namespace for the XQuery 3.0 declare option: "http://www.w3.org/2012/xquery"
+                  </p>
+            </div><a name="XQUERY_OPTIONS"></a><div class="member">
+               <h3>XQUERY_OPTIONS</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;XQUERY_OPTIONS</div>
+               <p>
+                  The xquery-option namespace for the XQuery 3.0 feature names: "http://www.w3.org/2011/xquery-options"
+                  </p>
+            </div><a name="XSLT"></a><div class="member">
+               <h3>XSLT</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;XSLT</div>
+               <p>
+                  Fixed namespace name for XSLT: "http://www.w3.org/1999/XSL/Transform"
+                  </p>
+            </div>
+         </div><a name="method_detail"></a><div class="section">
+            <h2>Method Detail</h2><a name="IsReserved(string)"></a><div class="member">
+               <h3>IsReserved</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a>&nbsp;IsReserved</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;uri)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Determine whether a namespace is a reserved namespace
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>uri</code>&nbsp;-&nbsp;the namespace URI to be tested</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">
+                     <code>true</code>, if this namespace URI is a reserved namespace, <code>false</code> otherwise.</div>
+               </div>
+            </div><a name="IsReservedInQuery31(string)"></a><div class="member">
+               <h3>IsReservedInQuery31</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a>&nbsp;IsReservedInQuery31</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;uri)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Determine whether a namespace is a reserved namespace in XQuery 3.1
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>uri</code>&nbsp;-&nbsp;the namespace URI to be tested</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">
+                     <code>true</code>, if this namespace URI is reserved in XQuery 3.1, <code>false</code> otherwise.</div>
+               </div>
+            </div>
+         </div>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+   </body>
+</html>

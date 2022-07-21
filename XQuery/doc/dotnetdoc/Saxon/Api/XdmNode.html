@@ -1,0 +1,845 @@
+<!DOCTYPE HTML><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>XdmNode</title>
+      <meta name="keywords" content="Saxon.Api.XdmNode class">
+      <link rel="stylesheet" type="text/css" href="../../saxon-dotnetdoc.css" title="Style">
+   </head>
+   <body>
+      <div class="contents">
+         <h3><a href="../../index.html" class="home">Saxon.Api</a></h3>
+         <ul class="list">
+            <li><a href="CollectionFinder.html">CollectionFinder</a></li>
+            <li><a href="DocumentBuilder.html">DocumentBuilder</a></li>
+            <li><a href="DomDestination.html">DomDestination</a></li>
+            <li><a href="DynamicContext.html">DynamicContext</a></li>
+            <li><a href="Error.html">Error</a></li>
+            <li><a href="ErrorReporter.html">ErrorReporter</a></li>
+            <li><a href="ExtensionFunctionCall.html">ExtensionFunctionCall</a></li>
+            <li><a href="ExtensionFunctionDefinition.html">ExtensionFunctionDefinition</a></li>
+            <li><a href="Feature.html">Feature</a></li>
+            <li><a href="FeatureKeys.html">FeatureKeys</a></li>
+            <li><a href="HostLanguage.html">HostLanguage</a></li>
+            <li><a href="IDestination.html">IDestination</a></li>
+            <li><a href="IInvalidityHandler.html">IInvalidityHandler</a></li>
+            <li><a href="IResource.html">IResource</a></li>
+            <li><a href="JsonBuilder.html">JsonBuilder</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="Message.html">Message</a></li>
+            <li><a href="NamespaceConstant.html">NamespaceConstant</a></li>
+            <li><a href="NodeResource.html">NodeResource</a></li>
+            <li><a href="NullDestination.html">NullDestination</a></li>
+            <li><a href="ParameterDetails.html">ParameterDetails</a></li>
+            <li><a href="Predicates.html">Predicates</a></li>
+            <li><a href="Processor.html">Processor</a></li>
+            <li><a href="QName.html">QName</a></li>
+            <li><a href="RawDestination.html">RawDestination</a></li>
+            <li><a href="ResourceRequest.html">ResourceRequest</a></li>
+            <li><a href="ResourceResolver.html">ResourceResolver</a></li>
+            <li><a href="ResultDocumentHandler.html">ResultDocumentHandler</a></li>
+            <li><a href="SaxonApiException.html">SaxonApiException</a></li>
+            <li><a href="SchemaManager.html">SchemaManager</a></li>
+            <li><a href="SchemaResolver.html">SchemaResolver</a></li>
+            <li><a href="SchemaValidationMode.html">SchemaValidationMode</a></li>
+            <li><a href="SchemaValidator.html">SchemaValidator</a></li>
+            <li><a href="Serializer.html">Serializer</a></li>
+            <li><a href="StaticContext.html">StaticContext</a></li>
+            <li><a href="Step.html">Step&lt;TInput, TResult&gt;</a></li>
+            <li><a href="Steps.html">Steps</a></li>
+            <li><a href="TextResource.html">TextResource</a></li>
+            <li><a href="TreeModel.html">TreeModel</a></li>
+            <li><a href="UnprefixedElementMatchingPolicy.html">UnprefixedElementMatchingPolicy</a></li>
+            <li><a href="ValidationFailure.html">ValidationFailure</a></li>
+            <li><a href="WhitespacePolicy.html">WhitespacePolicy</a></li>
+            <li><a href="XdmAnyArrayType.html">XdmAnyArrayType</a></li>
+            <li><a href="XdmAnyFunctionType.html">XdmAnyFunctionType</a></li>
+            <li><a href="XdmAnyItemType.html">XdmAnyItemType</a></li>
+            <li><a href="XdmAnyMapType.html">XdmAnyMapType</a></li>
+            <li><a href="XdmAnyNodeType.html">XdmAnyNodeType</a></li>
+            <li><a href="XdmArray.html">XdmArray</a></li>
+            <li><a href="XdmAtomicType.html">XdmAtomicType</a></li>
+            <li><a href="XdmAtomicValue.html">XdmAtomicValue</a></li>
+            <li><a href="XdmAxis.html">XdmAxis</a></li>
+            <li><a href="XdmDestination.html">XdmDestination</a></li>
+            <li><a href="XdmEmptySequence.html">XdmEmptySequence</a></li>
+            <li><a href="XdmExternalObject.html">XdmExternalObject</a></li>
+            <li><a href="XdmFunctionItem.html">XdmFunctionItem</a></li>
+            <li><a href="XdmItem.html">XdmItem</a></li>
+            <li><a href="XdmItemType.html">XdmItemType</a></li>
+            <li><a href="XdmMap.html">XdmMap</a></li>
+            <li><a href="XdmNode.html">XdmNode</a></li>
+            <li><a href="XdmNodeKind.html">XdmNodeKind</a></li>
+            <li><a href="XdmSequenceType.html">XdmSequenceType</a></li>
+            <li><a href="XdmValue.html">XdmValue</a></li>
+            <li><a href="XmlReaderResource.html">XmlReaderResource</a></li>
+            <li><a href="XmlWriterDestination.html">XmlWriterDestination</a></li>
+            <li><a href="XPathCompiler.html">XPathCompiler</a></li>
+            <li><a href="XPathExecutable.html">XPathExecutable</a></li>
+            <li><a href="XPathSelector.html">XPathSelector</a></li>
+            <li><a href="XQueryCompiler.html">XQueryCompiler</a></li>
+            <li><a href="XQueryEvaluator.html">XQueryEvaluator</a></li>
+            <li><a href="XQueryExecutable.html">XQueryExecutable</a></li>
+            <li><a href="XQueryResolver.html">XQueryResolver</a></li>
+            <li><a href="Xslt30Transformer.html">Xslt30Transformer</a></li>
+            <li><a href="XsltCompiler.html">XsltCompiler</a></li>
+            <li><a href="XsltExecutable.html">XsltExecutable</a></li>
+            <li><a href="XsltPackage.html">XsltPackage</a></li>
+            <li><a href="XsltTransformer.html">XsltTransformer</a></li>
+         </ul>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+      <div class="main">
+         <h3>Saxon.Api</h3>
+         <h1><span class="classLabel">Class&nbsp;</span>XdmNode</h1>
+         <hr>
+         <dl>
+            <dt>
+               <div class="code">public class&nbsp;XdmNode</div>
+            </dt>
+            <dt> extends <a href="XdmItem.html" class="apilink">XdmItem</a></dt>
+         </dl>
+         <p>
+            The class <code>XdmNode</code> represents a Node in the XDM Data Model. A Node
+            is an <code>XdmItem</code>, and is therefore an <code>XdmValue</code> in its own right, and may also participate
+            as one item within a sequence value.
+            </p>
+         
+         <p>An <code>XdmNode</code> is implemented as a wrapper around an object
+            of type <code>Saxon.Hej.NodeInfo</code>. Because this is a key interface
+            within Saxon, it is exposed via this API, even though it is an internal
+            interface that is not part of the API proper.</p>
+         
+         <p>The <code>XdmNode</code> interface exposes basic properties of the node, such
+            as its name, its string value, and its typed value. Navigation to other nodes
+            is supported through a single method, <code>EnumerateAxis</code>, which allows
+            other nodes to be retrieved by following any of the XPath axes.</p>
+         
+         <p>Navigation from a node to other related nodes can be achieved using the
+            <a href="XdmValue.html#Select(Step)" class="apilink">XdmValue.Select(Step)</a> method, which this class inherits.</p>
+         <a name="constructor_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Constructor Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#XdmNode(NodeInfo)" class="apilink">XdmNode</a> (<a href="../../../javadoc/net/sf/saxon/om/NodeInfo.html" class="apilink java">net.sf.saxon.om.NodeInfo</a>&nbsp;node)</span><div class="fnormal">
+                     <p>
+                        Construct an XdmNode as a wrapper around an instance of the internal class <code>Saxon.Hej.om.NodeInfo</code>
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="property_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Property Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a></td>
+               <td><span class="signature"><a href="#BaseUri" class="apilink">BaseUri</a></span><div class="fnormal">
+                     <p>
+                        Get the base URI of the node.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a></td>
+               <td><span class="signature"><a href="#ColumnNumber" class="apilink">ColumnNumber</a></span><div class="fnormal">
+                     <p>
+                        Get the column number of the node in a source document. 
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a></td>
+               <td><span class="signature"><a href="#DocumentUri" class="apilink">DocumentUri</a></span><div class="fnormal">
+                     <p>
+                        Get the document URI of the node.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="../../../javadoc/net/sf/saxon/om/NodeInfo.html" class="apilink java">net.sf.saxon.om.NodeInfo</a></td>
+               <td><span class="signature"><a href="#Implementation" class="apilink">Implementation</a></span><div class="fnormal">
+                     <p>
+                        Escape hatch to the underlying class in the Java implementation
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a></td>
+               <td><span class="signature"><a href="#LineNumber" class="apilink">LineNumber</a></span><div class="fnormal">
+                     <p>
+                        Get the line number of the node in a source document. 
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="XdmNodeKind.html" class="apilink">XdmNodeKind</a></td>
+               <td><span class="signature"><a href="#NodeKind" class="apilink">NodeKind</a></span><div class="fnormal">
+                     <p>
+                        The kind of node, as an instance of <code>Saxon.Api.XdmNodeKind</code>.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#NodeName" class="apilink">NodeName</a></span><div class="fnormal">
+                     <p>
+                        The name of the node, as a <code>QName</code>. Returns null in the case of unnamed nodes.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.xml.xmlnodetype(VS.80).aspx" class="apilink system" target="_blank">XmlNodeType</a></td>
+               <td><span class="signature"><a href="#NodeType" class="apilink">NodeType</a></span><div class="fnormal">
+                     <p>
+                        The kind of node, as an instance of <code>System.Xml.XmlNodeType</code>.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#OuterXml" class="apilink">OuterXml</a></span><div class="fnormal">
+                     <p>
+                        Return a serialization of this node as lexical XML
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="XdmNode.html" class="apilink">XdmNode</a></td>
+               <td><span class="signature"><a href="#Parent" class="apilink">Parent</a></span><div class="fnormal">
+                     <p>
+                        Get the parent of this node.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="Processor.html" class="apilink">Processor</a></td>
+               <td><span class="signature"><a href="#Processor" class="apilink">Processor</a></span><div class="fnormal">
+                     <p>
+                        Get a <a href="XdmNode.html#Processor" class="apilink">XdmNode.Processor</a> suitable for use with this <a href="XdmNode.html" class="apilink">XdmNode</a>.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="XdmNode.html" class="apilink">XdmNode</a></td>
+               <td><span class="signature"><a href="#Root" class="apilink">Root</a></span><div class="fnormal">
+                     <p>
+                        Get the root of the tree containing this node.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="XdmValue.html" class="apilink">XdmValue</a></td>
+               <td><span class="signature"><a href="#TypedValue" class="apilink">TypedValue</a></span><div class="fnormal">
+                     <p>
+                        The typed value of the node, as an instance of <code>XdmValue</code>.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="method_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Method Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span></td>
+               <td><span class="signature"><a href="#Children(Predicate)" class="apilink">Children</a> (<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span>&nbsp;filter)</span><div class="fnormal">
+                     <p>
+                        Get the nodes found on the child axis that satisfy a supplied <code>Predicate</code>.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span></td>
+               <td><span class="signature"><a href="#Children()" class="apilink">Children</a> ()</span><div class="fnormal">
+                     <p>
+                        Get the element children of this node
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span></td>
+               <td><span class="signature"><a href="#Children(string)" class="apilink">Children</a> (<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;localName)</span><div class="fnormal">
+                     <p>
+                        Get the element children of this node having a specified local name, irrespective
+                        of the namespace
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span></td>
+               <td><span class="signature"><a href="#Children(string,string)" class="apilink">Children</a> (<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;uri, <a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;localName)</span><div class="fnormal">
+                     <p>
+                        Get the element children having a specified namespace URI and local name
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span></td>
+               <td><span class="signature"><a href="#EnumerableOverAxis(XdmAxis)" class="apilink">EnumerableOverAxis</a> (<a href="XdmAxis.html" class="apilink">XdmAxis</a>&nbsp;axis)</span><div class="fnormal">
+                     <p>
+                        Get an enumerable that supplies all the nodes on one of the XPath
+                        axes, starting with this node.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerator(VS.80).aspx" class="apilink system" target="_blank">IEnumerator</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span></td>
+               <td><span class="signature"><a href="#EnumerateAxis(XdmAxis)" class="apilink">EnumerateAxis</a> (<a href="XdmAxis.html" class="apilink">XdmAxis</a>&nbsp;axis)</span><div class="fnormal">
+                     <p>
+                        Get an enumerator that supplies all the nodes on one of the XPath
+                        axes, starting with this node.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerator(VS.80).aspx" class="apilink system" target="_blank">IEnumerator</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span></td>
+               <td><span class="signature"><a href="#EnumerateAxis(XdmAxis,QName)" class="apilink">EnumerateAxis</a> (<a href="XdmAxis.html" class="apilink">XdmAxis</a>&nbsp;axis, <a href="QName.html" class="apilink">QName</a>&nbsp;nodeName)</span><div class="fnormal">
+                     <p>
+                        Get an enumerator that selects all the nodes on one of the XPath
+                        axes, provided they have a given name. The nodes selected are those of the principal
+                        node kind (elements for most axes, attributes for the attribute axis, namespace nodes
+                        for the namespace axis) whose name matches the name given in the second argument.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a></td>
+               <td><span class="signature"><a href="#Equals(object)" class="apilink">Equals</a> (<a href="http://msdn.microsoft.com/en-us/library/system.object(VS.80).aspx" class="apilink system" target="_blank">object</a>&nbsp;obj)</span><div class="fnormal">
+                     <p>
+                        Two instances of <code>XdmNode</code> are equal if they represent the same node. That is, the <code>Equals()</code>
+                        method returns the same result as the XPath "is" operator.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#GetAttributeValue(QName)" class="apilink">GetAttributeValue</a> (<a href="QName.html" class="apilink">QName</a>&nbsp;name)</span><div class="fnormal">
+                     <p>
+                        Get a the string value of a named attribute of this element. 
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#GetAttributeValue(string)" class="apilink">GetAttributeValue</a> (<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;name)</span><div class="fnormal">
+                     <p>
+                        Get a the string value of a named attribute (in no namespace) of this element. 
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a></td>
+               <td><span class="signature"><a href="#GetHashCode()" class="apilink">GetHashCode</a> ()</span><div class="fnormal">
+                     <p>
+                        The hash code of a node reflects the equality relationship: if two <code>XdmNode</code> instances
+                        represent the same node, then they have the same hash code
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.xml.xmlnode(VS.80).aspx" class="apilink system" target="_blank">XmlNode</a></td>
+               <td><span class="signature"><a href="#GetUnderlyingXmlNode()" class="apilink">GetUnderlyingXmlNode</a> ()</span><div class="fnormal">
+                     <p>
+                        Unwraps the underlying DOM <code>XmlNode</code> object from the <code>XdmValue</code>.
+                        If the method does not wrap a DOM <code>XmlNode</code> then null is returned
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.xml.xmlnode(VS.80).aspx" class="apilink system" target="_blank">XmlNode</a></td>
+               <td><span class="signature"><a href="#getUnderlyingXmlNode()" class="apilink">getUnderlyingXmlNode</a> ()</span><div class="fnormal">
+                     <p>
+                        Deprecated This is an obsolete synonym of GetUnderlyingXmlNode</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a></td>
+               <td><span class="signature"><a href="#IsAtomic()" class="apilink">IsAtomic</a> ()</span><div class="fnormal">
+                     <p>
+                        Determine whether the item is an atomic value
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span></td>
+               <td><span class="signature"><a href="#Select(Step)" class="apilink">Select</a> (<a href="Step.html" class="apilink">Step</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>,&nbsp;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span>&nbsp;step)</span><div class="fnormal">
+                     <p>
+                        Get a IEnumerable of XdmNodes by applying a <code>Step</code> to this
+                        XdmNode value.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a></td>
+               <td><span class="signature"><a href="#ToString()" class="apilink">ToString</a> ()</span><div class="fnormal">
+                     <p>
+                        Return a string representation of the node.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#WriteTo(XmlWriter)" class="apilink">WriteTo</a> (<a href="http://msdn.microsoft.com/en-us/library/system.xml.xmlwriter(VS.80).aspx" class="apilink system" target="_blank">XmlWriter</a>&nbsp;writer)</span><div class="fnormal">
+                     <p>
+                        Send the node (that is, the subtree rooted at this node) to an <code>XmlWriter</code>
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="constructor_detail"></a><div class="section">
+            <h2>Constructor Detail</h2><a name="XdmNode(NodeInfo)"></a><div class="member">
+               <h3>XdmNode</h3>
+               <div class="code">public&nbsp;XdmNode(<a href="../../../javadoc/net/sf/saxon/om/NodeInfo.html" class="apilink java">net.sf.saxon.om.NodeInfo</a>&nbsp;node)</div>
+               <p>
+                  Construct an XdmNode as a wrapper around an instance of the internal class <code>Saxon.Hej.om.NodeInfo</code>
+                  </p>
+               <p>
+                  Applications using the class <code>Saxon.Hej.om.NodeInfo</code> should be aware that it is subject to occasional
+                  changes from one release to the next. For documentation on this class, see the Saxon-EE
+                  Javadoc documentation
+                  for the very similar class <a href="../../../javadoc/net/sf/saxon/om/NodeInfo.html" class="apilink java">net.sf.saxon.om.NodeInfo</a>.
+                  </p>
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>node</code>&nbsp;-&nbsp;The object to be wrapped</div>
+            </div>
+         </div><a name="property_detail"></a><div class="section">
+            <h2>Property Detail</h2><a name="BaseUri"></a><div class="member">
+               <h3>BaseUri</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a>&nbsp;BaseUri&nbsp;{get; }</div>
+               <p>
+                  Get the base URI of the node.
+                  </p>
+            </div><a name="ColumnNumber"></a><div class="member">
+               <h3>ColumnNumber</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a>&nbsp;ColumnNumber&nbsp;{get; }</div>
+               <p>
+                  Get the column number of the node in a source document. 
+                  </p>
+               <p>
+                  For a document constructed using the document
+                  builder, this is available only if the line numbering option was set when the document
+                  was built (and
+                  then only for element nodes). If the column number is not available, the value -1
+                  is returned.
+                  Line numbers will typically be as reported by a SAX parser; this means that the column
+                  number for an element
+                  node is the column number containing the closing "&gt;" of the start tag.
+                  </p>
+            </div><a name="DocumentUri"></a><div class="member">
+               <h3>DocumentUri</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a>&nbsp;DocumentUri&nbsp;{get; }</div>
+               <p>
+                  Get the document URI of the node.
+                  </p>
+            </div><a name="Implementation"></a><div class="member">
+               <h3>Implementation</h3>
+               <div class="code">public&nbsp;<a href="../../../javadoc/net/sf/saxon/om/NodeInfo.html" class="apilink java">net.sf.saxon.om.NodeInfo</a>&nbsp;Implementation&nbsp;{get; }</div>
+               <p>
+                  Escape hatch to the underlying class in the Java implementation
+                  </p>
+            </div><a name="LineNumber"></a><div class="member">
+               <h3>LineNumber</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a>&nbsp;LineNumber&nbsp;{get; }</div>
+               <p>
+                  Get the line number of the node in a source document. 
+                  </p>
+               <p>
+                  For a document constructed using the document
+                  builder, this is available only if the line numbering option was set when the document
+                  was built (and
+                  then only for element nodes). If the line number is not available, the value -1 is
+                  returned.
+                  Line numbers will typically be as reported by a SAX parser; this means that the line
+                  number for an element
+                  node is the line number containing the closing "&gt;" of the start tag.
+                  </p>
+            </div><a name="NodeKind"></a><div class="member">
+               <h3>NodeKind</h3>
+               <div class="code">public&nbsp;<a href="XdmNodeKind.html" class="apilink">XdmNodeKind</a>&nbsp;NodeKind&nbsp;{get; }</div>
+               <p>
+                  The kind of node, as an instance of <code>Saxon.Api.XdmNodeKind</code>.
+                  </p>
+            </div><a name="NodeName"></a><div class="member">
+               <h3>NodeName</h3>
+               <div class="code">public&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;NodeName&nbsp;{get; }</div>
+               <p>
+                  The name of the node, as a <code>QName</code>. Returns null in the case of unnamed nodes.
+                  </p>
+            </div><a name="NodeType"></a><div class="member">
+               <h3>NodeType</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.xml.xmlnodetype(VS.80).aspx" class="apilink system" target="_blank">XmlNodeType</a>&nbsp;NodeType&nbsp;{get; }</div>
+               <p>
+                  The kind of node, as an instance of <code>System.Xml.XmlNodeType</code>.
+                  </p>
+               <p>For a namespace node in the XDM model, the value <code>XmlNodeType.None</code> 
+                  is returned.
+                  </p>
+            </div><a name="OuterXml"></a><div class="member">
+               <h3>OuterXml</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;OuterXml&nbsp;{get; }</div>
+               <p>
+                  Return a serialization of this node as lexical XML
+                  </p>
+               
+               <p>In the case of an element node, the result will be a well-formed
+                  XML document serialized as defined in the W3C XSLT/XQuery serialization specification,
+                  using options <code>method="xml"</code>, <code>indent="yes"</code>, <code>omit-xml-declaration="yes"</code>.</p>
+               
+               <p>In the case of a document node, the result will be a well-formed
+                  XML document provided that the document node contains exactly one element child,
+                  and no text node children. In other cases it will be a well-formed external
+                  general parsed entity.</p>
+               
+               <p>In the case of an attribute node, the output is a string in the form
+                  <code>name="value"</code>. The name will use the original namespace prefix.</p>
+               
+               <p>Other nodes, such as text nodes, comments, and processing instructions, are
+                  represented as they would appear in lexical XML.</p>
+               </div><a name="Parent"></a><div class="member">
+               <h3>Parent</h3>
+               <div class="code">public&nbsp;<a href="XdmNode.html" class="apilink">XdmNode</a>&nbsp;Parent&nbsp;{get; }</div>
+               <p>
+                  Get the parent of this node.
+                  </p>
+               <p>
+                  Returns either a document node, an element node, or null in the case where
+                  this node has no parent. 
+                  </p>
+            </div><a name="Processor"></a><div class="member">
+               <h3>Processor</h3>
+               <div class="code">public&nbsp;<a href="Processor.html" class="apilink">Processor</a>&nbsp;Processor&nbsp;{get; }</div>
+               <p>
+                  Get a <a href="XdmNode.html#Processor" class="apilink">XdmNode.Processor</a> suitable for use with this <a href="XdmNode.html" class="apilink">XdmNode</a>.
+                  </p>
+               
+               <p>In most cases this will be the original <a href="XdmNode.html#Processor" class="apilink">XdmNode.Processor</a>
+                  object used to create the <a href="DocumentBuilder.html" class="apilink">DocumentBuilder</a> that built the document that 
+                  contains this node. If that <a href="XdmNode.html#Processor" class="apilink">XdmNode.Processor</a> is not available, it will be a 
+                  compatible <code>Processor</code>, one that shares the same underlying <a href="../../../javadoc/net/sf/saxon/Configuration.html" class="apilink java">net.sf.saxon.Configuration</a>, 
+                  and hence is initialized with the same configuration settings, schema components,
+                  license features,
+                  and so on.</p>
+               
+               <p>
+                  <i>Note: the only case where the original <code>Processor</code> is not available is when
+                     the same <code>Configuration</code> is used with multiple APIs, for example mixing s9api
+                     and JAXP or XQJ in the same application.</i>
+                  </p>
+               
+               <p class="methodLabel">Returns:</p>
+               <div class="params">Returns a <code>Processor</code> suitable for performing further operations on this node, for example
+                  for creating a <a href="Serializer.html" class="apilink">Serializer</a> or an <a href="XPathCompiler.html" class="apilink">XPathCompiler</a>.</div>
+            </div><a name="Root"></a><div class="member">
+               <h3>Root</h3>
+               <div class="code">public&nbsp;<a href="XdmNode.html" class="apilink">XdmNode</a>&nbsp;Root&nbsp;{get; }</div>
+               <p>
+                  Get the root of the tree containing this node.
+                  </p>
+               <p>
+                  Returns the root of the tree containing this node (which might be this node itself).
+                  </p>
+            </div><a name="TypedValue"></a><div class="member">
+               <h3>TypedValue</h3>
+               <div class="code">public&nbsp;<a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;TypedValue&nbsp;{get; }</div>
+               <p>
+                  The typed value of the node, as an instance of <code>XdmValue</code>.
+                  </p>
+               <p>
+                  A <code>DynamicError</code> is thrown if the node has no typed value, as will be the case for
+                  an element with element-only content.
+                  </p>
+            </div>
+         </div><a name="method_detail"></a><div class="section">
+            <h2>Method Detail</h2><a name="Children(Predicate)"></a><div class="member">
+               <h3>Children</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span>&nbsp;Children</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span>&nbsp;filter)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Get the nodes found on the child axis that satisfy a supplied <code>Predicate</code>.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>filter</code>&nbsp;-&nbsp;the predicate to be applied</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params"> an <code>Iterable</code> containing those nodes found on the child axis that satisfy the supplied predicate.</div>
+               </div>
+            </div><a name="Children()"></a><div class="member">
+               <h3>Children</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span>&nbsp;Children</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Get the element children of this node
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params"> an <code>Iterable</code> containing all nodes on the child axis.</div>
+               </div>
+            </div><a name="Children(string)"></a><div class="member">
+               <h3>Children</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span>&nbsp;Children</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;localName)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Get the element children of this node having a specified local name, irrespective
+                     of the namespace
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>localName</code>&nbsp;-&nbsp;the local name of the child elements to be selected, or "*" to select all children
+                     that are element nodes</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params"> an <code>Iterable</code> containing the element children of this node that have the required local name.</div>
+               </div>
+            </div><a name="Children(string,string)"></a><div class="member">
+               <h3>Children</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span>&nbsp;Children</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;uri, <br><a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;localName)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Get the element children having a specified namespace URI and local name
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>uri</code>&nbsp;-&nbsp;the namespace URI of the child elements to be selected: 
+                     supply a zero-length string to indicate the null namespace</div>
+                  <div class="params"><code>localName</code>&nbsp;-&nbsp;the local name of the child elements to be selected</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params"> an <code>Iterable</code> containing the element children of this node that have the required local name and
+                     namespace URI.</div>
+               </div>
+            </div><a name="EnumerableOverAxis(XdmAxis)"></a><div class="member">
+               <h3>EnumerableOverAxis</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span>&nbsp;EnumerableOverAxis</span><span class="fblock">(<a href="XdmAxis.html" class="apilink">XdmAxis</a>&nbsp;axis)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Get an enumerable that supplies all the nodes on one of the XPath
+                     axes, starting with this node.
+                     </p>
+                  <p>
+                     The nodes are returned in axis order: that is, document order for a forwards
+                     axis, reverse document order for a reverse axis.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>axis</code>&nbsp;-&nbsp;
+                     The axis to be navigated, for example <code>XdmAxis.Child</code> for the child axis.
+                     </div>
+               </div>
+            </div><a name="EnumerateAxis(XdmAxis)"></a><div class="member">
+               <h3>EnumerateAxis</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerator(VS.80).aspx" class="apilink system" target="_blank">IEnumerator</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span>&nbsp;EnumerateAxis</span><span class="fblock">(<a href="XdmAxis.html" class="apilink">XdmAxis</a>&nbsp;axis)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Get an enumerator that supplies all the nodes on one of the XPath
+                     axes, starting with this node.
+                     </p>
+                  <p>
+                     The nodes are returned in axis order: that is, document order for a forwards
+                     axis, reverse document order for a reverse axis.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>axis</code>&nbsp;-&nbsp;
+                     The axis to be navigated, for example <code>XdmAxis.Child</code> for the child axis.
+                     </div>
+               </div>
+            </div><a name="EnumerateAxis(XdmAxis,QName)"></a><div class="member">
+               <h3>EnumerateAxis</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerator(VS.80).aspx" class="apilink system" target="_blank">IEnumerator</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span>&nbsp;EnumerateAxis</span><span class="fblock">(<a href="XdmAxis.html" class="apilink">XdmAxis</a>&nbsp;axis, <br><a href="QName.html" class="apilink">QName</a>&nbsp;nodeName)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Get an enumerator that selects all the nodes on one of the XPath
+                     axes, provided they have a given name. The nodes selected are those of the principal
+                     node kind (elements for most axes, attributes for the attribute axis, namespace nodes
+                     for the namespace axis) whose name matches the name given in the second argument.
+                     </p>
+                  <p>
+                     The nodes are returned in axis order: that is, document order for a forwards
+                     axis, reverse document order for a reverse axis.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>axis</code>&nbsp;-&nbsp;
+                     The axis to be navigated, for example <code>XdmAxis.Child</code> for the child axis.
+                     </div>
+                  <div class="params"><code>nodeName</code>&nbsp;-&nbsp;
+                     The name of the required nodes, for example <code>new QName("", "item")</code> to select
+                     nodes with local name "item", in no namespace.
+                     </div>
+               </div>
+            </div><a name="Equals(object)"></a><div class="member">
+               <h3>Equals</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;override&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a>&nbsp;Equals</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.object(VS.80).aspx" class="apilink system" target="_blank">object</a>&nbsp;obj)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Two instances of <code>XdmNode</code> are equal if they represent the same node. That is, the <code>Equals()</code>
+                     method returns the same result as the XPath "is" operator.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>obj</code>&nbsp;-&nbsp;The object node to be compared</div>
+               </div>
+            </div><a name="GetAttributeValue(QName)"></a><div class="member">
+               <h3>GetAttributeValue</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;GetAttributeValue</span><span class="fblock">(<a href="QName.html" class="apilink">QName</a>&nbsp;name)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Get a the string value of a named attribute of this element. 
+                     </p>
+                  <p>
+                     Returns null if this node is not an element, or if this element has no
+                     attribute with the specified name.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>name</code>&nbsp;-&nbsp;The name of the attribute whose value is required</div>
+               </div>
+            </div><a name="GetAttributeValue(string)"></a><div class="member">
+               <h3>GetAttributeValue</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;GetAttributeValue</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;name)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Get a the string value of a named attribute (in no namespace) of this element. 
+                     </p>
+                  <p>
+                     Returns null if this node is not an element, or if this element has no
+                     attribute with the specified name.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>name</code>&nbsp;-&nbsp;The name of the attribute whose value is required, interpreted as no-namespace name</div>
+               </div>
+            </div><a name="GetHashCode()"></a><div class="member">
+               <h3>GetHashCode</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;override&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a>&nbsp;GetHashCode</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     The hash code of a node reflects the equality relationship: if two <code>XdmNode</code> instances
+                     represent the same node, then they have the same hash code
+                     </p>
+               </div>
+            </div><a name="GetUnderlyingXmlNode()"></a><div class="member">
+               <h3>GetUnderlyingXmlNode</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.xml.xmlnode(VS.80).aspx" class="apilink system" target="_blank">XmlNode</a>&nbsp;GetUnderlyingXmlNode</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Unwraps the underlying DOM <code>XmlNode</code> object from the <code>XdmValue</code>.
+                     If the method does not wrap a DOM <code>XmlNode</code> then null is returned
+                     </p>
+                  <p>
+                     Unwraps the underlying DOM <code>XmlNode</code> object from the <code>XdmValue</code>.
+                     If the method does not wrap a DOM <code>XmlNode</code> then null is returned
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">The underlying <code>XmlNode</code>
+                     </div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">The underlying <code>XmlNode</code>
+                     </div>
+               </div>
+            </div><a name="getUnderlyingXmlNode()"></a><div class="member">
+               <h3>getUnderlyingXmlNode</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.xml.xmlnode(VS.80).aspx" class="apilink system" target="_blank">XmlNode</a>&nbsp;getUnderlyingXmlNode</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Deprecated This is an obsolete synonym of GetUnderlyingXmlNode</p>
+                  <p>
+                     Incorrectly-named synonym of GetUnderlyingXmlNode, retained temporarily for compatibility
+                     with 11.0 and 11.1
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">The underlying <code>XmlNode</code> if there is one</div>
+               </div>
+            </div><a name="IsAtomic()"></a><div class="member">
+               <h3>IsAtomic</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;override&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a>&nbsp;IsAtomic</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Determine whether the item is an atomic value
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">
+                     false (the item is not an atomic value)
+                     </div>
+               </div>
+            </div><a name="Select(Step)"></a><div class="member">
+               <h3>Select</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span>&nbsp;Select</span><span class="fblock">(<a href="Step.html" class="apilink">Step</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>,&nbsp;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span>&nbsp;step)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Get a IEnumerable of XdmNodes by applying a <code>Step</code> to this
+                     XdmNode value.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>step</code>&nbsp;-&nbsp;the <code>Step</code> to be applied to this node</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">an IEnumerable of nodes obtained by applying the <code>Step</code> function to this node</div>
+               </div>
+            </div><a name="ToString()"></a><div class="member">
+               <h3>ToString</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;override&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;ToString</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Return a string representation of the node.
+                     </p>
+                  <p>
+                     This method returns the value of the <a href="XdmNode.html#OuterXml" class="apilink">XdmNode.OuterXml</a> property, that is, a serialization of the node.
+                     To get the string value of a node as defined in XPath, use the <a href="XdmItem.html#StringValue" class="apilink">XdmItem.StringValue</a> property.
+                     </p>
+               </div>
+            </div><a name="WriteTo(XmlWriter)"></a><div class="member">
+               <h3>WriteTo</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;WriteTo</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.xml.xmlwriter(VS.80).aspx" class="apilink system" target="_blank">XmlWriter</a>&nbsp;writer)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Send the node (that is, the subtree rooted at this node) to an <code>XmlWriter</code>
+                     </p>
+                  <p>
+                     Note that an <code>XmlWriter</code> can only handle a well-formed XML document. This method
+                     will therefore signal an exception if the node is a document node with no children,
+                     or with
+                     more than one element child.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>writer</code>&nbsp;-&nbsp;
+                     The <code>XmlWriter</code> to which the node is to be written
+                     </div>
+               </div>
+            </div>
+         </div>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+   </body>
+</html>

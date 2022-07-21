@@ -1,0 +1,758 @@
+<!DOCTYPE HTML><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Predicates</title>
+      <meta name="keywords" content="Saxon.Api.Predicates class">
+      <link rel="stylesheet" type="text/css" href="../../saxon-dotnetdoc.css" title="Style">
+   </head>
+   <body>
+      <div class="contents">
+         <h3><a href="../../index.html" class="home">Saxon.Api</a></h3>
+         <ul class="list">
+            <li><a href="CollectionFinder.html">CollectionFinder</a></li>
+            <li><a href="DocumentBuilder.html">DocumentBuilder</a></li>
+            <li><a href="DomDestination.html">DomDestination</a></li>
+            <li><a href="DynamicContext.html">DynamicContext</a></li>
+            <li><a href="Error.html">Error</a></li>
+            <li><a href="ErrorReporter.html">ErrorReporter</a></li>
+            <li><a href="ExtensionFunctionCall.html">ExtensionFunctionCall</a></li>
+            <li><a href="ExtensionFunctionDefinition.html">ExtensionFunctionDefinition</a></li>
+            <li><a href="Feature.html">Feature</a></li>
+            <li><a href="FeatureKeys.html">FeatureKeys</a></li>
+            <li><a href="HostLanguage.html">HostLanguage</a></li>
+            <li><a href="IDestination.html">IDestination</a></li>
+            <li><a href="IInvalidityHandler.html">IInvalidityHandler</a></li>
+            <li><a href="IResource.html">IResource</a></li>
+            <li><a href="JsonBuilder.html">JsonBuilder</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="Message.html">Message</a></li>
+            <li><a href="NamespaceConstant.html">NamespaceConstant</a></li>
+            <li><a href="NodeResource.html">NodeResource</a></li>
+            <li><a href="NullDestination.html">NullDestination</a></li>
+            <li><a href="ParameterDetails.html">ParameterDetails</a></li>
+            <li><a href="Predicates.html">Predicates</a></li>
+            <li><a href="Processor.html">Processor</a></li>
+            <li><a href="QName.html">QName</a></li>
+            <li><a href="RawDestination.html">RawDestination</a></li>
+            <li><a href="ResourceRequest.html">ResourceRequest</a></li>
+            <li><a href="ResourceResolver.html">ResourceResolver</a></li>
+            <li><a href="ResultDocumentHandler.html">ResultDocumentHandler</a></li>
+            <li><a href="SaxonApiException.html">SaxonApiException</a></li>
+            <li><a href="SchemaManager.html">SchemaManager</a></li>
+            <li><a href="SchemaResolver.html">SchemaResolver</a></li>
+            <li><a href="SchemaValidationMode.html">SchemaValidationMode</a></li>
+            <li><a href="SchemaValidator.html">SchemaValidator</a></li>
+            <li><a href="Serializer.html">Serializer</a></li>
+            <li><a href="StaticContext.html">StaticContext</a></li>
+            <li><a href="Step.html">Step&lt;TInput, TResult&gt;</a></li>
+            <li><a href="Steps.html">Steps</a></li>
+            <li><a href="TextResource.html">TextResource</a></li>
+            <li><a href="TreeModel.html">TreeModel</a></li>
+            <li><a href="UnprefixedElementMatchingPolicy.html">UnprefixedElementMatchingPolicy</a></li>
+            <li><a href="ValidationFailure.html">ValidationFailure</a></li>
+            <li><a href="WhitespacePolicy.html">WhitespacePolicy</a></li>
+            <li><a href="XdmAnyArrayType.html">XdmAnyArrayType</a></li>
+            <li><a href="XdmAnyFunctionType.html">XdmAnyFunctionType</a></li>
+            <li><a href="XdmAnyItemType.html">XdmAnyItemType</a></li>
+            <li><a href="XdmAnyMapType.html">XdmAnyMapType</a></li>
+            <li><a href="XdmAnyNodeType.html">XdmAnyNodeType</a></li>
+            <li><a href="XdmArray.html">XdmArray</a></li>
+            <li><a href="XdmAtomicType.html">XdmAtomicType</a></li>
+            <li><a href="XdmAtomicValue.html">XdmAtomicValue</a></li>
+            <li><a href="XdmAxis.html">XdmAxis</a></li>
+            <li><a href="XdmDestination.html">XdmDestination</a></li>
+            <li><a href="XdmEmptySequence.html">XdmEmptySequence</a></li>
+            <li><a href="XdmExternalObject.html">XdmExternalObject</a></li>
+            <li><a href="XdmFunctionItem.html">XdmFunctionItem</a></li>
+            <li><a href="XdmItem.html">XdmItem</a></li>
+            <li><a href="XdmItemType.html">XdmItemType</a></li>
+            <li><a href="XdmMap.html">XdmMap</a></li>
+            <li><a href="XdmNode.html">XdmNode</a></li>
+            <li><a href="XdmNodeKind.html">XdmNodeKind</a></li>
+            <li><a href="XdmSequenceType.html">XdmSequenceType</a></li>
+            <li><a href="XdmValue.html">XdmValue</a></li>
+            <li><a href="XmlReaderResource.html">XmlReaderResource</a></li>
+            <li><a href="XmlWriterDestination.html">XmlWriterDestination</a></li>
+            <li><a href="XPathCompiler.html">XPathCompiler</a></li>
+            <li><a href="XPathExecutable.html">XPathExecutable</a></li>
+            <li><a href="XPathSelector.html">XPathSelector</a></li>
+            <li><a href="XQueryCompiler.html">XQueryCompiler</a></li>
+            <li><a href="XQueryEvaluator.html">XQueryEvaluator</a></li>
+            <li><a href="XQueryExecutable.html">XQueryExecutable</a></li>
+            <li><a href="XQueryResolver.html">XQueryResolver</a></li>
+            <li><a href="Xslt30Transformer.html">Xslt30Transformer</a></li>
+            <li><a href="XsltCompiler.html">XsltCompiler</a></li>
+            <li><a href="XsltExecutable.html">XsltExecutable</a></li>
+            <li><a href="XsltPackage.html">XsltPackage</a></li>
+            <li><a href="XsltTransformer.html">XsltTransformer</a></li>
+         </ul>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+      <div class="main">
+         <h3>Saxon.Api</h3>
+         <h1><span class="classLabel">Class&nbsp;</span>Predicates</h1>
+         <hr>
+         <dl>
+            <dt>
+               <div class="code">public class&nbsp;Predicates</div>
+            </dt>
+         </dl>
+         <p>
+            This non-instantiable class provides a number of useful implementations of the <code>System.Predicate</code>
+            interface, designed for use when navigating streams of XDM items.
+            </p><a name="method_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Method Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<span class="operator">&lt;T&gt;</span>&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;T&gt;</span></td>
+               <td><span class="signature"><a href="#AllOf(Predicate[])" class="apilink">AllOf</a> (<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate[]</a><span class="operator">&lt;T&gt;</span>&nbsp;conditions)</span><div class="fnormal">
+                     <p>
+                        A predicate to test whether all the supplied predicates are satisfied
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<span class="operator">&lt;T&gt;</span>&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;T&gt;</span></td>
+               <td><span class="signature"><a href="#AnyOf(Predicate[])" class="apilink">AnyOf</a> (<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate[]</a><span class="operator">&lt;T&gt;</span>&nbsp;conditions)</span><div class="fnormal">
+                     <p>
+                        A predicate to test whether at least one of the supplied predicates are satisfied
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span></td>
+               <td><span class="signature"><a href="#AttributeEq(string,string)" class="apilink">AttributeEq</a> (<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;local, <a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;value)</span><div class="fnormal">
+                     <p>
+                        Obtain a predicate that tests whether an item is an element node with a given attribute
+                        (whose
+                        name is in no namespace) whose string value is equal to a given value.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<span class="operator">&lt;TInput,&nbsp;TResult&gt;</span>&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;TInput&gt;</span></td>
+               <td><span class="signature"><a href="#Empty(Step)" class="apilink">Empty</a> (<a href="Step.html" class="apilink">Step</a><span class="operator">&lt;TInput,&nbsp;TResult&gt;</span>&nbsp;step)</span><div class="fnormal">
+                     <p>
+                        Obtain a predicate that tests whether a supplied <code>Step</code> delivers an empty result.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmAtomicValue.html" class="apilink">XdmAtomicValue</a>&gt;</span></td>
+               <td><span class="signature"><a href="#Eq(XdmAtomicValue)" class="apilink">Eq</a> (<a href="XdmAtomicValue.html" class="apilink">XdmAtomicValue</a>&nbsp;value)</span><div class="fnormal">
+                     <p>
+                        Obtain a predicate that tests whether an atomic value compares equal to a supplied
+                        atomic value of
+                        a comparable type.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span></td>
+               <td><span class="signature"><a href="#Eq(string)" class="apilink">Eq</a> (<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;value)</span><div class="fnormal">
+                     <p>
+                        Obtain a predicate that tests whether the result of applying the XPath <code>string()</code> function to an item
+                        is equal to a given string.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<span class="operator">&lt;TInput,&nbsp;TResult&gt;</span>&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;TInput&gt;</span></td>
+               <td><span class="signature"><a href="#Eq(Step,string)" class="apilink">Eq</a> (<a href="Step.html" class="apilink">Step</a><span class="operator">&lt;TInput,&nbsp;TResult&gt;</span>&nbsp;step, <a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;value)</span><div class="fnormal">
+                     <p>
+                        Obtain a predicate that tests whether there is some item in the result of applying
+                        a step,
+                        whose string value is equal to a given string. For example, <code>Eq(attribute("id"), "foo")</code>
+                        matches an element if it has an "id" attribute whose value is "foo".
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<span class="operator">&lt;TInput,&nbsp;TResult&gt;</span>&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;TInput&gt;</span></td>
+               <td><span class="signature"><a href="#Every(Step,Predicate)" class="apilink">Every</a> (<a href="Step.html" class="apilink">Step</a><span class="operator">&lt;TInput,&nbsp;TResult&gt;</span>&nbsp;step, <a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;TResult&gt;</span>&nbsp;condition)</span><div class="fnormal">
+                     <p>
+                        Obtain a predicate that tests whether every item in the result of applying a step
+                        satisfies the supplied condition.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span></td>
+               <td><span class="signature"><a href="#Exists(Step)" class="apilink">Exists</a> (<a href="Step.html" class="apilink">Step</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>,&nbsp;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span>&nbsp;step)</span><div class="fnormal">
+                     <p>
+                        Obtain a predicate that tests whether a supplied <code>Step</code> delivers a non-empty result.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span></td>
+               <td><span class="signature"><a href="#HasAttribute(string)" class="apilink">HasAttribute</a> (<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;local)</span><div class="fnormal">
+                     <p>
+                        Obtain a predicate that tests whether an item is an element node with a given attribute
+                        (whose name is in no namespace).
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span></td>
+               <td><span class="signature"><a href="#HasLocalName(string)" class="apilink">HasLocalName</a> (<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;localName)</span><div class="fnormal">
+                     <p>
+                        Obtain a predicate that tests whether an item is a node with a given local name, irrespective
+                        of the namespace.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span></td>
+               <td><span class="signature"><a href="#HasName(string,string)" class="apilink">HasName</a> (<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;uri, <a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;localName)</span><div class="fnormal">
+                     <p>
+                        Obtain a predicate that tests whether an item is a node with a given namespace URI
+                        and local name.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span></td>
+               <td><span class="signature"><a href="#HasNamespace(string)" class="apilink">HasNamespace</a> (<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;uri)</span><div class="fnormal">
+                     <p>
+                        Obtain a predicate that tests whether an item is a node with a given namespace URI.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span></td>
+               <td><span class="signature"><a href="#IsArray()" class="apilink">IsArray</a> ()</span><div class="fnormal">
+                     <p>
+                        A predicate to test whether an item is an XDM array.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span></td>
+               <td><span class="signature"><a href="#IsAtomic()" class="apilink">IsAtomic</a> ()</span><div class="fnormal">
+                     <p>
+                        A predicate to test whether an item is an atomic value.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span></td>
+               <td><span class="signature"><a href="#IsAttribute()" class="apilink">IsAttribute</a> ()</span><div class="fnormal">
+                     <p>
+                        A predicate to test whether an item is an attribute node.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span></td>
+               <td><span class="signature"><a href="#IsComment()" class="apilink">IsComment</a> ()</span><div class="fnormal">
+                     <p>
+                        A predicate to test whether an item is a comment node.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span></td>
+               <td><span class="signature"><a href="#IsDocument()" class="apilink">IsDocument</a> ()</span><div class="fnormal">
+                     <p>
+                        A predicate to test whether an item is a document node.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span></td>
+               <td><span class="signature"><a href="#IsElement()" class="apilink">IsElement</a> ()</span><div class="fnormal">
+                     <p>
+                        A predicate to test whether an item is an element node.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span></td>
+               <td><span class="signature"><a href="#IsFunction()" class="apilink">IsFunction</a> ()</span><div class="fnormal">
+                     <p>
+                        A predicate to test whether an item is a function value (this includes maps and arrays).
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span></td>
+               <td><span class="signature"><a href="#IsMap()" class="apilink">IsMap</a> ()</span><div class="fnormal">
+                     <p>
+                        A predicate to test whether an item is an XDM map.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span></td>
+               <td><span class="signature"><a href="#IsNamespace()" class="apilink">IsNamespace</a> ()</span><div class="fnormal">
+                     <p>
+                        A predicate to test whether an item is a namespace node.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span></td>
+               <td><span class="signature"><a href="#IsNode()" class="apilink">IsNode</a> ()</span><div class="fnormal">
+                     <p>
+                        A predicate to test whether an item is a node.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span></td>
+               <td><span class="signature"><a href="#IsProcessingInstruction()" class="apilink">IsProcessingInstruction</a> ()</span><div class="fnormal">
+                     <p>
+                        A predicate to test whether an item is a processing instruction node.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span></td>
+               <td><span class="signature"><a href="#IsText()" class="apilink">IsText</a> ()</span><div class="fnormal">
+                     <p>
+                        A predicate to test whether an item is a text node.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span></td>
+               <td><span class="signature"><a href="#MatchesRegex(string)" class="apilink">MatchesRegex</a> (<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;regex)</span><div class="fnormal">
+                     <p>
+                        Obtain a predicate that tests whether the result of applying the XPath <code>string()</code> function to an item
+                        matches a given regular expression.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<span class="operator">&lt;TInput&gt;</span>&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;TInput&gt;</span></td>
+               <td><span class="signature"><a href="#Not(Predicate)" class="apilink">Not</a> (<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;TInput&gt;</span>&nbsp;condition)</span><div class="fnormal">
+                     <p>
+                        Return a <code>Predicate</code> that is the negation of a supplied <code>Predicate</code>.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">static&nbsp;<span class="operator">&lt;TInput,&nbsp;TResult&gt;</span>&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;TInput&gt;</span></td>
+               <td><span class="signature"><a href="#Some(Step,Predicate)" class="apilink">Some</a> (<a href="Step.html" class="apilink">Step</a><span class="operator">&lt;TInput,&nbsp;TResult&gt;</span>&nbsp;step, <a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;TResult&gt;</span>&nbsp;condition)</span><div class="fnormal">
+                     <p>
+                        Obtain a predicate that tests whether there is some item in the result of applying
+                        a step that
+                        satisfies the supplied condition.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="method_detail"></a><div class="section">
+            <h2>Method Detail</h2><a name="AllOf(Predicate[])"></a><div class="member">
+               <h3>AllOf</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;T&gt;</span>&nbsp;AllOf<span class="operator">&lt;T&gt;</span></span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate[]</a><span class="operator">&lt;T&gt;</span>&nbsp;conditions)</span></div>
+               <div class="fcomment">
+                  <p>
+                     A predicate to test whether all the supplied predicates are satisfied
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>conditions</code>&nbsp;-&nbsp;The predicates that must all be satisfied</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate that evaluates to true only if all the supplied predicates are satisfied</div>
+               </div>
+            </div><a name="AnyOf(Predicate[])"></a><div class="member">
+               <h3>AnyOf</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;T&gt;</span>&nbsp;AnyOf<span class="operator">&lt;T&gt;</span></span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate[]</a><span class="operator">&lt;T&gt;</span>&nbsp;conditions)</span></div>
+               <div class="fcomment">
+                  <p>
+                     A predicate to test whether at least one of the supplied predicates are satisfied
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>conditions</code>&nbsp;-&nbsp;The predicates, one of which must be satisfied</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate that evaluates to true only if all the supplied predicates are satisfied</div>
+               </div>
+            </div><a name="AttributeEq(string,string)"></a><div class="member">
+               <h3>AttributeEq</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span>&nbsp;AttributeEq</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;local, <br><a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;value)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Obtain a predicate that tests whether an item is an element node with a given attribute
+                     (whose
+                     name is in no namespace) whose string value is equal to a given value.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>local</code>&nbsp;-&nbsp;The required attribute name</div>
+                  <div class="params"><code>value</code>&nbsp;-&nbsp;The required attribute value</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate that returns true if and only if the supplied item is an element having
+                     an attribute
+                     with the given local name, in no namespace, whose string value is equal to the given
+                     value.</div>
+               </div>
+            </div><a name="Empty(Step)"></a><div class="member">
+               <h3>Empty</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;TInput&gt;</span>&nbsp;Empty<span class="operator">&lt;TInput,&nbsp;TResult&gt;</span></span><span class="fblock">(<a href="Step.html" class="apilink">Step</a><span class="operator">&lt;TInput,&nbsp;TResult&gt;</span>&nbsp;step)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Obtain a predicate that tests whether a supplied <code>Step</code> delivers an empty result.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>step</code>&nbsp;-&nbsp;A step to be applied to the item being tested</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate that returns true if the supplied step returns an empty result.</div>
+               </div>
+            </div><a name="Eq(XdmAtomicValue)"></a><div class="member">
+               <h3>Eq</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmAtomicValue.html" class="apilink">XdmAtomicValue</a>&gt;</span>&nbsp;Eq</span><span class="fblock">(<a href="XdmAtomicValue.html" class="apilink">XdmAtomicValue</a>&nbsp;value)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Obtain a predicate that tests whether an atomic value compares equal to a supplied
+                     atomic value of
+                     a comparable type.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>value</code>&nbsp;-&nbsp;The atomic value to be compared with</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate which returns true when applied to a value that is equal to the supplied
+                     value under the "is-same-key" comparison rules. (These are the rules used to compare
+                     key values
+                     in an XDM map. The rules are chosen to be context-free, error-free, and transitive.)</div>
+               </div>
+            </div><a name="Eq(string)"></a><div class="member">
+               <h3>Eq</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span>&nbsp;Eq</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;value)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Obtain a predicate that tests whether the result of applying the XPath <code>string()</code> function to an item
+                     is equal to a given string.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>value</code>&nbsp;-&nbsp;The string being tested</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate which returns true if the string value of the item being tested
+                     is equal to the given string under Java comparison rules for comparing strings.</div>
+               </div>
+            </div><a name="Eq(Step,string)"></a><div class="member">
+               <h3>Eq</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;TInput&gt;</span>&nbsp;Eq<span class="operator">&lt;TInput,&nbsp;TResult&gt;</span></span><span class="fblock">(<a href="Step.html" class="apilink">Step</a><span class="operator">&lt;TInput,&nbsp;TResult&gt;</span>&nbsp;step, <br><a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;value)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Obtain a predicate that tests whether there is some item in the result of applying
+                     a step,
+                     whose string value is equal to a given string. For example, <code>Eq(attribute("id"), "foo")</code>
+                     matches an element if it has an "id" attribute whose value is "foo".
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>step</code>&nbsp;-&nbsp;The step to be evaluated</div>
+                  <div class="params"><code>value</code>&nbsp;-&nbsp;The string to be compared against the items returned by the step</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate which returns true if some item selected by the step has a string value
+                     equal to the given string.</div>
+               </div>
+            </div><a name="Every(Step,Predicate)"></a><div class="member">
+               <h3>Every</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;TInput&gt;</span>&nbsp;Every<span class="operator">&lt;TInput,&nbsp;TResult&gt;</span></span><span class="fblock">(<a href="Step.html" class="apilink">Step</a><span class="operator">&lt;TInput,&nbsp;TResult&gt;</span>&nbsp;step, <br><a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;TResult&gt;</span>&nbsp;condition)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Obtain a predicate that tests whether every item in the result of applying a step
+                     satisfies the supplied condition.
+                     </p>
+                  
+                  <p>For example, <code>every(CHILD, exists(attribute("foo"))</code> matches an element if each of its child
+                     elements has an attribute whose local name is "foo".</p>
+                  
+                  <p>If the step returns an empty sequence the result will always be true.</p>
+                  
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>step</code>&nbsp;-&nbsp;The step to be evaluated</div>
+                  <div class="params"><code>condition</code>&nbsp;-&nbsp;The predicate to be applied to the items returned by the step</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate which returns true if every item selected by the step satisfies the supplied
+                     condition.</div>
+               </div>
+            </div><a name="Exists(Step)"></a><div class="member">
+               <h3>Exists</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span>&nbsp;Exists</span><span class="fblock">(<a href="Step.html" class="apilink">Step</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>,&nbsp;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span>&nbsp;step)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Obtain a predicate that tests whether a supplied <code>Step</code> delivers a non-empty result.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>step</code>&nbsp;-&nbsp;A step to be applied to the item being tested</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate that returns true if the step returns a non-empty result.</div>
+               </div>
+            </div><a name="HasAttribute(string)"></a><div class="member">
+               <h3>HasAttribute</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span>&nbsp;HasAttribute</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;local)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Obtain a predicate that tests whether an item is an element node with a given attribute
+                     (whose name is in no namespace).
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>local</code>&nbsp;-&nbsp;The required attribute name</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate that returns true if and only if the supplied item is an element having
+                     an attribute
+                     with the given local name, in no namespace.</div>
+               </div>
+            </div><a name="HasLocalName(string)"></a><div class="member">
+               <h3>HasLocalName</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span>&nbsp;HasLocalName</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;localName)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Obtain a predicate that tests whether an item is a node with a given local name, irrespective
+                     of the namespace.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>localName</code>&nbsp;-&nbsp;The required local name</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate that returns true if and only if the supplied item is a node with the
+                     given namespace URI and local name.</div>
+               </div>
+            </div><a name="HasName(string,string)"></a><div class="member">
+               <h3>HasName</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span>&nbsp;HasName</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;uri, <br><a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;localName)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Obtain a predicate that tests whether an item is a node with a given namespace URI
+                     and local name.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>uri</code>&nbsp;-&nbsp;The required namespace URI: supply a zero-length string to indicate the null namespace</div>
+                  <div class="params"><code>localName</code>&nbsp;-&nbsp;The required local name</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate that returns true if and only if the supplied item is a node with the
+                     given namespace URI and local name.</div>
+               </div>
+            </div><a name="HasNamespace(string)"></a><div class="member">
+               <h3>HasNamespace</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmNode.html" class="apilink">XdmNode</a>&gt;</span>&nbsp;HasNamespace</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;uri)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Obtain a predicate that tests whether an item is a node with a given namespace URI.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>uri</code>&nbsp;-&nbsp;The required namespace URI: supply a zero-length string to identify the null namespace</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate that returns true if and only if the supplied item is a node with the
+                     given
+                     namespace URI. If a zero-length string is supplied, the predicate will also match
+                     nodes having no name,
+                     such as text and comment nodes, and nodes having a local name only, such as namespace
+                     and processing-instruction
+                     nodes.</div>
+               </div>
+            </div><a name="IsArray()"></a><div class="member">
+               <h3>IsArray</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span>&nbsp;IsArray</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     A predicate to test whether an item is an XDM array.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate that returns true if given an item that is an array.</div>
+               </div>
+            </div><a name="IsAtomic()"></a><div class="member">
+               <h3>IsAtomic</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span>&nbsp;IsAtomic</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     A predicate to test whether an item is an atomic value.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate that returns true if given an item that is an atomic value.</div>
+               </div>
+            </div><a name="IsAttribute()"></a><div class="member">
+               <h3>IsAttribute</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span>&nbsp;IsAttribute</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     A predicate to test whether an item is an attribute node.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate that returns true if given an item that is an attribute node.</div>
+               </div>
+            </div><a name="IsComment()"></a><div class="member">
+               <h3>IsComment</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span>&nbsp;IsComment</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     A predicate to test whether an item is a comment node.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate that returns true if given an item that is a comment node.</div>
+               </div>
+            </div><a name="IsDocument()"></a><div class="member">
+               <h3>IsDocument</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span>&nbsp;IsDocument</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     A predicate to test whether an item is a document node.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate that returns true if given an item that is a document node.</div>
+               </div>
+            </div><a name="IsElement()"></a><div class="member">
+               <h3>IsElement</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span>&nbsp;IsElement</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     A predicate to test whether an item is an element node.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate that returns true if given an item that is an element node.</div>
+               </div>
+            </div><a name="IsFunction()"></a><div class="member">
+               <h3>IsFunction</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span>&nbsp;IsFunction</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     A predicate to test whether an item is a function value (this includes maps and arrays).
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate that returns true if given an item that is a function, including
+                     maps and arrays.</div>
+               </div>
+            </div><a name="IsMap()"></a><div class="member">
+               <h3>IsMap</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span>&nbsp;IsMap</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     A predicate to test whether an item is an XDM map.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate that returns true if given an item that is a map.</div>
+               </div>
+            </div><a name="IsNamespace()"></a><div class="member">
+               <h3>IsNamespace</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span>&nbsp;IsNamespace</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     A predicate to test whether an item is a namespace node.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate that returns true if given an item that is a namespace node.</div>
+               </div>
+            </div><a name="IsNode()"></a><div class="member">
+               <h3>IsNode</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span>&nbsp;IsNode</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     A predicate to test whether an item is a node.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate that returns true if given an item that is a node.</div>
+               </div>
+            </div><a name="IsProcessingInstruction()"></a><div class="member">
+               <h3>IsProcessingInstruction</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span>&nbsp;IsProcessingInstruction</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     A predicate to test whether an item is a processing instruction node.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate that returns true if given an item that is a processing instruction node.</div>
+               </div>
+            </div><a name="IsText()"></a><div class="member">
+               <h3>IsText</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span>&nbsp;IsText</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     A predicate to test whether an item is a text node.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate that returns true if given an item that is a text node.</div>
+               </div>
+            </div><a name="MatchesRegex(string)"></a><div class="member">
+               <h3>MatchesRegex</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;<a href="XdmItem.html" class="apilink">XdmItem</a>&gt;</span>&nbsp;MatchesRegex</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.string(VS.80).aspx" class="apilink system" target="_blank">string</a>&nbsp;regex)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Obtain a predicate that tests whether the result of applying the XPath <code>string()</code> function to an item
+                     matches a given regular expression.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>regex</code>&nbsp;-&nbsp;The regular expression (this is a Java regular expression, not an XPath regular expression)</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate which returns true if the string value of the item being tested
+                     contains a substring that matches the given regular expression. To test the string
+                     in its entirety,
+                     use anchors "^" and "$" in the regular expression.</div>
+               </div>
+            </div><a name="Not(Predicate)"></a><div class="member">
+               <h3>Not</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;TInput&gt;</span>&nbsp;Not<span class="operator">&lt;TInput&gt;</span></span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;TInput&gt;</span>&nbsp;condition)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Return a <code>Predicate</code> that is the negation of a supplied <code>Predicate</code>.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>condition</code>&nbsp;-&nbsp;The supplied predicate</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate that matches an item if and only if the supplied predicate does not match
+                     the item.</div>
+               </div>
+            </div><a name="Some(Step,Predicate)"></a><div class="member">
+               <h3>Some</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;static&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;TInput&gt;</span>&nbsp;Some<span class="operator">&lt;TInput,&nbsp;TResult&gt;</span></span><span class="fblock">(<a href="Step.html" class="apilink">Step</a><span class="operator">&lt;TInput,&nbsp;TResult&gt;</span>&nbsp;step, <br><a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;TResult&gt;</span>&nbsp;condition)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Obtain a predicate that tests whether there is some item in the result of applying
+                     a step that
+                     satisfies the supplied condition.
+                     </p>
+                  
+                  <p>For example, <code>some(CHILD, exists(attribute("foo"))</code> matches an element if it has a child
+                     element with an attribute whose local name is "foo".</p>
+                  
+                  <p>If the step returns an empty sequence the result will always be false.</p>
+                  
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>step</code>&nbsp;-&nbsp;The step to be evaluated</div>
+                  <div class="params"><code>condition</code>&nbsp;-&nbsp;The predicate to be applied to the items returned by the step</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A predicate which returns true if some item selected by the step satisfies the supplied
+                     condition.</div>
+               </div>
+            </div>
+         </div>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+   </body>
+</html>

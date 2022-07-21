@@ -1,0 +1,528 @@
+<!DOCTYPE HTML><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>XsltTransformer</title>
+      <meta name="keywords" content="Saxon.Api.XsltTransformer class">
+      <link rel="stylesheet" type="text/css" href="../../saxon-dotnetdoc.css" title="Style">
+   </head>
+   <body>
+      <div class="contents">
+         <h3><a href="../../index.html" class="home">Saxon.Api</a></h3>
+         <ul class="list">
+            <li><a href="CollectionFinder.html">CollectionFinder</a></li>
+            <li><a href="DocumentBuilder.html">DocumentBuilder</a></li>
+            <li><a href="DomDestination.html">DomDestination</a></li>
+            <li><a href="DynamicContext.html">DynamicContext</a></li>
+            <li><a href="Error.html">Error</a></li>
+            <li><a href="ErrorReporter.html">ErrorReporter</a></li>
+            <li><a href="ExtensionFunctionCall.html">ExtensionFunctionCall</a></li>
+            <li><a href="ExtensionFunctionDefinition.html">ExtensionFunctionDefinition</a></li>
+            <li><a href="Feature.html">Feature</a></li>
+            <li><a href="FeatureKeys.html">FeatureKeys</a></li>
+            <li><a href="HostLanguage.html">HostLanguage</a></li>
+            <li><a href="IDestination.html">IDestination</a></li>
+            <li><a href="IInvalidityHandler.html">IInvalidityHandler</a></li>
+            <li><a href="IResource.html">IResource</a></li>
+            <li><a href="JsonBuilder.html">JsonBuilder</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="Message.html">Message</a></li>
+            <li><a href="NamespaceConstant.html">NamespaceConstant</a></li>
+            <li><a href="NodeResource.html">NodeResource</a></li>
+            <li><a href="NullDestination.html">NullDestination</a></li>
+            <li><a href="ParameterDetails.html">ParameterDetails</a></li>
+            <li><a href="Predicates.html">Predicates</a></li>
+            <li><a href="Processor.html">Processor</a></li>
+            <li><a href="QName.html">QName</a></li>
+            <li><a href="RawDestination.html">RawDestination</a></li>
+            <li><a href="ResourceRequest.html">ResourceRequest</a></li>
+            <li><a href="ResourceResolver.html">ResourceResolver</a></li>
+            <li><a href="ResultDocumentHandler.html">ResultDocumentHandler</a></li>
+            <li><a href="SaxonApiException.html">SaxonApiException</a></li>
+            <li><a href="SchemaManager.html">SchemaManager</a></li>
+            <li><a href="SchemaResolver.html">SchemaResolver</a></li>
+            <li><a href="SchemaValidationMode.html">SchemaValidationMode</a></li>
+            <li><a href="SchemaValidator.html">SchemaValidator</a></li>
+            <li><a href="Serializer.html">Serializer</a></li>
+            <li><a href="StaticContext.html">StaticContext</a></li>
+            <li><a href="Step.html">Step&lt;TInput, TResult&gt;</a></li>
+            <li><a href="Steps.html">Steps</a></li>
+            <li><a href="TextResource.html">TextResource</a></li>
+            <li><a href="TreeModel.html">TreeModel</a></li>
+            <li><a href="UnprefixedElementMatchingPolicy.html">UnprefixedElementMatchingPolicy</a></li>
+            <li><a href="ValidationFailure.html">ValidationFailure</a></li>
+            <li><a href="WhitespacePolicy.html">WhitespacePolicy</a></li>
+            <li><a href="XdmAnyArrayType.html">XdmAnyArrayType</a></li>
+            <li><a href="XdmAnyFunctionType.html">XdmAnyFunctionType</a></li>
+            <li><a href="XdmAnyItemType.html">XdmAnyItemType</a></li>
+            <li><a href="XdmAnyMapType.html">XdmAnyMapType</a></li>
+            <li><a href="XdmAnyNodeType.html">XdmAnyNodeType</a></li>
+            <li><a href="XdmArray.html">XdmArray</a></li>
+            <li><a href="XdmAtomicType.html">XdmAtomicType</a></li>
+            <li><a href="XdmAtomicValue.html">XdmAtomicValue</a></li>
+            <li><a href="XdmAxis.html">XdmAxis</a></li>
+            <li><a href="XdmDestination.html">XdmDestination</a></li>
+            <li><a href="XdmEmptySequence.html">XdmEmptySequence</a></li>
+            <li><a href="XdmExternalObject.html">XdmExternalObject</a></li>
+            <li><a href="XdmFunctionItem.html">XdmFunctionItem</a></li>
+            <li><a href="XdmItem.html">XdmItem</a></li>
+            <li><a href="XdmItemType.html">XdmItemType</a></li>
+            <li><a href="XdmMap.html">XdmMap</a></li>
+            <li><a href="XdmNode.html">XdmNode</a></li>
+            <li><a href="XdmNodeKind.html">XdmNodeKind</a></li>
+            <li><a href="XdmSequenceType.html">XdmSequenceType</a></li>
+            <li><a href="XdmValue.html">XdmValue</a></li>
+            <li><a href="XmlReaderResource.html">XmlReaderResource</a></li>
+            <li><a href="XmlWriterDestination.html">XmlWriterDestination</a></li>
+            <li><a href="XPathCompiler.html">XPathCompiler</a></li>
+            <li><a href="XPathExecutable.html">XPathExecutable</a></li>
+            <li><a href="XPathSelector.html">XPathSelector</a></li>
+            <li><a href="XQueryCompiler.html">XQueryCompiler</a></li>
+            <li><a href="XQueryEvaluator.html">XQueryEvaluator</a></li>
+            <li><a href="XQueryExecutable.html">XQueryExecutable</a></li>
+            <li><a href="XQueryResolver.html">XQueryResolver</a></li>
+            <li><a href="Xslt30Transformer.html">Xslt30Transformer</a></li>
+            <li><a href="XsltCompiler.html">XsltCompiler</a></li>
+            <li><a href="XsltExecutable.html">XsltExecutable</a></li>
+            <li><a href="XsltPackage.html">XsltPackage</a></li>
+            <li><a href="XsltTransformer.html">XsltTransformer</a></li>
+         </ul>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+      <div class="main">
+         <h3>Saxon.Api</h3>
+         <h1><span class="classLabel">Class&nbsp;</span>XsltTransformer</h1>
+         <hr>
+         <dl>
+            <dt>
+               <div class="code">public class&nbsp;XsltTransformer</div>
+            </dt>
+            <dt> implements <a href="IDestination.html" class="apilink">IDestination</a></dt>
+         </dl>
+         <p>
+            An <code>XsltTransformer</code> represents a compiled and loaded stylesheet ready for execution.
+            The <code>XsltTransformer</code> holds details of the dynamic evaluation context for the stylesheet.
+            </p>
+         
+         <p>An <code>XsltTransformer</code> must not be used concurrently in multiple threads. It is safe,
+            however, to reuse the object within a single thread to run the same stylesheet several
+            times.
+            Running the stylesheet does not change the context that has been established.</p>
+         
+         <p>An <code>XsltTransformer</code> is always constructed by running the <code>Load</code> method of
+            an <code>XsltExecutable</code>.</p>
+         
+         <p>The <a href="Xslt30Transformer.html" class="apilink">Xslt30Transformer</a> class provides invocation options that are more closely aligned
+            with the XSLT 3.0 specification, for example streamed evaluation. However, both <code>XsltTransformer</code> 
+            and <code>Xslt30Transformer</code> can be used irrespective of the XSLT language version used in the stylesheet.</p>
+         <a name="property_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Property Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a></td>
+               <td><span class="signature"><a href="#BaseOutputUri" class="apilink">BaseOutputUri</a></span><div class="fnormal">
+                     <p>
+                        The base output URI, which acts as the base URI for resolving the <code>href</code>
+                        attribute of <code>xsl:result-document</code>.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="IDestination.html" class="apilink">IDestination</a></td>
+               <td><span class="signature"><a href="#Destination" class="apilink">Destination</a></span><div class="fnormal">
+                     <p>
+                        The destination for the result of the transformation. The class <code>XmlDestination</code> is an abstraction 
+                        that allows a number of different kinds of destination to be specified.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="../../../javadoc/net/sf/saxon/trans/XsltController.html" class="apilink java">net.sf.saxon.trans.XsltController</a></td>
+               <td><span class="signature"><a href="#Implementation" class="apilink">Implementation</a></span><div class="fnormal">
+                     <p>
+                        Escape hatch to the underlying implementation
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="XdmNode.html" class="apilink">XdmNode</a></td>
+               <td><span class="signature"><a href="#InitialContextNode" class="apilink">InitialContextNode</a></span><div class="fnormal">
+                     <p>
+                        The global context item for the stylesheet, as a node.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#InitialMode" class="apilink">InitialMode</a></span><div class="fnormal">
+                     <p>
+                        The initial mode for the stylesheet. This is either a <code>QName</code>, for a 
+                        specific mode, or null, for the default mode.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#InitialTemplate" class="apilink">InitialTemplate</a></span><div class="fnormal">
+                     <p>
+                        The initial template for the stylesheet. This is either a <code>QName</code>, for a 
+                        named template, or null, if no initial template has been set.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.action(VS.80).aspx" class="apilink system" target="_blank">Action</a><span class="operator">&lt;<a href="Message.html" class="apilink">Message</a>&gt;</span></td>
+               <td><span class="signature"><a href="#MessageListener" class="apilink">MessageListener</a></span><div class="fnormal">
+                     <p>
+                        Handler for messages output using <code>&lt;xsl:message&gt;</code>.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="ResultDocumentHandler.html" class="apilink">ResultDocumentHandler</a></td>
+               <td><span class="signature"><a href="#ResultDocumentHandler" class="apilink">ResultDocumentHandler</a></span><div class="fnormal">
+                     <p>
+                        The <code>IResultDocumentHandler</code> to be used at run-time to process the output
+                        produced by any <code>xsl:result-document</code> instruction with an <code>href</code>
+                        attribute.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="SchemaValidationMode.html" class="apilink">SchemaValidationMode</a></td>
+               <td><span class="signature"><a href="#SchemaValidationMode" class="apilink">SchemaValidationMode</a></span><div class="fnormal">
+                     <p>
+                        The <code>SchemaValidationMode</code> to be used in this transformation, especially for documents
+                        loaded using the <code>doc()</code>, <code>document()</code>, or <code>collection()</code> functions.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.io.textwriter(VS.80).aspx" class="apilink system" target="_blank">TextWriter</a></td>
+               <td><span class="signature"><a href="#TraceFunctionDestination" class="apilink">TraceFunctionDestination</a></span><div class="fnormal">
+                     <p>
+                        Destination for output of messages using the <code>trace()</code> function.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="../../../javadoc/net/sf/saxon/s9api/Destination.html" class="apilink java">net.sf.saxon.s9api.Destination</a></td>
+               <td><span class="signature"><a href="#UnderlyingDestination" class="apilink">UnderlyingDestination</a></span><div class="fnormal">
+                     <p>
+                        The underlying implementation object. Although this method is public, it is intended
+                        for advanced applications only, and should not be considered stable from release to
+                        release.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="method_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Method Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#Close()" class="apilink">Close</a> ()</span><div class="fnormal">
+                     <p>
+                        Close the <code>Destination</code>, releasing any resources that need to be released.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#OnClose(Action)" class="apilink">OnClose</a> (<a href="http://msdn.microsoft.com/en-us/library/system.action(VS.80).aspx" class="apilink system" target="_blank">Action</a>&nbsp;action)</span><div class="fnormal">
+                     <p>
+                        Define an action to be performed when writing to the Destination is complete.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#Run(IDestination)" class="apilink">Run</a> (<a href="IDestination.html" class="apilink">IDestination</a>&nbsp;destination)</span><div class="fnormal">
+                     <p>
+                        Run the transformation, sending the result to a specified destination.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#SetInputStream(Stream,Uri)" class="apilink">SetInputStream</a> (<a href="http://msdn.microsoft.com/en-us/library/system.io.stream(VS.80).aspx" class="apilink system" target="_blank">Stream</a>&nbsp;input, <a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a>&nbsp;baseUri)</span><div class="fnormal">
+                     <p>
+                        Supply the principal input document for the transformation in the form of a stream.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#SetParameter(QName,XdmValue)" class="apilink">SetParameter</a> (<a href="QName.html" class="apilink">QName</a>&nbsp;name, <a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;value)</span><div class="fnormal">
+                     <p>
+                        Set the value of a stylesheet parameter.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="property_detail"></a><div class="section">
+            <h2>Property Detail</h2><a name="BaseOutputUri"></a><div class="member">
+               <h3>BaseOutputUri</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a>&nbsp;BaseOutputUri&nbsp;{get; set; }</div>
+               <p>
+                  The base output URI, which acts as the base URI for resolving the <code>href</code>
+                  attribute of <code>xsl:result-document</code>.
+                  </p>
+            </div><a name="Destination"></a><div class="member">
+               <h3>Destination</h3>
+               <div class="code">public&nbsp;<a href="IDestination.html" class="apilink">IDestination</a>&nbsp;Destination&nbsp;{get; set; }</div>
+               <p>
+                  The destination for the result of the transformation. The class <code>XmlDestination</code> is an abstraction 
+                  that allows a number of different kinds of destination to be specified.
+                  </p>
+               
+               <p>The Destination can be used to chain transformations into a pipeline, by using one
+                  <code>XsltTransformer</code> as the destination of another.</p>
+               </div><a name="Implementation"></a><div class="member">
+               <h3>Implementation</h3>
+               <div class="code">public&nbsp;<a href="../../../javadoc/net/sf/saxon/trans/XsltController.html" class="apilink java">net.sf.saxon.trans.XsltController</a>&nbsp;Implementation&nbsp;{get; }</div>
+               <p>
+                  Escape hatch to the underlying implementation
+                  </p>
+            </div><a name="InitialContextNode"></a><div class="member">
+               <h3>InitialContextNode</h3>
+               <div class="code">public&nbsp;<a href="XdmNode.html" class="apilink">XdmNode</a>&nbsp;InitialContextNode&nbsp;{get; set; }</div>
+               <p>
+                  The global context item for the stylesheet, as a node.
+                  </p>
+               
+               <p>Although XSLT 3.0 allows the global context item to be any item,
+                  this interface only allows it to be a node.
+                  Most commonly it will be a document node, which might be constructed
+                  using the <code>Build</code> method of the <code>DocumentBuilder</code> object.</p>
+               
+               <p>Note that this can be inefficient if the stylesheet uses <code>xsl:strip-space</code>
+                  to strip whitespace, or <code>input-type-annotations="strip"</code> to remove type
+                  annotations, since this will result in the transformation operating on a virtual document
+                  implemented as a view or wrapper of the supplied document.</p>
+               </div><a name="InitialMode"></a><div class="member">
+               <h3>InitialMode</h3>
+               <div class="code">public&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;InitialMode&nbsp;{get; set; }</div>
+               <p>
+                  The initial mode for the stylesheet. This is either a <code>QName</code>, for a 
+                  specific mode, or null, for the default mode.
+                  </p>
+               <p>
+                  The default mode will usually be the unnamed mode, but if the stylesheet declares
+                  a
+                  named mode as the default mode, then supplying null as the <code>InitialMode</code> invokes this default.
+                  </p>
+            </div><a name="InitialTemplate"></a><div class="member">
+               <h3>InitialTemplate</h3>
+               <div class="code">public&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;InitialTemplate&nbsp;{get; set; }</div>
+               <p>
+                  The initial template for the stylesheet. This is either a <code>QName</code>, for a 
+                  named template, or null, if no initial template has been set.
+                  </p>
+               <p>
+                  If the stylesheet is to be invoked by calling the template named <code>xsl:initial-template</code>,
+                  then the <code>InitialTemplate</code> property should be set to this <code>QName</code> explicitly.
+                  </p>
+               <p class="methodLabel">Throws:</p>
+               <div class="params"><a href="SaxonApiException.html" class="apilink">SaxonApiException</a>&nbsp;-&nbsp;Setting this property to the name of a template
+                  that does not exist in the stylesheet throws a <code>SaxonApiException</code> with error 
+                  code XTDE0040. Setting it to the name of a template that has template
+                  parameters throws a <code>SaxonApiException</code> with error code XTDE0060.</div>
+            </div><a name="MessageListener"></a><div class="member">
+               <h3>MessageListener</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.action(VS.80).aspx" class="apilink system" target="_blank">Action</a><span class="operator">&lt;<a href="Message.html" class="apilink">Message</a>&gt;</span>&nbsp;MessageListener&nbsp;{get; set; }</div>
+               <p>
+                  Handler for messages output using <code>&lt;xsl:message&gt;</code>.
+                  </p>
+               
+               <p>The caller may supply a message handler before calling <code>Run</code>;
+                  the processor will then invoke the handler once for each message generated during
+                  the transformation. Each message will be output as an object of type <code>XdmNode</code>
+                  representing a document node.</p>
+               
+               <p>If no message handler is supplied by the caller, message information will be written
+                  to
+                  the standard error stream.</p>
+               
+               <p>Each message is presented as an XML document node. Calling <code>ToString()</code>
+                  on the message object will usually generate an acceptable representation of the
+                  message.</p>
+               
+               <p>When the <code>xsl:message</code> instruction specifies <code>terminate="yes"</code>,
+                  the message is first notified using this interface, and then an exception is thrown
+                  which terminates the transformation.</p>
+               </div><a name="ResultDocumentHandler"></a><div class="member">
+               <h3>ResultDocumentHandler</h3>
+               <div class="code">public&nbsp;<a href="ResultDocumentHandler.html" class="apilink">ResultDocumentHandler</a>&nbsp;ResultDocumentHandler&nbsp;{get; set; }</div>
+               <p>
+                  The <code>IResultDocumentHandler</code> to be used at run-time to process the output
+                  produced by any <code>xsl:result-document</code> instruction with an <code>href</code>
+                  attribute.
+                  </p>
+               <p>
+                  In the absence of a user-supplied result document handler, the <code>href</code>
+                  attribute of the <code>xsl:result-document</code> instruction must be a valid relative
+                  URI, which is resolved against the value of the <code>BaseOutputUri</code> property,
+                  and the resulting absolute URI must identify a writable resource (typically
+                  a file in filestore, using the <code>file:</code> URI scheme).
+                  </p>
+            </div><a name="SchemaValidationMode"></a><div class="member">
+               <h3>SchemaValidationMode</h3>
+               <div class="code">public&nbsp;<a href="SchemaValidationMode.html" class="apilink">SchemaValidationMode</a>&nbsp;SchemaValidationMode&nbsp;{get; set; }</div>
+               <p>
+                  The <code>SchemaValidationMode</code> to be used in this transformation, especially for documents
+                  loaded using the <code>doc()</code>, <code>document()</code>, or <code>collection()</code> functions.
+                  </p>
+            </div><a name="TraceFunctionDestination"></a><div class="member">
+               <h3>TraceFunctionDestination</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.io.textwriter(VS.80).aspx" class="apilink system" target="_blank">TextWriter</a>&nbsp;TraceFunctionDestination&nbsp;{get; set; }</div>
+               <p>
+                  Destination for output of messages using the <code>trace()</code> function.
+                  </p>
+               
+               <p>If no value is supplied by the caller, trace information will be written to
+                  the standard error stream.</p>
+               
+               <p>The supplied destination is ignored if a <code>TraceListener</code> is in use.</p>
+               
+               <p>The <code>TextWriter</code> should be closed by the caller after use.</p>
+               </div><a name="UnderlyingDestination"></a><div class="member">
+               <h3>UnderlyingDestination</h3>
+               <div class="code">public&nbsp;<a href="../../../javadoc/net/sf/saxon/s9api/Destination.html" class="apilink java">net.sf.saxon.s9api.Destination</a>&nbsp;UnderlyingDestination&nbsp;{get; }</div>
+               <p>
+                  The underlying implementation object. Although this method is public, it is intended
+                  for advanced applications only, and should not be considered stable from release to
+                  release.
+                  </p>
+               <p class="methodLabel">Value:</p>
+               <div class="params">
+                  The underlying implementation object, which will be an instance of the class
+                  <code>Saxon.Hej.s9api.XsltTransformer</code>. Information about this class is available in the
+                  Saxon-EE Javadoc documentation for the very similar Java class <a href="../../../javadoc/net/sf/saxon/s9api/XsltTransformer.html" class="apilink java">net.sf.saxon.s9api.XsltTransformer</a>.
+                  </div>
+            </div>
+         </div><a name="method_detail"></a><div class="section">
+            <h2>Method Detail</h2><a name="Close()"></a><div class="member">
+               <h3>Close</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;Close</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Close the <code>Destination</code>, releasing any resources that need to be released.
+                     </p>
+                  <p>
+                     This method is called by the system on completion of a query or transformation.
+                     Some kinds of <code>Destination</code> may need to close an output stream, others might
+                     not need to do anything. The default implementation does nothing.
+                     </p>
+               </div>
+            </div><a name="OnClose(Action)"></a><div class="member">
+               <h3>OnClose</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;OnClose</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.action(VS.80).aspx" class="apilink system" target="_blank">Action</a>&nbsp;action)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Define an action to be performed when writing to the Destination is complete.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>action</code>&nbsp;-&nbsp;The action to be performed.</div>
+               </div>
+            </div><a name="Run(IDestination)"></a><div class="member">
+               <h3>Run</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;Run</span><span class="fblock">(<a href="IDestination.html" class="apilink">IDestination</a>&nbsp;destination)<br>throws<br><a href="SaxonApiException.html" class="apilink">SaxonApiException</a></span></div>
+               <div class="fcomment">
+                  <p>
+                     Run the transformation, sending the result to a specified destination.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>destination</code>&nbsp;-&nbsp;
+                     The destination for the results of the stylesheet. The class <code>XmlDestination</code>
+                     is an abstraction that allows a number of different kinds of destination
+                     to be specified.
+                     </div>
+                  <p class="methodLabel">Throws:</p>
+                  <div class="params"><a href="SaxonApiException.html" class="apilink">SaxonApiException</a>&nbsp;-&nbsp;Throws a <code>SaxonApiException</code> if the transformation
+                     fails.</div>
+               </div>
+            </div><a name="SetInputStream(Stream,Uri)"></a><div class="member">
+               <h3>SetInputStream</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;SetInputStream</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.io.stream(VS.80).aspx" class="apilink system" target="_blank">Stream</a>&nbsp;input, <br><a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a>&nbsp;baseUri)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Supply the principal input document for the transformation in the form of a stream.
+                     </p>
+                  
+                  <p>If this method is used, the <code>InitialContextNode</code> is ignored.</p>
+                  
+                  <p>The supplied stream will be consumed by the <code>Run()</code> method.
+                     Closing the input stream after use is the client's responsibility.</p>
+                  
+                  <p>A base URI must be supplied in all cases. It is used to resolve relative
+                     URI references appearing within the input document.</p>
+                  
+                  <p>Schema validation is applied to the input document according to the value of
+                     the <code>SchemaValidationMode</code> property.</p>
+                  
+                  <p>Whitespace stripping is applied according to the value of the
+                     <code>xsl:strip-space</code> and <code>xsl:preserve-space</code> declarations in the stylesheet.</p>
+                  
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>input</code>&nbsp;-&nbsp;
+                     The stream containing the source code of the principal input document to the transformation.
+                     The document
+                     node at the root of this document will be the global context item for the transformation.
+                     </div>
+                  <div class="params"><code>baseUri</code>&nbsp;-&nbsp;
+                     The base URI of the principal input document. This is used for example by the <code>document()</code>
+                     function if the document contains links to other documents in the form of relative
+                     URIs.</div>
+               </div>
+            </div><a name="SetParameter(QName,XdmValue)"></a><div class="member">
+               <h3>SetParameter</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;SetParameter</span><span class="fblock">(<a href="QName.html" class="apilink">QName</a>&nbsp;name, <br><a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;value)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Set the value of a stylesheet parameter.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>name</code>&nbsp;-&nbsp;The name of the parameter, expressed
+                     as a QName. If a parameter of this name has been declared in the
+                     stylesheet, the given value will be assigned to the variable. If the
+                     variable has not been declared, calling this method has no effect (it is
+                     not an error).</div>
+                  <div class="params"><code>value</code>&nbsp;-&nbsp;The value to be given to the parameter.
+                     If the parameter declaration defines a required type for the variable, then
+                     this value will be converted in the same way as arguments to function calls
+                     (for example, numeric promotion is applied).</div>
+               </div>
+            </div>
+         </div>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+   </body>
+</html>

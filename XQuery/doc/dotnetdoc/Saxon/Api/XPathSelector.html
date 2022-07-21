@@ -1,0 +1,405 @@
+<!DOCTYPE HTML><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>XPathSelector</title>
+      <meta name="keywords" content="Saxon.Api.XPathSelector class">
+      <link rel="stylesheet" type="text/css" href="../../saxon-dotnetdoc.css" title="Style">
+   </head>
+   <body>
+      <div class="contents">
+         <h3><a href="../../index.html" class="home">Saxon.Api</a></h3>
+         <ul class="list">
+            <li><a href="CollectionFinder.html">CollectionFinder</a></li>
+            <li><a href="DocumentBuilder.html">DocumentBuilder</a></li>
+            <li><a href="DomDestination.html">DomDestination</a></li>
+            <li><a href="DynamicContext.html">DynamicContext</a></li>
+            <li><a href="Error.html">Error</a></li>
+            <li><a href="ErrorReporter.html">ErrorReporter</a></li>
+            <li><a href="ExtensionFunctionCall.html">ExtensionFunctionCall</a></li>
+            <li><a href="ExtensionFunctionDefinition.html">ExtensionFunctionDefinition</a></li>
+            <li><a href="Feature.html">Feature</a></li>
+            <li><a href="FeatureKeys.html">FeatureKeys</a></li>
+            <li><a href="HostLanguage.html">HostLanguage</a></li>
+            <li><a href="IDestination.html">IDestination</a></li>
+            <li><a href="IInvalidityHandler.html">IInvalidityHandler</a></li>
+            <li><a href="IResource.html">IResource</a></li>
+            <li><a href="JsonBuilder.html">JsonBuilder</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="Message.html">Message</a></li>
+            <li><a href="NamespaceConstant.html">NamespaceConstant</a></li>
+            <li><a href="NodeResource.html">NodeResource</a></li>
+            <li><a href="NullDestination.html">NullDestination</a></li>
+            <li><a href="ParameterDetails.html">ParameterDetails</a></li>
+            <li><a href="Predicates.html">Predicates</a></li>
+            <li><a href="Processor.html">Processor</a></li>
+            <li><a href="QName.html">QName</a></li>
+            <li><a href="RawDestination.html">RawDestination</a></li>
+            <li><a href="ResourceRequest.html">ResourceRequest</a></li>
+            <li><a href="ResourceResolver.html">ResourceResolver</a></li>
+            <li><a href="ResultDocumentHandler.html">ResultDocumentHandler</a></li>
+            <li><a href="SaxonApiException.html">SaxonApiException</a></li>
+            <li><a href="SchemaManager.html">SchemaManager</a></li>
+            <li><a href="SchemaResolver.html">SchemaResolver</a></li>
+            <li><a href="SchemaValidationMode.html">SchemaValidationMode</a></li>
+            <li><a href="SchemaValidator.html">SchemaValidator</a></li>
+            <li><a href="Serializer.html">Serializer</a></li>
+            <li><a href="StaticContext.html">StaticContext</a></li>
+            <li><a href="Step.html">Step&lt;TInput, TResult&gt;</a></li>
+            <li><a href="Steps.html">Steps</a></li>
+            <li><a href="TextResource.html">TextResource</a></li>
+            <li><a href="TreeModel.html">TreeModel</a></li>
+            <li><a href="UnprefixedElementMatchingPolicy.html">UnprefixedElementMatchingPolicy</a></li>
+            <li><a href="ValidationFailure.html">ValidationFailure</a></li>
+            <li><a href="WhitespacePolicy.html">WhitespacePolicy</a></li>
+            <li><a href="XdmAnyArrayType.html">XdmAnyArrayType</a></li>
+            <li><a href="XdmAnyFunctionType.html">XdmAnyFunctionType</a></li>
+            <li><a href="XdmAnyItemType.html">XdmAnyItemType</a></li>
+            <li><a href="XdmAnyMapType.html">XdmAnyMapType</a></li>
+            <li><a href="XdmAnyNodeType.html">XdmAnyNodeType</a></li>
+            <li><a href="XdmArray.html">XdmArray</a></li>
+            <li><a href="XdmAtomicType.html">XdmAtomicType</a></li>
+            <li><a href="XdmAtomicValue.html">XdmAtomicValue</a></li>
+            <li><a href="XdmAxis.html">XdmAxis</a></li>
+            <li><a href="XdmDestination.html">XdmDestination</a></li>
+            <li><a href="XdmEmptySequence.html">XdmEmptySequence</a></li>
+            <li><a href="XdmExternalObject.html">XdmExternalObject</a></li>
+            <li><a href="XdmFunctionItem.html">XdmFunctionItem</a></li>
+            <li><a href="XdmItem.html">XdmItem</a></li>
+            <li><a href="XdmItemType.html">XdmItemType</a></li>
+            <li><a href="XdmMap.html">XdmMap</a></li>
+            <li><a href="XdmNode.html">XdmNode</a></li>
+            <li><a href="XdmNodeKind.html">XdmNodeKind</a></li>
+            <li><a href="XdmSequenceType.html">XdmSequenceType</a></li>
+            <li><a href="XdmValue.html">XdmValue</a></li>
+            <li><a href="XmlReaderResource.html">XmlReaderResource</a></li>
+            <li><a href="XmlWriterDestination.html">XmlWriterDestination</a></li>
+            <li><a href="XPathCompiler.html">XPathCompiler</a></li>
+            <li><a href="XPathExecutable.html">XPathExecutable</a></li>
+            <li><a href="XPathSelector.html">XPathSelector</a></li>
+            <li><a href="XQueryCompiler.html">XQueryCompiler</a></li>
+            <li><a href="XQueryEvaluator.html">XQueryEvaluator</a></li>
+            <li><a href="XQueryExecutable.html">XQueryExecutable</a></li>
+            <li><a href="XQueryResolver.html">XQueryResolver</a></li>
+            <li><a href="Xslt30Transformer.html">Xslt30Transformer</a></li>
+            <li><a href="XsltCompiler.html">XsltCompiler</a></li>
+            <li><a href="XsltExecutable.html">XsltExecutable</a></li>
+            <li><a href="XsltPackage.html">XsltPackage</a></li>
+            <li><a href="XsltTransformer.html">XsltTransformer</a></li>
+         </ul>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+      <div class="main">
+         <h3>Saxon.Api</h3>
+         <h1><span class="classLabel">Class&nbsp;</span>XPathSelector</h1>
+         <hr>
+         <dl>
+            <dt>
+               <div class="code">public class&nbsp;XPathSelector</div>
+            </dt>
+            <dt> implements <a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a></dt>
+         </dl>
+         <p>
+            An <code>XPathSelector</code> represents a compiled and loaded XPath expression ready for execution.
+            The <code>XPathSelector</code> holds details of the dynamic evaluation context for the XPath expression.
+            </p>
+         
+         <p>An <code>XPathSelector</code> should not be used concurrently in multiple threads. It is safe,
+            however, to reuse the object within a single thread to evaluate the same XPath expression
+            several times.
+            Evaluating the expression does not change the context that has been established.</p>
+         
+         <p>An <code>XPathSelector</code> is always constructed by running the <code>Load</code> method of
+            an <code>XPathExecutable</code>.</p>
+         
+         <p>The class <code>XPathSelector</code> implements <code>IEnumerable</code>, so it is possible to
+            enumerate the results in a <code>for</code> expression.</p>
+         <a name="property_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Property Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="XdmItem.html" class="apilink">XdmItem</a></td>
+               <td><span class="signature"><a href="#ContextItem" class="apilink">ContextItem</a></span><div class="fnormal">
+                     <p>
+                        The context item for the XPath expression evaluation.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="../../../javadoc/net/sf/saxon/sxpath/XPathDynamicContext.html" class="apilink java">net.sf.saxon.sxpath.XPathDynamicContext</a></td>
+               <td><span class="signature"><a href="#Implementation" class="apilink">Implementation</a></span><div class="fnormal">
+                     <p>
+                        Escape hatch to the <code>Saxon.Hej.s9api.XPathSelector</code> object in the underlying Java implementation
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="ResourceResolver.html" class="apilink">ResourceResolver</a></td>
+               <td><span class="signature"><a href="#TextResolver" class="apilink">TextResolver</a></span><div class="fnormal">
+                     <p>
+                        The <code>TextResolver</code> to be used at run-time to resolve and dereference URIs
+                        supplied to the <code>unparsed-text()</code>, <code>unparsed-text-lines()</code>,
+                        <code>unparsed-text-available()</code>, and <code>json-doc()</code> functions.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="ResourceResolver.html" class="apilink">ResourceResolver</a></td>
+               <td><span class="signature"><a href="#XmlDocumentResolver" class="apilink">XmlDocumentResolver</a></span><div class="fnormal">
+                     <p>
+                        The <code>ResourceResolver</code> to be used at run-time to resolve and dereference URIs
+                        supplied to the <code>fn:doc()</code> and <code>fn:doc-available()</code> functions, and also
+                        <code>fn:transform</code>.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="method_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Method Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a></td>
+               <td><span class="signature"><a href="#EffectiveBooleanValue()" class="apilink">EffectiveBooleanValue</a> ()</span><div class="fnormal">
+                     <p>
+                        Evaluate the effective boolean value of the XPath expression, returning the result
+                        as a <code>Boolean</code>
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="XdmValue.html" class="apilink">XdmValue</a></td>
+               <td><span class="signature"><a href="#Evaluate()" class="apilink">Evaluate</a> ()</span><div class="fnormal">
+                     <p>
+                        Evaluate the expression, returning the result as an <code>XdmValue</code> (that is,
+                        a sequence of nodes, atomic values, and possibly function items such as maps and arrays).
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="XdmItem.html" class="apilink">XdmItem</a></td>
+               <td><span class="signature"><a href="#EvaluateSingle()" class="apilink">EvaluateSingle</a> ()</span><div class="fnormal">
+                     <p>
+                        Evaluate the XPath expression, returning the result as an <code>XdmItem</code> (that is,
+                        a single node or atomic value).
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerator(VS.80).aspx" class="apilink system" target="_blank">IEnumerator</a></td>
+               <td><span class="signature"><a href="#GetEnumerator()" class="apilink">GetEnumerator</a> ()</span><div class="fnormal">
+                     <p>
+                        Evaluate the expression, returning the result as an <code>IEnumerator</code> (that is,
+                        an enumerator over a sequence of nodes and/or atomic values).
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#SetVariable(QName,XdmValue)" class="apilink">SetVariable</a> (<a href="QName.html" class="apilink">QName</a>&nbsp;name, <a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;value)</span><div class="fnormal">
+                     <p>
+                        Set the value of a variable
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="property_detail"></a><div class="section">
+            <h2>Property Detail</h2><a name="ContextItem"></a><div class="member">
+               <h3>ContextItem</h3>
+               <div class="code">public&nbsp;<a href="XdmItem.html" class="apilink">XdmItem</a>&nbsp;ContextItem&nbsp;{get; set; }</div>
+               <p>
+                  The context item for the XPath expression evaluation.
+                  </p>
+               <p> This may be either a node or an atomic
+                  value. Most commonly it will be a document node, which might be constructed
+                  using the <code>Build</code> method of the <code>DocumentBuilder</code> object.
+                  </p>
+            </div><a name="Implementation"></a><div class="member">
+               <h3>Implementation</h3>
+               <div class="code">public&nbsp;<a href="../../../javadoc/net/sf/saxon/sxpath/XPathDynamicContext.html" class="apilink java">net.sf.saxon.sxpath.XPathDynamicContext</a>&nbsp;Implementation&nbsp;{get; }</div>
+               <p>
+                  Escape hatch to the <code>Saxon.Hej.s9api.XPathSelector</code> object in the underlying Java implementation
+                  </p>
+            </div><a name="TextResolver"></a><div class="member">
+               <h3>TextResolver</h3>
+               <div class="code">public&nbsp;<a href="ResourceResolver.html" class="apilink">ResourceResolver</a>&nbsp;TextResolver&nbsp;{get; set; }</div>
+               <p>
+                  The <code>TextResolver</code> to be used at run-time to resolve and dereference URIs
+                  supplied to the <code>unparsed-text()</code>, <code>unparsed-text-lines()</code>,
+                  <code>unparsed-text-available()</code>, and <code>json-doc()</code> functions.
+                  </p>
+               
+               <p>If no <code>TextResolver</code> is supplied, or if the supplied <code>TextResolver</code> returns null
+                  when called, the <code>CommonResourceResolver</code> for the Saxon <code>Configuration</code> is invoked,
+                  with a <code>ResourceRequest</code> having <code>Nature == ResourceRequest.TEXT_NATURE</code>. If this
+                  returns null, then the "direct" URI resolution provided by <code>Org.XmlResolver.UriUtils</code> is
+                  invoked: this is capable of handling regular <code>file:</code>, <code>http:</code>, and <code>https:</code>
+                  URIs, as well as the <code>data:</code> and <code>pack:</code> schemes.
+                  </p>
+               
+               <p>If the call on <code>unparsed-text()</code> supplies an encoding parameter, this is made
+                  available in the call to the <code>TextResolver</code>. 
+                  </p>
+               </div><a name="XmlDocumentResolver"></a><div class="member">
+               <h3>XmlDocumentResolver</h3>
+               <div class="code">public&nbsp;<a href="ResourceResolver.html" class="apilink">ResourceResolver</a>&nbsp;XmlDocumentResolver&nbsp;{get; set; }</div>
+               <p>
+                  The <code>ResourceResolver</code> to be used at run-time to resolve and dereference URIs
+                  supplied to the <code>fn:doc()</code> and <code>fn:doc-available()</code> functions, and also
+                  <code>fn:transform</code>.
+                  </p>
+               
+               <p>
+                  The URI supplied as the first argument to the resolver is the absolute URI requested,
+                  that is, the result of resolving the requested relative URI against the relevant base
+                  URI.
+                  </p>
+               
+               <p>The requested relative URI and the corresponding base URI are supplied as separate
+                  properties within the <code>ResourceProperties</code> argument, in case they are needed.
+                  </p>
+               
+               <p>The returned <code>IResource</code> must be one of the following:
+                  
+                  <ul>
+                     
+                     <li>An <code>IResource</code> such as a <code>NodeResource</code> or an <code>XmlReaderResource</code>
+                        whose <code>getItem()</code> method delivers an <code>XdmNode</code>;</li>
+                     
+                     <li>A <code>TextResource</code> delivering lexical XML in its <code>Content</code> property; this
+                        will then be parsed to deliver the corresponding XML document.</li>
+                     </ul>
+                  </p>
+               
+               <p>If no <code>XmlDocumentResolver</code> is supplied, or if it returns null, then
+                  the <code>CommonResourceResolver</code> associated with the Saxon Configuration is invoked;
+                  if this also returns null, then the URI is resolved directly.
+                  </p>
+               </div>
+         </div><a name="method_detail"></a><div class="section">
+            <h2>Method Detail</h2><a name="EffectiveBooleanValue()"></a><div class="member">
+               <h3>EffectiveBooleanValue</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a>&nbsp;EffectiveBooleanValue</span><span class="fblock">()<br>throws<br><a href="SaxonApiException.html" class="apilink">SaxonApiException</a></span></div>
+               <div class="fcomment">
+                  <p>
+                     Evaluate the effective boolean value of the XPath expression, returning the result
+                     as a <code>Boolean</code>
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">
+                     A <code>Boolean</code> representing the result of the expression, converted to its
+                     effective boolean value as if by applying the XPath <code>boolean()</code> function
+                     </div>
+                  <p class="methodLabel">Throws:</p>
+                  <div class="params"><a href="SaxonApiException.html" class="apilink">SaxonApiException</a>&nbsp;-&nbsp;
+                     Throws <code>Saxon.Api.DynamicError</code> if the evaluation of the XPath expression fails
+                     with a dynamic error.
+                     </div>
+               </div>
+            </div><a name="Evaluate()"></a><div class="member">
+               <h3>Evaluate</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;Evaluate</span><span class="fblock">()<br>throws<br><a href="SaxonApiException.html" class="apilink">SaxonApiException</a></span></div>
+               <div class="fcomment">
+                  <p>
+                     Evaluate the expression, returning the result as an <code>XdmValue</code> (that is,
+                     a sequence of nodes, atomic values, and possibly function items such as maps and arrays).
+                     </p>
+                  <p>
+                     Although a singleton result <i>may</i> be represented as an <code>XdmItem</code>, there is
+                     no guarantee that this will always be the case. If you know that the expression will
+                     return at
+                     most one node or atomic value, it is best to use the <code>EvaluateSingle</code> method, which 
+                     does guarantee that an <code>XdmItem</code> (or null) will be returned.
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">
+                     An <code>XdmValue</code> representing the results of the expression. 
+                     </div>
+                  <p class="methodLabel">Throws:</p>
+                  <div class="params"><a href="SaxonApiException.html" class="apilink">SaxonApiException</a>&nbsp;-&nbsp;
+                     Throws <code>Saxon.Api.SaxonApiException</code> if the evaluation of the XPath expression fails
+                     with a dynamic error.
+                     </div>
+               </div>
+            </div><a name="EvaluateSingle()"></a><div class="member">
+               <h3>EvaluateSingle</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="XdmItem.html" class="apilink">XdmItem</a>&nbsp;EvaluateSingle</span><span class="fblock">()<br>throws<br><a href="SaxonApiException.html" class="apilink">SaxonApiException</a></span></div>
+               <div class="fcomment">
+                  <p>
+                     Evaluate the XPath expression, returning the result as an <code>XdmItem</code> (that is,
+                     a single node or atomic value).
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">
+                     An <code>XdmItem</code> representing the result of the expression, or null if the expression
+                     returns an empty sequence. If the expression returns a sequence of more than one item,
+                     any items after the first are ignored.
+                     </div>
+                  <p class="methodLabel">Throws:</p>
+                  <div class="params"><a href="SaxonApiException.html" class="apilink">SaxonApiException</a>&nbsp;-&nbsp;
+                     Throws <code>Saxon.Api.DynamicError</code> if the evaluation of the XPath expression fails
+                     with a dynamic error.
+                     </div>
+               </div>
+            </div><a name="GetEnumerator()"></a><div class="member">
+               <h3>GetEnumerator</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerator(VS.80).aspx" class="apilink system" target="_blank">IEnumerator</a>&nbsp;GetEnumerator</span><span class="fblock">()<br>throws<br><a href="SaxonApiException.html" class="apilink">SaxonApiException</a></span></div>
+               <div class="fcomment">
+                  <p>
+                     Evaluate the expression, returning the result as an <code>IEnumerator</code> (that is,
+                     an enumerator over a sequence of nodes and/or atomic values).
+                     </p>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">
+                     An enumerator over the sequence that represents the results of the expression.
+                     Each object in this sequence will be an instance of <code>XdmItem</code>. Note
+                     that the expression may be evaluated lazily, which means that a successful response
+                     from this method does not imply that the expression has executed successfully: failures
+                     may be reported later while retrieving items from the iterator. 
+                     </div>
+                  <p class="methodLabel">Throws:</p>
+                  <div class="params"><a href="SaxonApiException.html" class="apilink">SaxonApiException</a>&nbsp;-&nbsp;
+                     May throw a <code>Saxon.Api.DynamicError</code> if the evaluation of the XPath expression fails
+                     with a dynamic error. However, some errors will not be detected during the invocation
+                     of this
+                     method, but only when stepping through the returned <code>SequenceEnumerator</code>.
+                     </div>
+               </div>
+            </div><a name="SetVariable(QName,XdmValue)"></a><div class="member">
+               <h3>SetVariable</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;SetVariable</span><span class="fblock">(<a href="QName.html" class="apilink">QName</a>&nbsp;name, <br><a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;value)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Set the value of a variable
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>name</code>&nbsp;-&nbsp;The name of the variable. This must match the name of a variable
+                     that was declared to the <code>XPathCompiler</code>. No error occurs if the expression does not
+                     actually reference a variable with this name.</div>
+                  <div class="params"><code>value</code>&nbsp;-&nbsp;The value to be given to the variable.</div>
+               </div>
+            </div>
+         </div>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+   </body>
+</html>

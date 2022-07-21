@@ -1,0 +1,313 @@
+/* CSS style sheet for Saxon .NET API */
+
+/* 
+Text blue: #3D5B96
+Dark blue: #C1CEDE
+Mid blue: #E4EEF0
+Light blue: #F6FFFB
+mid green: #B1CCC7
+dark green: #688790
+rust: #96433D
+brown: #B3956F
+light grey: #F5F5F5
+*/
+
+
+/* Default styling */
+
+h1 {
+	font-size: 22px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+   margin-bottom:10px;
+}
+
+h2 {
+	font-size: 18px;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+h3 {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+a {
+	font-size: inherit;
+	font-style: normal;
+	font-weight: normal;
+	color: #96433D;
+	text-decoration: none;
+}
+
+p {
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #3D5B96;
+	text-decoration: none;
+   line-height: 1.4em;
+   margin: 4px 5px 8px 0px;
+   padding: 0;
+}
+
+table {
+   border: 2px solid #C1CEDE;
+   width: 100%;
+   border-collapse: collapse;
+}
+
+td {
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #3D5B96;
+	text-decoration: none;
+	padding: 4px;
+	/*padding: 0px 4px 0px 4px;*/
+	margin: 0px 0px 2px 0px;
+	border: 2px solid #C1CEDE;
+}
+
+dl {
+	font-size: inherit;
+	font-style: normal;
+	font-weight: normal;
+	color: #3D5B96;
+	text-decoration: none;
+}
+
+dt {
+	font-size: inherit;
+	font-style: normal;
+	font-weight: normal;
+	color: #3D5B96;
+	text-decoration: none;
+	padding: 2px;
+}
+
+pre {
+	font-family: "lucida sans typewriter", courier, monospace;
+	font-size: inherit;
+	font-style: normal;
+	font-weight: normal;
+	color: #3D5B96;
+	text-decoration: none;
+}
+
+samp{
+    margin:0px;
+    font-family:monospace;
+    font-size:10pt;
+    line-height:1.4em;
+    white-space:pre-wrap;
+    display:block;
+    border:none;
+    background-color:#F5F5F5;
+    padding:2px;
+    margin-left:8px;
+    margin-bottom:5px;
+}
+
+b {
+	font-weight: bold;
+}
+
+hr {
+   border: 1px solid #3D5B96;
+}
+
+
+/* Main section styling */
+
+div.main {
+   float: left; 
+   width: 70%; 
+   overflow: auto; 
+   height: 100%;
+   font-size: 10pt;
+   color: #3D5B96;
+   /*font-family: Verdana, Arial, Helvetica, sans-serif;*/
+   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;   
+}
+
+.classLabel {
+   color: #688790;
+   font-size: inherit;
+}
+
+a.apilink {
+   font-family: "lucida sans typewriter", courier, monospace;
+   font-size: 10pt;
+   color: #B3956F;
+}
+
+a.java {
+   color: #96433D;
+}
+
+a.system {
+   color: #688790;
+}
+
+span.operator {
+   font-family: "lucida sans typewriter", courier, monospace;
+}
+
+/* Member table styling */
+
+.TableHeading    { 
+   background: #e4eef0;
+   border: 1px solid #C1CEDE;
+   color: #3D5B96;
+}
+
+.TableRow td.col1 {
+   text-align: right;
+   vertical-align: top;
+   width: 1%;
+   font-family: "lucida sans typewriter", courier, monospace;
+}
+
+
+/* Member Summary table content */
+
+span.signature {
+   font-family: "lucida sans typewriter", courier, monospace;
+   font-size: 10pt;
+}
+
+div.fnormal {
+   margin-top: 4px;
+   margin-bottom: 4px;
+   line-height: 1.4em;
+}
+
+div.fnormal p {
+   margin: 0px;
+	padding: 0px;
+}
+
+/* Member Detail section */
+
+div.section h2 {
+   background-color: #B1CCC7;
+   padding: 10px;
+   text-align: center;
+}
+
+div.member {
+   border-style: solid;
+   border-width: 0px;
+   border-bottom-width: 2px;
+   border-color: #B1CCC7;
+   line-height: 1.4em;
+}
+
+div.member h3 {
+   font-weight: normal;
+   color:#688790 !important;
+}
+
+div.code, div.fullsignature {
+	font-family: "lucida sans typewriter", courier, monospace;
+	font-size: inherit;
+	font-style: normal;
+	font-weight: normal;
+	color: #3D5B96;
+	text-decoration: none;
+}
+
+span.fblock {
+   display: block;
+   float: left;
+   font-family: "lucida sans typewriter", courier, monospace;
+   margin-bottom: 5px;
+}
+
+div.fcomment {
+   clear: both;
+   padding-bottom: 5px;
+}
+
+/* Parameters, Returns, Exceptions, etc. label for members */
+.methodLabel {
+   font-size: inherit;
+   font-weight: bold;
+   margin-bottom: 3px;
+}
+
+/* Formatting for Parameters, Returns, Exceptions, etc. content for members */
+.params {
+   margin-left: 40px;
+   margin-bottom: 6px;
+   line-height: 1.4em;
+}
+
+
+/* Contents section styling */
+
+div.contents {
+   width: 20%;
+   float: left; 
+   background-color: #F5F5F5; 
+   overflow: auto; 
+   height: 100%;
+   font-size: 10pt;
+   color: #3D5B96;
+   /*font-family: Verdana, Arial, Helvetica, sans-serif;*/
+   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+div.contents a {
+   color: #3D5B96;
+}
+
+/* .NET API main page link */
+
+a.home {
+   font-size: 16px;
+	font-weight: bold;
+	padding-left: 15px;
+}
+
+/* API contents list */
+
+ul.list {
+   list-style-type: none;
+   margin-left: 5px;
+   margin-bottom: 5px;
+   overflow: auto;
+   margin: 5px;
+   padding: 0;
+}
+
+ul.list ul {
+   list-style-type: none;
+   margin-top: 2px;
+   padding: 0;
+}
+
+ul.list li {
+   margin: 4px 5px 4px 0px;
+   padding: 0px 0px 0px 10px;
+}
+
+
+/* Margin section styling */
+
+div.margin {
+   width: 5%; 
+   float: left;
+   overflow: auto; 
+   height: 100%;
+   /*font-family: Verdana, Arial, Helvetica, sans-serif;*/
+   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}

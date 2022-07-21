@@ -1,0 +1,319 @@
+<!DOCTYPE HTML><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Step</title>
+      <meta name="keywords" content="Saxon.Api.Step class">
+      <link rel="stylesheet" type="text/css" href="../../saxon-dotnetdoc.css" title="Style">
+   </head>
+   <body>
+      <div class="contents">
+         <h3><a href="../../index.html" class="home">Saxon.Api</a></h3>
+         <ul class="list">
+            <li><a href="CollectionFinder.html">CollectionFinder</a></li>
+            <li><a href="DocumentBuilder.html">DocumentBuilder</a></li>
+            <li><a href="DomDestination.html">DomDestination</a></li>
+            <li><a href="DynamicContext.html">DynamicContext</a></li>
+            <li><a href="Error.html">Error</a></li>
+            <li><a href="ErrorReporter.html">ErrorReporter</a></li>
+            <li><a href="ExtensionFunctionCall.html">ExtensionFunctionCall</a></li>
+            <li><a href="ExtensionFunctionDefinition.html">ExtensionFunctionDefinition</a></li>
+            <li><a href="Feature.html">Feature</a></li>
+            <li><a href="FeatureKeys.html">FeatureKeys</a></li>
+            <li><a href="HostLanguage.html">HostLanguage</a></li>
+            <li><a href="IDestination.html">IDestination</a></li>
+            <li><a href="IInvalidityHandler.html">IInvalidityHandler</a></li>
+            <li><a href="IResource.html">IResource</a></li>
+            <li><a href="JsonBuilder.html">JsonBuilder</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="Message.html">Message</a></li>
+            <li><a href="NamespaceConstant.html">NamespaceConstant</a></li>
+            <li><a href="NodeResource.html">NodeResource</a></li>
+            <li><a href="NullDestination.html">NullDestination</a></li>
+            <li><a href="ParameterDetails.html">ParameterDetails</a></li>
+            <li><a href="Predicates.html">Predicates</a></li>
+            <li><a href="Processor.html">Processor</a></li>
+            <li><a href="QName.html">QName</a></li>
+            <li><a href="RawDestination.html">RawDestination</a></li>
+            <li><a href="ResourceRequest.html">ResourceRequest</a></li>
+            <li><a href="ResourceResolver.html">ResourceResolver</a></li>
+            <li><a href="ResultDocumentHandler.html">ResultDocumentHandler</a></li>
+            <li><a href="SaxonApiException.html">SaxonApiException</a></li>
+            <li><a href="SchemaManager.html">SchemaManager</a></li>
+            <li><a href="SchemaResolver.html">SchemaResolver</a></li>
+            <li><a href="SchemaValidationMode.html">SchemaValidationMode</a></li>
+            <li><a href="SchemaValidator.html">SchemaValidator</a></li>
+            <li><a href="Serializer.html">Serializer</a></li>
+            <li><a href="StaticContext.html">StaticContext</a></li>
+            <li><a href="Step.html">Step&lt;TInput, TResult&gt;</a></li>
+            <li><a href="Steps.html">Steps</a></li>
+            <li><a href="TextResource.html">TextResource</a></li>
+            <li><a href="TreeModel.html">TreeModel</a></li>
+            <li><a href="UnprefixedElementMatchingPolicy.html">UnprefixedElementMatchingPolicy</a></li>
+            <li><a href="ValidationFailure.html">ValidationFailure</a></li>
+            <li><a href="WhitespacePolicy.html">WhitespacePolicy</a></li>
+            <li><a href="XdmAnyArrayType.html">XdmAnyArrayType</a></li>
+            <li><a href="XdmAnyFunctionType.html">XdmAnyFunctionType</a></li>
+            <li><a href="XdmAnyItemType.html">XdmAnyItemType</a></li>
+            <li><a href="XdmAnyMapType.html">XdmAnyMapType</a></li>
+            <li><a href="XdmAnyNodeType.html">XdmAnyNodeType</a></li>
+            <li><a href="XdmArray.html">XdmArray</a></li>
+            <li><a href="XdmAtomicType.html">XdmAtomicType</a></li>
+            <li><a href="XdmAtomicValue.html">XdmAtomicValue</a></li>
+            <li><a href="XdmAxis.html">XdmAxis</a></li>
+            <li><a href="XdmDestination.html">XdmDestination</a></li>
+            <li><a href="XdmEmptySequence.html">XdmEmptySequence</a></li>
+            <li><a href="XdmExternalObject.html">XdmExternalObject</a></li>
+            <li><a href="XdmFunctionItem.html">XdmFunctionItem</a></li>
+            <li><a href="XdmItem.html">XdmItem</a></li>
+            <li><a href="XdmItemType.html">XdmItemType</a></li>
+            <li><a href="XdmMap.html">XdmMap</a></li>
+            <li><a href="XdmNode.html">XdmNode</a></li>
+            <li><a href="XdmNodeKind.html">XdmNodeKind</a></li>
+            <li><a href="XdmSequenceType.html">XdmSequenceType</a></li>
+            <li><a href="XdmValue.html">XdmValue</a></li>
+            <li><a href="XmlReaderResource.html">XmlReaderResource</a></li>
+            <li><a href="XmlWriterDestination.html">XmlWriterDestination</a></li>
+            <li><a href="XPathCompiler.html">XPathCompiler</a></li>
+            <li><a href="XPathExecutable.html">XPathExecutable</a></li>
+            <li><a href="XPathSelector.html">XPathSelector</a></li>
+            <li><a href="XQueryCompiler.html">XQueryCompiler</a></li>
+            <li><a href="XQueryEvaluator.html">XQueryEvaluator</a></li>
+            <li><a href="XQueryExecutable.html">XQueryExecutable</a></li>
+            <li><a href="XQueryResolver.html">XQueryResolver</a></li>
+            <li><a href="Xslt30Transformer.html">Xslt30Transformer</a></li>
+            <li><a href="XsltCompiler.html">XsltCompiler</a></li>
+            <li><a href="XsltExecutable.html">XsltExecutable</a></li>
+            <li><a href="XsltPackage.html">XsltPackage</a></li>
+            <li><a href="XsltTransformer.html">XsltTransformer</a></li>
+         </ul>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+      <div class="main">
+         <h3>Saxon.Api</h3>
+         <h1><span class="classLabel">Class&nbsp;</span>Step&lt;TInput, TResult&gt;</h1>
+         <hr>
+         <dl>
+            <dt>
+               <div class="code">public class&nbsp;Step&lt;TInput, TResult&gt;</div>
+            </dt>
+         </dl>
+         <p>
+            A <code>Step</code> represents a function from an XDM item to a sequence of items. Steps
+            are most commonly used as the argument to the method <code>XdmValue.Select()</code>. A wide
+            selection of system-defined steps are available from static methods of the <code>Saxon.Api.Steps</code>
+            class. It is possible, however, to create user-defined Steps.
+            </p><a name="constructor_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Constructor Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td><span class="signature"><a href="#Step(Func)" class="apilink">Step</a> (<a href="http://msdn.microsoft.com/en-us/library/system.func(VS.80).aspx" class="apilink system" target="_blank">Func</a><span class="operator">&lt;TInput,&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;TResult&gt;</span>&gt;</span>&nbsp;steppingFunction)</span><div class="fnormal">
+                     <p>
+                        Constructor method to wrap a delegate method.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="property_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Property Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;</td>
+               <td><span class="signature"><a href="#Func" class="apilink">Func</a></span><div class="fnormal">
+                     <p>
+                        The underlying function corresponding to this <code>Step</code>.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="method_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Method Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="Step.html" class="apilink">Step</a><span class="operator">&lt;TInput,&nbsp;TResult&gt;</span></td>
+               <td><span class="signature"><a href="#At(int)" class="apilink">At</a> (<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a>&nbsp;index)</span><div class="fnormal">
+                     <p>
+                        Obtain a <code>Step</code> that selects the Nth item in the results of this step.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="Step.html" class="apilink">Step</a><span class="operator">&lt;TInput,&nbsp;TResult&gt;</span></td>
+               <td><span class="signature"><a href="#Cat(Step)" class="apilink">Cat</a> (<a href="Step.html" class="apilink">Step</a><span class="operator">&lt;TInput,&nbsp;TResult&gt;</span>&nbsp;other)</span><div class="fnormal">
+                     <p>
+                        Obtain a <code>Step</code> that concatenates the results of this <code>Step</code> with the result of another
+                        <code>Step</code> applied to the same input item.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;TResult&gt;</span></td>
+               <td><span class="signature"><a href="#Invoke(TInput)" class="apilink">Invoke</a> (TInput&nbsp;item)</span><div class="fnormal">
+                     <p>
+                        Invokes this function on the given argument.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="Step.html" class="apilink">Step</a><span class="operator">&lt;TInput,&nbsp;TResult&gt;</span></td>
+               <td><span class="signature"><a href="#Then(Step)" class="apilink">Then</a> (<a href="Step.html" class="apilink">Step</a><span class="operator">&lt;TResult,&nbsp;TResult&gt;</span>&nbsp;next)</span><div class="fnormal">
+                     <p>
+                        Obtain a <code>Step</code> that combines the results of this step with the results of another step.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="Step.html" class="apilink">Step</a><span class="operator">&lt;TInput,&nbsp;TResult&gt;</span></td>
+               <td><span class="signature"><a href="#Where(Predicate)" class="apilink">Where</a> (<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;TResult&gt;</span>&nbsp;predicate)</span><div class="fnormal">
+                     <p>
+                        Obtain a <code>Step</code> that filters the results of this <code>Step</code> using a supplied <code>Predicate</code>.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="constructor_detail"></a><div class="section">
+            <h2>Constructor Detail</h2><a name="Step(Func)"></a><div class="member">
+               <h3>Step</h3>
+               <div class="code">public&nbsp;Step(<a href="http://msdn.microsoft.com/en-us/library/system.func(VS.80).aspx" class="apilink system" target="_blank">Func</a><span class="operator">&lt;TInput,&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;TResult&gt;</span>&gt;</span>&nbsp;steppingFunction)</div>
+               <p>
+                  Constructor method to wrap a delegate method.
+                  </p>
+               <p class="methodLabel">Parameters:</p>
+               <div class="params"><code>steppingFunction</code>&nbsp;-&nbsp;Passes a delegate as a <code>Func</code> with encapsulated type <code>XdmItem</code> and the return value <code>IEnumerable</code> of items.</div>
+            </div>
+         </div><a name="property_detail"></a><div class="section">
+            <h2>Property Detail</h2><a name="Func"></a><div class="member">
+               <h3>Func</h3>
+               <div class="code">public&nbsp;&nbsp;Func&nbsp;{get; }</div>
+               <p>
+                  The underlying function corresponding to this <code>Step</code>.
+                  </p>
+            </div>
+         </div><a name="method_detail"></a><div class="section">
+            <h2>Method Detail</h2><a name="At(int)"></a><div class="member">
+               <h3>At</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="Step.html" class="apilink">Step</a><span class="operator">&lt;TInput,&nbsp;TResult&gt;</span>&nbsp;At</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.int32(VS.80).aspx" class="apilink system" target="_blank">int</a>&nbsp;index)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Obtain a <code>Step</code> that selects the Nth item in the results of this step.
+                     </p>
+                  
+                  <p>The standard LINQ methods <code>First()</code> and <code>Last()</code> can be
+                     used on the results of a step to select the first and last items in the result.</p>
+                  
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>index</code>&nbsp;-&nbsp;The zero-based index of the item to be selected</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A new <code>Step</code> (that is, a function from one <code>IEnumerable</code> of items to another) that
+                     filters the results of this step by selecting only the items that satisfy the predicate.</div>
+               </div>
+            </div><a name="Cat(Step)"></a><div class="member">
+               <h3>Cat</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="Step.html" class="apilink">Step</a><span class="operator">&lt;TInput,&nbsp;TResult&gt;</span>&nbsp;Cat</span><span class="fblock">(<a href="Step.html" class="apilink">Step</a><span class="operator">&lt;TInput,&nbsp;TResult&gt;</span>&nbsp;other)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Obtain a <code>Step</code> that concatenates the results of this <code>Step</code> with the result of another
+                     <code>Step</code> applied to the same input item.
+                     </p>
+                  <p>
+                     
+                     <p>For example, <code>Attribute().Cat(Child())</code> returns a step whose effect is
+                        to select the attributes of a supplied element followed by its children.</p>
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>other</code>&nbsp;-&nbsp;The step whose results will be concatenated with the results of this step</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A new <code>Step</code> (that is, a function from one <code>IEnumerable</code> of items to another) that
+                     concatenates the results of applying this step to the input item, followed by the
+                     results of applying the other step to the input item.</div>
+               </div>
+            </div><a name="Invoke(TInput)"></a><div class="member">
+               <h3>Invoke</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable(VS.80).aspx" class="apilink system" target="_blank">IEnumerable</a><span class="operator">&lt;TResult&gt;</span>&nbsp;Invoke</span><span class="fblock">(TInput&nbsp;item)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Invokes this function on the given argument.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>item</code>&nbsp;-&nbsp;The function argument</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">The function result.</div>
+               </div>
+            </div><a name="Then(Step)"></a><div class="member">
+               <h3>Then</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="Step.html" class="apilink">Step</a><span class="operator">&lt;TInput,&nbsp;TResult&gt;</span>&nbsp;Then</span><span class="fblock">(<a href="Step.html" class="apilink">Step</a><span class="operator">&lt;TResult,&nbsp;TResult&gt;</span>&nbsp;next)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Obtain a <code>Step</code> that combines the results of this step with the results of another step.
+                     </p>
+                  
+                  <p>In XPath terms, this corresponds to the "!" operator. It differs from the "/" operator
+                     in that there is no elimination of duplicates or sorting into document order.</p>
+                  
+                  <p>In function programming theory this operation is often referred to as "flatMap";
+                     in LINQ it corresponds to <code>SelectMany</code>.</p>
+                  
+                  <p>For example, <code>var grandchildren = Child("*").Then(Child("*"))</code> constructs a step
+                     that returns the children of the children of a node; this can be used in a statement
+                     such as
+                     <code>foreach (XdmNode gc in origin.Select(grandchildren) ...</code>.</p>
+                  
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>next</code>&nbsp;-&nbsp;The step which will be applied to the results of this step</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A new <code>Step</code> (that is, a function from one <code>IEnumerable</code> of items to another) that
+                     performs this step and the next step in turn. The result is equivalent to the <code>IEnumerable</code> method <code>SelectMany()</code>
+                     function or the XPath <code>!</code> operator: there is no sorting of nodes into document order, and
+                     no elimination of duplicates.</div>
+               </div>
+            </div><a name="Where(Predicate)"></a><div class="member">
+               <h3>Where</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="Step.html" class="apilink">Step</a><span class="operator">&lt;TInput,&nbsp;TResult&gt;</span>&nbsp;Where</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.predicate(VS.80).aspx" class="apilink system" target="_blank">Predicate</a><span class="operator">&lt;TResult&gt;</span>&nbsp;predicate)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Obtain a <code>Step</code> that filters the results of this <code>Step</code> using a supplied <code>Predicate</code>.
+                     </p>
+                  
+                  <p>For example, <code>Child().Where(Predicates.IsText())</code>
+                     returns a <code>Step</code> whose effect is to select the text node children 
+                     of a supplied element or document node. This example can be abbreviated to
+                     <code>Child(Predicates.IsText())</code>.</p>
+                  
+                  <p>Similarly, <code>Child("*").Where(n =&gt; n.NodeName.LocalName.StartsWith("h"))</code> selects
+                     element children whose names begin with "h".</p>
+                  
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>predicate</code>&nbsp;-&nbsp;The predicate is a function that is applied to each item in the results
+                     of this step, and returns a boolean indicating whether that item should be included
+                     in the result.</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">A new <code>Step</code> (that is, a wrapped delegate from one <code>Step</code> of items to another) that
+                     filters the results of this step by selecting only the items that satisfy the predicate.</div>
+               </div>
+            </div>
+         </div>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+   </body>
+</html>

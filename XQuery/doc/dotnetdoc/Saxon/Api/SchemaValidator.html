@@ -1,0 +1,852 @@
+<!DOCTYPE HTML><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>SchemaValidator</title>
+      <meta name="keywords" content="Saxon.Api.SchemaValidator class">
+      <link rel="stylesheet" type="text/css" href="../../saxon-dotnetdoc.css" title="Style">
+   </head>
+   <body>
+      <div class="contents">
+         <h3><a href="../../index.html" class="home">Saxon.Api</a></h3>
+         <ul class="list">
+            <li><a href="CollectionFinder.html">CollectionFinder</a></li>
+            <li><a href="DocumentBuilder.html">DocumentBuilder</a></li>
+            <li><a href="DomDestination.html">DomDestination</a></li>
+            <li><a href="DynamicContext.html">DynamicContext</a></li>
+            <li><a href="Error.html">Error</a></li>
+            <li><a href="ErrorReporter.html">ErrorReporter</a></li>
+            <li><a href="ExtensionFunctionCall.html">ExtensionFunctionCall</a></li>
+            <li><a href="ExtensionFunctionDefinition.html">ExtensionFunctionDefinition</a></li>
+            <li><a href="Feature.html">Feature</a></li>
+            <li><a href="FeatureKeys.html">FeatureKeys</a></li>
+            <li><a href="HostLanguage.html">HostLanguage</a></li>
+            <li><a href="IDestination.html">IDestination</a></li>
+            <li><a href="IInvalidityHandler.html">IInvalidityHandler</a></li>
+            <li><a href="IResource.html">IResource</a></li>
+            <li><a href="JsonBuilder.html">JsonBuilder</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="Message.html">Message</a></li>
+            <li><a href="NamespaceConstant.html">NamespaceConstant</a></li>
+            <li><a href="NodeResource.html">NodeResource</a></li>
+            <li><a href="NullDestination.html">NullDestination</a></li>
+            <li><a href="ParameterDetails.html">ParameterDetails</a></li>
+            <li><a href="Predicates.html">Predicates</a></li>
+            <li><a href="Processor.html">Processor</a></li>
+            <li><a href="QName.html">QName</a></li>
+            <li><a href="RawDestination.html">RawDestination</a></li>
+            <li><a href="ResourceRequest.html">ResourceRequest</a></li>
+            <li><a href="ResourceResolver.html">ResourceResolver</a></li>
+            <li><a href="ResultDocumentHandler.html">ResultDocumentHandler</a></li>
+            <li><a href="SaxonApiException.html">SaxonApiException</a></li>
+            <li><a href="SchemaManager.html">SchemaManager</a></li>
+            <li><a href="SchemaResolver.html">SchemaResolver</a></li>
+            <li><a href="SchemaValidationMode.html">SchemaValidationMode</a></li>
+            <li><a href="SchemaValidator.html">SchemaValidator</a></li>
+            <li><a href="Serializer.html">Serializer</a></li>
+            <li><a href="StaticContext.html">StaticContext</a></li>
+            <li><a href="Step.html">Step&lt;TInput, TResult&gt;</a></li>
+            <li><a href="Steps.html">Steps</a></li>
+            <li><a href="TextResource.html">TextResource</a></li>
+            <li><a href="TreeModel.html">TreeModel</a></li>
+            <li><a href="UnprefixedElementMatchingPolicy.html">UnprefixedElementMatchingPolicy</a></li>
+            <li><a href="ValidationFailure.html">ValidationFailure</a></li>
+            <li><a href="WhitespacePolicy.html">WhitespacePolicy</a></li>
+            <li><a href="XdmAnyArrayType.html">XdmAnyArrayType</a></li>
+            <li><a href="XdmAnyFunctionType.html">XdmAnyFunctionType</a></li>
+            <li><a href="XdmAnyItemType.html">XdmAnyItemType</a></li>
+            <li><a href="XdmAnyMapType.html">XdmAnyMapType</a></li>
+            <li><a href="XdmAnyNodeType.html">XdmAnyNodeType</a></li>
+            <li><a href="XdmArray.html">XdmArray</a></li>
+            <li><a href="XdmAtomicType.html">XdmAtomicType</a></li>
+            <li><a href="XdmAtomicValue.html">XdmAtomicValue</a></li>
+            <li><a href="XdmAxis.html">XdmAxis</a></li>
+            <li><a href="XdmDestination.html">XdmDestination</a></li>
+            <li><a href="XdmEmptySequence.html">XdmEmptySequence</a></li>
+            <li><a href="XdmExternalObject.html">XdmExternalObject</a></li>
+            <li><a href="XdmFunctionItem.html">XdmFunctionItem</a></li>
+            <li><a href="XdmItem.html">XdmItem</a></li>
+            <li><a href="XdmItemType.html">XdmItemType</a></li>
+            <li><a href="XdmMap.html">XdmMap</a></li>
+            <li><a href="XdmNode.html">XdmNode</a></li>
+            <li><a href="XdmNodeKind.html">XdmNodeKind</a></li>
+            <li><a href="XdmSequenceType.html">XdmSequenceType</a></li>
+            <li><a href="XdmValue.html">XdmValue</a></li>
+            <li><a href="XmlReaderResource.html">XmlReaderResource</a></li>
+            <li><a href="XmlWriterDestination.html">XmlWriterDestination</a></li>
+            <li><a href="XPathCompiler.html">XPathCompiler</a></li>
+            <li><a href="XPathExecutable.html">XPathExecutable</a></li>
+            <li><a href="XPathSelector.html">XPathSelector</a></li>
+            <li><a href="XQueryCompiler.html">XQueryCompiler</a></li>
+            <li><a href="XQueryEvaluator.html">XQueryEvaluator</a></li>
+            <li><a href="XQueryExecutable.html">XQueryExecutable</a></li>
+            <li><a href="XQueryResolver.html">XQueryResolver</a></li>
+            <li><a href="Xslt30Transformer.html">Xslt30Transformer</a></li>
+            <li><a href="XsltCompiler.html">XsltCompiler</a></li>
+            <li><a href="XsltExecutable.html">XsltExecutable</a></li>
+            <li><a href="XsltPackage.html">XsltPackage</a></li>
+            <li><a href="XsltTransformer.html">XsltTransformer</a></li>
+         </ul>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+      <div class="main">
+         <h3>Saxon.Api</h3>
+         <h1><span class="classLabel">Class&nbsp;</span>SchemaValidator</h1>
+         <hr>
+         <dl>
+            <dt>
+               <div class="code">public class&nbsp;SchemaValidator</div>
+            </dt>
+            <dt> implements <a href="IDestination.html" class="apilink">IDestination</a></dt>
+         </dl>
+         <p>
+            A <code>SchemaValidator</code> is an object that is used for validating instance documents
+            against a schema. The schema consists of the collection of schema components that
+            are
+            available within the schema cache maintained by the <code>SchemaManager</code>, together with
+            any additional schema components located during the course of validation by means
+            of an
+            <code>xsl:schemaLocation</code> or <code>xsi:noNamespaceSchemaLocation</code> attribute within the
+            instance document.
+            </p>
+         
+         <p>The <code>SchemaValidator.Run</code> method can be used either to validate a single
+            document (supplied using <code>SetSource()</code>), or multiple documents (supplied using
+            <code>AddSource</code>.</p>
+         
+         <p>When validating a single document, if validation succeeds, the validated
+            document can optionally be written to a specified destination. This will be a copy
+            of
+            the original document, augmented with default values for absent elements and attributes,
+            and carrying type annotations derived from the schema processing. Saxon does not deliver
+            the full PSVI as described in the XML schema specifications, only the subset of the
+            PSVI properties featured in the XDM data model.</p>
+         
+         <p>When validating multiple documents, they are validated in parallel (in multiple
+            threads), and the validated documents are not made available. It is recommended in
+            this
+            case to use <code>SetValidityReporting</code> to capture any validation errors in a single
+            XML report document.</p>
+         
+         <p>If validation fails, an exception is thrown. This may indicate invalidity against
+            the schema, or it might result from other conditions, such as an input document not
+            being
+            well-formed XML, or not existing.</p>
+         <a name="property_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Property Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#DocumentElementName" class="apilink">DocumentElementName</a></span><div class="fnormal">
+                     <p>
+                        The name of the required top-level element of the document to be validated (that is,
+                        the
+                        name of the outermost element of the document).
+                        If no value is supplied, there is no constraint on the required element name.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="QName.html" class="apilink">QName</a></td>
+               <td><span class="signature"><a href="#DocumentElementTypeName" class="apilink">DocumentElementTypeName</a></span><div class="fnormal">
+                     <p>
+                        The name of the required type of the top-level element of the document to be validated.
+                        QName of the name of the required type of the document element, or null if no value
+                        has been set.
+                        If no value is supplied, there is no constraint on the required type
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a></td>
+               <td><span class="signature"><a href="#ExpendAttributeDefaults" class="apilink">ExpendAttributeDefaults</a></span><div class="fnormal">
+                     <p>
+                        Ask and set whether attribute defaults defined in a schema are to be expanded or not
+                        (by default, fixed and default attribute values are expanded, that is, they are inserted)
+                        into
+                        the document during validation as if they were present in the instance being validated)
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="IInvalidityHandler.html" class="apilink">IInvalidityHandler</a></td>
+               <td><span class="signature"><a href="#InvalidityHandler" class="apilink">InvalidityHandler</a></span><div class="fnormal">
+                     <p>Set the <code>InvalidityHandler</code> to be used when validating instance documents;
+                        the invalidity handler is called once at the start of validation, once for each
+                        validation failure, and once at the end.</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.action(VS.80).aspx" class="apilink system" target="_blank">Action</a><span class="operator">&lt;<a href="ValidationFailure.html" class="apilink">ValidationFailure</a>&gt;</span></td>
+               <td><span class="signature"><a href="#InvalidityListener" class="apilink">InvalidityListener</a></span><div class="fnormal">
+                     <p>Set the <code>InvalidityListener</code> to be used when validating instance documents;
+                        this is a simple delegate callback which is called once for each validation failure.</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a></td>
+               <td><span class="signature"><a href="#Lax" class="apilink">Lax</a></span><div class="fnormal">
+                     <p>
+                        The validation mode may be either strict or lax. The default is strict;
+                        this property is set to indicate that lax validation is required. With strict validation,
+                        validation fails if no element declaration can be located for the outermost element.
+                        With lax
+                        validation, the absence of an element declaration results in the content being considered
+                        valid.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="../../../javadoc/net/sf/saxon/s9api/Destination.html" class="apilink java">net.sf.saxon.s9api.Destination</a></td>
+               <td><span class="signature"><a href="#UnderlyingDestination" class="apilink">UnderlyingDestination</a></span><div class="fnormal">
+                     <p>
+                        The underlying <code>Saxon.Hej.s9api.Destination</code> object in the Saxon implementation.
+                        Note that this property represents the schema validator itself as the destination
+                        of
+                        some other process (for example, a transformation whose output is to be validated);
+                        it must not be confused with the destination to which output is sent after validation,
+                        as set using the <code>SetDestination()</code> method.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a></td>
+               <td><span class="signature"><a href="#UseXsiSchemaLocation" class="apilink">UseXsiSchemaLocation</a></span><div class="fnormal">
+                     <p>
+                        This property defines whether the schema processor will recognize, and attempt to
+                        dereference, any <code>xsi:schemaLocation</code> and <code>xsi:noNamespaceSchemaLocation</code>
+                        attributes encountered in the instance document. The default value is true.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="method_summary"></a><table>
+            <tr class="TableHeading">
+               <th colspan="2">
+                  <h3>Method Summary</h3>
+               </th>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#AddSource(Stream,Uri)" class="apilink">AddSource</a> (<a href="http://msdn.microsoft.com/en-us/library/system.io.stream(VS.80).aspx" class="apilink system" target="_blank">Stream</a>&nbsp;source, <a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a>&nbsp;baseUri)</span><div class="fnormal">
+                     <p>
+                        Add an instance document to the list of documents to be validated by a subsequent
+                        call
+                        on <code>ValidateMultipleDocuments</code>.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#AddSource(Stream)" class="apilink">AddSource</a> (<a href="http://msdn.microsoft.com/en-us/library/system.io.stream(VS.80).aspx" class="apilink system" target="_blank">Stream</a>&nbsp;source)</span><div class="fnormal">
+                     <p>
+                        Add an instance document to the list of documents to be validated by a subsequent
+                        call
+                        on <code>ValidateMultipleDocuments</code>. The base URI is taken as the current working
+                        directory.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#AddSource(TextReader,Uri)" class="apilink">AddSource</a> (<a href="http://msdn.microsoft.com/en-us/library/system.io.textreader(VS.80).aspx" class="apilink system" target="_blank">TextReader</a>&nbsp;source, <a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a>&nbsp;baseUri)</span><div class="fnormal">
+                     <p>
+                        Add an instance document to the list of documents to be validated by a subsequent
+                        call
+                        on <code>ValidateMultipleDocuments</code>.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#AddSource(TextReader)" class="apilink">AddSource</a> (<a href="http://msdn.microsoft.com/en-us/library/system.io.textreader(VS.80).aspx" class="apilink system" target="_blank">TextReader</a>&nbsp;source)</span><div class="fnormal">
+                     <p>
+                        Add an instance document to the list of documents to be validated by a subsequent
+                        call
+                        on <code>ValidateMultipleDocuments</code>. The base URI is taken as the current working
+                        directory.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#AddSource(Uri)" class="apilink">AddSource</a> (<a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a>&nbsp;uri)</span><div class="fnormal">
+                     <p>
+                        Add an instance document to the list of documents to be validated by a subsequent
+                        call
+                        on <code>ValidateMultipleDocuments</code>.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#AddSource(XmlReader)" class="apilink">AddSource</a> (<a href="http://msdn.microsoft.com/en-us/library/system.xml.xmlreader(VS.80).aspx" class="apilink system" target="_blank">XmlReader</a>&nbsp;reader)</span><div class="fnormal">
+                     <p>
+                        Add an instance document to the list of documents to be validated by a subsequent
+                        call
+                        on <code>ValidateMultipleDocuments</code>.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#AddSource(XdmNode)" class="apilink">AddSource</a> (<a href="XdmNode.html" class="apilink">XdmNode</a>&nbsp;source)</span><div class="fnormal">
+                     <p>
+                        Add an instance document to the list of documents to be validated  by a subsequent
+                        call
+                        on <code>ValidateMultipleDocuments</code>.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#Close()" class="apilink">Close</a> ()</span><div class="fnormal">
+                     <p>
+                        Close the destination, allowing resources to be released. Saxon calls this method
+                        when it has finished writing to the destination
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;<a href="XdmValue.html" class="apilink">XdmValue</a></td>
+               <td><span class="signature"><a href="#GetParameter(QName)" class="apilink">GetParameter</a> (<a href="QName.html" class="apilink">QName</a>&nbsp;name)</span><div class="fnormal">
+                     <p>
+                        Get the value that has been set for a schema processor (a parameter defined in the
+                        schema using the <code>saxon:param</code> extension)
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#OnClose(Action)" class="apilink">OnClose</a> (<a href="http://msdn.microsoft.com/en-us/library/system.action(VS.80).aspx" class="apilink system" target="_blank">Action</a>&nbsp;action)</span><div class="fnormal">
+                     <p>
+                        Define an action to be performed when writing to the Destination is complete.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#SetDestination(IDestination)" class="apilink">SetDestination</a> (<a href="IDestination.html" class="apilink">IDestination</a>&nbsp;destination)</span><div class="fnormal">
+                     <p>
+                        Supply the destination to hold the validated document. If no destination
+                        is supplied, the validated document is discarded.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#SetParameter(QName,XdmValue)" class="apilink">SetParameter</a> (<a href="QName.html" class="apilink">QName</a>&nbsp;name, <a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;value)</span><div class="fnormal">
+                     <p>
+                        Set the value of a schema parameter (a parameter defined in the schema using the <code>saxon:param</code> extension)
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#SetValidityReporting(IDestination)" class="apilink">SetValidityReporting</a> (<a href="IDestination.html" class="apilink">IDestination</a>&nbsp;destination)</span><div class="fnormal">
+                     <p>Set the validation reporting feature, which saves the validation errors in an XML
+                        file</p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#Validate(Stream,Uri)" class="apilink">Validate</a> (<a href="http://msdn.microsoft.com/en-us/library/system.io.stream(VS.80).aspx" class="apilink system" target="_blank">Stream</a>&nbsp;source, <a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a>&nbsp;baseUri)</span><div class="fnormal">
+                     <p>
+                        Validate an instance document supplied in the form of a <code>Stream</code>
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#Validate(Stream)" class="apilink">Validate</a> (<a href="http://msdn.microsoft.com/en-us/library/system.io.stream(VS.80).aspx" class="apilink system" target="_blank">Stream</a>&nbsp;source)</span><div class="fnormal">
+                     <p>
+                        Validate an instance document supplied in the form of a <code>Stream</code>.
+                        The base Uri of the document is taken as the current working directory.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#Validate(TextReader,Uri)" class="apilink">Validate</a> (<a href="http://msdn.microsoft.com/en-us/library/system.io.textreader(VS.80).aspx" class="apilink system" target="_blank">TextReader</a>&nbsp;source, <a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a>&nbsp;baseUri)</span><div class="fnormal">
+                     <p>
+                        Validate an instance document supplied in the form of a <code>TextReader</code>
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#Validate(TextReader)" class="apilink">Validate</a> (<a href="http://msdn.microsoft.com/en-us/library/system.io.textreader(VS.80).aspx" class="apilink system" target="_blank">TextReader</a>&nbsp;source)</span><div class="fnormal">
+                     <p>
+                        Validate an instance document supplied in the form of a <code>TextReader</code>.
+                        The base Uri of the document is taken as the current working directory.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#Validate(Uri)" class="apilink">Validate</a> (<a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a>&nbsp;uri)</span><div class="fnormal">
+                     <p>
+                        Validate an instance document, supplied in the form of a <code>Uri</code> reference
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#Validate(XmlReader)" class="apilink">Validate</a> (<a href="http://msdn.microsoft.com/en-us/library/system.xml.xmlreader(VS.80).aspx" class="apilink system" target="_blank">XmlReader</a>&nbsp;reader)</span><div class="fnormal">
+                     <p>
+                        Validate an instance document, supplied in the form of an <code>XmlReader</code>.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#Validate(XdmNode)" class="apilink">Validate</a> (<a href="XdmNode.html" class="apilink">XdmNode</a>&nbsp;source)</span><div class="fnormal">
+                     <p>
+                        Validate an instance document, supplied in the form of an <code>XdmNode</code>.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+            <tr class="TableRow">
+               <td class="col1">&nbsp;void</td>
+               <td><span class="signature"><a href="#ValidateMultipleDocuments()" class="apilink">ValidateMultipleDocuments</a> ()</span><div class="fnormal">
+                     <p>
+                        Run the validation of a set of instance documents, previously
+                        supplied by calling <code>AddSource</code>.
+                        </p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p><a name="property_detail"></a><div class="section">
+            <h2>Property Detail</h2><a name="DocumentElementName"></a><div class="member">
+               <h3>DocumentElementName</h3>
+               <div class="code">public&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;DocumentElementName&nbsp;{get; set; }</div>
+               <p>
+                  The name of the required top-level element of the document to be validated (that is,
+                  the
+                  name of the outermost element of the document).
+                  If no value is supplied, there is no constraint on the required element name.
+                  </p>
+            </div><a name="DocumentElementTypeName"></a><div class="member">
+               <h3>DocumentElementTypeName</h3>
+               <div class="code">public&nbsp;<a href="QName.html" class="apilink">QName</a>&nbsp;DocumentElementTypeName&nbsp;{get; set; }</div>
+               <p>
+                  The name of the required type of the top-level element of the document to be validated.
+                  QName of the name of the required type of the document element, or null if no value
+                  has been set.
+                  If no value is supplied, there is no constraint on the required type
+                  </p>
+            </div><a name="ExpendAttributeDefaults"></a><div class="member">
+               <h3>ExpendAttributeDefaults</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a>&nbsp;ExpendAttributeDefaults&nbsp;{get; set; }</div>
+               <p>
+                  Ask and set whether attribute defaults defined in a schema are to be expanded or not
+                  (by default, fixed and default attribute values are expanded, that is, they are inserted)
+                  into
+                  the document during validation as if they were present in the instance being validated)
+                  </p>
+            </div><a name="InvalidityHandler"></a><div class="member">
+               <h3>InvalidityHandler</h3>
+               <div class="code">public&nbsp;<a href="IInvalidityHandler.html" class="apilink">IInvalidityHandler</a>&nbsp;InvalidityHandler&nbsp;{set; }</div>
+               <p>Set the <code>InvalidityHandler</code> to be used when validating instance documents;
+                  the invalidity handler is called once at the start of validation, once for each
+                  validation failure, and once at the end.</p>
+            </div><a name="InvalidityListener"></a><div class="member">
+               <h3>InvalidityListener</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.action(VS.80).aspx" class="apilink system" target="_blank">Action</a><span class="operator">&lt;<a href="ValidationFailure.html" class="apilink">ValidationFailure</a>&gt;</span>&nbsp;InvalidityListener&nbsp;{set; }</div>
+               <p>Set the <code>InvalidityListener</code> to be used when validating instance documents;
+                  this is a simple delegate callback which is called once for each validation failure.</p>
+               <p>Previous versions of this API allowed validation failures to be gathered
+                  in a user-supplied list. This effect can be achieved by declaring <code>List&lt;ValidationFailure&gt; ErrorList</code>
+                  and setting the <code>InvalidityListener</code> property to <code>ErrorList.Add</code>.</p>
+            </div><a name="Lax"></a><div class="member">
+               <h3>Lax</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a>&nbsp;Lax&nbsp;{get; set; }</div>
+               <p>
+                  The validation mode may be either strict or lax. The default is strict;
+                  this property is set to indicate that lax validation is required. With strict validation,
+                  validation fails if no element declaration can be located for the outermost element.
+                  With lax
+                  validation, the absence of an element declaration results in the content being considered
+                  valid.
+                  </p>
+            </div><a name="UnderlyingDestination"></a><div class="member">
+               <h3>UnderlyingDestination</h3>
+               <div class="code">public&nbsp;<a href="../../../javadoc/net/sf/saxon/s9api/Destination.html" class="apilink java">net.sf.saxon.s9api.Destination</a>&nbsp;UnderlyingDestination&nbsp;{get; }</div>
+               <p>
+                  The underlying <code>Saxon.Hej.s9api.Destination</code> object in the Saxon implementation.
+                  Note that this property represents the schema validator itself as the destination
+                  of
+                  some other process (for example, a transformation whose output is to be validated);
+                  it must not be confused with the destination to which output is sent after validation,
+                  as set using the <code>SetDestination()</code> method.
+                  </p>
+               
+               <p>This property provides access to internal methods in the Saxon engine that are
+                  not specifically exposed in the .NET API. In general these methods should be
+                  considered to be less stable than the classes in the Saxon.Api namespace.</p>
+               
+               <p>The internal methods follow
+                  Java naming conventions rather than .NET conventions.</p>
+               
+               <p>Information about the returned <a href="../../../javadoc/net/sf/saxon/s9api/Destination.html" class="apilink java">net.sf.saxon.s9api.Destination</a> object 
+                  (and the objects it provides access to) is included in the Saxon JavaDoc documentation.
+                  </p>
+               
+               <p class="methodLabel">Value:</p>
+               <div class="params">The underlying Destination object</div>
+            </div><a name="UseXsiSchemaLocation"></a><div class="member">
+               <h3>UseXsiSchemaLocation</h3>
+               <div class="code">public&nbsp;<a href="http://msdn.microsoft.com/en-us/library/system.boolean(VS.80).aspx" class="apilink system" target="_blank">bool</a>&nbsp;UseXsiSchemaLocation&nbsp;{get; set; }</div>
+               <p>
+                  This property defines whether the schema processor will recognize, and attempt to
+                  dereference, any <code>xsi:schemaLocation</code> and <code>xsi:noNamespaceSchemaLocation</code>
+                  attributes encountered in the instance document. The default value is true.
+                  </p>
+            </div>
+         </div><a name="method_detail"></a><div class="section">
+            <h2>Method Detail</h2><a name="AddSource(Stream,Uri)"></a><div class="member">
+               <h3>AddSource</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;AddSource</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.io.stream(VS.80).aspx" class="apilink system" target="_blank">Stream</a>&nbsp;source, <br><a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a>&nbsp;baseUri)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Add an instance document to the list of documents to be validated by a subsequent
+                     call
+                     on <code>ValidateMultipleDocuments</code>.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>source</code>&nbsp;-&nbsp;Source document supplied as a <code>Stream</code>
+                     </div>
+                  <div class="params"><code>baseUri</code>&nbsp;-&nbsp;Base URI of the source document</div>
+               </div>
+            </div><a name="AddSource(Stream)"></a><div class="member">
+               <h3>AddSource</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;AddSource</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.io.stream(VS.80).aspx" class="apilink system" target="_blank">Stream</a>&nbsp;source)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Add an instance document to the list of documents to be validated by a subsequent
+                     call
+                     on <code>ValidateMultipleDocuments</code>. The base URI is taken as the current working
+                     directory.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>source</code>&nbsp;-&nbsp;Source document supplied as a <code>Stream</code>
+                     </div>
+               </div>
+            </div><a name="AddSource(TextReader,Uri)"></a><div class="member">
+               <h3>AddSource</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;AddSource</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.io.textreader(VS.80).aspx" class="apilink system" target="_blank">TextReader</a>&nbsp;source, <br><a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a>&nbsp;baseUri)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Add an instance document to the list of documents to be validated by a subsequent
+                     call
+                     on <code>ValidateMultipleDocuments</code>.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>source</code>&nbsp;-&nbsp;Source document supplied as a <code>TextReader</code>
+                     </div>
+                  <div class="params"><code>baseUri</code>&nbsp;-&nbsp;Base URI of the source document</div>
+               </div>
+            </div><a name="AddSource(TextReader)"></a><div class="member">
+               <h3>AddSource</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;AddSource</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.io.textreader(VS.80).aspx" class="apilink system" target="_blank">TextReader</a>&nbsp;source)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Add an instance document to the list of documents to be validated by a subsequent
+                     call
+                     on <code>ValidateMultipleDocuments</code>. The base URI is taken as the current working
+                     directory.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>source</code>&nbsp;-&nbsp;Source document supplied as a <code>TextReader</code>
+                     </div>
+               </div>
+            </div><a name="AddSource(Uri)"></a><div class="member">
+               <h3>AddSource</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;AddSource</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a>&nbsp;uri)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Add an instance document to the list of documents to be validated by a subsequent
+                     call
+                     on <code>ValidateMultipleDocuments</code>.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>uri</code>&nbsp;-&nbsp;URI of the source document</div>
+               </div>
+            </div><a name="AddSource(XmlReader)"></a><div class="member">
+               <h3>AddSource</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;AddSource</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.xml.xmlreader(VS.80).aspx" class="apilink system" target="_blank">XmlReader</a>&nbsp;reader)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Add an instance document to the list of documents to be validated by a subsequent
+                     call
+                     on <code>ValidateMultipleDocuments</code>.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>reader</code>&nbsp;-&nbsp;Source document supplied as an <code>XmlReader</code>
+                     </div>
+               </div>
+            </div><a name="AddSource(XdmNode)"></a><div class="member">
+               <h3>AddSource</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;AddSource</span><span class="fblock">(<a href="XdmNode.html" class="apilink">XdmNode</a>&nbsp;source)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Add an instance document to the list of documents to be validated  by a subsequent
+                     call
+                     on <code>ValidateMultipleDocuments</code>.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>source</code>&nbsp;-&nbsp;Source document supplied as an <code>XdmNode</code> value</div>
+               </div>
+            </div><a name="Close()"></a><div class="member">
+               <h3>Close</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;Close</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Close the destination, allowing resources to be released. Saxon calls this method
+                     when it has finished writing to the destination
+                     </p>
+               </div>
+            </div><a name="GetParameter(QName)"></a><div class="member">
+               <h3>GetParameter</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;<a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;GetParameter</span><span class="fblock">(<a href="QName.html" class="apilink">QName</a>&nbsp;name)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Get the value that has been set for a schema processor (a parameter defined in the
+                     schema using the <code>saxon:param</code> extension)
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>name</code>&nbsp;-&nbsp;the parameter whose name is required</div>
+                  <p class="methodLabel">Returns:</p>
+                  <div class="params">the value that has been set for the parameter, or the EmptySequence if no value has
+                     been set</div>
+               </div>
+            </div><a name="OnClose(Action)"></a><div class="member">
+               <h3>OnClose</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;OnClose</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.action(VS.80).aspx" class="apilink system" target="_blank">Action</a>&nbsp;action)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Define an action to be performed when writing to the Destination is complete.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>action</code>&nbsp;-&nbsp;The action to be performed.</div>
+               </div>
+            </div><a name="SetDestination(IDestination)"></a><div class="member">
+               <h3>SetDestination</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;SetDestination</span><span class="fblock">(<a href="IDestination.html" class="apilink">IDestination</a>&nbsp;destination)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Supply the destination to hold the validated document. If no destination
+                     is supplied, the validated document is discarded.
+                     </p>
+                  <p>
+                     The destination differs from the source in that (a) default values of missing
+                     elements and attributes are supplied, and (b) the typed values of elements and
+                     attributes are available. However, typed values can only be accessed if the result
+                     is represented using the XDM data model, that is, if the destination is supplied
+                     as an <code>XdmDestination</code>.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>destination</code>&nbsp;-&nbsp;
+                     The destination to hold the validated document.
+                     </div>
+               </div>
+            </div><a name="SetParameter(QName,XdmValue)"></a><div class="member">
+               <h3>SetParameter</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;SetParameter</span><span class="fblock">(<a href="QName.html" class="apilink">QName</a>&nbsp;name, <br><a href="XdmValue.html" class="apilink">XdmValue</a>&nbsp;value)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Set the value of a schema parameter (a parameter defined in the schema using the <code>saxon:param</code> extension)
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>name</code>&nbsp;-&nbsp;the name of the schema parameter, as a QName</div>
+                  <div class="params"><code>value</code>&nbsp;-&nbsp;the value of the schema  parameter, or null to clear a previously set value</div>
+               </div>
+            </div><a name="SetValidityReporting(IDestination)"></a><div class="member">
+               <h3>SetValidityReporting</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;SetValidityReporting</span><span class="fblock">(<a href="IDestination.html" class="apilink">IDestination</a>&nbsp;destination)</span></div>
+               <div class="fcomment">
+                  <p>Set the validation reporting feature, which saves the validation errors in an XML
+                     file</p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>destination</code>&nbsp;-&nbsp; destination where XML will be sent</div>
+               </div>
+            </div><a name="Validate(Stream,Uri)"></a><div class="member">
+               <h3>Validate</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;Validate</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.io.stream(VS.80).aspx" class="apilink system" target="_blank">Stream</a>&nbsp;source, <br><a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a>&nbsp;baseUri)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Validate an instance document supplied in the form of a <code>Stream</code>
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>source</code>&nbsp;-&nbsp;A stream containing the XML document to be parsed
+                     and validated. This stream will be consumed by the validation process,
+                     but it will not be closed after use: that is the responsibility of the
+                     caller.</div>
+                  <div class="params"><code>baseUri</code>&nbsp;-&nbsp;The base URI to be used for resolving any relative
+                     references, for example a reference to an <code>xsi:schemaLocation</code>
+                     </div>
+               </div>
+            </div><a name="Validate(Stream)"></a><div class="member">
+               <h3>Validate</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;Validate</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.io.stream(VS.80).aspx" class="apilink system" target="_blank">Stream</a>&nbsp;source)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Validate an instance document supplied in the form of a <code>Stream</code>.
+                     The base Uri of the document is taken as the current working directory.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>source</code>&nbsp;-&nbsp;A stream containing the XML document to be parsed
+                     and validated. This stream will be consumed by the validation process,
+                     but it will not be closed after use: that is the responsibility of the
+                     caller.</div>
+               </div>
+            </div><a name="Validate(TextReader,Uri)"></a><div class="member">
+               <h3>Validate</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;Validate</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.io.textreader(VS.80).aspx" class="apilink system" target="_blank">TextReader</a>&nbsp;source, <br><a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a>&nbsp;baseUri)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Validate an instance document supplied in the form of a <code>TextReader</code>
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>source</code>&nbsp;-&nbsp;A <code>TextReader</code> that supplies the XML document to be parsed
+                     and validated. This reader will be consumed by the validation process,
+                     but it will not be closed after use: that is the responsibility of the
+                     caller.</div>
+                  <div class="params"><code>baseUri</code>&nbsp;-&nbsp;The base URI to be used for resolving any relative
+                     references, for example a reference to an <code>xsi:schemaLocation</code>
+                     </div>
+               </div>
+            </div><a name="Validate(TextReader)"></a><div class="member">
+               <h3>Validate</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;Validate</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.io.textreader(VS.80).aspx" class="apilink system" target="_blank">TextReader</a>&nbsp;source)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Validate an instance document supplied in the form of a <code>TextReader</code>.
+                     The base Uri of the document is taken as the current working directory.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>source</code>&nbsp;-&nbsp;A <code>TextReader</code> that supplies the XML document to be parsed
+                     and validated. This reader will be consumed by the validation process,
+                     but it will not be closed after use: that is the responsibility of the
+                     caller.</div>
+               </div>
+            </div><a name="Validate(Uri)"></a><div class="member">
+               <h3>Validate</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;Validate</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.uri(VS.80).aspx" class="apilink system" target="_blank">Uri</a>&nbsp;uri)</span></div>
+               <div class="fcomment">
+                  <p>
+                     Validate an instance document, supplied in the form of a <code>Uri</code> reference
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>uri</code>&nbsp;-&nbsp;URI of the document to be validated</div>
+               </div>
+            </div><a name="Validate(XmlReader)"></a><div class="member">
+               <h3>Validate</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;Validate</span><span class="fblock">(<a href="http://msdn.microsoft.com/en-us/library/system.xml.xmlreader(VS.80).aspx" class="apilink system" target="_blank">XmlReader</a>&nbsp;reader)<br>throws<br><a href="SaxonApiException.html" class="apilink">SaxonApiException</a></span></div>
+               <div class="fcomment">
+                  <p>
+                     Validate an instance document, supplied in the form of an <code>XmlReader</code>.
+                     </p>
+                  <p>
+                     The <code>XmlReader</code> is responsible for parsing the document; this method validates it.
+                     </p>
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>reader</code>&nbsp;-&nbsp;The <code>XmlReader</code> used to read and parse the instance
+                     document being validated. This is used as supplied. For conformance, use of a
+                     plain <code>XmlTextReader</code> is discouraged, because it does not expand entity
+                     references. This may cause validation failures.
+                     </div>
+                  <p class="methodLabel">Throws:</p>
+                  <div class="params"><a href="SaxonApiException.html" class="apilink">SaxonApiException</a>&nbsp;-&nbsp;Throws an exception if the document is found to be
+                     invalid (and also on other conditions like a failure to read the source document)</div>
+               </div>
+            </div><a name="Validate(XdmNode)"></a><div class="member">
+               <h3>Validate</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;Validate</span><span class="fblock">(<a href="XdmNode.html" class="apilink">XdmNode</a>&nbsp;source)<br>throws<br><a href="SaxonApiException.html" class="apilink">SaxonApiException</a></span></div>
+               <div class="fcomment">
+                  <p>
+                     Validate an instance document, supplied in the form of an <code>XdmNode</code>.
+                     </p>
+                  
+                  <p>The supplied node must be either a document node or an element node.
+                     If an element node is supplied, then the subtree rooted at this element is
+                     validated as if it were a complete document: that is, it must not only conform
+                     to the structure required of that element, but any referential constraints
+                     (keyref, IDREF) must be satisfied within that subtree.
+                     </p>
+                  
+                  <p class="methodLabel">Parameters:</p>
+                  <div class="params"><code>source</code>&nbsp;-&nbsp;The document or element node at the root of the tree
+                     to be validated</div>
+                  <p class="methodLabel">Throws:</p>
+                  <div class="params"><a href="SaxonApiException.html" class="apilink">SaxonApiException</a>&nbsp;-&nbsp;Throws an exception if the document is found to be
+                     invalid (and also on other conditions like a failure to read the source document)</div>
+               </div>
+            </div><a name="ValidateMultipleDocuments()"></a><div class="member">
+               <h3>ValidateMultipleDocuments</h3>
+               <div class="fullsignature"><span class="fblock">public&nbsp;void&nbsp;ValidateMultipleDocuments</span><span class="fblock">()</span></div>
+               <div class="fcomment">
+                  <p>
+                     Run the validation of a set of instance documents, previously
+                     supplied by calling <code>AddSource</code>.
+                     </p>
+                  
+                  <p>Unless multithreading has been disabled at <code>Processor</code> level, the
+                     instance documents are validated in parallel in multiple threads.</p>
+                  
+                  <p>This requires care when deciding how invalidity should be reported: the
+                     recommended option is to generate an XML validation report by calling
+                     <code>SetValidityReporting</code>.</p>
+                  
+                  <p>The validated documents (with type annotations and expanded defaults: that is,
+                     the PSVIs) are not made available to the calling application.</p>
+                  
+                  <p>The method does not throw an exception if any of the source documents
+                     is found to be invalid. It does however throw an exception if any of the source
+                     documents cannot be read, or is not well-formed XML. (This method
+                     can therefore be useful even when there is only one document to be validated,
+                     to avoid the exception condition.)</p>
+                  </div>
+            </div>
+         </div>
+         <p>&nbsp;</p>
+      </div>
+      <div class="margin">
+         &nbsp;
+         </div>
+   </body>
+</html>
