@@ -9,13 +9,8 @@ import javax.xml.transform.*;
 import javax.xml.transform.dom.*;
 import javax.xml.transform.stream.*;
 
-
-
 public class Inventaire  
 {  
-   
-
-
     public static void modifier(String nomdoc, String codeproduitvendu, String quantitevendue) throws Exception {
         
         //System.out.println("OUI!");
@@ -73,13 +68,6 @@ public class Inventaire
 
     }
 
-
-
-
-
-
-
-
 public static void main(String[] args) throws IOException   
 {  
 
@@ -110,9 +98,6 @@ modifier(args[1], idproduit, quantite);
     // TODO Auto-generated catch block
     e.printStackTrace();
 }
-
-
-
 // Fin main ---------------------------------------------------------------
 }  
 }  

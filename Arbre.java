@@ -4,14 +4,17 @@ import javax.xml.parsers.*;
 //Méthode 
  public class Arbre {
     public static void traite(Node node, int i) {
+      
+      // Indentation -------------------------------------------------------
       // On part de rien  
       String s= ""; 
       // Et on ajoute une indentation pour chaque niveau
-      for (int k = 0; k < i; ++k) s+=" ";
+      //for (int k = 0; k < i; ++k) s+=" ";
        
+
+
        // Affiche nom et valeur du noeud
-       // Notez la présence du s (indentation)
-       // 
+       // Notez la présence du s (indentation) 
        System.out.println(s+"Nom: "+ node.getNodeName() +
        " Valeur: "+node.getNodeValue());
       
@@ -48,7 +51,9 @@ import javax.xml.parsers.*;
        DocumentBuilderFactory.newInstance();
        DocumentBuilder parser = factory.newDocumentBuilder();
 
+       // Définit le fichier XML à parser -----------------------------------
        String filename = args[0];
+
 
        // On parse le fichier XML
        Document doc = parser.parse(filename);
@@ -57,3 +62,4 @@ import javax.xml.parsers.*;
 
     }
  }
+ 

@@ -10,7 +10,7 @@ import javax.xml.transform.stream.*;
  public class Bottin {
 
 
-   // 1 parametres de la classe Bottin
+   // Main method
    public static void main(String[] args) throws Exception {
       DocumentBuilderFactory factory = 
        DocumentBuilderFactory.newInstance();
@@ -41,9 +41,14 @@ import javax.xml.transform.stream.*;
       
       // Paramètre "cherche" ------------------------------------------
       else if (args[0].equals("cherche")) {
-       for (int k = 0; k < nl.getLength(); ++k) {
+       
+          
+         for (int k = 0; k < nl.getLength(); ++k) {
+         //Parcours la liste
           if(nl.item(k).getNodeType()==Node.ELEMENT_NODE) {
-             Element e = (Element) nl.item(k);
+            // Créer un élément "noeud" courant 
+            Element e = (Element) nl.item(k);
+             // Compare avec le String args[1]
              if(e.getAttribute("nom").equals(args[1])) {
                 System.out.println(e.getAttribute("telephone"));
              }
@@ -71,7 +76,7 @@ import javax.xml.transform.stream.*;
       }
 
 
-
+      // Bloc important -------------------------------------------------
       TransformerFactory tfact = TransformerFactory.newInstance();
       Transformer transformer = tfact.newTransformer();
       transformer.setOutputProperty("encoding", "ISO-8859-1");
