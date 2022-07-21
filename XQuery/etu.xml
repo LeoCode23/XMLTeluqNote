@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+ <?xml-stylesheet href="class.xsl" type="text/xsl" ?>
+ <universite>
+ <etudiant><nom>Rejean Tremblay</nom>
+ <cours sigle="INF8430" note="89" />
+ <cours sigle="INF1030" note="69" />
+ <cours sigle="INF1230" note="75" /></etudiant>
+ <etudiant><nom>Martin Lambert</nom>
+ <cours sigle="INF8430" note="75" />
+ <cours sigle="INF1030" note="72" />
+ <cours sigle="INF1230" note="73" /></etudiant>
+ <etudiant><nom>Luc Alain</nom>
+ <cours sigle="INF9430" note="39" />
+ <cours sigle="INF1030" note="89" />
+ <cours sigle="INF1230" note="79" /></etudiant>
+ <etudiant><nom>Olive Saint-Amant</nom>
+ <cours sigle="INF8430" note="91" />
+  <cours sigle="INF1230" note="99" /></etudiant>
+ </universite>
