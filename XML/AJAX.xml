@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<!-- CSS -->>
+<style>
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+</style>
+
+
+
+<title>Exemple plus avancé en AJAX</title>
+
+<!-- Javascript -->
+<script>
+function myFunction() {
+  document.getElementById("demon").innerHTML = "Hello World";
+
+}
+function myFunction1() {
+  document.body.style.backgroundColor = "red";
+
+}
+
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    myFunction2(this);
+  }
+  xhttp.open("GET", "ledevoir.xml");
+  xhttp.send();
+}
+
+function myFunction2(xml) {
+  const xmlDoc = xml.responseXML;
+  const x = xmlDoc.getElementsByTagName("item");
+  let table="<tr><th>Artist</th><th>Title</th></tr>";
+  var longueur = x.length;
+  for ( k = 0; k &lt; longueur ; ++k) { 
+    table += "<tr><td>" +
+    x[k].getElementsByTagName("title")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[k].getElementsByTagName("description")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+  }
+  document.getElementById("demo").innerHTML = table;
+}
+
+</script>
+
+</head>
+<!-- html -->
+<body>
+<h1>HTML DOM Events</h1>
+<h2>The onclick Event</h2>
+
+<p>The onclick event triggers a function when an element is clicked on.</p>
+
+<button onclick="myFunction()">La base</button>
+<button onclick="myFunction1()">Test CSS</button>
+<button onclick="loadDoc()">Afficher la réponse</button>
+
+<p id="demon"></p>
+<table id="demo"></table>
+
+
+</body>
+</html>

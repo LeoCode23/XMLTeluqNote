@@ -7,38 +7,18 @@ import javax.xml.transform.*;
 import javax.xml.transform.dom.*;
 import javax.xml.transform.stream.*;
 
+// Permet d'ouvrir une fenêtre sous windows:
+import java.awt.Desktop;
+import java.net.URI;
+  
+
 public class ledevoir {
 
     // --------------------------------------------------------------
-    public static void navigateur(String URI) throws Exception {
-        // Fonction qui ouvre un navigateur internet
-        // Ref: https://mkyong.com/java/open-browser-in-java-windows-or-linux/
-        String url = URI;
-        String os = System.getProperty("os.name").toLowerCase();
-        Runtime rt = Runtime.getRuntime();
-        try {
-            if (os.indexOf("win") >= 0) {
-                // this doesn't support showing urls in the form of "page.html#nameLink"
-                rt.exec("rundll32 url.dll,FileProtocolHandler " + url);
-            } else if (os.indexOf("mac") >= 0) {
-                rt.exec("open " + url);
-            } else if (os.indexOf("nix") >= 0 || os.indexOf("nux") >= 0) {
-                // Do a best guess on unix until we get a platform independent way
-                // Build a list of browsers to try, in this order.
-                String[] browsers = { "epiphany", "firefox", "mozilla", "konqueror",
-                        "netscape", "opera", "links", "lynx" };
-                // Build a command string which looks like "browser1 "url" || browser2 "url"
-                // ||..."
-                StringBuffer cmd = new StringBuffer();
-                for (int i = 0; i < browsers.length; i++)
-                    cmd.append((i == 0 ? "" : " || ") + browsers[i] + " \"" + url + "\" ");
-                rt.exec(new String[] { "sh", "-c", cmd.toString() });
-            } else {
-                return;
-            }
-        } catch (Exception e) {
+    public static void ouvrir_nav(String URI) throws Exception{
+        Desktop desk = Desktop.getDesktop();
+        desk.browse(new URI(URI));
         }
-    }
     // ----------------------------------------------------------------------------------------------------------------------
 
 
@@ -64,17 +44,96 @@ public class ledevoir {
       
 
 
-    // --------------------------------------------------------------
+    // XML TO AJAX--------------------------------------------------------------
     public static void rendre_lisible(String nom_fichier_a_modifier) throws SAXException, IOException, ParserConfigurationException, TransformerException {
     // Pour rendre le fichier lisible, il faut:
-    // 1. Retirer les balises d'entête
-    // 2. Configurer les balises HTML de base
-    
+    // 1. Récupérer les information importantes (nodeList)
+            // 1.1. Récupérer <channel><title>
+            // 1.2. Récupérer <item><title>
+            // 1.3. Récupérer <item><description>
+            // 1.4. Récupérer <item><link>
+            // 1.5. Récupérer <item><pubdate>
+    // 2. Effacer le document
+    // 3. Configurer les balises HTML de base et les informations importantes
+    DocumentBuilderFactory factory = 
+        DocumentBuilderFactory.newInstance();
+       DocumentBuilder parser = 
+        factory.newDocumentBuilder();
+       Document doc = parser.parse(nom_fichier_a_modifier);
+       
+       Element racine = doc.getDocumentElement();
+       System.out.println(racine.getNodeName()); 
+       // Affiche RSS
+       String channel = "channel";
+        String titre = "title";
+        String description = "description";
+        String link = "link";
+        String pubdate = "pubdate";
+        String item = "item";
 
-    
-    }
+        NodeList NLracine = racine.getElementsByTagName(channel);
+        // 1.1 Affiche <channel><title>
+        // System.out.println("TextContent " + element_enfant.getTextContent());
+        NodeList channel_liste = noeud_enfant(NLracine, titre);
+        // 1.2
+        NodeList item_liste = noeud_enfant(NLracine, item);
+        NodeList titre_item_liste = noeud_enfant(item_liste, titre);
+        NodeList description_item_liste = noeud_enfant(item_liste, description);
+
+        // Fonction Affiche le contenu d'une NodeList (Nodelist NodeList_a_afficher))
+        affiche_noeud_for(titre_item_liste);
+        affiche_noeud_for(description_item_liste);
+
+       
+
+      }
+
+
+
+      
+
+
+
+       
+       //System.out.println(racine.getNodeValue());
+       //NodeList nl = racine.getElementsByTagName("joueur");
+       //for (int i = 0; i < nl.getLength(); ++i) {
+         // Element joueur = (Element) nl.item(i);
+          //NodeList listedenoms = joueur.getElementsByTagName("nom");
+          //Element nom = (Element) listedenoms.item(0);
+          //System.out.println(nom.getFirstChild().getNodeValue());
+       //}
     // ----------------------------------------------------------------------------------------------------------------------
 
+
+
+    private static NodeList noeud_enfant(NodeList nl, String nom_tagname_enfant) {
+        //Tant qu'il y a des node dans nl
+         for (int i = 0; i < nl.getLength(); i++) {
+        //Va cherche 1 à 1 les element de la liste nl  
+        Element element = (Element) nl.item(i);
+          // Va cherche le titre du channel sous forme de noeud
+          NodeList liste_enfant = element.getElementsByTagName(nom_tagname_enfant);
+          // Passe de noeud à element
+        //affiche_noeud(liste_enfant, i);
+          return liste_enfant;
+    }return null;}
+
+    private static void affiche_noeud(NodeList nl, int i) {
+        // Passe de noeud à element selon l'index
+          Element element_enfant = (Element) nl.item(i);
+          //On utilise l'element
+            System.out.println("NodeName: " + element_enfant.getNodeName());
+            System.out.println("TextContent " + element_enfant.getTextContent());
+    }
+    private static void affiche_noeud_for(NodeList nl) {
+        for (int i = 0; i < nl.getLength(); ++i) {
+        // Passe de noeud à element selon l'index
+          Element element_enfant = (Element) nl.item(i);
+          //On utilise l'element
+            System.out.println("NodeName: " + element_enfant.getNodeName());
+            System.out.println("TextContent " + element_enfant.getTextContent());
+    }}
 
 
     // Modifie la déclaration de l'encodage de UTF-8 à ISO-8859-1 ----------------------------------------------------- 
@@ -112,20 +171,44 @@ public class ledevoir {
         String URI = "https://www.ledevoir.com/rss/ledevoir.xml";
         String nomsortant = "copy.xml";
         String nom_document_modifier = "recopy.xml";
-        String emplacement = "file:///C:/Users/LT/Documents/GitHub/XMLTeluqNote/recopy.xml";
-        
+        String emplacement = "file://C:/Users/LT/Documents/GitHub/XMLTeluqNote/recopy.xml";
+        int a=1;
+        int b=0;
 
+
+        afficher(b);
+        b = somme(a, b);
+        afficher(b);
+        
+        // Charger fichier xml grâce URI
         charger_uri(URI, nomsortant);
+
+        // Modifier l'encodage pour éviter un problème lié aux caractères spéciaux
+        // Effectue une simple modification du fichier d'un point de vue .text
         modifier_encodage(nomsortant);
-        //Inutile mais permet de comparer copy.xml et recopy.xml lors du développement
+        
+        //Inutile mais permet de comparer copy.xml et recopy.xml lors du développement/évaluation
         charger_uri(nomsortant, nom_document_modifier);
         rendre_lisible(nom_document_modifier);
 
-        // Ouvrir dans un navigateur
+        // Ouvrir dans une fenêtre
         // --------------------------------------------------------------
-       navigateur(emplacement);
+       ouvrir_nav(emplacement);
         // ---------------------------------------------------------------------------
 
+    }
+
+
+
+    private static void afficher(int b) {
+        System.out.println("b = " + b);
+    }
+
+
+
+    private static int somme(int a, int b) {
+        b+=a+a+a;
+        return b;
     }
 
 
