@@ -7,6 +7,15 @@ import org.w3c.dom.*;
 public class xpathsearch {
 
 
+    
+    public static void lire_xml()
+    {
+
+        
+    }
+    
+    
+    
     public static void main(String[] args) throws Exception {
 
 // Variable de départ

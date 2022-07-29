@@ -1,0 +1,17 @@
+
+
+
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSRequestNotHttp
+
+Local files from the same directory and subdirectories were historically treated as being from the same origin. This meant that a file and all its resources could be loaded from a local directory or subdirectory during testing, without triggering a CORS error.
+
+Unfortunately this had security implications, as noted in this advisory: CVE-2019-11730. Many browsers, including Firefox and Chrome, now treat all local files as having opaque origins (by default). As a result, loading a local file with included local resources will now result in CORS errors. 
+
+
+
+
+
+
+
+

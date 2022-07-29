@@ -1,18 +1,5 @@
 
-XQuery
-Saxon
+Guide SAXON:
 
 
-java -cp Dependance\saxon-he-11.3.jar net.sf.saxon.Query -t -qs:"current-date()"
-
-XQuery\Dependance\saxon-he-11.3.jar
-
-Mettre CMD (powershell) sur le dossier XQuery (cp ...)
-
-java -cp Dependance\saxon-he-11.3.jar net.sf.saxon.Query -t 
-    -q:C:\Users\LT\Documents\GitHub\XMLTeluqNote\XQuery\samples\query\books-to-html.xq -s:C:\Users\LT\Documents\GitHub\XMLTeluqNote\XQuery\samples\data\books.xml
-
-
-
-    java -cp Dependance\saxon-he-11.3.jar net.sf.saxon.Transform -t -s:samples\data\books.xml 
-    -xsl:samples\styles\books.xsl -o:c:\temp.html
+java -cp saxon9.jar net.sf.saxon.Query query.xqm

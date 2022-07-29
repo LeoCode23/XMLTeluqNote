@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Exemple plus avancé en AJAX</title>
+
+<script language="JavaScript" charset="UTF-8">
+/* Cette fonction va chercher un document XML sur
+le serveur et appelle la fonction afficherTitres lorsque
+c'est fait! */
+function chargeDocument(URI) {
+try {
+ 
+ xmlhttp = new XMLHttpRequest();
+ xmlhttp.open("GET", URI,true);
+ xmlhttp.onreadystatechange=function() {
+ if (xmlhttp.readyState==4) {
+  afficheTitres(xmlhttp.responseXML);
+  }
+ }
+ xmlhttp.send(null);
+ } catch(o) {alert(o);}
+}
+
+function afficheTitres(doc) {
+      titres = doc.getElementsByTagName("title");
+      elementol = document.createElement("ol");
+      var longueur = titres.length;
+      for ( k = 0; k &lt; longueur ; ++k) {
+        elementli = document.createElement("li");
+        elementli.appendChild(
+          document.createTextNode(
+            titres[k].firstChild.nodeValue
+          )
+        );
+        elementol.appendChild(elementli);
+      }
+      body = document.getElementsByTagName("body").item(0);
+      body.appendChild(elementol);
+}
+
+</script>
+</head>
+<body>
+<ul>
+<li><a href="javascript:chargeDocument('ledevoir.xml');">Récupère 
+et affiche les nouvelles du devoir.</a></li>
+</ul>
+</body>
+</html>
