@@ -1,14 +1,95 @@
 
+Local files from the same directory and subdirectories were historically treated as being from the same origin. 
+This meant that a file and all its resources could be loaded from a local directory or subdirectory during testing, 
+without triggering a CORS error.
+Unfortunately this had security implications, as noted in this advisory: CVE-2019-11730. 
+Many browsers, including Firefox and Chrome, now treat all local files as having opaque origins (by default). 
+As a result, loading a local file with included local resources will now result in CORS errors. 
+Référence: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSRequestNotHttp
 
 
+Réponse: 
 
-https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSRequestNotHttp
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
 
-Local files from the same directory and subdirectories were historically treated as being from the same origin. This meant that a file and all its resources could be loaded from a local directory or subdirectory during testing, without triggering a CORS error.
+<style>
+body { background-color: linen;}
+li {display: block;}
+</style>
 
-Unfortunately this had security implications, as noted in this advisory: CVE-2019-11730. Many browsers, including Firefox and Chrome, now treat all local files as having opaque origins (by default). As a result, loading a local file with included local resources will now result in CORS errors. 
+
+<title>Exercice 4 - Application AJAX</title>
+<!--
+    Il est important de mettre le charset UTF-8 sur le document local pour que les accents s'affichent correctement
+-->
+
+<!-- 
+    Objectif:
+     Créer une page web AJAX capable de charger le fichier XML
+     et d'afficher tant le titre des nouvelles que leur description complète. 
+     Attention, il ne faut récupérer que le contenu des éléments au sein des éléments item.
+     Nous supposons que les titres et descriptions ne contiennent que du texte, sans éléments HTML (même si c'est faux)
+ -->
+<script language="JavaScript">
 
 
+function chargeDocument(URI) {
+try {
+ xmlhttp = new XMLHttpRequest();
+ xmlhttp.open("GET", URI,true);
+ xmlhttp.onreadystatechange=function() {
+ if (xmlhttp.readyState==4) {
+  afficheTitres(xmlhttp.responseXML);
+  }
+ }
+ xmlhttp.send(null);
+ } catch(o) {alert(o);}
+}
+
+function afficheTitres(doc) {
+    /* Accède à l'élement racine */
+    /* racine = doc.documentElement; */
+    /* Affiche l'élément racine */
+    /*alert(racine.nodeName);*/
+    /* Accède tous les éléments item */
+    var items = doc.getElementsByTagName("item");
+    /* Affiche le nombre d'éléments item */
+    /*alert(items.length + 1);*/
+
+      titres = doc.getElementsByTagName("title");
+      description = doc.getElementsByTagName("description");
+      
+      elementol = document.createElement("ol");
+      var longueur = items.length + 1;
+      /* Pour récupérer uniquement les éléments contenus dans les balises item, on modifie la boucle pour obtenir l'index 1. */
+      for ( k = 1; k &lt; longueur ; ++k) {
+        /* Le titre + numéro */
+        elementli = document.createElement("li");
+        elementli.appendChild(
+          document.createTextNode("Titre #"+ k + ": " + titres[k].firstChild.nodeValue)
+        );
+        /* La description */
+        elementol.appendChild(elementli);
+        elementli = document.createElement("li");
+        elementli.appendChild(
+          document.createTextNode("Description: " + description[k].firstChild.nodeValue)
+        );
+        elementol.appendChild(elementli);
+
+      }
+      body = document.getElementsByTagName("body").item(0);
+      body.appendChild(elementol);
+}
+</script>
+</head>
+<body>
+<ul>
+<li><a href="javascript:chargeDocument('ledevoir.xml');">Cliquez ici pour évaluation</a></li>
+</ul>
+</body>
+</html>
 
 
 

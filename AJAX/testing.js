@@ -1,26 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-
-<style>
-body { background-color: linen;}
-li {display: block;}
-</style>
-
-
-<title>Exercice 4 - Application AJAX</title>
-<!--
-    Il est important de mettre le charset UTF-8 sur le document local pour que les accents s'affichent correctement
--->
-
-<!-- 
-    Objectif:
-     Créer une page web AJAX capable de charger le fichier XML
-     et d'afficher tant le titre des nouvelles que leur description complète. 
-     Attention, il ne faut récupérer que le contenu des éléments au sein des éléments item.
-     Nous supposons que les titres et descriptions ne contiennent que du texte, sans éléments HTML (même si c'est faux)
- -->
-<script language="JavaScript">
 
 
 function chargeDocument(URI) {
@@ -52,13 +29,13 @@ function afficheTitres(doc) {
       elementol = document.createElement("ol");
       var longueur = items.length + 1;
       /* Pour récupérer uniquement les éléments contenus dans les balises item, on modifie la boucle pour obtenir l'index 1. */
-      for ( k = 1; k &lt; longueur ; ++k) {
-        /* Le titre + numéro */
+      for ( k = 1; k &lt; longueur; ++k) {
+        
         elementli = document.createElement("li");
         elementli.appendChild(
           document.createTextNode("Titre #"+ k + ": " + titres[k].firstChild.nodeValue)
         );
-        /* La description */
+
         elementol.appendChild(elementli);
         elementli = document.createElement("li");
         elementli.appendChild(
@@ -67,14 +44,9 @@ function afficheTitres(doc) {
         elementol.appendChild(elementli);
 
       }
+    
+
+
       body = document.getElementsByTagName("body").item(0);
       body.appendChild(elementol);
 }
-</script>
-</head>
-<body>
-<ul>
-<li><a href="javascript:chargeDocument('ledevoir.xml');">Cliquez ici pour évaluation</a></li>
-</ul>
-</body>
-</html>

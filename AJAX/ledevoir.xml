@@ -1,600 +1,391 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><rss version="2.0">
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
   <channel>
-    <title>Fil de presse - Le Devoir</title>
-    <link>https://www.ledevoir.com</link>
+    <title>Le fil de presse du Devoir</title>
+    <link>http://www.ledevoir.com/</link>
+    <description></description>
     <language>fr-ca</language>
-    <copyright>Copyright 2008-2022, Le Devoir</copyright>
-
-    <webMaster>webmaster@ledevoir.com (Le Devoir)</webMaster>
+    <copyright></copyright>
+    <lastBuildDate>Mon, 05 Feb 2007 04:00:00 EST</lastBuildDate>
     <ttl>1440</ttl>
-    <image>
-	 <url>https://www.ledevoir.com/images/ul/logos/2018/logo_ledevoir.png</url>
-	 <title>Fil de presse - Le Devoir</title>
-	 <link>https://www.ledevoir.com</link>
-	</image>
-
-	<description/>
-    <category>Fil de presse</category>
-
-		
     <item>
-	  <surtitle/>
-      <title>Une nouvelle Ètoile naÓtra prËs du viaduc Van Horne</title>
-      <pubDate>Fri, 22 Jul 2022 00:16:33 -0400</pubDate>
-      <link>https://www.ledevoir.com/culture/musique/736749/musique-une-nouvelle-etoile-naitra-pres-du-viaduc-van-horne</link>
-      <guid>https://www.ledevoir.com/culture/musique/736749/musique-une-nouvelle-etoile-naitra-pres-du-viaduc-van-horne</guid>
-      <category>Musique</category>
-      <description>La SÈcuritÈ, nouveau ´supergroupeª de la scËne ´undergroundª montrÈalaise, offrira son concert inaugural dimanche.</description>
-      <author>philrenaud@hotmail.com (Philippe Renaud)</author>
+      <title>Lettres: Clinique priv√©e: le beurre et l'argent du beurre</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129935.html</link>
+      <category>Quebec</category>
+      <description>On apprenait r√©cemment dans l'√©ditorial de Jean-Robert Sansfa√ßon (¬´M. Couillard doit intervenir¬ª, Le Devoir du 27 janvier 2007), d'une part, la cr√©ation d'une clinique priv√©e utilisant des avenues ill√©gales pour rentabiliser ses services et, d'autre part, le refus du ministre de la Sant√© d'intervenir pour faire appliquer les r√®gles de la loi 33. On se rend compte que le gouvernement Charest voulait jouer la carte de la social-d√©mocratie en mod√©rant les retomb√©es du jugement Chaoulli, alors qu'en fait il n'avait aucune intention de l√©gif√©rer dans la cr√©ation de cliniques priv√©es. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129935.html&quot;&gt;Suite&lt;/a&gt;</description>
     </item>
-
-		
     <item>
-	  <surtitle/>
-      <title>Un externe en mÈdecine sur six aurait songÈ au suicide dans la derniËre annÈe</title>
-      <pubDate>Fri, 22 Jul 2022 00:15:17 -0400</pubDate>
-      <link>https://www.ledevoir.com/societe/sante/736788/sante-un-externe-en-medecine-sur-six-aurait-songe-au-suicide-dans-la-derniere-annee</link>
-      <guid>https://www.ledevoir.com/societe/sante/736788/sante-un-externe-en-medecine-sur-six-aurait-songe-au-suicide-dans-la-derniere-annee</guid>
-      <category>SantÈ</category>
-      <description>Un tout rÈcent sondage de la FÈdÈration mÈdicale Ètudiante du QuÈbec dresse des constats ´prÈoccupantsª.</description>
-      <author>fmorinmartel@ledevoir.com (Florence Morin-Martel)</author>
+      <title>La p√©nurie d'infirmi√®res: un second regard s'impose!</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129932.html</link>
+      <category>Sante</category>
+      <description>√âtablissons d'entr√©e de jeu que la profession d'infirmi√®re attire beaucoup de jeunes: en 1997, l'Ordre des infirmi√®res et infirmiers du Qu√©bec (OIIQ) a d√©livr√© 997 permis, alors que l'an dernier nous en avons d√©livr√© 2880 pour atteindre un nombre total d'infirmi√®res de 68 754 qui est un sommet historique. Depuis 2002, nous avons un solde positif, c'est-√†-dire que nous d√©livrons plus de permis que le nombre d'infirmi√®res qui partent, √† savoir entre 900 et 1145 permis de plus que le besoin de remplacement. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129932.html&quot;&gt;Suite&lt;/a&gt;</description>
     </item>
-
-		
     <item>
-	  <surtitle/>
-      <title>Les yeux du monde se dÈtournent de líUkraine</title>
-      <pubDate>Fri, 22 Jul 2022 00:14:17 -0400</pubDate>
-      <link>https://www.ledevoir.com/monde/europe/736584/medias-sociaux-les-yeux-du-monde-se-detournent-de-l-ukraine</link>
-      <guid>https://www.ledevoir.com/monde/europe/736584/medias-sociaux-les-yeux-du-monde-se-detournent-de-l-ukraine</guid>
-      <category>Europe</category>
-      <description>Sur Facebook, on recensait dÈj‡ quatre fois moins de publications sur le pays un mois aprËs le dÈbut de líinvasion.</description>
-      <author>svieira@ledevoir.com (Sandrine Vieira)</author>
+      <title>La nation ¬´ethnique¬ª et la nation civique: une fausse opposition</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129921.html</link>
+      <category>Quebec</category>
+      <description>Le d√©bat sur la nation a retrouv√© une forte acuit√© √† la suite de la motion du premier ministre Harper sur la reconnaissance de la nation qu√©b√©coise. La presse anglophone hors Qu√©bec a tergivers√© quant √† l'interpr√©tation des termes Qu√©b√©cois et Quebecer: ¬´Qu√©b√©cois¬ª renvoyant pour certains √† la majorit√© qu√©b√©coise d'origine canadienne-fran√ßaise, alors que le terme Quebecer signifierait une notion inclusive et renverrait √† tous les habitants du Qu√©bec. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129921.html&quot;&gt;Suite&lt;/a&gt;</description>
     </item>
-
-		
     <item>
-	  <surtitle/>
-      <title>Victimes de la chaleur</title>
-      <pubDate>Fri, 22 Jul 2022 00:13:17 -0400</pubDate>
-      <link>https://www.ledevoir.com/environnement/736746/victimes-de-la-chaleur</link>
-      <guid>https://www.ledevoir.com/environnement/736746/victimes-de-la-chaleur</guid>
+      <title>Lettres: Pourquoi exclure le Parti vert du Qu√©bec?</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129929.html</link>
+      <category>Quebec</category>
+      <description>Mardi dernier, Le Devoir a publi√© un sondage qui excluait le Parti vert du Qu√©bec (PVQ). En cons√©quence, au b√©n√©fice des personnes qui ne lisent que Le Devoir, il est important de mentionner trois faits indiscutables. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129929.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Lettres: H√©rouxville: les seuls lapid√©s sont les membres de notre communaut√©</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129926.html</link>
+      <category>Ethiqueetreligion</category>
+      <description>Que dire de cette petite municipalit√© du nom de H√©rouxville, lasse de sombrer dans l'oubli, elle promulgua un code de conduite pour les immigrants qu'elle n'a jamais re√ßus et qu'elle ne recevra probablement jamais: interdiction d'exciser les femmes, interdiction du voile et, le pire, interdiction de lapider les femmes! &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129926.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Libre-Opinion: Le pari perdu d'Andr√© Boisclair</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129925.html</link>
+      <category>Quebec</category>
+      <description>La crise de leadership que vit actuellement le Parti qu√©b√©cois (PQ) r√©v√®le l'inanit√© d'une strat√©gie de repositionnement √† droite √©labor√©e √† la suite des √©lections compl√©mentaires de 2002 en vue de courtiser l'√©lectorat ad√©quiste. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129925.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Irak: le massacre de Sadriya soul√®ve un toll√©</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129965.html</link>
+      <category>ProcheOrient</category>
+      <description>Bagdad -- La capitale irakienne, frapp√©e samedi par le deuxi√®me attentat le plus meurtrier en Irak en quatre ans s'est r√©veill√©e hier au son de nouvelles explosions. Somm√© d'agir, le gouvernement irakien a renouvel√© son engagement √† lutter contre les groupes arm√©s au lendemain de la mort de 135 personnes dans un attentat suicide au camion pi√©g√© dans un secteur √† majorit√© chiite de Bagdad. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129965.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Le pr√©sident de Hyundai Motor est condamn√© √† trois ans de prison</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129970.html</link>
+      <category>Economie</category>
+      <description>S√©oul -- La justice sud-cor√©enne a condamn√© ce lundi √† trois ans de prison ferme le pr√©sident de Hyundai Motor, Chung Mong-koo, pour abus de confiance et d√©tournement de fonds de sa compagnie. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129970.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Le PLQ annule son congr√®s de mars</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129964.html</link>
+      <category>Quebec</category>
+      <description>Qu√©bec ‚Äî Un autre signe est venu renforcer la rumeur selon laquelle le Qu√©bec pourrait se retrouver en √©lections plus t√¥t qu‚Äôon ne le croyait. L‚Äôex√©cutif du Parti lib√©ral du Qu√©bec s‚Äôest r√©uni hier et a d√©cid√© de reporter son congr√®s pr√©vu pour la fin mars, un important rassemblement pr√©vu depuis plus d‚Äôun an. La formation politique a toutefois choisi de se r√©unir le 17 f√©vrier en ¬´conseil g√©n√©ral √©largi¬ª, qui planchera sur des orientations √©lectorales. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129964.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Colts 29, Bears 17 - Peyton Manning remporte enfin le Super Bowl</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129968.html</link>
+      <category>Sports</category>
+      <description>Miami -- Peyton Manning l'a enfin, sa bague du Super Bowl. Avec le titre de joueur par excellence du match comme boni. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129968.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Canadien 4 - Penguins 3 - Souray donne la victoire au Canadien en prolongation</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129948.html</link>
+      <category>Hockey</category>
+      <description>Sidney Crosby a tent√© un jeu de finesse de trop. Le joueur-vedette des Penguins de Pittsburgh a perdu le disque en zone offensive et Tomas Plekanec, lors d‚Äôun surnombre, l‚Äôa refil√© √† Sheldon Souray. Le tir foudroyant du d√©fenseur a eu raison de Marc-Andr√© Fleury et son but, marqu√© √† 2:01 de la prolongation, a permis au Canadien de l‚Äôemporter 4-3, hier apr√®s-midi au Centre Bell. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129948.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>L'appartement-fumoir pour d√©jouer la loi antitabac</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129967.html</link>
+      <category>Societe</category>
+      <description>Le locataire qui loue le logement √† c√¥t√© du bar Sky, situ√© dans le quartier gai rue Sainte-Catherine coin Alexandre-de-S√®ve, est tr√®s accueillant. Tellement accueillant, que son appartement est d√©nu√© de tout meuble, sauf quelques tables munies de cendriers pour accueillir les fumeurs du bar. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129967.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>L'entrevue - Le s√©nateur du Vermont, alli√© de la plan√®te</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129966.html</link>
+      <category>EtatsUnis</category>
+      <description>Le premier s√©nateur socialiste de l'histoire des √âtats-Unis repr√©sente le Vermont, voisin du Qu√©bec, dont il importe de l'hydro√©lectricit√©. Bernie Sanders est l'auteur de la proposition de loi la plus compl√®te et la plus draconienne pour lutter contre le r√©chauffement de la plan√®te. Il est aussi l'un des principaux d√©tracteurs de la guerre en Irak. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129966.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>La tr√™ve semble se mat√©rialiser √† Gaza</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129963.html</link>
+      <category>Monde</category>
+      <description>Gaza -- Les activistes arm√©s ont commenc√© √† se retirer hier des rues de Gaza, des otages ont √©t√© lib√©r√©s et de nombreux magasins ont rouvert leurs portes, premiers signes concrets d'une nouvelle tr√™ve conclue la veille au soir entre le Hamas et le Fatah, ont rapport√© des habitants. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129963.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Ind√©pendance ou partition?</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129961.html</link>
+      <category>Monde</category>
+      <description>Le Kosovo sera-t-il le th√©√¢tre du dernier acte de la sanglante trag√©die des Balkans, cette r√©gion montagneuse, pluriethnique et tourment√©e qui avait obs√©d√© le monde durant la premi√®re moiti√© des ann√©es 90... avant de retomber, au cours des 15 derni√®res ann√©es, dans un calme peut-√™tre trompeur? &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129961.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Intervenir contre l'Iran aurait des cons√©quences ¬´d√©sastreuses¬ª</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129960.html</link>
+      <category>ProcheOrient</category>
+      <description>Londres -- Une intervention militaire contre l'Iran aurait des cons√©quences ¬´d√©sastreuses¬ª pour la r√©gion, soulignent trois anciens hauts responsables militaires am√©ricains dans une tribune au Sunday Times, l'√©dition dominicale du quotidien londonien The Times. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129960.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Semaine de pr√©vention du suicide - Les personnes √¢g√©es sont de plus en plus nombreuses √† se suicider</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129962.html</link>
+      <category>Sante</category>
+      <description>Nombreuses sont les personnes √¢g√©es qui parlent de la mort √† mesure qu'elles s'en rapprochent. Il ne faut surtout pas banaliser ce discours qui peut receler des id√©es suicidaires, pr√©viennent des sp√©cialistes et repr√©sentants des a√Æn√©s en ce d√©but de la Semaine de pr√©vention du suicide. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129962.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Une deuxi√®me sortie dans l'espace pour les astronautes de l'ISS</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129959.html</link>
+      <category>Scienceettechnologie</category>
+      <description>Cap Canaveral -- Deux astronautes am√©ricains sortis dans l'espace hier pour achever l'installation d'un nouveau syst√®me de climatisation qui permettra l'arrimage d√®s cette ann√©e de modules europ√©en et japonais ont r√©int√©gr√© la Station spatiale internationale (ISS). &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129959.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>La grippe aviaire r√©appara√Æt en Grande-Bretagne</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129958.html</link>
+      <category>Sante</category>
+      <description>Holton, Angleterre -- Les autorit√©s britanniques, qui s'employaient hier √† abattre des dizaines de milliers de dindes, ont renforc√© les restrictions au transport de volailles pour emp√™cher la propagation de la grippe aviaire, apparue dans une ferme de l'est de l'Angleterre. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129958.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Apprendre √† rendre les armes</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129957.html</link>
+      <category>Monde</category>
+      <description>Une conf√©rence sur les enfants-soldats, dont le nombre est estim√© entre 250 000 et 300 000 dans le monde, s'ouvre aujourd'hui √† Paris. Cette rencontre, la premi√®re du genre en dix ans, vise √† mettre √† jour les normes adopt√©es au Cap en 1997 en ce qui concerne la lib√©ration et la r√©insertion sociale de ces jeunes. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129957.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Plus √ßa change...</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129956.html</link>
+      <category>Quebec</category>
+      <description>Dans les ann√©es 80, la d√©cision du gouvernement de Brian Mulroney d'accorder le contrat d'entretien des CF-18 √† Canadair de Montr√©al plut√¥t qu'√† la compagnie Bristol Aerospace de Winnipeg avait eu un r√¥le d√©terminant dans le d√©part de Stephen Harper des rangs du Parti progressiste-conservateur. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129956.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>En bref - Deux Canadiens bless√©s lors d'une fusillade au Mexique</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129955.html</link>
+      <category>Societe</category>
+      <description>Toronto -- Deux Canadiens ont √©t√© bless√©s lors d'une fusillade dans un h√¥tel du Mexique au cours de la fin de semaine. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129955.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>En bref - Postes de gardien de prison supprim√©s : Stockwell Day nie</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129954.html</link>
+      <category>Justice</category>
+      <description>Ottawa -- Le ministre canadien de la S√©curit√© publique, Stockwell Day, nie que 300 postes de gardiens de prison seraient supprim√©s d'ici 2009. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129954.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>En bref - Risque de tremblement de terre √©cart√©</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129953.html</link>
+      <category>Scienceettechnologie</category>
+      <description>Vancouver -- Le risque d'un tremblement de terre d√©crit comme ¬´catastrophique¬ª √† l'ouest du Canada est √©cart√© pour le moment, ont affirm√© samedi des sismologues cit√©s par Radio-Canada. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129953.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Les p√©quistes sont appel√©s √† serrer les rangs autour de leur chef</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129952.html</link>
+      <category>Quebec</category>
+      <description>√Ä quelques semaines du d√©clenchement probable de la campagne √©lectorale provinciale, le chef p√©quiste Andr√© Boisclair a r√©v√©l√© cette fin de semaine quelques grandes lignes √† saveur social-d√©mocrate de la future plateforme √©lectorale de sa formation, dans un effort pour souder des troupes souverainistes passablement √©chaud√©es. En clair, le Parti qu√©b√©cois d√©velopperait un Qu√©bec ¬´plus riche, plus juste, plus vert et plus pr√®s des r√©gions¬ª, selon l'expression employ√©e par son chef samedi, √† la Conf√©rence des pr√©sidents des associations du parti. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129952.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>L'ONU ferme la porte √† un groupe qu√©b√©cois de d√©fense des gais</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129951.html</link>
+      <category>Monde</category>
+      <description>Le Comit√© des organisations non gouvernementales des Nations unies a refus√© la semaine derni√®re, par huit voix contre six, de recommander que la Coalition gaie et lesbienne du Qu√©bec (CGLQ) obtienne le statut d'observateur, en raison du vote d√©favorable de certains pays o√π l'homosexualit√© est toujours tr√®s mal per√ßue, voire criminalis√©e. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129951.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Super Bowl - Malgr√© sa blessure, Nick Harper portait l'uniforme des Colts</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129950.html</link>
+      <category>Sports</category>
+      <description>Miami -- Le demi de coin des Colts d'Indianapolis Nick Harper, qui √©tait g√™n√© par une entorse √† la cheville gauche cette semaine, faisait partie de la formation officielle hier en vue du match du Super Bowl. Harper, un ancien joueur des Tiger-Cats de Hamilton dans la LCF, s'√©tait bless√© dans le match de championnat de l'Association am√©ricaine, disput√© contre les Patriots de la Nouvelle-Angleterre. Il a r√©ussi trois interceptions en saison r√©guli√®re, un sommet chez les Colts, en plus de r√©aliser 73 plaqu√©s. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129950.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>D√®s aujourd'hui - Quelque 25 CPE de Montr√©al et de Laval pourraient se retrouver en gr√®ve</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129949.html</link>
+      <category>Societe</category>
+      <description>Quelque 25 centres de la petite enfance de Montr√©al et de Laval se retrouveront en gr√®ve d√®s ce matin, √† moins d'une entente de derni√®re minute. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129949.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Escrime - Le Montr√©alais Josh McGuire d√©croche la 11e place en Espagne</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129947.html</link>
+      <category>Sports</category>
+      <description>La Coruna, Espagne -- Le fleurettiste montr√©alais Josh McGuire a d√©croch√© la 11e place √† la Coupe du monde d'escrime de La Corua, hier en Espagne. Dans le tableau des 64, McGuire a remport√© son premier affrontement 15-11 contre l'Espagnol Javier Menendez pour ensuite signer une autre victoire contre Kyoya Ichikawa, du Japon, par la marque serr√©e de 11-10. Au troisi√®me tour, le fleurettiste s'est inclin√© 15-9 contre le Polonais Radoslaw Glonek, qui s'est av√©r√© l'√©ventuel finaliste d√©fait par l'Allemand Peter Joppich. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129947.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>En bref - Soccer: les obs√®ques du policier italien auront lieu ce matin</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129946.html</link>
+      <category>Sports</category>
+      <description>Rome, Italie -- Les obs√®ques de Filippo Raciti, le policier tu√© lors d'affrontements entre forces de l'ordre et supporteurs de l'√©quipe de Catane en marge du derby sicilien contre Palerme vendredi, auront lieu aujourd'hui √† 11h √† la cath√©drale de Catane. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129946.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>En bref - Caracas c√©l√®bre les 15 ans du putsch manqu√© de Ch√°vez</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129945.html</link>
+      <category>AmeriqueLatine</category>
+      <description>Caracas -- Des milliers de V√©n√©zu√©liens v√™tus de rouge et agitant de gigantesques poup√©es gonflables √† l'effigie d'Hugo Ch√°vez sont descendus hier dans les rues de Caracas pour c√©l√©brer le 15e anniversaire du putsch manqu√© par l'actuel pr√©sident, qui a largement contribu√© √† forger sa r√©putation. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129945.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Les talibans s'appr√™tent √† intensifier leur campagne d'attentats suicide en Afghanistan</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129944.html</link>
+      <category>Monde</category>
+      <description>Spin Boldak, Afghanistan -- Les talibans s'appr√™tent √† intensifier leur campagne d'attentats suicide en Afghanistan, o√π ils jouissent du soutien de 95 % de la population, a d√©clar√© √† Reuters un chef de la milice islamiste, alors que les √âtats-Unis ont pris hier le commandement des forces de l'OTAN dans le pays. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129944.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Quinze soldats britanniques de moins de 18 ans envoy√©s en Irak</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129943.html</link>
+      <category>ProcheOrient</category>
+      <description>Londres -- Quinze soldats britanniques √¢g√©s de moins de 18 ans ont √©t√© envoy√©s combattre en Irak depuis juin 2003, en violation du protocole des Nations unies sur les droits des enfants, a reconnu hier le gouvernement britannique. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129943.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Th√©√¢tre - Facture classique</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129942.html</link>
+      <category>Theatre</category>
+      <description>Qu√©bec -- La question br√ªlait depuis l'annonce de la programmation de La Bord√©e l'an dernier: comment Martin Genest allait-il se frotter √† Racine? Les succ√®s r√©cents du metteur en sc√®ne -- un Festen percutant au P√©riscope, un Jacques et son ma√Ætre de Diderot inspir√© malgr√© les faiblesses du texte et cette pure merveille th√©√¢trale que fut Le P√©riple lors du Carrefour -- avaient habitu√© le public √† des propositions aux images fortes, jouant souvent de l'irr√©v√©rence et de l'entorse aux conventions. Comment donc allait-il maintenant aborder le monstre sacr√© qu'est Ph√®dre, dont l'art repose justement sur la biens√©ance et les conventions? &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129942.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Arch√©ologie - En faisant peau neuve, Rabat d√©couvre son pass√©</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129941.html</link>
+      <category>Afrique</category>
+      <description>Raba -- Colonnes et chapiteaux romains, murs d'enceinte du XIIe si√®cle, c√©ramiques et monnaies islamiques, la capitale marocaine d√©couvre son pass√© enfoui dans les sables √† l'occasion de vastes travaux de r√©habilitation de sa fa√ßade maritime. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129941.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Concerts classiques - F√©erique Lakm√©</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129940.html</link>
+      <category>Musiqueclassique</category>
+      <description>L'Op√©ra de Montr√©al mettait, samedi soir, Lakm√© √† son r√©pertoire. Voir l'un des dix ouvrages majeurs du r√©pertoire fran√ßais gagner l'affiche de l'institution lyrique d'une ville francophone apr√®s... vingt-six ann√©es de fonctionnement (!) de cette institution a quelque chose de vertigineux. On peut penser ce que l'on veut du passage de Bernard Labadie √† la t√™te de l'Op√©ra de Montr√©al (OdeM), mais on ne peut certainement pas lui nier le m√©rite d'avoir remis quelques pendules √† l'heure et d'avoir ouvert des voies que ses successeurs auraient grand tort de ne pas suivre. Le respect de nos racines lyriques francophones est une chose, le choix de nouveaux partenaires de coproduction en est une autre. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129940.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>En bref - Scorsese est r√©compens√© par ses pairs</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129939.html</link>
+      <category>Cinema</category>
+      <description>Los Angeles -- Martin Scorsese a √©t√© sacr√© samedi par la Guilde des r√©alisateurs am√©ricains pour son nouveau film Les Infiltr√©s, se rapprochant ainsi d'un Oscar qu'il n'a encore jamais obtenu, malgr√© six nominations par le pass√©. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129939.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>En bref - Polanski adaptera Pomp√©i de Robert Harris</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129938.html</link>
+      <category>Cinema</category>
+      <description>Londres -- Le r√©alisateur Roman Polanski va adapter √† l'√©cran le best-seller Pomp√©i de l'√©crivain et journaliste britannique Robert Harris, rapporte le Sunday Times. ¬´Roman a dit qu'il aimait le livre, nous nous sommes rencontr√©s √† Paris, et l'affaire a √©t√© conclue¬ª, a d√©clar√© Harris au journal dominical. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129938.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>L'argent trop facile</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129934.html</link>
+      <category>Economie</category>
+      <description>Trop beau pour durer? L'ann√©e qui s'est achev√©e est inscrite en lettres d'or pour la sph√®re financi√®re mondiale. Beaucoup de Bourses ont battu leurs records, les profits des banques ont √©t√© mirifiques, les fusions et acquisitions ont d√©pass√© les volumes de la bulle Internet en 2000, les nouveaux instruments financiers comme les fonds sp√©culatifs (hedge funds) ont tant de succ√®s qu'ils g√®rent trente fois plus d'actifs qu'il y a quinze ans (1400 milliards de dollars) avec des rentabilit√©s inou√Øes et une nouvelle vedette, le Private Equity, a r√©alis√© des acquisitions spectaculaires (750 milliards au total en 2006). &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129934.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>La hantise de Bush</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129933.html</link>
+      <category>EtatsUnis</category>
+      <description>Ces jours-ci, la Maison-Blanche est plus nerveuse qu'habituellement. La cause de cette inqui√©tude est un ex-agent secret dont l'identit√© a √©t√© r√©v√©l√©e √† des journalistes par un et peut-√™tre deux ou trois membres du personnel politique croisant quotidiennement le pr√©sident Bush et le vice-pr√©sident Dick Cheney. Depuis que le monde entier a appris que Valerie Plame √©taient les nom et pr√©nom d'un agent de la CIA, une enqu√™te a √©t√© men√©e, un proc√®s se poursuit. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129933.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Accommodements raisonnables - Les m√©dias ont-ils exag√©r√© ?</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129931.html</link>
+      <category>Medias</category>
+      <description>Faute de grandes r√©v√©lations propres √† leur valoir la palme d'or du public, des cha√Ænes m√©diatiques seraient rendues, au Qu√©bec, √† exploiter les peurs religieuses et les rancoeurs nationales. Au m√©pris, bien entendu, des r√®gles d'√©thique. Un sondage du Journal de Montr√©al et de TVA sur le racisme avait suscit√©, en janvier, maintes attaques journalistiques contre Quebecor, leur propri√©taire. Devant la multiplication d'incidents plus ou moins conflictuels parus, depuis, un peu partout √† la une, des observateurs parlent maintenant d'une ¬´guerre commerciale¬ª sur le dos de minorit√©s. La temp√™te sur l'accommodement raisonnable serait-elle une cr√©ation des empires de presse? &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129931.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Un imam condamne le ¬´ code de vie ¬ª d'H√©rouxville</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129930.html</link>
+      <category>Villesetregions</category>
+      <description>L'imam de la mosqu√©e Al-Qods, √† Montr√©al, estime que le ¬´code de vie¬ª adopt√© par le conseil municipal d'H√©rouxville est plut√¥t un ¬´code de r√©pression¬ª. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129930.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Les accommodants</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129928.html</link>
+      <category>Ethiqueetreligion</category>
+      <description>La saga des ¬´accommodements¬ª, v√©ritable toile de P√©n√©lope retiss√©e chaque jour dans les m√©dias, est porteuse d'une triste v√©rit√©: que les Qu√©b√©cois s'illusionnent sur eux-m√™mes! Peu importe ce que l'on clame, ce n'est pas l'√©galit√© qui m√®ne. Qu'un homme d√©cr√®te: pas de dame dans la voiture!; qu'une femme dise: pas de messieurs dans mon cours!, le permis de discriminer est donn√©, sans √©tat d'√¢me. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129928.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Plus de 339 000 sinistr√©s √† Jakarta en proie aux inondations</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129927.html</link>
+      <category>Monde</category>
+      <description>Jakarta -- Une vaste op√©ration de secours se poursuivait hier √† Jakarta pour venir en aide √† plus de 339 000 habitants de la capitale indon√©sienne et de ses environs chass√©s de chez eux par des inondations dues √† des pluies torrentielles qui ont fait une vingtaine de morts. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129927.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>20 morts - La tornade a caus√© des d√©g√¢ts consid√©rables en Floride</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129924.html</link>
+      <category>Societe</category>
+      <description>Lady Lake -- Vingt personnes sont mortes lors du passage d'une tornade dans la nuit de jeudi √† vendredi dans le centre de la Floride, qui a provoqu√© des d√©g√¢ts spectaculaires sur une zone de 51 km2. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129924.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Bilan du 37e Forum √©conomique mondial - Davos: l'ann√©e du changement climatique</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129923.html</link>
       <category>Environnement</category>
-      <description>Trois tÈmoignages recueillis par ´Le Devoirª donnent un avant-go˚t du danger climatique qui guette le QuÈbec.</description>
-      <author>ariopel@ledevoir.com (Alexis Riopel)</author>
+      <description>Le 37e Forum de Davos ne fera pas partie des plus flamboyants. Aucun repr√©sentant du gouvernement am√©ricain n'est descendu d'un h√©licopt√®re de l'US Air Force comme Dick Cheney en 2003, aucune star n'a fait tourner les t√™tes comme Sharon Stone en 2005 et aucun pays n'a, comme l'Inde en 2006, brill√© de mille feux. Qu'importe, l'optimisme habitait les 2500 participants. Pas de doute: 2007 sera encore un tr√®s bon mill√©sime pour l'√©conomie mondiale. Davos 2007 aura √©t√© l'ann√©e du changement climatique. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129923.html&quot;&gt;Suite&lt;/a&gt;</description>
     </item>
-
-		
     <item>
-	  <surtitle>?Critique cinÈma</surtitle>
-      <title>´Nopeª: entre divertissement et mÈtaphores</title>
-      <pubDate>Fri, 22 Jul 2022 00:05:33 -0400</pubDate>
-      <link>https://www.ledevoir.com/culture/cinema/736533/critique-cinema-nope-entre-divertissement-et-metaphores</link>
-      <guid>https://www.ledevoir.com/culture/cinema/736533/critique-cinema-nope-entre-divertissement-et-metaphores</guid>
-      <category>CinÈma</category>
-      <description>Le film voit Jordan Peele creuser davantage son sillon o˘ cinÈma de genre et commentaire social fusionnent.</description>
-      <author>flevesque@ledevoir.com (FranÁois LÈvesque)</author>
+      <title>Selon un ancien ministre lib√©ral - Dion n'a pas toujours √©t√© un grand partisan de la question environnementale</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129922.html</link>
+      <category>Canada</category>
+      <description>Ottawa -- Un ancien coll√®gue de cabinet de St√©phane Dion affirme que l'actuel dirigeant lib√©ral n'a pas toujours affich√© le m√™me enthousiasme qu'aujourd'hui √† propos de la question environnementale. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129922.html&quot;&gt;Suite&lt;/a&gt;</description>
     </item>
-
-		
     <item>
-	  <surtitle/>
-      <title>Le papillon monarque maintenant ´en dangerª</title>
-      <pubDate>Fri, 22 Jul 2022 00:05:02 -0400</pubDate>
-      <link>https://www.ledevoir.com/environnement/736425/le-papillon-monarque-est-maintenant-en-danger</link>
-      <guid>https://www.ledevoir.com/environnement/736425/le-papillon-monarque-est-maintenant-en-danger</guid>
+      <title>Libert√© de presse - Le Comit√© pour la protection des journalistes s'en prend aux gouvernements</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129920.html</link>
+      <category>Medias</category>
+      <description>New York -- Le Comit√© pour la protection des journalistes (CPJ) tire un sombre bilan pour la libert√© de la presse, dans un rapport annuel qui critique autant les groupes arm√©s que certains gouvernements, accus√©s de recourir √† des m√©thodes de contr√¥le toujours plus voil√©es. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129920.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Perspectives - Voyage de Terre</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129919.html</link>
+      <category>Economie</category>
+      <description>L'industrie touristique est rarement consid√©r√©e √† sa juste valeur. Elle a beau √™tre l'une des plus importantes de toutes en mati√®re de retomb√©es √©conomiques et d'emplois, elle a du mal √† b√©n√©ficier des m√™mes attentions que les autres grands secteurs. Il le faudrait pourtant, car elle conna√Æt les m√™mes bouleversements mondiaux, et l'on commence √† y tirer de l'arri√®re. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129919.html&quot;&gt;Suite&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Conf√©rence de Paris sur l'environnement - Jean Charest veut une ONU verte</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129918.html</link>
       <category>Environnement</category>
-      <description>Le dÈclin rapide de sa population place le cÈlËbre insecte sur la ´liste rougeª des espËces menacÈes.</description>
-      <author>webmestre@ledevoir.com (Christina Larson)</author>
+      <description>Paris -- Refusant de commenter les rumeurs d'√©lections au Qu√©bec en mars, Jean Charest a quitt√© Paris hier en appuyant officiellement la cr√©ation d'une ONU de l'environnement. Le premier ministre √©tait l'un des rares chefs de gouvernements, avec celui du Gabon, √† participer √† la Conf√©rence de Paris convoqu√©e √† l'initiative du pr√©sident Jacques Chirac et qui r√©unissait surtout des sp√©cialistes et des repr√©sentants d'ONG. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129918.html&quot;&gt;Suite&lt;/a&gt;</description>
     </item>
-
-		
     <item>
-	  <surtitle/>
-      <title>Deuil national et colËre en Irak aprËs des frappes meurtriËres imputÈes ‡ Ankara</title>
-      <pubDate>Fri, 22 Jul 2022 00:04:38 -0400</pubDate>
-      <link>https://www.ledevoir.com/monde/moyen-orient/736341/deuil-national-et-colere-apres-les-frappes-meurtrieres-imputees-a-ankara</link>
-      <guid>https://www.ledevoir.com/monde/moyen-orient/736341/deuil-national-et-colere-apres-les-frappes-meurtrieres-imputees-a-ankara</guid>
-      <category>Moyen-Orient</category>
-      <description>LíIrak enterrait jeudi les victimes des tirs díartillerie imputÈs ‡ la Turquie qui ont tuÈ la veille neuf civils.</description>
-      <author>webmestre@ledevoir.com (Ahmad Al-Rubaye)</author>
+      <title>Suzuki Grand Vitara - Suzuki joue la carte de l'authenticit√©</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129917.html</link>
+      <category>Economie</category>
+      <description>R√©put√©e pour ses motocyclettes, la firme japonaise Suzuki a √©galement fait sa marque avec les utilitaires en format de poche, avant de suivre la mode et d'en faire des plus gros... Dans le cr√©neau des petits 4X4, Suzuki a fait office de pr√©curseur avec ses d√©funts Samurai et Sidekick, dont la robustesse n'avait d'√©gal que le manque de raffinement et l'absence totale de confort. Cette √©poque est r√©volue depuis l'arriv√©e des Vitara et Grand Vitara en 1999. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129917.html&quot;&gt;Suite&lt;/a&gt;</description>
     </item>
-
-		
     <item>
-	  <surtitle/>
-      <title>Accord imminent entre líUkraine et la Russie sur líexportation des cÈrÈales ukrainiennes</title>
-      <pubDate>Fri, 22 Jul 2022 00:04:08 -0400</pubDate>
-      <link>https://www.ledevoir.com/monde/europe/736710/guerre-en-ukraine-accord-imminent-entre-l-ukraine-et-la-russie-sur-l-exportation-des-cereales-ukrainiennes</link>
-      <guid>https://www.ledevoir.com/monde/europe/736710/guerre-en-ukraine-accord-imminent-entre-l-ukraine-et-la-russie-sur-l-exportation-des-cereales-ukrainiennes</guid>
-      <category>Europe</category>
-      <description>Líentente permettra de dÈbloquer le blÈ ukrainien et díallÈger des entraves au transport de grains et díengrais russes.</description>
-      <author>webmestre@ledevoir.com (Dario Thuburn)</author>
+      <title>Technologies - Visa le noir, tua le blanc</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129916.html</link>
+      <category>Television</category>
+      <description>Depuis que Google a fait l'acquisition du portail YouTube l'an dernier, il ne se passe plus une semaine sans qu'une entreprise de communication menace le portail d'une poursuite pour violation de propri√©t√© intellectuelle ou somme les responsables du site de retirer sur-le-champ tel ou tel segment vid√©o. Cette fois, c'est le groupe am√©ricain Viacom qui lance les grandes hostilit√©s. &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129916.html&quot;&gt;Suite&lt;/a&gt;</description>
     </item>
-
-		
     <item>
-	  <surtitle/>
-      <title>Les tout-petits auront droit ‡ une dose de vaccin dËs lundi</title>
-      <pubDate>Fri, 22 Jul 2022 00:03:34 -0400</pubDate>
-      <link>https://www.ledevoir.com/societe/sante/736371/la-vaccination-des-tout-petits-devrait-commencer-la-semaine-prochaine</link>
-      <guid>https://www.ledevoir.com/societe/sante/736371/la-vaccination-des-tout-petits-devrait-commencer-la-semaine-prochaine</guid>
-      <category>SantÈ</category>
-      <description>SantÈ Canada a rÈcemment approuvÈ un vaccin de Moderna pour les six mois ‡ cinq ans.</description>
-      <author>fcarabin@ledevoir.com (FranÁois Carabin)</author>
+      <title>M√©dias - Les surprises de la crise au FCT</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129915.html</link>
+      <category>Television</category>
+      <description>Au bout du fil, le producteur s'indigne: ¬´Vous imaginez si je d√©cidais de ne pas payer mon hypoth√®que parce que je suis contre les politiques de ma banque?¬ª &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129915.html&quot;&gt;Suite&lt;/a&gt;</description>
     </item>
-
-		
     <item>
-	  <surtitle/>
-      <title>Un soutien díOttawa pour lutter contre les prÈjugÈs sur la variole simienne</title>
-      <pubDate>Fri, 22 Jul 2022 00:02:10 -0400</pubDate>
-      <link>https://www.ledevoir.com/societe/sante/736386/un-financement-contre-la-stigmatisation-de-la-variole-simienne</link>
-      <guid>https://www.ledevoir.com/societe/sante/736386/un-financement-contre-la-stigmatisation-de-la-variole-simienne</guid>
-      <category>SantÈ</category>
-      <description>Des organismes communautaires, dont REZO, ‡ MontrÈal, sont chargÈs de dispenser de líinformation sur la maladie.</description>
-      <author>bproulx@ledevoir.com (Boris Proulx)</author>
+      <title>Bienvenue aux nouveaux arrivants !...</title>
+      <pubDate>Mon, 05 Feb 2007 04:00:00 EST</pubDate>
+      <link>http://www.ledevoir.com/2007/02/05/129936.html</link>
+      <category>Villesetregions</category>
+      <description> &lt;a href=&quot;http://www.ledevoir.com/2007/02/05/129936.html&quot;&gt;Suite&lt;/a&gt;</description>
     </item>
 
-		
-    <item>
-	  <surtitle/>
-      <title>Le SPVM tente díarrÍter ´líhÈmorragieª des fraudes</title>
-      <pubDate>Fri, 22 Jul 2022 00:01:34 -0400</pubDate>
-      <link>https://www.ledevoir.com/societe/736689/fraudes-le-spvm-tente-d-arreter-l-hemorragie</link>
-      <guid>https://www.ledevoir.com/societe/736689/fraudes-le-spvm-tente-d-arreter-l-hemorragie</guid>
-      <category>SociÈtÈ</category>
-      <description>AprËs avoir arrÍtÈ huit suspects, la police constate une hausse des arnaques visant les aÓnÈs dans líouest de MontrÈal.</description>
-      <author>zgoudreault@ledevoir.com (Zacharie Goudreault)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle/>
-      <title>Les travaux du tramway peuvent aller de líavant</title>
-      <pubDate>Fri, 22 Jul 2022 00:01:03 -0400</pubDate>
-      <link>https://www.ledevoir.com/societe/transports-urbanisme/736440/tramway-la-ville-de-quebec-peut-poursuivre-ses-travaux</link>
-      <guid>https://www.ledevoir.com/societe/transports-urbanisme/736440/tramway-la-ville-de-quebec-peut-poursuivre-ses-travaux</guid>
-      <category>Transports / Urbanisme</category>
-      <description>La Cour supÈrieure a rejetÈ jeudi une demande díinjonction dÈposÈe par des opposants au projet.</description>
-      <author>smarin@ledevoir.com (StÈphanie Marin)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle/>
-      <title>La Banque centrale europÈenne tire un trait sur les taux nÈgatifs</title>
-      <pubDate>Thu, 21 Jul 2022 23:24:01 -0400</pubDate>
-      <link>https://www.ledevoir.com/economie/736641/inflation-la-banque-centrale-europeenne-tire-un-trait-sur-les-taux-negatifs</link>
-      <guid>https://www.ledevoir.com/economie/736641/inflation-la-banque-centrale-europeenne-tire-un-trait-sur-les-taux-negatifs</guid>
-      <category>…conomie</category>
-      <description>Líinstitution de Francfort clÙt une dÈcennie de gÈnÈreuse politique monÈtaire.</description>
-      <author>webmestre@ledevoir.com (Jean-Philippe Lacour)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle>?IdÈes</surtitle>
-      <title>Courir pour la chance de vivre</title>
-      <pubDate>Thu, 21 Jul 2022 22:56:07 -0400</pubDate>
-      <link>https://www.ledevoir.com/opinion/idees/736797/idees-courir-pour-la-chance-de-vivre</link>
-      <guid>https://www.ledevoir.com/opinion/idees/736797/idees-courir-pour-la-chance-de-vivre</guid>
-      <category>IdÈes</category>
-      <description>Les maladies rares sont peu connues et donc peu considÈrÈes encore par une grande majoritÈ de soignants.</description>
-      <author/>
-    </item>
-
-		
-    <item>
-	  <surtitle>Chronique</surtitle>
-      <title>De la repentance</title>
-      <pubDate>Thu, 21 Jul 2022 22:51:10 -0400</pubDate>
-      <link>https://www.ledevoir.com/opinion/chroniques/736785/chronique-de-la-repentance</link>
-      <guid>https://www.ledevoir.com/opinion/chroniques/736785/chronique-de-la-repentance</guid>
-      <category>Chroniques</category>
-      <description>Souhaitons que la visite du pape ne soit pas líoccasion de franchir un nouveau pas dans le dÈlire pÈnitentiel.</description>
-      <author>crioux@ledevoir.com (Christian Rioux)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle/>
-      <title>VÈlos et services díurgence, des mondes irrÈconciliables?</title>
-      <pubDate>Thu, 21 Jul 2022 22:27:06 -0400</pubDate>
-      <link>https://www.ledevoir.com/societe/transports-urbanisme/736791/reseau-express-velo-velos-et-servicesd-urgence-des-mondes-irreconciliables</link>
-      <guid>https://www.ledevoir.com/societe/transports-urbanisme/736791/reseau-express-velo-velos-et-servicesd-urgence-des-mondes-irreconciliables</guid>
-      <category>Transports / Urbanisme</category>
-      <description>Alors que des ambulanciers du CHUM craignent líarrivÈe du REV, díautres services díurgence síadaptent aux cyclistes.</description>
-      <author>webmestre@ledevoir.com (Maxance Cloutier)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle>?Pour votre info</surtitle>
-      <title>Quoi surveiller aujourdíhui†?</title>
-      <pubDate>Thu, 21 Jul 2022 22:03:29 -0400</pubDate>
-      <link>https://www.ledevoir.com/societe/736758/pour-votre-info-quoi-surveiller-aujourd-hui</link>
-      <guid>https://www.ledevoir.com/societe/736758/pour-votre-info-quoi-surveiller-aujourd-hui</guid>
-      <category>SociÈtÈ</category>
-      <description>Panne†: les rÈponses de Rogers
-†
-
-AprËs la panne majeure de service chez Rogers, qui a touchÈ des...</description>
-      <author>ppapineau@ledevoir.com (Philippe Papineau)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle>?Chronique</surtitle>
-      <title>Sur la piste des derniËres forÍts vierges du QuÈbec</title>
-      <pubDate>Thu, 21 Jul 2022 21:13:42 -0400</pubDate>
-      <link>https://www.ledevoir.com/opinion/chroniques/736740/chronique-sur-la-piste-des-dernieres-forets-vierges-du-quebec</link>
-      <guid>https://www.ledevoir.com/opinion/chroniques/736740/chronique-sur-la-piste-des-dernieres-forets-vierges-du-quebec</guid>
-      <category>Chroniques</category>
-      <description>Certaines sont des rescapÈes de plus de 400†ans de coupes assidues.</description>
-      <author>ipare@ledevoir.com (Isabelle ParÈ)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle/>
-      <title>La FÈdÈration des chambres de commerce veut des billets ‡ 500$ pour tous les vols interrÈgionaux</title>
-      <pubDate>Thu, 21 Jul 2022 21:01:48 -0400</pubDate>
-      <link>https://www.ledevoir.com/economie/736725/transport-la-federation-des-chambres-de-commerce-veut-des-billets-a-500-pour-tous-les-vols-interregionaux</link>
-      <guid>https://www.ledevoir.com/economie/736725/transport-la-federation-des-chambres-de-commerce-veut-des-billets-a-500-pour-tous-les-vols-interregionaux</guid>
-      <category>…conomie</category>
-      <description>La FÈdÈration des chambres de commerce du QuÈbec demande le retrait de líobligation de passage ‡ MontrÈal ou ‡ QuÈbec.</description>
-      <author>webmestre@ledevoir.com (La Presse canadienne)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle>?</surtitle>
-      <title>´IA.  tre ou ne pas Ítreª: aux confins de líintelligence artificielle</title>
-      <pubDate>Thu, 21 Jul 2022 20:58:41 -0400</pubDate>
-      <link>https://www.ledevoir.com/culture/ecrans/736470/ecrans-ia-etre-ou-ne-pas-etre-aux-confins-de-l-intelligence-artificielle</link>
-      <guid>https://www.ledevoir.com/culture/ecrans/736470/ecrans-ia-etre-ou-ne-pas-etre-aux-confins-de-l-intelligence-artificielle</guid>
-      <category>…crans</category>
-      <description>Matthieu Dugal est de retour sur nos Ècrans†une sÈrie documentaire qui sonde les enjeux Èthiques liÈs ‡ cette technologie.</description>
-      <author>webmestre@ledevoir.com (AmÈlie Revert)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle/>
-      <title>Inculpations pour dÈlit díinitiÈ sur Coinbase, une premiËre dans les cryptomonnaies</title>
-      <pubDate>Thu, 21 Jul 2022 20:50:02 -0400</pubDate>
-      <link>https://www.ledevoir.com/economie/736728/cryptomonnaie-inculpations-pour-delit-d-initie-sur-coinbase-une-premiere-dans-les-cryptomonnaies</link>
-      <guid>https://www.ledevoir.com/economie/736728/cryptomonnaie-inculpations-pour-delit-d-initie-sur-coinbase-une-premiere-dans-les-cryptomonnaies</guid>
-      <category>…conomie</category>
-      <description>´Le Web3 níest pas une zone de non-droitª, rappelle un procureur de New York.</description>
-      <author>webmestre@ledevoir.com (Agence France-Presse)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle>?Les vins de la semaine</surtitle>
-      <title>Bas-Armagnac 1982, Baron G. Legrand, Cognac Lheraud, Sud-Ouest, France</title>
-      <pubDate>Thu, 21 Jul 2022 20:35:11 -0400</pubDate>
-      <link>https://www.ledevoir.com/vivre/vin/736668/les-vins-de-la-semaine-bas-armagnac-1982-baron-g-legrand-cognac-lheraud-sud-ouest-france-147-75-14666559</link>
-      <guid>https://www.ledevoir.com/vivre/vin/736668/les-vins-de-la-semaine-bas-armagnac-1982-baron-g-legrand-cognac-lheraud-sud-ouest-france-147-75-14666559</guid>
-      <category>Vin</category>
-      <description>Cíest le 40e†anniversaire de votre fille ou de votre fiston†? La sagesse ‡ venir níaltËre en rien...</description>
-      <author>guideaubry@gmail.com (Jean Aubry)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle>?Les vins de la semaine</surtitle>
-      <title>Domaine Tariquet ´Classicª 2021, Famille Grassa, CÙtes de Gascogne, Sud-Ouest, France (</title>
-      <pubDate>Thu, 21 Jul 2022 20:32:54 -0400</pubDate>
-      <link>https://www.ledevoir.com/vivre/vin/736665/les-vins-de-la-semaine-domaine-tariquet-classic-2021-famille-grassa-cotes-de-gascogne-sud-ouest-france-13-70-521518</link>
-      <guid>https://www.ledevoir.com/vivre/vin/736665/les-vins-de-la-semaine-domaine-tariquet-classic-2021-famille-grassa-cotes-de-gascogne-sud-ouest-france-13-70-521518</guid>
-      <category>Vin</category>
-      <description>Ce blanc fort original est en vente dans 383 succursales de la SAQ. Aucune raison donc de ne pas le...</description>
-      <author>guideaubry@gmail.com (Jean Aubry)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle>Vitrine musique</surtitle>
-      <title>´Mozart. Piano concertosª, Eric le Sage</title>
-      <pubDate>Thu, 21 Jul 2022 20:31:36 -0400</pubDate>
-      <link>https://www.ledevoir.com/culture/musique/736494/classique-mozart-piano-concertos</link>
-      <guid>https://www.ledevoir.com/culture/musique/736494/classique-mozart-piano-concertos</guid>
-      <category>Musique</category>
-      <description>TrËs belle nouvelle†: le pianiste franÁais …ric Le Sage se penche sur Mozart. Son partenaire est ici...</description>
-      <author>redaction@ledevoir.com (Christophe Huss)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle>Les vins de la semaine</surtitle>
-      <title>Saint-PÈray 2020, Pierre Gaillard, RhÙne, France </title>
-      <pubDate>Thu, 21 Jul 2022 20:30:50 -0400</pubDate>
-      <link>https://www.ledevoir.com/vivre/vin/736662/saint-peray-2020-pierre-gaillard-rhone-france-29-50-14862007</link>
-      <guid>https://www.ledevoir.com/vivre/vin/736662/saint-peray-2020-pierre-gaillard-rhone-france-29-50-14862007</guid>
-      <category>Vin</category>
-      <description>La dominante de marsanne enrobe et circonscrit ici un visage dÈlicatement ponctuÈ des grains de...</description>
-      <author>guideaubry@gmail.com (Jean Aubry)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle>Vitrine musique</surtitle>
-      <title>´More Fuzz!ª, The Jukeez</title>
-      <pubDate>Thu, 21 Jul 2022 20:30:08 -0400</pubDate>
-      <link>https://www.ledevoir.com/culture/musique/736491/garage-more-fuzz-the-jukeez</link>
-      <guid>https://www.ledevoir.com/culture/musique/736491/garage-more-fuzz-the-jukeez</guid>
-      <category>Musique</category>
-      <description>Il y a un boucan díenfer qui provient du garage, au fond de líimpasse. Du rock sans vernis, Áa...</description>
-      <author>redaction@ledevoir.com (Sylvain Cormier)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle>Les vins de la semaine</surtitle>
-      <title>Riesling 2021, Domaine Kientzler, Alsace, France </title>
-      <pubDate>Thu, 21 Jul 2022 20:29:01 -0400</pubDate>
-      <link>https://www.ledevoir.com/vivre/vin/736659/les-vins-de-la-semaine-riesling-2021-domaine-kientzler-alsace-france-24-95-13992475</link>
-      <guid>https://www.ledevoir.com/vivre/vin/736659/les-vins-de-la-semaine-riesling-2021-domaine-kientzler-alsace-france-24-95-13992475</guid>
-      <category>Vin</category>
-      <description>Jíavais oubliÈ en cave un vieux millÈsime du vin de ce domaine, avec, tout derniËrement, une...</description>
-      <author>guideaubry@gmail.com (Jean Aubry)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle>Vitrine musique</surtitle>
-      <title>´Hello, Hiª, Ty Segall</title>
-      <pubDate>Thu, 21 Jul 2022 20:27:08 -0400</pubDate>
-      <link>https://www.ledevoir.com/culture/musique/736479/rock-hello-hi-ty-segall</link>
-      <guid>https://www.ledevoir.com/culture/musique/736479/rock-hello-hi-ty-segall</guid>
-      <category>Musique</category>
-      <description>Il síest passÈ une annÈe ‡ peine depuis la sortie du disque Harmonizer,†du†trËs prolifique...</description>
-      <author>webmestre@ledevoir.com (AmÈlie Revert)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle>Les vins de la semaine</surtitle>
-      <title>Pinot Noir, Adrien Vacher, Savoie, France </title>
-      <pubDate>Thu, 21 Jul 2022 20:27:03 -0400</pubDate>
-      <link>https://www.ledevoir.com/vivre/vin/736656/les-vins-de-la-semaine-pinot-noir-adrien-vacher-savoie-france-18-14969947</link>
-      <guid>https://www.ledevoir.com/vivre/vin/736656/les-vins-de-la-semaine-pinot-noir-adrien-vacher-savoie-france-18-14969947</guid>
-      <category>Vin</category>
-      <description>Voil‡ trËs exactement pourquoi le coeur díun ÈtÈ ensoleillÈ bat la mesure et gonfle de bonheur, sans...</description>
-      <author>guideaubry@gmail.com (Jean Aubry)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle>Les vins de la semaine</surtitle>
-      <title>Hermanos Lurton 2021, Bodega El Albar Lurton, Toro, Espagne</title>
-      <pubDate>Thu, 21 Jul 2022 20:25:33 -0400</pubDate>
-      <link>https://www.ledevoir.com/vivre/alimentation/736653/les-vins-de-la-semaine-hermanos-lurton-2021-bodega-el-albar-lurton-toro-espagne</link>
-      <guid>https://www.ledevoir.com/vivre/alimentation/736653/les-vins-de-la-semaine-hermanos-lurton-2021-bodega-el-albar-lurton-toro-espagne</guid>
-      <category>Alimentation</category>
-      <description>FranÁois Lurton est au vin ce quíEric Clapton est ‡ la guitare, par son inventivitÈ et la maÓtrise...</description>
-      <author>guideaubry@gmail.com (Jean Aubry)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle>?Vitrine musique</surtitle>
-      <title>´Love, Daminiª, Burna Boy</title>
-      <pubDate>Thu, 21 Jul 2022 20:21:29 -0400</pubDate>
-      <link>https://www.ledevoir.com/culture/musique/736485/pop-love-damini-burna-boy</link>
-      <guid>https://www.ledevoir.com/culture/musique/736485/pop-love-damini-burna-boy</guid>
-      <category>Musique</category>
-      <description>Presque dix ans aprËs la sortie de son premier album, L.I.F.E., le NigÈrian Burna Boy a atteint son...</description>
-      <author>philrenaud@hotmail.com (Philippe Renaud)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle>Vitrine musique</surtitle>
-      <title>´Louis Lortie plays Chopin, volume 7ª, Louis Lortie</title>
-      <pubDate>Thu, 21 Jul 2022 20:21:06 -0400</pubDate>
-      <link>https://www.ledevoir.com/culture/musique/736488/classique-louis-lortie-plays-chopin-volume-7</link>
-      <guid>https://www.ledevoir.com/culture/musique/736488/classique-louis-lortie-plays-chopin-volume-7</guid>
-      <category>Musique</category>
-      <description>Au coeur de ce 7e†volume Chopin de Louis Lortie enregistrÈ sur Fazioli ‡ Potton Hall en octobre...</description>
-      <author>redaction@ledevoir.com (Christophe Huss)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle>?Billet vins</surtitle>
-      <title>Montlouis on The Rock (2)</title>
-      <pubDate>Thu, 21 Jul 2022 20:17:26 -0400</pubDate>
-      <link>https://www.ledevoir.com/vivre/vin/736650/billet-vins-montlouis-on-the-rock-2</link>
-      <guid>https://www.ledevoir.com/vivre/vin/736650/billet-vins-montlouis-on-the-rock-2</guid>
-      <category>Vin</category>
-      <description>Le chenin blanc face aux changements climatiques.</description>
-      <author>guideaubry@gmail.com (Jean Aubry)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle/>
-      <title>Dans la cuisineÖ díIsabelle Deschamps Plante</title>
-      <pubDate>Thu, 21 Jul 2022 20:10:36 -0400</pubDate>
-      <link>https://www.ledevoir.com/vivre/alimentation/736644/entrevue-dans-la-cuisine-d-isabelle-deschamps-plante</link>
-      <guid>https://www.ledevoir.com/vivre/alimentation/736644/entrevue-dans-la-cuisine-d-isabelle-deschamps-plante</guid>
-      <category>Alimentation</category>
-      <description>Des tartes ‡ sa passion pour les produits du terroir, la cheffe dÈvoile son univers gourmand.</description>
-      <author>sophiegrenierheroux@hotmail.com (Sophie Grenier-HÈroux)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle>?Vitrine musique</surtitle>
-      <title>´Specialª, Lizzo</title>
-      <pubDate>Thu, 21 Jul 2022 20:10:32 -0400</pubDate>
-      <link>https://www.ledevoir.com/culture/musique/736482/pop-special-lizzo</link>
-      <guid>https://www.ledevoir.com/culture/musique/736482/pop-special-lizzo</guid>
-      <category>Musique</category>
-      <description>Elle a une voix claironnante, Lizzo, moins soul que pop, son grand amour musical, mais, surtout,...</description>
-      <author>philrenaud@hotmail.com (Philippe Renaud)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle/>
-      <title>´Monsieur Lazharª: la grammaire du deuil</title>
-      <pubDate>Thu, 21 Jul 2022 20:03:27 -0400</pubDate>
-      <link>https://www.ledevoir.com/culture/ecrans/736572/serie-en-therapie-monsieur-lazhar-la-grammaire-du-deuil</link>
-      <guid>https://www.ledevoir.com/culture/ecrans/736572/serie-en-therapie-monsieur-lazhar-la-grammaire-du-deuil</guid>
-      <category>…crans</category>
-      <description>LíÈcole de la vie.</description>
-      <author>redaction@ledevoir.com (AndrÈ Lavoie)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle>Lettres</surtitle>
-      <title>Duhaime lËve son jupon tous azimuts!</title>
-      <pubDate>Thu, 21 Jul 2022 19:58:52 -0400</pubDate>
-      <link>https://www.ledevoir.com/opinion/lettres/736683/duhaime-leve-son-jupon-tous-azimuts</link>
-      <guid>https://www.ledevoir.com/opinion/lettres/736683/duhaime-leve-son-jupon-tous-azimuts</guid>
-      <category>Lettres</category>
-      <description>¿ lire parmi notre sÈlection quotidienne de lettres rÈdigÈes par nos lecteurs.</description>
-      <author/>
-    </item>
-
-		
-    <item>
-	  <surtitle>Lettres</surtitle>
-      <title>¿ quand un ´arrÍt Jordanª dans la fonction publique?</title>
-      <pubDate>Thu, 21 Jul 2022 19:57:14 -0400</pubDate>
-      <link>https://www.ledevoir.com/opinion/lettres/736686/a-quand-un-arret-jordan-dans-la-fonction-publique</link>
-      <guid>https://www.ledevoir.com/opinion/lettres/736686/a-quand-un-arret-jordan-dans-la-fonction-publique</guid>
-      <category>Lettres</category>
-      <description>¿ lire parmi notre sÈlection quotidienne de lettres rÈdigÈes par nos lecteurs.</description>
-      <author/>
-    </item>
-
-		
-    <item>
-	  <surtitle>Lettres</surtitle>
-      <title>Les ratÈs du carnet de santÈ au QuÈbec</title>
-      <pubDate>Thu, 21 Jul 2022 19:54:04 -0400</pubDate>
-      <link>https://www.ledevoir.com/opinion/lettres/736680/les-rates-du-carnet-de-sante-au-quebec</link>
-      <guid>https://www.ledevoir.com/opinion/lettres/736680/les-rates-du-carnet-de-sante-au-quebec</guid>
-      <category>Lettres</category>
-      <description>¿ lire parmi notre sÈlection quotidienne de lettres rÈdigÈes par nos lecteurs.</description>
-      <author/>
-    </item>
-
-		
-    <item>
-	  <surtitle/>
-      <title>´Strayª: la ville ‡ hauteur de chat</title>
-      <pubDate>Thu, 21 Jul 2022 19:53:09 -0400</pubDate>
-      <link>https://www.ledevoir.com/culture/ecrans/736467/stray-la-ville-a-hauteur-de-chat</link>
-      <guid>https://www.ledevoir.com/culture/ecrans/736467/stray-la-ville-a-hauteur-de-chat</guid>
-      <category>…crans</category>
-      <description>Dans ce brillant jeu de plateforme 3D, il faut aider un fÈlin ‡ retrouver son chemin dans un monde postapocalyptique.</description>
-      <author>osylvestre@ledevoir.com (Olivier Sylvestre)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle>?Libre opinion</surtitle>
-      <title>Plan vert de Tartuffe au cimetiËre</title>
-      <pubDate>Thu, 21 Jul 2022 19:52:28 -0400</pubDate>
-      <link>https://www.ledevoir.com/opinion/libre-opinion/736674/libre-opinion-plan-vert-de-tartuffe-au-cimetiere</link>
-      <guid>https://www.ledevoir.com/opinion/libre-opinion/736674/libre-opinion-plan-vert-de-tartuffe-au-cimetiere</guid>
-      <category>Libre opinion</category>
-      <description>Promouvoir líÈcologie, díaccord, mais pas au dÈtriment des familles endeuillÈes, cela dure depuis trop longtemps.</description>
-      <author/>
-    </item>
-
-		
-    <item>
-	  <surtitle>?…ditorial - SeptiËme vague et COVID longue durÈe</surtitle>
-      <title>Le supplice de la durÈe</title>
-      <pubDate>Thu, 21 Jul 2022 19:48:27 -0400</pubDate>
-      <link>https://www.ledevoir.com/opinion/editoriaux/736677/septieme-vague-et-covid-longue-duree-le-supplice-de-la-duree</link>
-      <guid>https://www.ledevoir.com/opinion/editoriaux/736677/septieme-vague-et-covid-longue-duree-le-supplice-de-la-duree</guid>
-      <category>…ditoriaux</category>
-      <description>On síillusionne en síimaginant que la pandÈmie se rÈsume ‡ sa part visible. Le marathon est loin díÍtre terminÈ.</description>
-      <author>lmriouxsoucy@ledevoir.com (Louise-Maude Rioux Soucy)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle/>
-      <title>Nous paysans: des vies de labeur</title>
-      <pubDate>Thu, 21 Jul 2022 19:44:03 -0400</pubDate>
-      <link>https://www.ledevoir.com/culture/ecrans/736455/documentaire-nous-paysans-des-vies-de-labeur</link>
-      <guid>https://www.ledevoir.com/culture/ecrans/736455/documentaire-nous-paysans-des-vies-de-labeur</guid>
-      <category>…crans</category>
-      <description>Plusieurs gÈnÈrations díagriculteurs franÁais racontent comment le mÈtier síest transformÈ au fil des saisons.</description>
-      <author>myargeau@ledevoir.com (MaÔka Yargeau)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle/>
-      <title>´Les hÈroÔquesª, criant de vÈritÈ</title>
-      <pubDate>Thu, 21 Jul 2022 19:43:44 -0400</pubDate>
-      <link>https://www.ledevoir.com/culture/cinema/736506/cinema-les-heroiques-criant-de-verite</link>
-      <guid>https://www.ledevoir.com/culture/cinema/736506/cinema-les-heroiques-criant-de-verite</guid>
-      <category>CinÈma</category>
-      <description>Líexistence glauque díun vieux punk abstinent interprÈtÈ avec authenticitÈ par un vieux punk abstinent.</description>
-      <author>philrenaud@hotmail.com (Philippe Renaud)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle>IdÈes</surtitle>
-      <title>´Who am Iª, qui suis-je?</title>
-      <pubDate>Thu, 21 Jul 2022 19:37:03 -0400</pubDate>
-      <link>https://www.ledevoir.com/opinion/idees/736632/diversite-who-am-i-qui-suis-je</link>
-      <guid>https://www.ledevoir.com/opinion/idees/736632/diversite-who-am-i-qui-suis-je</guid>
-      <category>IdÈes</category>
-      <description>Trop de gens pensent encore quíon ne peut pas Ítre un fier QuÈbÈcois et avoir une autre identitÈ en mÍme temps.</description>
-      <author/>
-    </item>
-
-		
-    <item>
-	  <surtitle>IdÈes</surtitle>
-      <title>FranÁois, mon pape</title>
-      <pubDate>Thu, 21 Jul 2022 19:32:54 -0400</pubDate>
-      <link>https://www.ledevoir.com/opinion/idees/736635/religion-francois-mon-pape</link>
-      <guid>https://www.ledevoir.com/opinion/idees/736635/religion-francois-mon-pape</guid>
-      <category>IdÈes</category>
-      <description>De tous les souverains pontifes, il est celui qui mía le plus rÈconciliÈ avec lí…glise-institution, parfois si difficile ‡ aimer.</description>
-      <author/>
-    </item>
-
-		
-    <item>
-	  <surtitle/>
-      <title>´¿ la poursuite du diableª: un justicier dans lí‚me</title>
-      <pubDate>Thu, 21 Jul 2022 19:28:38 -0400</pubDate>
-      <link>https://www.ledevoir.com/culture/ecrans/736458/documentaire-a-la-poursuite-du-diable-un-justicier-dans-l-ame</link>
-      <guid>https://www.ledevoir.com/culture/ecrans/736458/documentaire-a-la-poursuite-du-diable-un-justicier-dans-l-ame</guid>
-      <category>…crans</category>
-      <description>Portrait de Ben Ferencz, un avocat qui a luttÈ toute sa vie pour líhumanitÈ.</description>
-      <author>myargeau@ledevoir.com (MaÔka Yargeau)</author>
-    </item>
-
-		
-    <item>
-	  <surtitle/>
-      <title>´Fire of Loveª: les liaisons intrÈpides</title>
-      <pubDate>Thu, 21 Jul 2022 19:16:39 -0400</pubDate>
-      <link>https://www.ledevoir.com/culture/cinema/736509/documentaire-fire-of-love-les-liaisons-intrepides</link>
-      <guid>https://www.ledevoir.com/culture/cinema/736509/documentaire-fire-of-love-les-liaisons-intrepides</guid>
-      <category>CinÈma</category>
-      <description>La documentariste Sara Dosa síintÈresse ‡ la vie du cÈlËbre couple de volcanologues franÁais Katia et Maurice Krafft.</description>
-      <author>philrenaud@hotmail.com (Philippe Renaud)</author>
-    </item>
-
-	
   </channel>
 </rss>

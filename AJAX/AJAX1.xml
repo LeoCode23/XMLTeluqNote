@@ -1,16 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"  ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
-<title>Exemple plus avancé en AJAX</title>
+<style>
+body { background-color: linen;}
+li {display: block;}  }
+</style>
 
-<script language="JavaScript" charset="UTF-8">
-/* Cette fonction va chercher un document XML sur
-le serveur et appelle la fonction afficherTitres lorsque
-c'est fait! */
+
+<title>Exercice 4 - Application AJAX</title>
+
+<script language="JavaScript">
+<!--
+    Il est important de mettre le charset UTF-8 sur le document local pour que les accents s'affichent correctement
+-->
+
+<!-- 
+    Objectif:
+     Créer une page web AJAX capable de charger le fichier XML
+     et d'afficher tant le titre des nouvelles que leur description complète. 
+     Attention, il ne faut récupérer que le contenu des éléments au sein des éléments item.
+     Nous supposons que les titres et descriptions ne contiennent que du texte, sans éléments HTML (même si c'est faux)
+ -->
+
+
 function chargeDocument(URI) {
 try {
- 
  xmlhttp = new XMLHttpRequest();
  xmlhttp.open("GET", URI,true);
  xmlhttp.onreadystatechange=function() {
@@ -22,29 +37,52 @@ try {
  } catch(o) {alert(o);}
 }
 
+
+
 function afficheTitres(doc) {
+    /* Accède à l'élement racine */
+    /* racine = doc.documentElement; */
+    /* Affiche l'élément racine */
+    /*alert(racine.nodeName);*/
+
+    /* Accède tous les éléments item */
+    /* items = racine.getElementsByTagName("item"); */
+    /* Affiche le nombre d'éléments item */
+    /*alert(items.length + 1);*/
+
+
       titres = doc.getElementsByTagName("title");
+      description = doc.getElementsByTagName("description");
+      
       elementol = document.createElement("ol");
       var longueur = titres.length;
-      for ( k = 0; k &lt; longueur ; ++k) {
+      /* Pour récupérer uniquement les éléments contenus dans les balises item, on modifie la boucle pour obtenir l'index 1. */
+      for ( k = 1; k &lt; longueur ; ++k) {
         elementli = document.createElement("li");
         elementli.appendChild(
-          document.createTextNode(
-            titres[k].firstChild.nodeValue
-          )
+          document.createTextNode("Titre #"+ k + ": " + titres[k].firstChild.nodeValue)
+        
         );
         elementol.appendChild(elementli);
+        elementli = document.createElement("li");
+        elementli.appendChild(
+          document.createTextNode("Description: " + description[k].firstChild.nodeValue)
+        
+        );
+        elementol.appendChild(elementli);
+
       }
+    
+
+
       body = document.getElementsByTagName("body").item(0);
       body.appendChild(elementol);
 }
-
 </script>
 </head>
 <body>
 <ul>
-<li><a href="javascript:chargeDocument('ledevoir.xml');">Récupère 
-et affiche les nouvelles du devoir.</a></li>
+<li><a href="javascript:chargeDocument('ledevoir.xml');">Cliquez ici pour évaluation</a></li>
 </ul>
 </body>
 </html>

@@ -1,0 +1,41 @@
+<!-- 
+    XML: Question 10 :  XML to JSON 
+-->
+
+
+Référence: https://www.w3schools.com/js/js_json_xml.asp
+
+XML:
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<joueur>
+    <nom>Pierrot Rouge</nom>
+    <cote>3 étoiles</cote>
+    <parent>
+        <nom>Pierrette Rouge</nom>
+        <nom>Pierre Rouge</nom>
+    </parent>
+</joueur>
+
+JSON #1:
+{
+"joueur": {
+"nom": "Pierrot Rouge",
+"cote": "3 étoiles",
+"parent": {
+"nom": ["Pierrette Rouge","Pierre Rouge"]
+}
+}
+}
+
+JSON #2:
+{
+"nom": "Pierrot Rouge",
+"cote": "3 étoiles",
+"parent": {
+    "nom": ["Pierrette Rouge","Pierre Rouge"]
+}
+
+}
+
+Référence: https://jsonlint.com/
+Les 2 structures permettent une représentation en JSON valide.
