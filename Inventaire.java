@@ -1,6 +1,10 @@
+/**
+* INF 6450 -  Travail noté 4 - Léo Talbot,  fait avec JDK 17.0.3
+*/
+
+
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.io.IOException;
 
 import org.w3c.dom.*;
 import java.io.*;
@@ -12,7 +16,7 @@ import javax.xml.transform.stream.*;
 public class Inventaire {
   public static void modifier(String nomdoc, String codeproduitvendu, String quantitevendue) throws Exception {
 
-    // System.out.println("OUI!");
+    // System.out.println("1e étape");
     DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
     factory.setNamespaceAware(true);
     DocumentBuilder parser = factory.newDocumentBuilder();
@@ -54,7 +58,8 @@ public class Inventaire {
           // ------------------------------------------------------
 
         }
-      }
+      } 
+
     }
     // Bloc important -------------------------------------------------
     TransformerFactory tfact = TransformerFactory.newInstance();
@@ -64,10 +69,10 @@ public class Inventaire {
     FileWriter fw = new FileWriter(filename);
     StreamResult result = new StreamResult(fw);
     transformer.transform(source, result);
-
+    fw.close();
   }
 
-  public static void main(String[] args) throws IOException {
+  public static void main(String[] args) throws Exception {
 
     String line = "";
 
@@ -75,12 +80,13 @@ public class Inventaire {
     // le fichier CSV est un fichier texte qui contient des données séparées par des
     // virgules
     BufferedReader lelecteur;
-    try {
+    
+
       lelecteur = new BufferedReader(new FileReader(args[0]));
 
       // Lit tant que l'on a pas atteint la fin du fichier
       while ((line = lelecteur.readLine()) != null) {
-        String[] listeclient = line.split(","); // use comma as separator
+        String[] listeclient = line.split(","); 
         // Client, # carte, code produit et quantité
         // Données de mise à jour -----------------------------------------------------
         // System.out.println("Code produit " + listeclient[2]);
@@ -93,10 +99,7 @@ public class Inventaire {
         modifier(args[1], idproduit, quantite);
 
       }
-    } catch (Exception e) {
-      // TODO Auto-generated catch block
-      e.printStackTrace();
-    }
+    
     // Fin main ---------------------------------------------------------------
   }
 }

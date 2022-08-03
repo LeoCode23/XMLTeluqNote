@@ -1,30 +1,13 @@
-<!-- 
-   Java - Q6
-   Besoin de test.java et test.xml
-   Commande dans CMD (powershell)
-   javac test.java
-    java test test.xml
--->
 /**
 * INF 6450 -  Travail noté 4 - Léo Talbot,  fait avec JDK 17.0.3
 */
+    import org.w3c.dom.*;
+    import javax.xml.parsers.*;
+
+public class Transactions {
 
 
 
-<h1>
-    Java - Q6
-   Besoin de test.java et test.xml
-   Commande dans CMD (powershell)
-   javac test.java
-    java test test.xml
-
-</h1>
-
-<!-- 
-   import org.w3c.dom.*;
-import javax.xml.parsers.*;
-
- public class test {
  public static void main(String[] args) throws Exception {
     DocumentBuilderFactory factory = 
      DocumentBuilderFactory.newInstance();
@@ -77,4 +60,3 @@ import javax.xml.parsers.*;
     }
   }
  }
--->

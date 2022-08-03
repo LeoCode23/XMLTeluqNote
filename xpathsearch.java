@@ -1,5 +1,9 @@
- /* on doit toujours importer ces deux paquetages: */
- import javax.xml.parsers.*;
+ /**
+* INF 6450 -  Travail noté 4 - Léo Talbot,  fait avec JDK 17.0.3
+* javac xpathsearch.java
+* java xpathsearch inventaire.xml 32
+*/
+import javax.xml.parsers.*;
  import javax.xml.xpath.*;
 import org.w3c.dom.*;
 
@@ -7,15 +11,6 @@ import org.w3c.dom.*;
 public class xpathsearch {
 
 
-    
-    public static void lire_xml()
-    {
-
-        
-    }
-    
-    
-    
     public static void main(String[] args) throws Exception {
 
 // Variable de départ
