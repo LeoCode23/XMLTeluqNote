@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<problem type="exemple">
+<?xml version="1.0" encoding="UTF-8"  standalone="yes"?>
+<problem xmltype="exemple">
 <code>
 <temps>4</temps>
 <temps>6</temps>

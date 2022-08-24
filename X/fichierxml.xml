@@ -1,0 +1,18 @@
+<rdf:RDF xmlns="http://example.com/ontology/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:md="http://www.w3.org/2002/07/md#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <md:Ontology rdf:about="http://example.com/ontology/">
+    </md:Ontology>
+    
+
+    <md:ObjectProperty rdf:about="http://example.com/ontology/property1">
+        <rdfs:label xml:lang="en">First property</rdfs:label>
+        <rdfs:comment xml:lang="en">Provides the very first object property</rdfs:comment>
+    </md:ObjectProperty>
+    
+    <md:DatatypeProperty rdf:about="http://example.com/ontology/property2">
+        <rdfs:label xml:lang="en">Second property</rdfs:label>
+         <rdfs:comment xml:lang="en">This is a data type property</rdfs:comment>
+    </md:DatatypeProperty>
+</rdf:RDF>

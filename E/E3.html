@@ -1,0 +1,161 @@
+Donnez un exemple de document RDF (au format XML) qui comprend au moins une
+quinzaine de relations (sujet, verbe, complément).
+B. Concevez un document XSLT qui est à même de transformer votre document RDF
+sous la forme d’un tableau HTML.
+
+Référence:
+Données étudiant/employé https://fr.wikipedia.org/wiki/Universit%C3%A9_du_Qu%C3%A9bec_%C3%A0_Montr%C3%A9al
+Coordonnées
+https://www.google.com/maps/place/Universit%C3%A9+du+Qu%C3%A9bec+%C3%A0+Montr%C3%A9al/@45.5131493,-73.5953129,13z/data=!3m1!4b1!4m5!3m4!1s0x4cc91a4ff35a6e0d:0x1dc2d9ad7f3e5880!8m2!3d45.5131547!4d-73.5602936
+Téléphone https://uqam.ca/en/information/contact/
+
+
+
+
+
+
+
+
+<h1>XML:</h1>
+<?xml version="1.0" encoding="UTF-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:md="http://www.mondomaine.com/">
+    <rdf:Description rdf:about="https://www.uqam.ca/">
+        <md:titre>Site de l'UQAM</md:titre>
+        <md:autre rdf:resource="https://www.uqam.ca/index.html" />
+        <md:position>45.513510221563344, -73.55943568549887</md:position>
+        <md:adresse>405 Rue Sainte-Catherine Est</md:adresse>
+        <md:ville>Montréal</md:ville>
+        <md:province>Qc</md:province>
+        <md:pays>Canada</md:pays>
+        <md:langue>fr</md:langue>
+        <md:nbretudiant>37600</md:nbretudiant>
+        <md:nbremploye>5641</md:nbremploye>
+        <md:telephone>5149873000</md:telephone>
+        <md:urgence>5149873131</md:urgence>
+        <md:contact>mailto:registrat@uqam.ca</md:contact>
+        <md:heureouverturelundi>7h30</md:heureouverturelundi>
+        <md:heurefermeturelundi>22h00</md:heurefermeturelundi>
+    </rdf:Description>
+</rdf:RDF>
+
+<h1>XSLT (transform XML to Résultat attendu = table of 3 columns: sujet,verbe,objet):</h1>
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:output method="html" encoding="UTF-8" indent="yes" />
+    <xsl:template match="/">
+        <html>
+
+        <head>
+            <meta charset="UTF-8" />
+            <title>XML to HTML</title>
+        </head>
+
+        <body>
+            <table>
+                <tr>
+                    <th>Sujet</th>
+                    <th>Verbe</th>
+                    <th>Objet</th>
+                </tr>
+                <tr>
+                    <td>https://www.uqam.ca</td>
+                    <td>http://www.mondomaine.com/titre</td>
+                    <td> Site de l'UQAM</td>
+                </tr>
+                <tr>
+                    <td>https://www.uqam.ca</td>
+                    <td>http://www.mondomaine.com/adresseweb</td>
+                    <td> https://www.uqam.ca/index.html</td>
+                </tr>
+                <tr>
+                    <td>https://www.uqam.ca</td>
+                    <td>http://www.mondomaine.com/position</td>
+                    <td> 45.513510221563344, -73.55943568549887</td>
+                </tr>
+                <tr>
+                    <td>https://www.uqam.ca</td>
+                    <td>http://www.mondomaine.com/adresse</td>
+                    <td> 405 Rue Sainte-Catherine EstH2L 2C4</td>
+                </tr>
+                <tr>
+                    <td>https://www.uqam.ca</td>
+                    <td>http://www.mondomaine.com/ville</td>
+                    <td> Montréal </td>
+                </tr>
+                <tr>
+                    <td>https://www.uqam.ca</td>
+                    <td>http://www.mondomaine.com/province</td>
+                    <td> Qc</td>
+                </tr>
+                <tr>
+                    <td>https://www.uqam.ca</td>
+                    <td>http://www.mondomaine.com/pays</td>
+                    <td> Canada</td>
+                </tr>
+                <tr>
+                    <td>https://www.uqam.ca</td>
+                    <td>http://www.mondomaine.com/langue</td>
+                    <td> fr</td>
+                </tr>
+                <tr>
+                    <td>https://www.uqam.ca</td>
+                    <td>http://www.mondomaine.com/nbretudiant</td>
+                    <td> 37600</td>
+                </tr>
+                <tr>
+                    <td>https://www.uqam.ca</td>
+                    <td>http://www.mondomaine.com/nbremploye</td>
+                    <td> 5641</td>
+                </tr>
+                <tr>
+                    <td>https://www.uqam.ca</td>
+                    <td>http://www.mondomaine.com/telephone</td>
+                    <td> 5149873000</td>
+                </tr>
+                <tr>
+                    <td>https://www.uqam.ca</td>
+                    <td>http://www.mondomaine.com/urgence</td>
+                    <td> 5149873131</td>
+                </tr>
+                <tr>
+                    <td>https://www.uqam.ca</td>
+                    <td>http://www.mondomaine.com/contact</td>
+                    <td> mailto:registrat@uqam.ca</td>
+                </tr>
+                <tr>
+                    <td>https://www.uqam.ca</td>
+                    <td>http://www.mondomaine.com/heureouverturelundi</td>
+                    <td> 7h30</td>
+                </tr>
+                <tr>
+                    <td>https://www.uqam.ca</td>
+                    <td>http://www.mondomaine.com/heurefermeturelundi</td>
+                    <td> 22h00</td>
+                </tr>
+            </table>
+        </body>
+
+        </html>
+    </xsl:template>
+</xsl:stylesheet>
+
+
+
+<h1>Résultat attendu:</h1>
+
+Sujet Verbe Objet
+https://www.uqam.ca http://www.mondomaine.com/titre Site de l'UQAM
+https://www.uqam.ca http://www.mondomaine.com/adresseweb https://www.uqam.ca/index.html
+https://www.uqam.ca http://www.mondomaine.com/position 45.513510221563344, -73.55943568549887
+https://www.uqam.ca http://www.mondomaine.com/adresse 405 Rue Sainte-Catherine EstH2L 2C4
+https://www.uqam.ca http://www.mondomaine.com/ville Montréal
+https://www.uqam.ca http://www.mondomaine.com/province Qc
+https://www.uqam.ca http://www.mondomaine.com/pays Canada
+https://www.uqam.ca http://www.mondomaine.com/langue fr
+https://www.uqam.ca http://www.mondomaine.com/nbretudiant 37600
+https://www.uqam.ca http://www.mondomaine.com/nbremploye 5641
+https://www.uqam.ca http://www.mondomaine.com/telephone 5149873000
+https://www.uqam.ca http://www.mondomaine.com/urgence 5149873131
+https://www.uqam.ca http://www.mondomaine.com/contact mailto:registrat@uqam.ca
+https://www.uqam.ca http://www.mondomaine.com/heureouverturelundi 7h30
+https://www.uqam.ca http://www.mondomaine.com/heurefermeturelundi 22h00

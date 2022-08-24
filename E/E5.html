@@ -1,0 +1,84 @@
+<h1>
+    Question #5
+
+</h1>
+
+<h2>
+    Imaginez que vous receviez un document XML qui excède largement votre capacité de
+mémoire vive. Écrivez un programme Java qui sera à même de compter le nombre
+d’éléments contenus dans le document XML.
+</h2>
+
+Testé avec un flux RSS et un fichier test.xml
+test.xml (18 élements):
+<?xml version="1.0" encoding="UTF-8"?>
+<racine>
+ <element>
+ <souselement>
+ <sousouselement/></souselement>
+ <souselement/>
+ <souselement/>
+ <souselement/> </element>
+ <element></element>
+ <element></element>
+ <element>
+ <souselement/>
+ <souselement>
+ <sousouselement>
+ <sousoussouselement>
+ <soussoussoussouselement/></sousoussouselement> </sousouselement></souselement>
+ <souselement/>
+ <souselement/></element></racine>
+
+
+
+JAVA:
+import org.w3c.dom.*;
+import javax.xml.parsers.*;
+
+public class compterelement {
+
+    // Compte tous les element enfants d'un noeud donné et ajoute à un compteur
+    public static int compteElementEnfant(Node noeud, int compteur) {
+        if (noeud.getNodeType() == Node.ELEMENT_NODE) {
+            compteur++;
+        }
+        NodeList listeEnfants = noeud.getChildNodes();
+        for (int i = 0; i < listeEnfants.getLength(); i++) {
+            compteur = compteElementEnfant(listeEnfants.item(i), compteur);
+        }
+        return compteur;
+    }
+
+    // fonction qui compte tous les elements d'un document xml
+    public static int compteElement(String fichier) {
+        int nbElement = 0;
+        try {
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder = factory.newDocumentBuilder();
+            Document document = builder.parse(fichier);
+            NodeList liste = document.getChildNodes();
+            for (int i = 0; i < liste.getLength(); i++) {
+                Node noeud = liste.item(i);
+                if (noeud.getNodeType() == Node.ELEMENT_NODE) {
+                    nbElement++;
+                    // comptes les noeuds enfants
+                    nbElement += compteElementEnfant(noeud, 0);
+                }
+            }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        return nbElement;
+    }
+
+    public static void main(String[] args) {
+        String filename = "test.xml";
+        System.out.println("Le document xml contient " + compteElement(filename) + " éléments");
+    }
+
+}
+
+
+
+

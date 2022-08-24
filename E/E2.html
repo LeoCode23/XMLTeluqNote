@@ -1,0 +1,64 @@
+A. Étant donné un document XML qui prend la forme suivante, produisez un programme Java
+qui fait la somme des valeurs contenues dans les éléments « paire ».
+<racine>
+ <paire>1</paire>
+ <paire>3.5</paire>
+ <paire>7.8</paire>
+</racine>
+B. Faites la même chose en utilisant un document XSLT. 
+
+XSLT:
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:output method="html" indent="yes" encoding="ISO-8859-1" />
+<xsl:template match="/">
+      <xsl:for-each select="//paire">
+        <xsl:value-of select="."/>
+        <xsl:choose>
+          <xsl:when test="position()=last()">
+            <xsl:text> = </xsl:text>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:text> + </xsl:text>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:for-each>
+      <xsl:value-of select="sum(//paire)"/>
+    </xsl:template>
+</xsl:stylesheet>
+
+
+JAVA: 
+
+import org.w3c.dom.*;
+import javax.xml.parsers.*;
+
+public class sommepaire {
+
+    public static void main(String[] args) throws Exception {
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder parser = factory.newDocumentBuilder();
+        // String filename = args[0];
+        String filename = "test.xml";
+        Document doc = parser.parse(filename);
+        Node racine = doc.getDocumentElement();
+
+        // NodeListe des enfants de la balise racine
+        NodeList liste = racine.getChildNodes();
+
+        // Permet de stocker 4.9e-324 à 1.8e+308 (comme nous avons aucune idée de la
+        // grandeur du fichier)
+        double somme = 0;
+        for (int i = 0; i < liste.getLength(); i++) {
+            if (liste.item(i).getNodeType() == Node.ELEMENT_NODE) {
+                Element element = (Element) liste.item(i);
+                if (element.getTagName().equals("paire")) {
+                    // Affiche l'addition des valeurs des éléments paire
+                    System.out.println("Nombre: " + Double.parseDouble(element.getTextContent()));
+                    somme += Double.parseDouble(element.getTextContent());
+                }
+            }
+        }
+        System.out.println("La somme des nombres est " + somme);
+    }
+}

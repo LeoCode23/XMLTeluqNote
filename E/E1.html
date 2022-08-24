@@ -1,0 +1,34 @@
+
+
+Corrigez le document XML suivant pour qu’il soit valable :
+<problem xmltype=”exemple”>
+<code temps="4" temps=”6” temps = ”8” >
+If (x < 5) { x = x + 2;}
+</code>
+</problem> 
+
+
+Définition d’un document XML valable : Un document XML qui est bien formé et qui respecte les contraintes définissant son type de document est dit valable (ou valide).
+-On réserve les noms débutant par xml, Xml, xMl, xmL, XMl, xML,Xml et XML pour les spécifications XML. Ainsi, la balise <xmldanslavie> est à éviter.
+-En XML, la valeur d'un attribut de type ID identifie un élément unique. Selon les autoévaluations sur le site du cours, le ID peut contenir le caractère ‘-’.
+Information à considérer :
+-Les éléments peuvent eux aussi avoir des attributs, par exemple <a att="test"></a>, mais il faut obligatoirement mettre la valeur de l'attribut entre guillemets (") ou apostrophes (').
+-Appels d'entités: un élément peut contenir du texte, mais ne peut contenir le symbole <, comme dans l'exemple <a><</a>, parce que cela mène à de la confusion.
+-Il arrive parfois qu'il soit trop lourd d'utiliser des appels d'entités, et on peut alors utiliser un segment « CDATA ». Un tel segment débute par « <![CDATA[ » et se termine par « ]]> ». Tout le texte au sein du segment est rendu verbatim. Ainsi, le texte « <![CDATA[<monelement />]]> » est équivalent à « <monelement /> ».
+
+Référence: https://www.w3schools.com/xml/xml_attributes.asp
+Voici quelques éléments à prendre en compte lors de l'utilisation d'attributs :
+les attributs ne peuvent pas contenir plusieurs valeurs (les éléments peuvent)
+les attributs ne peuvent pas contenir d'arborescences (les éléments peuvent)
+les attributs ne sont pas facilement extensibles (pour les modifications futures)
+
+Solution:
+<?xml version="1.0" encoding="UTF-8"  standalone="yes"?>
+<problem xmltype="exemple">
+<code>
+<temps>4</temps>
+<temps>6</temps>
+<temps>8</temps>
+<![CDATA[If (x < 5) { x = x + 2;}]]>
+</code>
+</problem>
