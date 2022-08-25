@@ -1,8 +1,3 @@
-
-
-
-
-
 //class GUI
 public class GUI
 {
