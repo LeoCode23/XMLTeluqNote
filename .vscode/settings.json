@@ -1,0 +1,10 @@
+{
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar"
+        ],
+        "exclude": [
+            "c:\\Users\\LT\\Desktop\\flatlaf-intellij-themes-2.4.jar"
+        ]
+    }
+}
